@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "compatibility": {
     "minimum": "12",
-    "verified": "12"
+    "verified": "13.350",
+    "maximum": "13"
   },
   "authors": [
     {
@@ -13,6 +14,19 @@
       "flags": {}
     }
   ],
-
-  "esmodules": ["babele-register.js"]
+  "esmodules": [
+    "babele-register.js"
+  ],
+  "description": "<p>The german Babele translation for Project Fabula Ultima Game System Compendiums</p>",
+  "url": "https://github.com/rustywrecks/pfu-babele-german/blob/main/module.json",
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "flags": {}
 }
