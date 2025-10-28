@@ -1,0 +1,170 @@
+{
+	"label": "Standardausrüstung",
+	"folders": {
+		"Armor": "Rüstungen",
+		"Shields": "Schilde",
+		"Weapons": "Waffen"
+	},
+	"mapping": {
+		"description": "system.description",
+		"src": "system.source",
+		"srcOld": "system.source.value"
+	},
+	"entries": {
+		"Brigandine": {
+			"name": "Brigantine",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Bronze Plate": {
+			"name": "Bronze-Plattenpanzer",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Combat Tunic": {
+			"name": "Kampfrock",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Runic Plate": {
+			"name": "Runen-Plattenpanzer",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Sage Robe": {
+			"name": "Gelehrtenrobe",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Silk Shirt": {
+			"name": "Seidenhemd",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Steel Plate": {
+			"name": "Stahl-Plattenpanzer",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Travel Garb": {
+			"name": "Reisegewand",
+			"src": "GRW168",
+			"srcOld": "GRW168"
+		},
+		"Bronze Shield": {
+			"name": "Bronzeschild",
+			"src": "GRW169",
+			"srcOld": "GRW169"
+		},
+		"Runic Shield": {
+			"name": "Runenschild",
+			"src": "GRW169",
+			"srcOld": "GRW169"
+		},
+		"Broadaxe": {
+			"name": "Breitaxt",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Bronze Sword": {
+			"name": "Bronzeschwert",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Chain Whip": {
+			"name": "Kettenpeitsche",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Crossbow": {
+			"name": "Armbrust",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Greatsword": {
+			"name": "Großschwert",
+			"src": "GRW167"
+		},
+		"Heavy Spear": {
+			"name": "Schwerer Speer",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Improvised (Melee)": {
+			"name": "Improvisiert (Nahkampf)",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Improvised (Ranged)": {
+			"name": "Improvisiert (Fernkampf)",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Iron Hammer": {
+			"name": "Eisenhammer",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Iron Knuckle": {
+			"name": "Eiserner Schlagring",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Katana": {
+			"name": "Katana",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Light Spear": {
+			"name": "Leichter Speer",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Pistol": {
+			"name": "Pistole",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Rapier": {
+			"name": "Rapier",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Shortbow": {
+			"name": "Kurzbogen",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Shuriken": {
+			"name": "Shuriken",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Staff": {
+			"name": "Stab",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Steel Dagger": {
+			"name": "Stahldolch",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Tome": {
+			"name": "Foliant",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Unarmed Strike": {
+			"name": "Waffenloser Schlag",
+			"description":"<p>Wird automatisch in jeder leeren Hand ausgerüstet.</p>",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		},
+		"Waraxe": {
+			"name": "Kriegsaxt",
+			"src": "GRW167",
+			"srcOld": "GRW167"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fabula-ultima-de",
+  "title": "Fabula Ultima - Deutsche Kompendium-Übersetzung",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Stefan",
+      "discord": "Rusty",
+      "flags": {}
+    }
+  ],
+
+  "esmodules": ["babele-register.js"]
+}

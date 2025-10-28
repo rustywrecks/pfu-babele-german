@@ -1,0 +1,11 @@
+{
+	"label": "NPCs",
+	"entries": {
+		"Decoy Bait": {
+			"name": "Köder"
+		},
+		"Faithful Companion": {
+			"name": "Treuer Begleiter"
+		}
+	}
+}
