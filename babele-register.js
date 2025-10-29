@@ -1,5 +1,5 @@
 Hooks.on('init', () => {
-  console.log("PFU Deutsch | Choo Choo, motherfucker! Dis is live!");
+  console.log("PFU Deutsch | Deutsche Übersetzungen für PFU Kompendien initialisiert.");
   game.babele.register({
     module: 'fabula-ultima-de',
     lang: 'de',
