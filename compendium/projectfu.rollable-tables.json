@@ -1,0 +1,86 @@
+{
+  "label": "Würfeltabellen",
+  "folders": {},
+  "entries": {
+    "Alchemy: Effect": {
+      "name": "Alchemie: Effekt",
+      "description": "<p>Wenn du eine Mixtur herstellst, würfle mit der Anzahl der zwanzigseitigen Würfel, die diese Mixtur angibt, und weise dann einen dieser Würfe der <strong>@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{Ziel}</strong>-Tabelle (Andere Tabelle) und einen der <strong>Effekt</strong>-Tabelle (unten) zu. Verwerfe alle übrigen Würfel und beschreibe dann die Effekte der Mixtur!</p>",
+      "results": {
+        "1-1": "<p>... behandelt seine Geschicklichkeits- (@EFFECT[dex-up e:eot i:2 t:source]) und Macht- (@EFFECT[mig-up e:eot i:2 t:source]) Würfel bis zum Ende deines nächsten Zuges so, als wären sie eine Größe höher (bis zu einem Maximum von W12).</p>",
+        "2-2": "<p>... behandelt seine Einsicht- (@EFFECT[ins-up e:eot i:2 t:source]) und Willenskraft-(@EFFECT[wlp-up e:eot i:2 t:source]) Würfel bis zum Ende deines nächsten Zuges so, als wären sie eine Größe höher (bis zu einem Maximum von W12).</p>",
+        "3-3": "<p>... erleidet @DMG[&step(20,30,40) air]{20|30|40 Luft} schaden.</p>",
+        "4-4": "<p>... erleidet @DMG[&step(20,30,40) bolt]{20|30|40 Blitz} schaden.</p>",
+        "5-5": "<p>... erleidet @DMG[&step(20,30,40) dark]{20|30|40 Finster} schaden.</p>",
+        "6-6": "<p>... erleidet @DMG[&step(20,30,40) earth]{20|30|40 Erd} schaden.</p>",
+        "7-7": "<p>... erleidet @DMG[&step(20,30,40) fire]{20|30|40 Feuer} schaden.</p>",
+        "8-8": "<p>... erleidet @DMG[&step(20,30,40) ice]{20|30|40 Eis} schaden.</p>",
+        "9-9": "<p>... erhält (@TYPE[affinity air resistance e:eos i:1 t:source]) und (@TYPE[affinity fire resistance e:eos i:1 t:source]) bis zum Ende der Szene.</p>",
+        "10-10": "<p>... erhält (@TYPE[affinity bolt resistance e:eos i:1 t:source]) und (@TYPE[affinity ice resistance e:eos i:1 t:source]) bis zum Ende der Szene.</p>",
+        "11-11": "<p>... erhält (@TYPE[affinity dark resistance e:eos i:1 t:source]) und (@TYPE[affinity earth resistance e:eos i:1 t:source]) bis zum Ende der Szene.</p>",
+        "12-12": "<p>... erleidet @EFFECT[enraged].",
+        "13-13": "<p>... erleidet @EFFECT[poisoned].",
+        "14-14": "<p>... erleidet @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow], und @EFFECT[weak].</p>",
+        "15-15": "<p>... erholt sich von allen Statuseffekten.</p>",
+        "16-17": "<p>... regeneriert @GAIN[50 hp] und @GAIN[50 mp].</p>",
+        "18-18": "<p>... regeneriert @GAIN[100 hp].</p>",
+        "19-19": "<p>... regeneriert @GAIN[100 mp].</p>",
+        "20-20": "<p>... regeneriert @GAIN[100 hp] und @GAIN[100 mp].</p>"
+      }
+    },
+    "Alchemy: Target": {
+      "name": "Alchemie: Ziel",
+      "description": "<p>Wenn du eine Mixtur herstellst, würfle mit der Anzahl der zwanzigseitigen Würfel, die diese Mixtur angibt, und weise dann einen dieser Würfe der <strong>Ziel</strong>-Tabelle (unten) und einen der <strong>@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{Effekt}</strong>-Tabelle zu. Verwerfe alle übrigen Würfel und beschreibe dann die Effekte der Mixtur!</p>",
+      "results": {
+        "1-6": "<p>... Du <strong>oder</strong> ein Verbündeter, den du sehen kannst und der in der Szene ist.</p>",
+        "7-11": "<p>... Ein Gegner, den du sehen kannst und der in der Szene ist.</p>",
+        "12-16": "<p>... Du <strong>und</strong> jeder Verbündete, der in der Szene ist.</p>",
+        "17-20": "<p>... Jeder Gegner, der in der Szene ist.</p>"
+      }
+    },
+    "Delicacy Effect": {
+      "name": "Delikatessen-Effekt",
+      "description": "<p>Wenn du zwei <strong>Geschmacksrichtungen</strong> kombinierst, die du <strong>vorher noch nie kombiniert</strong> hast, bestimme den <strong>Effekt</strong> dieser Kombination, indem du mit einem <strong>W12</strong> würfelst und die Tabelle auf der nächsten Seite zurate ziehst; bei den meisten Einträgen musst du außerdem eine Auswahl treffen (z.B. eine bestimmte Schadensart oder einen Statuseffekt). Sobald du fertig bist, notierst du das Ergebnis in deinem @UUID[Compendium.projectfu.skills.Item.HQTDIy6suF8u6dAl]{Kochbuch}: Von diesem Moment an wird diese <strong>Geschmackskombination immer</strong> genau diesen <strong>Effekt</strong> haben, wenn du sie benutzt. Folge den @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4]{Zutaten &amp; Delikatessen-Regeln} für weitere Informationen.</p>",
+      "results": {
+        "1-1": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> erholt sich vom Statuseffekt <strong>(wähle einen: benommen; wütend; vergiftet; erschüttert; geschwächt)</strong>.</p>",
+        "2-2": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> erleidet den Statuseffekt <strong>(wähle einen: @EFFECT[dazed]; @EFFECT[shaken]; @EFFECT[slow]; @EFFECT[weak])<strong>.</p>",
+        "3-3": "<p> Jedes Ziel dieser <strong>Delikatesse</strong> gewinnt @GAIN[40 hp] zurück. Dieser Betrag erhöht sich auf @GAIN[50 hp], wenn du auf <strong>Stufe 30 oder höher</strong> bist.</p>",
+        "4-4": "<p> Jedes Ziel dieser <strong>Delikatesse</strong> gewinnt @GAIN[40 mp] zurück. Dieser Betrag erhöht sich auf @GAIN[50 mp], wenn du auf <strong>Stufe 30 oder höher</strong> bist.</p>",
+        "5-5": "<p>Diese <strong>Delikatesse</strong> fügt jedem ihrer Ziele @DMG[20 untyped] der Art <strong>(wähle eine: Luft; Blitz; Erde; Feuer; Eis; Gift)</strong> zu. Dieser Betrag erhöht sich auf @DMG[30 untyped], wenn du auf <strong>Stufe 30 oder höher</strong> bist.</p>",
+        "6-6": "<p>Bis zum Ende deines nächsten Zuges fügt jede Quelle, die Schaden der Art <strong>(wähle eine: Luft; Blitz; Erde; Feuer; Eis; Gift)</strong> verursacht, jedem Ziel dieser <strong>Delikatesse</strong> 5 Zusatzschaden zu.</p>",
+        "7-7": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> kann in seinem nächsten Zug nicht die Aktion <strong>Beschützen</strong> ausführen.</p>",
+        "8-8": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> kann in seinem nächsten Zug nicht die Aktion <strong>Zaubern</strong> ausführen.</p>",
+        "9-9": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> kann in seinem nächsten Zug nicht die Aktion <strong>Fähigkeit</strong> ausführen.</p>",
+        "10-10": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> erhält bis zum Ende deines nächsten Zuges Resistenz gegen Schaden der Art <strong>(wähle eine: @UUID[Compendium.projectfu.actor-effects.Item.3tMyw1mCjd7SfGTD]{Luft}; @UUID[Compendium.projectfu.actor-effects.Item.QrEztsujMpK33cpj]{Blitz}; @UUID[Compendium.projectfu.actor-effects.Item.H3SJ1fej3GSyHdKG]{Erde}; @UUID[Compendium.projectfu.actor-effects.Item.FAfKTXxluiqIVP5t]{Feuer}; @UUID[Compendium.projectfu.actor-effects.Item.SWdZeuJTEq1ig6S8]{Eis}; @UUID[Compendium.projectfu.actor-effects.Item.3xPA7x9S3fggYHkX]{Gift})</strong></p>",
+        "11-11": "<p>Jedes Ziel dieser <strong>Delikatesse</strong> behandelt seine <strong>(wähle eins: @UUID[Compendium.projectfu.actor-effects.Item.vv2cqUDHaCJLmEYw]{Geschicklichkeit}; @UUID[Compendium.projectfu.actor-effects.Item.4G5iaieFDwGiIVrw]{Einsicht}; @UUID[Compendium.projectfu.actor-effects.Item.hX70STpGG5fgAAkp]{Macht}; @UUID[Compendium.projectfu.actor-effects.Item.nXxz7GyqeIGtQpMG]{Willenskraft}) bis zum Ende deines nächsten Zuges so, als wäre sie eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p>",
+        "12-12": "<p>Im nächsten Zug eines jeden Ziels dieser <strong>Delikatesse</strong> wird der gesamte Schaden, den es verursacht, zu <strong>(wähle eins: Luft; Blitz; Erde; Feuer; Eis; Gift)</strong>, und seine Schadensart kann sich nicht ändern.</p>"
+      }
+    },
+    "Gamble": {
+      "name": "Glücksspiel",
+      "description": "<p>Du beschwörst einen Strudel aus chaotischer Energie. Würfele deinen  <strong>Willenskraft</strong>-Würfel einmal pro 10 für diesen Zauber ausgegebene Geistpunkte und behalte <strong>das eine Würfelergebnis</strong> das du bevorzugst: Die Zahl auf dem Würfel bestimmt den Effekt des Zaubers.</p>",
+      "results": {
+        "1-1": "Du verlierst die @LOSS[(@actor.resources.hp.value/2) hp]{Hälfte deiner aktuellen Lebenspunkte} und die @LOSS[(@actor.resources.mp.value/2) mp]{Hälfte deiner aktuellen Geistpunkte}.",
+        "2-3": "<p>Jedes Wesen in der Szene, einschließlich dir selbst, wird @EFFECT[poisoned].</p>",
+        "4-6": "<p>Jedes Wesen in der Szene, einschließlich dir selbst, wird @EFFECT[slow].</p>",
+        "7-8": "<p>Wähle bis zu drei Wesen, die du sehen kannst: Jedes von ihnen erhält @GAIN[50 hp] zurück und erholt sich auch von allen Statuseffekten.</p>",
+        "9-12": "<p>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet 30 Schaden. Die Schadensart wird zufällig durch Würfeln eines W6 bestimmt:</p> 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]"
+      }
+    },
+    "Ingredient Taste": {
+      "name": "Zutaten-Geschmack",
+      "description": "<p>Würfle mit einem <strong>W6</strong>, um den <strong>Geschmack der Zutat</strong> anhand der Tabelle unten zu bestimmen, beschreibe dann ihr <strong>Aussehen</strong> und gib ihr einen <strong>Namen</strong>.</p>",
+      "results": {
+        "1-1": "<p>Bitter</p>",
+        "2-2": "<p>Salzig</p>",
+        "3-3": "<p>Sauer</p>",
+        "4-4": "<p>Süß</p>",
+        "5-5": "<p>Umami</p>",
+        "6-6": "<p>Deine Wahl</p>"
+      }
+    },
+    "Random Hoplospheres": {
+      "name": "Zufällige Hoplosphären",
+      "description": "<p>Eine zufällig aus dem Inhalt des Holosphären Ordners generierte Tabelle.</p>"
+    }
+  }
+}
