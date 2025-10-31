@@ -17,7 +17,7 @@
   "esmodules": [
     "babele-register.js"
   ],
-  "description": "<p>The german Babele translation for Project Fabula Ultima Game System Compendiums</p>",
+  "description": "The german Babele translation for Project Fabula Ultima Game System Compendiums",
   "url": "https://github.com/rustywrecks/pfu-babele-german/blob/main/module.json",
   "relationships": {
     "requires": [
