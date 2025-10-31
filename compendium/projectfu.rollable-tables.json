@@ -68,15 +68,7 @@
     },
     "Ingredient Taste": {
       "name": "Zutaten-Geschmack",
-      "description": "<p>Würfle mit einem <strong>W6</strong>, um den <strong>Geschmack der Zutat</strong> anhand der Tabelle unten zu bestimmen, beschreibe dann ihr <strong>Aussehen</strong> und gib ihr einen <strong>Namen</strong>.</p>",
-      "results": {
-        "1-1": "<p>Bitter</p>",
-        "2-2": "<p>Salzig</p>",
-        "3-3": "<p>Sauer</p>",
-        "4-4": "<p>Süß</p>",
-        "5-5": "<p>Umami</p>",
-        "6-6": "<p>Deine Wahl</p>"
-      }
+      "description": "<p>Würfle mit einem <strong>W6</strong>, um den <strong>Geschmack der Zutat</strong> anhand der Tabelle unten zu bestimmen, beschreibe dann ihr <strong>Aussehen</strong> und gib ihr einen <strong>Namen</strong>.</p>"
     },
     "Random Hoplospheres": {
       "name": "Zufällige Hoplosphären",
