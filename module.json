@@ -18,7 +18,7 @@
     "babele-register.js"
   ],
   "description": "The german Babele translation for Project Fabula Ultima Game System Compendiums",
-  "url": "https://github.com/rustywrecks/pfu-babele-german/blob/main/module.json",
+  "url": "https://github.com/rustywrecks/pfu-babele-german",
   "relationships": {
     "requires": [
       {
