@@ -48,7 +48,7 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 > - ATF = Atlas Techno Fantasy
 > - ANF = Atlas Natural Fantasy
 
-# Fabula Ultima - English Compendium Translation
+# Fabula Ultima - German Compendium Translation
 ## Foreword
 In a fit of workaholism, I decided to translate the compendiums that come with the wonderful [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) system using [Babele](https://gitlab.com/riccisi/foundryvtt-babele).
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
