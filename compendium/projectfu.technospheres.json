@@ -1,0 +1,323 @@
+{
+  "label": "Technosphären",
+  "mapping": {
+    "source": "system.source",
+    "socketable": "system.socketable",
+    "requiredSlots": "system.requiredSlots",
+    "coagulationLevel0": "system.effects.0.coagulationLevel",
+    "damageType0": "system.effects.0.damageType",
+    "type0": "system.effects.0.type",
+    "coagulationLevel1": "system.effects.1.coagulationLevel",
+    "damageType1": "system.effects.1.damageType",
+    "type1": "system.effects.1.type",
+    "coagulationLevel2": "system.effects.2.coagulationLevel",
+    "damageType2": "system.effects.2.damageType",
+    "type2": "system.effects.2.type",
+    "coagulationLevel3": "system.effects.3.coagulationLevel",
+    "damageType3": "system.effects.3.damageType",
+    "type3": "system.effects.3.type",
+    "class": "system.class",
+    "skillName0": "system.items.0.name",
+    "skillName1": "system.items.1.name",
+    "skillName2": "system.items.2.name",
+    "skillName3": "system.items.3.name",
+    "skillName4": "system.items.4.name"
+  },
+  "folders": {
+    "Hoplospheres": "Hoplosphären",
+    "Mnemospheres": "Mnemosphären"
+  },
+  "entries": {
+    "Agile Hoplosphere": {
+      "name": "Agile Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "all",
+      "requiredSlots": 2
+    },
+    "Arctic Hoplosphere": {
+      "name": "Arktische Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Blessed Hoplosphere": {
+      "name": "Gesegnete Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Brave Hoplosphere": {
+      "name": "Mutige Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 2
+    },
+    "Crystalline Hoplosphere": {
+      "name": "Kristalline Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Cyclonic Hoplosphere": {
+      "name": "Zyklonische Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Dark Hoplosphere": {
+      "name": "Finstere Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Dazing Hoplosphere": {
+      "name": "Betäubende Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Disrupting Hoplosphere": {
+      "name": "Störende Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Draining Hoplosphere": {
+      "name": "Entziehende Hoplosphäre",
+      "source": "ATF140",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Energizing Hoplosphere": {
+      "name": "Belebende Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Expansive Hoplosphere": {
+      "name": "Ausgedehnte Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Ghastly Hoplosphere": {
+      "name": "Schauderhafte Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Gladiator Hoplosphere": {
+      "name": "Gladiator Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Knightly Hoplosphere": {
+      "name": "Ritterliche Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Medical Hoplosphere": {
+      "name": "Medizinische Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Mighty Hoplosphere": {
+      "name": "Mächtige Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 2
+    },
+    "Occult Hoplosphere": {
+      "name": "Okkulte Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Piercing Hoplosphere": {
+      "name": "Durchbohrende Hoplosphäre",
+      "source": "ATF139",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Poisonous Hoplosphere": {
+      "name": "Giftige Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Predator Hoplosphere": {
+      "name": "Raubtier Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Quick Hoplosphere": {
+      "name": "Schnelle Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Radiant Hoplosphere": {
+      "name": "Strahlende Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Reaping Hoplosphere": {
+      "name": "Erntende Hoplosphäre",
+      "source": "ATF140",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Revealing Hoplosphere": {
+      "name": "Enthüllende Hoplosphäre",
+      "source": "ATF140",
+      "socketable": "all",
+      "requiredSlots": 2
+    },
+    "Scornful Hoplosphere": {
+      "name": "Verächtliche Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Seismic Hoplosphere": {
+      "name": "Seismische Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Sharpening Hoplosphere": {
+      "name": "Schärfende Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Skeptical Hoplosphere": {
+      "name": "Skeptische Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Snaring Hoplosphere": {
+      "name": "Fangende Hoplosphäre",
+      "source": "ATF141",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Sorcerous Hoplosphere": {
+      "name": "Zauberhafte Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "weapon",
+      "requiredSlots": 1
+    },
+    "Steadfast Hoplosphere": {
+      "name": "Standhafte Hoplosphäre",
+      "source": "ATF142",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Tiring Hoplosphere": {
+      "name": "Ermüdende Hoplosphäre",
+      "source": "ATF140",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Toxic Hoplosphere": {
+      "name": "Toxische Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "weapon",
+      "requiredSlots": 2
+    },
+    "Volcanic Hoplosphere": {
+      "name": "Vulkanische Hoplosphäre",
+      "source": "ATF143",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Voltaic Hoplosphere": {
+      "name": "Energetisierende Hoplosphäre",
+      "source": "ATF140",
+      "socketable": "all",
+      "requiredSlots": 1
+    },
+    "Mnemosphere: Chanter": {
+      "name": "Mnemosphäre: Kantor",
+      "source": "",
+      "class": "Kantor"
+    },
+    "Mnemosphere: Chimerist": {
+      "name": "Mnemosphäre: Chimärist",
+      "source": "",
+      "class": "Chimärist"
+    },
+    "Mnemosphere: Commander": {
+      "name": "Mnemosphäre: Kommandant",
+      "source": "",
+      "class": "Kommandant"
+    },
+    "Mnemosphere: Dancer": {
+      "name": "Mnemosphäre: Tänzer",
+      "source": "",
+      "class": "Tänzer"
+    },
+    "Mnemosphere: Elementalist": {
+      "name": "Mnemosphäre: Elementarist",
+      "source": "",
+      "class": "Elementarist"
+    },
+    "Mnemosphere: Entropist": {
+      "name": "Mnemosphäre: Entropist",
+      "source": "",
+      "class": "Entropist"
+    },
+    "Mnemosphere: Esper": {
+      "name": "Mnemosphäre: Esper",
+      "source": "",
+      "class": "Esper"
+    },
+    "Mnemosphere: Fury": {
+      "name": "Mnemosphäre: Furie",
+      "source": "",
+      "class": "Furie"
+    },
+    "Mnemosphere: Guardian": {
+      "name": "Mnemosphäre: Wächter",
+      "source": "",
+      "class": "Wächter"
+    },
+    "Mnemosphere: Loremaster": {
+      "name": "Mnemosphäre: Lehrmeister",
+      "source": "",
+      "class": "Lehrmeister"
+    },
+    "Mnemosphere: Orator": {
+      "name": "Mnemosphäre: Orator",
+      "source": "",
+      "class": "Orator"
+    },
+    "Mnemosphere: Rogue": {
+      "name": "Mnemosphäre: Schurke",
+      "source": "",
+      "class": "Schurke"
+    },
+    "Mnemosphere: Sharpshooter": {
+      "name": "Mnemosphäre: Scharfschütze",
+      "source": "",
+      "class": "Scharfschütze"
+    },
+    "Mnemosphere: Spiritist": {
+      "name": "Mnemosphäre: Spiritist",
+      "source": "",
+      "class": "Spiritist"
+    },
+    "Mnemosphere: Weaponmaster": {
+      "name": "Mnemosphäre: Waffenmeister",
+      "source": "",
+      "class": "Waffenmeister"
+    }
+  }
+}

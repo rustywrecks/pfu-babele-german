@@ -1,0 +1,138 @@
+{
+  "label": "Verbrauchsgegenstände",
+  "mapping": {
+    "source": "system.source",
+    "description": "system.description",
+    "summary": "system.summary.value"
+  },
+  "folders": {
+    "Alchemy": "Alchemie",
+    "Infusion": "Einflößung",
+    "Items": "Gegenstände",
+    "Magicannon": "Magikanone",
+    "Magisphere": "Magisphäre",
+    "Tinkerer Only": "Nur Bastler"
+  },
+  "entries": {
+    "Advanced Alchemy": {
+      "name": "Fortgeschrittene Alchemie",
+      "source": "GRW184",
+      "description": "<h5>Erfordert: Fortgeschrittene Vorteile in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]</h5><p>Für 4 Inventarpunkte, würfle <strong>drei W20</strong> und weise einen dem <strong>Ziel</strong> und einen dem <strong>Effekt</strong> zu.</p>",
+      "summary": ""
+    },
+    "Basic Alchemy": {
+      "name": "Grundlegende Alchemie",
+      "source": "GRW184",
+      "description": "<h5>Erfordert: Grundlegende Vorteile in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]</h5><p>Für 3 Inventarpunkte, würfle <strong>zwei W20</strong> und weise einen dem <strong>Ziel</strong> und einen dem <strong>Effekt</strong> zu.</p>",
+      "summary": ""
+    },
+    "Elemental Shard": {
+      "name": "Elementarer Splitter",
+      "source": "GRW104",
+      "description": "<p>Für 2 Inventarpunkte erleidet ein Wesen 10 Schaden einer Art deiner Wahl (<strong>Luft</strong>, <strong>Blitz</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>).</p><hr><ul><li><p><strong>Ziel erleidet:</strong> @DMG[10 air], @DMG[10 bolt], @DMG[10 earth], @DMG[10 fire], or @DMG[10 ice]</p></li></ul>",
+      "summary": "Ein Wesen erleidet 10 Schaden einer Art deiner Wahl (Luft,  Blitz, Erde, Feuer oder Eis)."
+    },
+    "Elixir": {
+      "name": "Elixier",
+      "source": "GRW104",
+      "description": "<p>Für 3 Inventarpunkte erhält ein Wesen @HEAL[50 mp] zurück.</p>",
+      "summary": "Ein Wesen erhält 50 GP zurück."
+    },
+    "Infusion: Advanced": {
+      "name": "Einflößung: Fortgeschritten",
+      "source": "GRW186",
+      "description": "<h5>Erfordert: Fortgeschrittene Vorteile in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]</h5><p>Für 2 Inventarpunkte verursacht der Angriff 5 Zusatzschaden und die Schadensart wird zu: <strong>Licht</strong>, <strong>Finster</strong>, <strong>Erde</strong> oder <strong>Luft</strong>.</p>",
+      "summary": "Für 2 IP verursacht der Angriff 5 Zusatzschaden und wird zu: Licht, Finter, Erde ODER Finster."
+    },
+    "Infusion: Basic": {
+      "name": "Einflößung: Grundlegend",
+      "source": "GRW186",
+      "description": "<h5>Erfordert: Grundlegende Vorteile in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]</h5><p>Für 2 Inventarpunkte verursacht der Angriff 5 Zusatzschaden und die Schadensart wird zu: <strong>Eis</strong>, <strong>Feuer</strong> oder <strong>Blitz</strong>.</p>",
+      "summary": "Für 2 IP verursacht der Angriff 5 Zusatzschaden und wird zu:Eis, Feuer ODER Blitz."
+    },
+    "Infusion: Vampire (Superior)": {
+      "name": "Einflößung: Vampir (Überlegen)",
+      "source": "GRW186",
+      "description": "<h5>Erfordert: Überlegene Vorteile in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]</h5><p>Du erhältst eine Menge an LP zurück, die der Hälfte des LP-Verlustes des Ziels des Angriffs entspricht; <strong>oder</strong> du erhältst eine Menge an GP zurück, die der Hälfte des LP-Verlustes des Ziels des Angriffs entspricht.</p><p>Diese Einflößung kann nur verwendet werden, wenn der Angriff ein einzelnes Wesen zum Ziel hatte.</p>",
+      "summary": ""
+    },
+    "Infusion: Venom (Superior)": {
+      "name": "Einflößung: Gift (Überlegen)",
+      "source": "GRW186",
+      "description": "<h5>Erfordert: Überlegene Vorteile in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]</h5><p>Für 2 Inventarpunkte verursacht der Angriff 5 Zusatzschaden, sein Schaden wird zu <strong>Gift</strong> und jedes Wesen, das von dem Angriff getroffen wird, wird <strong>vergiftet</strong>.</p>",
+      "summary": ""
+    },
+    "Magic Tent": {
+      "name": "Magisches Zelt",
+      "source": "GRW104",
+      "description": "<p>Ermöglicht es für 4 Inventarpunkte der gesamten Gruppe, sich in der Wildnis <strong>auszuruhen</strong>.</p>",
+      "summary": "Ermöglicht es der gesamten Gruppe, sich in der Wildnis und auf See auszuruhen."
+    },
+    "Magicannon (Air)": {
+      "name": "Magikanone (Luft)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[air] <strong>Luftschaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die Luftschaden verursacht."
+    },
+    "Magicannon (Bolt)": {
+      "name": "Magikanone (Blitz)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[bolt] <strong>Blitzschaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die Blitzschaden verursacht."
+    },
+    "Magicannon (Earth)": {
+      "name": "Magikanone (Erde)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[earth] <strong>Erdschaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die Erdschaden verursacht."
+    },
+    "Magicannon (Fire)": {
+      "name": "Magikanone (Feuer)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[fire] <strong>Feuerschaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die Feuerschaden verursacht."
+    },
+    "Magicannon (Ice)": {
+      "name": "Magikanone (Eis)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[ice] <strong>Eisschaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die Eisschaden verursacht."
+    },
+    "Magicannon (Item)": {
+      "name": "Magikanone (Gegenstand)",
+      "source": "GRW187",
+      "description": "<h5>Erfordert: Fortgeschrittene Vorteile in @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]</h5><p>Du kannst die <strong>Inventar</strong>-Aktion ausführen und <strong>@LOSS[3 ip]</strong> ausgeben, um eine <strong>Schusswaffe</strong>, die <strong>Magikanone</strong> herzustellen. Wenn du eine Magikanone herstellst, wähle die Art des Schadens, den sie verursacht (<strong>Luft</strong>, <strong>Blitz</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong> oder <strong>Physisch</strong>) und ziehe den passenden Gegenstand auf deinen Charakterbogen.</p><hr><p>@UUID[Compendium.projectfu.consumables.Item.EGvZsEWEhaTqoCgG]</p><p>@UUID[Compendium.projectfu.consumables.Item.uuKKqm81klCOiDjO]</p><p>@UUID[Compendium.projectfu.consumables.Item.sREYRTy6TfK8fe53]</p><p>@UUID[Compendium.projectfu.consumables.Item.jHbcjw8RW9Ywesyu]</p><p>@UUID[Compendium.projectfu.consumables.Item.eVOnHgRLTnL695cP]</p><p>@UUID[Compendium.projectfu.consumables.Item.MJoIwfTvo0FHcDqL]</p>",
+      "summary": "Stelle eine Schusswaffe her, die Luft-, Blitz-, Erd-, Feuer-, Eis- oder physischen Schaden verursacht."
+    },
+    "Magicannon (Physical)": {
+      "name": "Magikanone (Physisch)",
+      "source": "GRW187",
+      "description": "<p>Eine Magitech Schusswaffe, die @ICON[physical] <strong>physischen Schaden</strong> verursacht.</p>",
+      "summary": "Eine Magitech Schusswaffe, die physischen Schaden verursacht."
+    },
+    "Magisphere (Superior)": {
+      "name": "Magisphäre (Überlegen)",
+      "source": "GRW187",
+      "description": "<h5>Erfordert: Überlegene Vorteile in @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]</h5><p>Führe die <strong>Inventar</strong>-Aktion aus und gib 2 Inventarpunkte aus, um eine Magisphäre zu erschaffen und sofort die <strong>Zaubern</strong>-Aktion kostenlos durchführen, bei der du einen der Zauber wirkst, für die du einen Prototyp entwickelt hast.</p>",
+      "summary": ""
+    },
+    "Remedy": {
+      "name": "Medizin",
+      "source": "GRW104",
+      "description": "<p>Für 3 Inventarpunkte erhält ein Wesen @HEAL[50 hp] zurück.</p>",
+      "summary": "Ein Wesen erhält 50 LP zurück."
+    },
+    "Superior Alchemy": {
+      "name": "Superior Alchemy",
+      "source": "GRW",
+      "description": "<h5>Required: Superior Benefits in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]</h5><p>For 5 Inventory Points, roll <strong>four d20s</strong> and assign one to <strong>target</strong> and one to <strong>effect</strong>.</p>",
+      "summary": ""
+    },
+    "Tonic": {
+      "name": "Tonikum",
+      "source": "GRW104",
+      "description": "<p>Für 2 Inventarpunkte erholt sich ein Wesen von einem einzelnen Statuseffekt.</p>",
+      "summary": "Ein Wesen erholt sich von einem einzelnen Statuseffekt."
+    }
+  }
+}

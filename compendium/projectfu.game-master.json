@@ -1,0 +1,93 @@
+{
+  "label": "Spielleitung",
+  "mapping": {
+    "source": "system.source",
+    "description": "system.description",
+    "summary": "system.summary.value"
+  },
+  "folders": {
+    "NPC Spells": "NSC Zauber"
+  },
+  "entries": {
+    "Area Status": {
+      "name": "Bereichsstatus",
+      "description": "<p>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet <strong>(wähle eins: benommen, erschüttert, verlangsamt, geschwächt)</strong>.</p><hr><ul><li><p><strong>Ziel erleidet:</strong> @EFFECT[dazed] @EFFECT[shaken] @EFFECT[slow] @EFFECT[weak]</p></li></ul>",
+      "source": "GRW310"
+    },
+    "Breath": {
+      "name": "Atem",
+      "description": "<p>Das Ziel erleidet<strong>【HW + 10】</strong>(<strong>Schadensart wählen</strong>).</p>",
+      "source": "GRW310"
+    },
+    "Curse": {
+      "name": "Fluch",
+      "description": "<p>Das Ziel erleidet (<strong>wähle eins: benommen, erschüttert, verlangsamt, geschwächt</strong>).</p><hr><ul><li><p><strong>Ziel erleidet:</strong> @EFFECT[dazed] @EFFECT[shaken] @EFFECT[slow] @EFFECT[weak]</p></li></ul>",
+      "source": "GRW310"
+    },
+    "Curse XL": {
+      "name": "Fluch XL",
+      "description": "<p>Das Ziel erleidet (<strong>wähle zwei: benommen, erschüttert, verlangsamt, geschwächt</strong>).</p><hr><ul><li><p>Ziel erleidet: @EFFECT[dazed] @EFFECT[shaken] @EFFECT[slow] @EFFECT[weak]</p></li></ul>",
+      "source": "GRW310"
+    },
+    "Cursed Breath": {
+      "name": "Verfluchter Atem",
+      "description": "<p>Das Ziel erleidet<strong>【HW + 15】</strong>(<strong>Schadensart wählen</strong>) und erleidet (<strong>wähle eins: benommen, erschüttert, verlangsamt, geschwächt</strong>).</p><hr><ul><li><p><strong>Ziel erleidet:</strong> @EFFECT[dazed] @EFFECT[shaken] @EFFECT[slow] @EFFECT[weak]</p></li></ul>",
+      "source": "GRW311"
+    },
+    "Devastation": {
+      "name": "Verwüstung",
+      "description": "<p>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet 30 (<strong>Schadensart wählen</strong>). Du kannst diesen Zauber nur <strong>einmal pro Zug</strong> wirken.</p><p>Dieser Zauber sollte nur <strong>Champion</strong>- und <strong>Elite</strong>-Wesen der <strong>Stufe 30 oder höher</strong> gegeben werden, und diese Wesen können diesen Zauber nur in ihrem <strong>letzten Zug in der Runde</strong> wirken.</p><hr><ul><li><p><strong>Ziele erleiden:</strong> @DMG[30 untyped]</p></li></ul>",
+      "source": "GRW311"
+    },
+    "Lick Wounds": {
+      "name": "Wunden lecken",
+      "description": "<p>Du erhältst 20 Lebenspunkte zurück. Diese Menge erhöht sich auf 30 Lebenspunkte, sofern du auf <strong>Stufe 20 oder höher</strong> bist, auf 40 Lebenspunkte, sofern du auf <strong>Stufe 40 oder höher</strong> bist, oder auf 50 Lebenspunkte, sofern du auf <strong>Stufe 60 oder höher</strong> bist.</p><hr><ul><li><p><strong>Du regenerierst:</strong> @GAIN[&step(20,30,40,50) hp]{20|30|40|50 LP}</p></li></ul>",
+      "source": "GRW311"
+    },
+    "Life Theft": {
+      "name": "Lebensentzug",
+      "description": "<p>Das Ziel erleidet<strong>【HW + 15】(Schadensart wählen)</strong>. Danach erhältst du eine Anzahl an Lebenspunkten zurück, die der Hälfte des erlittenen Lebenspunktverlustes entspricht.</p>",
+      "source": "GRW311"
+    },
+    "Mind Theft": {
+      "name": "Geistentzug",
+      "description": "<p>Das Ziel erleidet<strong>【HW + 15】(Schadensart wählen)</strong>. Danach erhältst du eine Anzahl an Geistpunkten zurück, die der Hälfte des erlittenen Lebenspunktverlustes entspricht.</p>",
+      "source": "GRW310"
+    },
+    "Poison": {
+      "name": "Gift",
+      "description": "<p>Jedes Ziel, das von diesem Zauber getroffen wird, wird @EFFECT[poisoned].</p>",
+      "source": "GRW310"
+    },
+    "Quicken": {
+      "name": "Beschleunigen",
+      "description": "<p>Das Ziel kann sofort einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die es ausgerüstet hat (oder mit einem <strong>Basis-Angriff</strong>, sofern das Ziel ein NSC ist).</p>",
+      "source": "GRW310"
+    },
+    "Rage": {
+      "name": "Wut",
+      "description": "<p>Jedes Ziel, das von diesem Zauber getroffen wird, wird @EFFECT[enraged].</p>",
+      "source": "GRW311"
+    },
+    "Shell": {
+      "name": "Hülle",
+      "description": "<p>Bis dieser Zauber endet, erhältst du Resistenz gegen <strong>physischen</strong> Schaden.</p><hr><ul><li><p><strong>Du erhältst:</strong> @TYPE[affinity physical resistance e:eos i:1 t:source]</p></li></ul>",
+      "source": "GRW311"
+    },
+    "War Cry": {
+      "name": "Kriegsschrei",
+      "description": "<p>Bis dieser Zauber endet, erhält jedes Ziel einen Bonus von +1 auf Präzisionsproben.</p><hr /><ul><li><p><strong>Ziele erhalten: </strong>@EFFECT[Compendium.projectfu.actor-effects.Item.62RZnGQvUWIEyeJ7 e:eos i:1 t:source]{Effekt: Kriegsschrei}</p></li></ul>",
+      "source": "GRW311"
+    },
+    "Weaken": {
+      "name": "Schwächen",
+      "description": "<p>Bis dieser Zauber endet, erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die (<strong>Schadensart wählen</strong>) verursachen.</p><hr /><ul><li><p><strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.actor-effects.Item.6JCfyn7Ewt0AJndC e:eos i:1 t:source]{Effekt: Schwächen (Physisch)}, @EFFECT[Compendium.projectfu.actor-effects.aI4tsuVswH5gfGab e:eos i:1 t:source]{Effekt: Schwächen (Luft)}, @EFFECT[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J e:eos i:1 t:source]{Effekt: Schwächen (Blitz)}, @EFFECT[Compendium.projectfu.actor-effects.zFQpa3KcSAmBCWdE e:eos i:1 t:source]{Effekt: Schwächen (Finster)}, @EFFECT[Compendium.projectfu.actor-effects.YpXM5ClzMzIcwCgd e:eos i:1 t:source]{Effekt: Schwächen (Erde}, @EFFECT[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We e:eos i:1 t:source]{Effekt: Schwächen (Feuer)}, @EFFECT[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0 e:eos i:1 t:source]{Effekt: Schwächen (Eis)}, @EFFECT[Compendium.projectfu.actor-effects.aPBdnNy1hA8aRctl e:eos i:1 t:source]{Effekt: Schwächen (Licht)}, or @EFFECT[Compendium.projectfu.actor-effects.2sXIFIXiWxRHt8CP e:eos i:1 t:source]{Effekt: Schwächen (Gift)}</p></li></ul>",
+      "source": "GRW311"
+    },
+    "[All NPC Spells]": {
+      "name": "[Alle NSC Zauber]",
+      "description": "<p>Mit ( @ICON[offensive] ) markierte Zauber sind offensive Zauber und erfordern Magieproben!</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.1JaRWZz48d1dtVN0]</p></td><td><p>20</p></td><td><p>Speziell</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet <strong>(wähle eins: benommen, erschüttert, verlangsamt, geschwächt)</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.SSfB2SP3DVfwslhv] @ICON[offensive]</p></td><td><p>5</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet<strong>【HW + 10】(Schadensart wählen)</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.rEWv1yWQHse3soqn] @ICON[offensive]</p></td><td><p>5</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet <strong>(wähle eins: benommen, erschüttert, verlangsamt, geschwächt)</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.S291phTQNL0qbGYa] @ICON[offensive]</p></td><td><p>10</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet <strong>(wähle zwei: benommen, erschüttert, verlangsamt, geschwächt)</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.e5IBMtSXDyfWo0kb] @ICON[offensive]</p></td><td><p>10</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet<strong>【HW + 15】(Schadensart wählen)</strong> und erleidet <strong>(wähle eins: benommen, erschüttert, verlangsamt, geschwächt)</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.32sA6nb1MVPzP8lc] @ICON[offensive]</p></td><td><p>30</p></td><td><p>Speziell</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet 30 <strong>(Schadensart wählen)</strong>. Du kannst diesen Zauber nur <strong>einmal pro Zug</strong> wirken.</p><p>Dieser Zauber sollte nur <strong>Champion</strong>- und <strong>Elite</strong>-Wesen der <strong>Stufe 30 oder höher</strong> gegeben werden, und diese Wesen können diesen Zauber nur in ihrem <strong>letzten Zug in der Runde</strong> wirken.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.Up14pnEa8pWzGkDD]</p></td><td><p>5</p></td><td><p>Selbst</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Du erhältst 20 Lebenspunkte zurück. Diese Menge erhöht sich auf 30 Lebenspunkte, sofern du auf <strong>Stufe 20 oder höher</strong> bist, auf 40 Lebenspunkte, sofern du auf <strong>Stufe 40 oder höher</strong> bist, oder auf 50 Lebenspunkte, sofern du auf <strong>Stufe 60 oder höher</strong> bist.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.MEp2lJPOwnmHvDwk] @ICON[offensive]</p></td><td><p>10</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet<strong>【HW + 15】(Schadensart wählen)</strong>. Danach erhältst du eine Anzahl an Lebenspunkten zurück, die der Hälfte des erlittenen Lebenspunktverlustes entspricht.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.Jr3T9bVRZdWMmAIw] @ICON[offensive]</p></td><td><p>10</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel erleidet<strong>【HW + 15】(Schadensart wählen)</strong>. Danach erhältst du eine Anzahl an Geistpunkten zurück, die der Hälfte des erlittenen Lebenspunktverlustes entspricht.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.PYXh4QmqJDiA2tqy] @ICON[offensive]</p></td><td><p>10 × T</p></td><td><p>Bis zu drei Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Jedes Ziel, das von diesem Zauber getroffen wird, wird <strong>vergiftet</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.w93PJbDwQ2WvkXvK]</p></td><td><p>20</p></td><td><p>Ein Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Das Ziel kann sofort einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die es ausgerüstet hat (oder mit einem <strong>Basis-Angriff</strong>, sofern das Ziel ein NSC ist).</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.dSlyecqTxIXXSa1l] @ICON[offensive]</p></td><td><p>10 × T</p></td><td><p>Bis zu drei Wesen</p></td><td><p>Unmittelbar</p></td></tr></tbody></table><p>Jedes Ziel, das von diesem Zauber getroffen wird, wird <strong>wütend</strong>.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.zf8HeDLrqXVMhGt4]</p></td><td><p>10</p></td><td><p>Selbst</p></td><td><p>Szene</p></td></tr></tbody></table><p>Bis dieser Zauber endet, erhältst du Resistenz gegen <strong>physischen</strong> Schaden.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.sJc4OnOFGBTiQEzs]</p></td><td><p>10 × T</p></td><td><p>Bis zu drei Wesen</p></td><td><p>Szene</p></td></tr></tbody></table><p>Bis dieser Zauber endet, erhält jedes Ziel einen Bonus von +1 auf Präzisionsproben.</p><table><colgroup><col style=\"width:33%\"><col style=\"width:15%\"><col style=\"width:29%\"><col style=\"width:23%\"></colgroup><tbody><tr><td><p><strong>Zauber</strong></p></td><td><p><strong>GP</strong></p></td><td><p><strong>Ziel</strong></p></td><td><p><strong>Dauer</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.game-master.Item.AUIhgG59yCsNnaT4] @ICON[offensive]</p></td><td><p>10</p></td><td><p>Ein Wesen</p></td><td><p>Szene</p></td></tr></tbody></table><p>Bis dieser Zauber endet, erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>(Schadensart wählen)</strong> verursachen.</p>",
+      "source": "GRW310"
+    }
+  }
+}
