@@ -1,4 +1,4 @@
-# Fabula Ultima - Deutsche Kompendium-Übersetzung
+# Project Fabula Ultima - Deutsche Kompendium-Übersetzung
 ## Vorwort
 In einem Anfall von Arbeitswut habe ich mich dazu entschieden die Kompendien, die mit dem wundervollen System [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) zusammen kommen per [Babele](https://gitlab.com/riccisi/foundryvtt-babele) zu übersetzen.
 Da ich aber kein Entwickler bin – oder irgendwas von JavaScript verstehe – gibt es verschiedene Hürden, an denen ich bisher gescheitert bin.
@@ -48,7 +48,7 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 > - ATF = Atlas Techno Fantasy
 > - ANF = Atlas Natural Fantasy
 
-# Fabula Ultima - German Compendium Translation
+# Project Fabula Ultima - German Compendium Translation
 ## Foreword
 In a fit of workaholism, I decided to translate the compendiums that come with the wonderful [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) system using [Babele](https://gitlab.com/riccisi/foundryvtt-babele).
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
