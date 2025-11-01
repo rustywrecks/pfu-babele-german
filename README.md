@@ -3,6 +3,15 @@
 In einem Anfall von Arbeitswut habe ich mich dazu entschieden die Kompendien, die mit dem wundervollen System [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) zusammen kommen per [Babele](https://gitlab.com/riccisi/foundryvtt-babele) zu übersetzen.
 Da ich aber kein Entwickler bin – oder irgendwas von JavaScript verstehe – gibt es verschiedene Hürden, an denen ich bisher gescheitert bin.
 In Anlehnung an die von den System-Entwicklern genutzte Lizenz, lasse ich dieses Modul ebenfalls unter der MIT Licence laufen.
+## Manuelle Installation
+Um das Modul in Foundry zu installieren sind wenige, simple Schritte notwendig:
+1. Öffne die Setup-Seite deiner _FoundryVTT_ Instanz
+2. Wechsele zum Tab _Add-on Modules_
+3. Klicke auf _Install Module_
+4. Füge diese URL bei _Manifest URL_ ein: `https://github.com/rustywrecks/pfu-babele-german/releases/latest/download/module.json`
+5. Klicke auf _Install_
+> [!WARNING]
+> Damit das dieses Modul funktioniert, muss das Modul [Babele](https://gitlab.com/riccisi/foundryvtt-babele) installiert sein.
 ## Übersetzte Kompendien
 Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die Einschränkungen als Unterpunkte zu formulieren.
 ### **Bestiary**
@@ -53,6 +62,15 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 In a fit of workaholism, I decided to translate the compendiums that come with the wonderful [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) system using [Babele](https://gitlab.com/riccisi/foundryvtt-babele).
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
 Following the license used by the system developers, I am also running this module under the MIT License.
+## Manual installation
+To install the module in Foundry, a few simple steps are necessary:
+1. Open the setup page of your _FoundryVTT_ instance
+2. Switch to the _Add-on Modules_ tab
+3. Click on _Install Module_
+4. Enter this URL in the _Manifest URL_ field: `https://github.com/rustywrecks/pfu-babele-german/releases/latest/download/module.json`
+5. Click on _Install_
+> [!WARNING]
+> For this module to work, the [Babele](https://gitlab.com/riccisi/foundryvtt-babele) module must be installed.
 ## Translated compendiums
 These are the compendiums I have translated so far. I will try to formulate the limitations as sub-points.
 ### **Bestiary**
