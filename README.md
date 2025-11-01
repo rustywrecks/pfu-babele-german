@@ -38,11 +38,13 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 - Spielleitung (Game Master)
 - Würfeltabellen (Rollable Tables)
 ## (Noch) Nicht übersetzte Kompendien
+### **Character Creation**
+- Heldenhafte Fähigkeiten (Heroic Skills)
 ### **Effects**
-- Actor Effects
-- Conditions
-- Equipment Effects
-- Qualities
+- Akteur Effekte (Actor Effects)
+- Zustände (Conditions)
+- Ausrüstungseffekte (Equipment Effects)
+- Qualitäten (Qualities)
 > [!NOTE]
 > Bisher plane ich nicht, die Effekte zu übersetzen, da die meisten direkt durch das System genutzt werden.
 ### **Journals**
@@ -97,6 +99,8 @@ These are the compendiums I have translated so far. I will try to formulate the 
 - Game Master
 - Rollable Tables
 ## Compendiums not (yet) translated
+### **Character Creation**
+- Heroic Skills
 ### **Effects**
 - Actor Effects
 - Conditions
