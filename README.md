@@ -35,9 +35,13 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
   - Mnemosphären
     - Sollten **DRINGEND** mit den übersetzten Fähigkeiten manuell erstellt werden
     - Keine Übersetzung der Fähigkeiten innerhalb der Mnemosphäre möglich
+- Fahrzeugmodule (Vehicle Modules)
 ### **GM Tools**
 - Spielleitung (Game Master)
 - Würfeltabellen (Rollable Tables)
+### **Journals**
+- Handouts
+  - Das Heldenhaften Fähigkeiten Journal fehlt noch. (Mache ich dann nach den Fähigkeiten selbst...)
 ## (Noch) Nicht übersetzte Kompendien
 ### **Character Creation**
 - Heldenhafte Fähigkeiten (Heroic Skills)
@@ -48,17 +52,15 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 - Qualitäten (Qualities)
 > [!NOTE]
 > Bisher plane ich nicht, die Effekte zu übersetzen, da die meisten direkt durch das System genutzt werden.
-### **Journals**
-- Handouts
 
 > [!TIP]
 > **Project FU** hat in einer früheren Version das [PDF Pager](https://github.com/farling42/fvtt-pdf-pager) Modul verwendet, um über einen Klick auf _Quelle / Source_ die Seite in einer hochgeladenen PDF zu öffnen.
 > Dafür verwende ich die folgenden Codes und habe die Quellen angepasst:
 > - GRW = Fabula Ultima Grundregelwerk
 > - LU = Bonusheftchen Level-Up
-> - AHF = Atlas High Fantasy
-> - ATF = Atlas Techno Fantasy
-> - ANF = Atlas Natural Fantasy
+> - AHF = Atlas: High Fantasy
+> - ATF = Atlas: Techno Fantasy
+> - ANF = Atlas: Natural Fantasy
 
 # Project Fabula Ultima - German Compendium Translation
 ## Foreword
@@ -96,9 +98,13 @@ These are the compendiums I have translated so far. I will try to formulate the 
   - Mnemospheres
     - Should **URGENTLY** be created manually with the translated abilities.
     - No translation of abilities within the Mnemosphere possible.
+- Vehicle Modules
 ### **GM Tools**
 - Game Master
 - Rollable Tables
+### **Journals**
+- Handouts
+  - Skipped the Heroic Skills Journal for now. (Will do them after I translated the Skills themselves)
 ## Compendiums not (yet) translated
 ### **Character Creation**
 - Heroic Skills
@@ -109,8 +115,6 @@ These are the compendiums I have translated so far. I will try to formulate the 
 - Qualities
 > [!NOTE]
 > So far, I do not plan to translate the effects, as most of them are used directly by the system.
-### **Journals**
-- Handouts
 
 > [!TIP]
 > In an earlier version, **Project FU** used the [PDF Pager](https://github.com/farling42/fvtt-pdf-pager) module to open the page in an uploaded PDF by clicking on _Source_.
