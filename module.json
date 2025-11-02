@@ -1,7 +1,7 @@
 {
   "id": "fabula-ultima-de",
-  "title": "Fabula Ultima - Deutsche Kompendium-Übersetzung",
-  "version": "1.0.1",
+  "title": "Project Fabula Ultima - Deutsche Kompendium-Übersetzung",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "12",
     "verified": "13.350",
@@ -10,16 +10,16 @@
   "authors": [
     {
       "name": "Stefan",
-      "discord": "Rusty",
+      "discord": "wrecko0n",
       "flags": {}
     }
   ],
   "esmodules": [
     "babele-register.js"
   ],
-  "description": "The german Babele translation for Project Fabula Ultima Game System Compendiums",
+  "description": "<p>The german Babele translation for Project Fabula Ultima Game System Compendiums</p>",
   "url": "https://github.com/rustywrecks/pfu-babele-german",
-  "manifest": "https://github.com/rustywrecks/pfu-babele-german/releases/latest/download/module.json", 
+  "manifest": "https://github.com/rustywrecks/pfu-babele-german/releases/latest/download/module.json",
   "download": "https://github.com/rustywrecks/pfu-babele-german/releases/latest/download/fabula-ultima-de.zip",
   "license": "https://github.com/rustywrecks/pfu-babele-german/blob/main/LICENSE",
   "relationships": {
