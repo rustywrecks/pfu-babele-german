@@ -4,6 +4,7 @@
 In einem Anfall von Arbeitswut habe ich mich dazu entschieden die Kompendien, die mit dem wundervollen System [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) zusammen kommen per [Babele](https://gitlab.com/riccisi/foundryvtt-babele) zu übersetzen.
 Da ich aber kein Entwickler bin – oder irgendwas von JavaScript verstehe – gibt es verschiedene Hürden, an denen ich bisher gescheitert bin.
 In Anlehnung an die von den System-Entwicklern genutzte Lizenz, lasse ich dieses Modul ebenfalls unter der MIT Licence laufen.
+Abseits davon ein großer Shoutout an [DjLeChuck](https://github.com/djlechuck/) und sein Modul [[BTFG] Babele Translation Files Generator](https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator), das mir ungemein viel Arbeit dabei abgenommen hat, die Übersetzungsdateien anzulegen, nachdem ich die Data-Keys wusste.
 ## Manuelle Installation
 Um das Modul in Foundry zu installieren sind wenige, simple Schritte notwendig:
 1. Öffne die Setup-Seite deiner _FoundryVTT_ Instanz
@@ -67,6 +68,7 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 In a fit of workaholism, I decided to translate the compendiums that come with the wonderful [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) system using [Babele](https://gitlab.com/riccisi/foundryvtt-babele).
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
 Following the license used by the system developers, I am also running this module under the MIT License.
+Apart from that, a big shoutout to [DjLeChuck](https://github.com/djlechuck/) and his module [ [BTFG] Babele Translation Files Generator](https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator), which saved me a tremendous amount of work in creating the translation files once I knew the data keys.
 ## Manual installation
 To install the module in Foundry, a few simple steps are necessary:
 1. Open the setup page of your _FoundryVTT_ instance
