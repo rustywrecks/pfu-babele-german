@@ -1,11 +1,25 @@
 {
 	"label": "NSCs",
+	"mapping": {
+		"effects": {
+			"path": "effects",
+			"converter": "effects"
+		}
+	},
 	"entries": {
 		"Decoy Bait": {
-			"name": "Köder"
+			"name": "Köder",
+			"effects": [{
+				"name": "Effekt: Köder",
+				"description": "Du erschaffst einen Köder mit Lebenspunkten, die<strong>【der Hälfte deiner Stufe + (deiner FS in Falkenauge multipliziert mit 5)】</strong>entsprechen."
+			}]
 		},
 		"Faithful Companion": {
-			"name": "Treuer Begleiter"
+			"name": "Treuer Begleiter",
+			"effects": [{
+				"name": "Effekt: Treuer Begleiter",
+				"description": "<p>Begleiter erhält einen Bonus in Höhe von<strong>【FS】</strong>auf Präzisions- und Magieproben.</p>"
+			}]
 		}
 	}
 }
