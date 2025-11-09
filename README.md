@@ -5,6 +5,10 @@ In einem Anfall von Arbeitswut habe ich mich dazu entschieden die Kompendien, di
 Da ich aber kein Entwickler bin – oder irgendwas von JavaScript verstehe – gibt es verschiedene Hürden, an denen ich bisher gescheitert bin.
 In Anlehnung an die von den System-Entwicklern genutzte Lizenz, lasse ich dieses Modul ebenfalls unter der MIT Licence laufen.
 Abseits davon ein großer Shoutout an [DjLeChuck](https://github.com/djlechuck/) und sein Modul [[BTFG] Babele Translation Files Generator](https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator), das mir ungemein viel Arbeit dabei abgenommen hat, die Übersetzungsdateien anzulegen, nachdem ich die Data-Keys wusste.
+## ToDo
+- Journal "Heldenhafte Fähigkeiten" vollständig bearbeiten
+- Einträge im HTML sortieren
+- Rework nach Implementierung der Custom Converter
 ## Manuelle Installation
 Um das Modul in Foundry zu installieren sind wenige, simple Schritte notwendig:
 1. Öffne die Setup-Seite deiner _FoundryVTT_ Instanz
@@ -18,21 +22,19 @@ Um das Modul in Foundry zu installieren sind wenige, simple Schritte notwendig:
 Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die Einschränkungen als Unterpunkte zu formulieren.
 ### **Bestiary**
 - NSCs (NPCs)
-  - Nur Namen übersetzt, kein Zugriff auf Effekte innerhalb des Akteurs
 ### **Character Creation**
 - Klassen (Classes)
 - Skills (Fähigkeiten)
   - Es gibt ein paar Felder, die nicht übernommen werden.
     - Zum Beispiel kann ich bei den Einflößungen den Zusatzschaden nicht manipulieren, was darin resultiert, dass die Vampir-Einflößung 5 Zusatzschaden bewirkt und manuell angepasst werden muss
+- Heldenhafte Fähigkeiten (Heroic Skills)
 - Zauber (Spells)
-  - Kein Einfluss auf vorgefertigte Effekte.
-    - Ich kann nur den Namen anpassen, nicht die Beschreibung.
 ### **Equipment**
 - Standardausrüstung (Basic Equipmen)
 - Verbrauchsgegenstände (Consumables)
 - Technosphären (Technospheres)
   - Hoplosphären
-    - Mehr als Name, Socketable in, Slots required und Quelle ist derzeit nicht übersetzbar, bzw. wird ignoriert
+    - Mehr als Name, Socketable in, Slots required und Quelle ist nicht übersetzbar, da es Strings und Übersetzungen vom System sind.
   - Mnemosphären
     - Sollten **DRINGEND** mit den übersetzten Fähigkeiten manuell erstellt werden
     - Keine Übersetzung der Fähigkeiten innerhalb der Mnemosphäre möglich
@@ -42,10 +44,8 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 - Würfeltabellen (Rollable Tables)
 ### **Journals**
 - Handouts
-  - Das Heldenhaften Fähigkeiten Journal fehlt noch. (Mache ich dann nach den Fähigkeiten selbst...)
+  - Das Journal "Heldenhaften Fähigkeiten" braucht noch etwas Zuwendung.
 ## (Noch) Nicht übersetzte Kompendien
-### **Character Creation**
-- Heldenhafte Fähigkeiten (Heroic Skills)
 ### **Effects**
 - Akteur Effekte (Actor Effects)
 - Zustände (Conditions)
@@ -69,6 +69,10 @@ In a fit of workaholism, I decided to translate the compendiums that come with t
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
 Following the license used by the system developers, I am also running this module under the MIT License.
 Apart from that, a big shoutout to [DjLeChuck](https://github.com/djlechuck/) and his module [ [BTFG] Babele Translation Files Generator](https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator), which saved me a tremendous amount of work in creating the translation files once I knew the data keys.
+## ToDo
+- Complete the journal "Heroic Skills"
+- Sort entries inside HTML content
+- Rework compendiums after implementation of custom converters
 ## Manual installation
 To install the module in Foundry, a few simple steps are necessary:
 1. Open the setup page of your _FoundryVTT_ instance
@@ -85,20 +89,19 @@ These are the compendiums I have translated so far. I will try to formulate the 
   - Only names translated, no access to effects within the actor
 ### **Character Creation**
 - Classes
+- Heroic Skills
+- Spells
 - Skills
   - There are a few fields that are not transferred.
     - For example, I cannot manipulate the additional damage for the infusions, which results in the vampire infusion causing 5 additional damage and having to be adjusted manually.
-- Spells
-  - No influence on predefined effects.
-    - I can only customize the name, not the description.
 ### **Equipment**
 - Basic Equipment
 - Consumables
 - Technospheres
   - Hoplospheres
-    - More than name, socketable in, slots required, and source is currently untranslatable or ignored.
+    - More than name, socketable in, slots required, and source is currently untranslatable, because they are tanslated system-sided.
   - Mnemospheres
-    - Should **URGENTLY** be created manually with the translated abilities.
+    - Should **REALLY** be created manually with the translated abilities.
     - No translation of abilities within the Mnemosphere possible.
 - Vehicle Modules
 ### **GM Tools**
@@ -106,10 +109,8 @@ These are the compendiums I have translated so far. I will try to formulate the 
 - Rollable Tables
 ### **Journals**
 - Handouts
-  - Skipped the Heroic Skills Journal for now. (Will do them after I translated the Skills themselves)
+  - The Heroic Skills Journal for now still needs a little tending
 ## Compendiums not (yet) translated
-### **Character Creation**
-- Heroic Skills
 ### **Effects**
 - Actor Effects
 - Conditions

@@ -1,0 +1,878 @@
+{
+  "label": "Heldenhafte Fähigkeiten",
+  "mapping": {
+    "source": "system.source",
+		"effects": {
+			"path": "effects",
+			"converter": "effects"
+		},
+    "class": {
+      "path": "system.class.value",
+      "converter": "classNames"
+    },
+    "rp": "system.rp.name",
+    "summary": "system.summary.value",
+    "description": "system.data.description",
+    "desc": "system.description"
+  },
+  "folders": {
+    "Effects": "Effekte",
+    "Heroic Skills [BC]": "Heldenhafte Fähigkeiten [LU]",
+    "Heroic Skills [CR]": "Heldenhafte Fähigkeiten [GRW]",
+    "Heroic Skills [HF]": "Heldenhafte Fähigkeiten [AHF]",
+    "Heroic Skills [NF]": "Heldenhafte Fähigkeiten [ANF]",
+    "Heroic Skills [TF]": "Heldenhafte Fähigkeiten [ATF]"
+  },
+  "entries": {
+    "Adversity": {
+      "name": "Widrigkeit",
+      "source": "GRW241",
+      "summary": "Statuseffekte machen dich stärker.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Finsterschneide</strong> gemeistert haben.</p></blockquote><p>Solange du unter einem oder mehreren Statuseffekten leidest, erhältst du für jeden Statuseffekt, unter dem du leidest, einen Bonus von +1 auf alle Proben und fügst für jeden Statuseffekt, unter dem du leidest, 2 Zusatzschaden zu (sei es durch Angriffe, Zauber, Arkana, Items oder eine andere Methode).</p>",
+      "effects": [{
+        "name": "Widrigkeit",
+        "description": "<p>Solange du unter einem oder mehreren Statuseffekten leidest, erhältst du für jeden Statuseffekt, unter dem du leidest, einen Bonus von +1 auf alle Proben und fügst für jeden Statuseffekt, unter dem du leidest, 2 Zusatzschaden zu (sei es durch Angriffe, Zauber, Arkana, Items oder eine andere Methode).</p>",
+        "source": "GRW241"
+      }]
+    },
+    "All You Can Eat": {
+      "name": "So viel du willst",
+      "source": "ANF167",
+      "summary": "Kombiniere vier Zutaten zu einer Delikatesse.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Gourmet</strong> gemeistert haben.</p></blockquote><p>Einmal pro Szene, wenn du die Fähigkeit <strong>Kochen</strong> einsetzt, kannst du <strong>vier Zutaten zu einer Delikatesse</strong> kombinieren (und ignorierst damit das normale Limit von drei Zutaten). Abgesehen davon gelten für die Delikatesse die üblichen Regeln.</p>",
+      "effects": [{
+        "name": "So viel du willst",
+        "source": "ANF167",
+        "description": "<p>Einmal pro Szene, wenn du die Fähigkeit <strong>Kochen</strong> einsetzt, kannst du <strong>vier Zutaten zu einer Delikatesse</strong> kombinieren (und ignorierst damit das normale Limit von drei Zutaten). Abgesehen davon gelten für die Delikatesse die üblichen Regeln.</p>"
+      }]
+    },
+    "Ambidextrous": {
+      "name": "Beidhändig",
+      "source": "GRW234",
+      "summary": "Kämpfe mit zwei Waffen unterschiedlicher Kategorien.",
+      "desc": "<p>Die Vorteile des <strong>Kampfes mit zwei Waffen</strong> (<strong>Grundregelwerk</strong>, Seite 69) kannst du auf Waffen verschiedener Kategorien anwenden, selbst wenn eine davon eine <strong>Nahkampf</strong>- und die andere eine <strong>Fernkampfwaffe</strong> ist (z. B. ein <strong>Dolch</strong> und eine <strong>Schusswaffe</strong>).</p>"
+    },
+    "Arcane Echoes": {
+      "name": "Arkane Echos",
+      "source": "GRW234",
+      "summary": "Arkana helfen dir, Uhren zu beeinflussen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Arkanist</strong> gemeistert haben.</p></blockquote><p>Wenn du erfolgreich eine Probe ablegst, um einen oder mehrere Abschnitte einer Uhr zu füllen oder zu löschen, darfst du, sofern die <strong>Domänen</strong> einer oder mehrerer Arkana, die du gebunden hast, auf die betreffende Probe anwendbar sind, einen zusätzlichen Abschnitt dieser Uhr füllen oder löschen.</p><p>Die Spielleiterin hat das letzte Wort bei der Entscheidung, ob eine bestimmte Domäne anwendbar ist oder nicht.</p><blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Arkanist</strong> gemeistert haben.</p></blockquote><p>Wenn du erfolgreich eine Probe ablegst, um einen oder mehrere Abschnitte einer Uhr zu füllen oder zu löschen, darfst du, sofern die <strong>Domänen</strong> einer oder mehrerer Arkana, die du gebunden hast, auf die betreffende Probe anwendbar sind, einen zusätzlichen Abschnitt dieser Uhr füllen oder löschen.</p><p>Die Spielleiterin hat das letzte Wort bei der Entscheidung, ob eine bestimmte Domäne anwendbar ist oder nicht.</p>"
+    },
+    "Arcane Mark": {
+      "name": "Arkanes Mal",
+      "source": "AHF154",
+      "summary": "Verbessere die kritische Chance von Zaubern mit arkanen Waffen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Scharfschütze</strong>, <strong>Symbolist</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem Angriff mit einer Waffe triffst, die der Kategorie <strong>Arkan</strong> angehört, verursacht der Angriff 5 Zusatzschaden, und du darfst eines dieser Wesen auswählen. Wenn der nächste offensive Zauber ( @ICON[offensive] ), den du in dieser Szene wirkst, <strong>nur</strong> das gewählte Wesen zum Ziel hat, löst seine Magieprobe einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (und die Probe kein <strong>Patzer</strong> ist).</p>",
+      "effects": [{
+        "name": "Arkanes Mal",
+        "source": "AHF154",
+        "description": "<p>Wenn du ein oder mehrere Wesen mit einem Angriff mit einer Waffe triffst, die der Kategorie <strong>Arkan</strong> angehört, verursacht der Angriff 5 Zusatzschaden, und du darfst eines dieser Wesen auswählen. Wenn der nächste offensive Zauber ( @ICON[offensive] ), den du in dieser Szene wirkst, <strong>nur</strong> das gewählte Wesen zum Ziel hat, löst seine Magieprobe einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (und die Probe kein <strong>Patzer</strong> ist).</p>"
+      }]
+    },
+    "Arcane Soldier": {
+      "name": "Arkaner Soldat",
+      "source": "ATF172",
+      "summary": "Führe einen freien Angriff gegen ein Ziel aus und wirke dann sofort einen offensiven Zauber gegen es.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Elementarist</strong>, <strong>Scharfschütze</strong> und <strong>Waffenmeister</strong> gemeistert haben und mindestens <strong>zwei</strong> offensive ( @ICON[offensive] ) Zauber kennen.</p></blockquote><p>Du kannst eine Aktion nutzen, um einen <strong>freien Angriff</strong> mit einer Waffe auszuführen, die du ausgerüstet hast. Dieser Angriff muss <strong>einen einzelnen Gegner</strong> zum Ziel haben. Wenn der Angriff erfolgreich ist, behandle deinen <strong>höheren Wurf</strong> so, als wäre er 0, wenn du den Schaden bestimmst, der durch verursacht wird. Wenn der Angriff erfolgreich war, darfst du nach dem Abhandeln des Angriffs sofort die <strong>Zaubern</strong>-Aktion kostenfrei ausführen: Der <strong>Zauber</strong>, den du auf diese Weise wirkst, <strong>muss</strong> ein offensiver ( @ICON[offensive] ) Zauber sein, dessen GP-Kosten <strong>höchstens 20</strong> betragen, und er darf <strong>nur</strong> den angegriffenen Gegner zum Ziel haben (du musst dennoch die entsprechenden Geistpunkte ausgeben und die Magieprobe ablegen). Siehe den <strong>höheren Wurf</strong> deiner Magieprobe als 0 an, wenn du Schaden oder andere Effekte dieses Zaubers bestimmst.</p>"
+    },
+    "Auramancer's Refraction": {
+      "name": "Reflexion des Auren-Magiers",
+      "source": "ANF166",
+      "summary": "Verbessert Aura und Barriere und bestraft Gegner, die geschützten Zielen Schaden zufügen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Arkanist</strong> und <strong>Spiritist</strong> gemeistert und den Zauber <strong>Aura</strong> und/oder den Zauber <strong>Barriere</strong> gelernt haben.</p></blockquote><p>Wähle eine Schadensart aus: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong> oder <strong>Licht</strong>.</p><p>Wenn ein Gegner, den du sehen kannst, einem oder mehreren Wesen, die von einem von dir gewirkten @UUID[Compendium.projectfu.spells.Item.jd9jMsj2PNq99M64]- und/oder @UUID[Compendium.projectfu.spells.Item.pGDJPfT1bc2vErY9]-Zauber betroffen sind, Schaden zufügt, wird der Schaden, den jedes dieser Wesen erleidet, um einen Betrag in Höhe von<strong>【der Hälfte deiner Stufe in der Spiritisten-Klasse】</strong> <strong>oder【deiner Stufe geteilt durch 10】</strong>reduziert (nimm den <strong>höheren</strong> Wert; diese Reduzierung wird <strong>vor</strong> Schadensaffinitäten abgehandelt). Dann kannst du diesem Gegner Schaden der gewählten Art in Höhe von<strong>【der Hälfte deiner Stufe】</strong>zufügen. Wenn du das tust, kannst du bis zum Beginn deines nächsten Zuges keinen Schaden auf diese Weise verursachen.</p>"
+    },
+    "Bend Magic": {
+      "name": "Magie biegen",
+      "source": "ANF165",
+      "summary": "Reagiere mit deinen Anrufungen auf gegnerische Zauber.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Elementarist</strong>, <strong>Entropist</strong>, <strong>Anrufer</strong> und <strong>Symbolist</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>142</strong>) gemeistert haben und die Fähigkeit <strong>Anrufung</strong> erworben haben.</p></blockquote><p>Wenn ein Gegner, den du sehen kannst, <strong>dich mit einem offensiven Zauber ( @ICON[offensive] ) trifft oder verfehlt</strong>, darfst du, wenn das Ergebnis seiner Magieprobe eine <strong>gerade Zahl</strong> war, sofort kostenlos die Fähigkeit <strong>Anrufung</strong> einsetzen (nachdem der Zauber vollständig abgehandelt wurde), um eine <strong>Anrufung</strong>, auf die du Zugriff hast, gegen diesen Gegner durchzuführen, ohne Geistpunkte auszugeben. Diese Anrufung darf keine <strong>„Verhexung“</strong> sein, und sie darf nur diesen Gegner zum Ziel haben (du kannst die Fähigkeit @UUID[Compendium.projectfu.skills.Item.OQaLTvDV59JKnFqO] nicht mit ihr benutzen).</p>"
+    },
+    "Bimagus": {
+      "name": "Bimagus",
+      "source": "AHF154",
+      "summary": "Wirke einen Zauber direkt nach dem anderen und spare dabei GP.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst <strong>mindestens zwei</strong> der Klassen <strong>Elementarist</strong>, <strong>Entropist</strong> und <strong>Spiritist</strong> gemeistert haben, und dein Charakter muss <strong>mindestens auf Stufe 30</strong> sein.</p></blockquote><p>Wenn du eine <strong>arkane</strong> Waffe ausgerüstet hast, kannst du einmal pro Zug während eines Konflikts eine Aktion ausführen und <strong>20 bis 50 Geistpunkte</strong> ausgeben, um die <strong>Zaubern</strong>-Aktion <strong>zweimal</strong> kostenfrei auszuführen und zwei Zauber zu wirken, ohne deren GP-Kosten zu bezahlen. Wenn du das tust, müssen die <strong>kombinierten GP-Gesamtkosten</strong> der beiden Zauber <strong>gleich hoch wie oder niedriger als【20 + die Menge an GP, die du für diese Fähigkeit ausgegeben hast】</strong>sein, und die <strong>GP-Gesamtkosten</strong> des zweiten Zaubers müssen <strong>gleich hoch wie oder niedriger als die Hälfte der GP-Gesamtkosten</strong> des ersten Zaubers sein.</p>"
+    },
+    "Birth of the Cruel": {
+      "name": "Birth of the Cruel",
+      "source": "LU6",
+      "summary": "Verwandle einen toten NSC in einen Lakeien.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Nekromant</strong> gemeistert haben.</p></blockquote><p>Wenn ein NSC, den du sehen kannst, welcher kein <strong>Bösewicht</strong> ist und der Spezies <strong>Biest</strong>, <strong>Humanoid</strong>, <strong>Monster</strong> oder <strong>Pflanze</strong> angehört, stirbt, kannst du 2 Grabpunkte ausgeben und <strong>deine maximalen Lebenspunkte und Geistpunkte</strong> um eine Menge <strong>reduzieren</strong>, die der <strong>Stufe</strong> des NSC entspricht.</p><p>Tust du das, wird seine Leiche zu einem <strong>Lakaien</strong>, der deine telepathischen Befehle befolgt:</p><ul><li><p>Seine <strong>Spezies</strong> wird <strong>Untot</strong> und er erhält alle <strong>Untoten-Regeln</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>305</strong>).<br>Die neuen Affinitäten für <strong>Finsterschaden</strong>, <strong>Licht</strong>- und <strong>Giftschaden</strong> überschreiben jegliche bisher existierenden Affinitäten, aber die ursprünglichen Regeln der Spezies werden ansonsten <strong>beibehalten</strong>.</p></li><li><p>Sein <strong>Rang</strong> wird <strong>Soldat</strong>; war die ursprüngliche Kreatur eine <strong>Elite</strong> oder ein <strong>Champion</strong>, muss die SL die LP und GP des Lakaien entsprechen reduzieren (Fähigkeiten werden <strong>beibehalten</strong>).</p></li><li><p>Der nun erstellte Lakai ist ein komplett neues Wesen und hat volle LP, volle GP und keine Statuseffekte. Es behält die <strong>Ausrüstung</strong> des ursprünglichen Wesens.</p></li><li><p>Dein Lakai macht während Konflikten seine eigenen Züge, und die Spielleiterin muss ihn als <strong>zusätzlichen Spielercharakter</strong> mitzählen, wenn sie einen Konflikt gestaltet.</p></li><li><p>Wenn du dich <strong>ausruhst</strong>, genießt dein Lakai ebenfalls die vollen Vorteile des Ausruhens.</p></li><li><p>Wird dein Lakai auf 0 Lebenspunkte gebracht und du <strong>mehr als 1 Reisetag</strong> von ihm entfernt bist oder stirbst bzw. bewusstlos wirst, wird dein Lakai sofort <strong>zerstört</strong>.</p></li><li><p>Du kannst deinen Lakaien außerdem <strong>jederzeit</strong> zerstören; willst du einen neuen Lakaien erschaffen, musst du zunächst den aktuellen zerstören.</p></li><li><p>Wird dein Lakai zerstört, sind deine LP- und GP-Werte wieder im <strong>Normalzustand</strong>.</p></li></ul>"
+    },
+    "Black & White": {
+      "name": "Schwarz & Weiß",
+      "source": "LU24",
+      "summary": "Modifiziere dein \"Doppelter Ärger\"-Set; Joker werden stärker.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kartenass</strong>, <strong>Finsterschneide</strong>, <strong>Entropist</strong> und <strong>Spiritist</strong> gemeistert und die Fähigkeit <strong>Magische Karten</strong> erworben haben.</p></blockquote><p>Wenn du den Effekt von <strong>Doppelter Ärger</strong> abhandelst, kannst du den gesamten Schaden zu <strong>Licht</strong> oder <strong>Finster</strong> machen (statt einer Schadensart, die den <strong>Farben</strong> der abgehandelten Karten entspricht).</p><p>Solange sich ein <strong>Joker</strong> in deinem <strong>Ablagestapel</strong> befindet, ignoriert jeglicher Schaden, der durch die Effekte von <strong>Blendender Flush, Doppelter Ärger</strong> und <strong>Magischer Flush</strong> verursacht wird, Immunitäten und Resistenzen.</p>"
+    },
+    "Blade Adept": {
+      "name": "Adept der Klingen",
+      "source": "AHF153",
+      "summary": "Erhalte Boni mit Dolchen und behandle sie als Raufen-, Schwert- und Wurfwaffen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Schurke</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Während du eine oder mehrere <strong>Nahkampf-Dolchwaffen</strong> ausgerüstet hast, erhältst du einen Bonus von +1 auf Verteidigung und Magie-Verteidigung, und du behandelst diese Waffen im Hinblick auf Fähigkeiten und Effekte so, als würden sie zu den Kategorien <strong>Raufen</strong>, <strong>Schwert</strong> und <strong>Werfen</strong> gehören.</p><p>Zusätzlich können deine Angriffe mit Waffen, die zur Kategorie <strong>Dolch</strong> gehören, Wesen zum Ziel haben, die normalerweise nicht im <strong>Nahkampf</strong> angegriffen werden können.</p>",
+      "effects": [{
+        "name": "Adept der Klingen",
+        "source": "AHF153",
+        "description": "<p>Während du eine oder mehrere <strong>Nahkampf-Dolchwaffen</strong> ausgerüstet hast, erhältst du einen Bonus von +1 auf Verteidigung und Magie-Verteidigung, und du behandelst diese Waffen im Hinblick auf Fähigkeiten und Effekte so, als würden sie zu den Kategorien <strong>Raufen</strong>, <strong>Schwert</strong> und <strong>Werfen</strong> gehören.</p>"
+      }]
+    },
+    "Brainwave Discharge": {
+      "name": "Gehirnwellen-Entladung",
+      "source": "ATF173",
+      "summary": "Lösche deine Gehirnwellenuhr und verursache Schaden.",
+      "desc": "<blockquote><p><strong>Voraussetzungen:</strong> Du musst die Klasse <strong>Esper</strong> gemeistert haben.</p></blockquote><p>Wenn deine <strong>Gehirnwellenuhr gefüllt</strong> ist, kannst du eine Aktion nutzen, um alle Abschnitte zu löschen.</p><p>Tust du das, kannst du eine Option wählen: Du fügst allen Gegnern, die sich in der Szene befinden, @DMG[20 physical] Schaden zu, <strong>oder</strong> du fügst einem einzelnen Gegner, den du sehen kannst, @DMG[30 physical] Schaden zu. Dieser Betrag erhöht sich um 10, wenn du <strong>mindestens auf Stufe 20</strong> bist, oder um 20, wenn du <strong>mindestens auf Stufe 40</strong> bist.</p><hr><ul><li><p><strong>Zurücksetzen:</strong> @CLOCK[brainwave-clock reset]{Gehirnwellenuhr zurücksetzen}</p></li><li><p><strong>Ziel verliert</strong> @DMG[&step(20,30,40) physical]{20|30|40 Physisch (einzel)}, or @DMG[&step(30,40,50) physical]{30|40|50 Phyisch (multi)}</p><p></p></li></ul>"
+    },
+    "Brambleheart": {
+      "name": "Brombeerherz",
+      "source": "ANF161",
+      "summary": "Deine Brombeeren schützen dich und reagieren auf gegnerische Angriffe.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Finsterschneide</strong> und <strong>Floralist</strong> gemeistert und die Fähigkeit <strong>Chloromantie</strong> erworben haben.</p></blockquote><p>Du bist resistent gegen <strong>Licht</strong>- und <strong>Giftschaden</strong>.</p><p>Wenn du Lebenspunkte verlierst, kannst du, sofern du dich in einer <strong>Krise</strong> befindest und sich ein <strong>Magiesamen</strong> in deinem <strong>Garten</strong> befindet, <strong>1 Abschnitt</strong> deiner <strong>Wachstumsuhr</strong> füllen.</p><p>Wenn du die Fähigkeit <strong>Schattenschlag</strong> einsetzt, kann dein Angriff zusätzlich <strong>Giftschaden</strong> anstelle von <strong>Finsterschaden</strong> verursachen (die Schadensart kann dennoch nicht geändert werden). Wenn du das tust, verursacht dein @UUID[Compendium.projectfu.skills.Item.W5hE9L8x7AsJI7a1] Zusatzschaden in Höhe <strong>【der doppelten Anzahl der gefüllten Abschnitte deiner Wachstumsuhr】</strong>.</p>",
+      "effects": [{
+        "name": "Brombeerherz: Resistenz",
+        "source": "ANF161",
+        "description": "<p>Du bist resistent gegen <strong>Licht</strong>- und <strong>Giftschaden</strong>.</p>"
+      }]
+    },
+    "Brave Bash": {
+      "name": "Mutiger Schlag",
+      "source": "ANF166",
+      "summary": "Verwende Knochenbrecher, um Feinde mit einem Schild herauszufordern und ihnen dann Zusatzschaden zuzufügen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kommandant</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>140</strong>), <strong>Furie</strong>, <strong>Wächter</strong>, <strong>Pilot</strong> (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>158</strong>) und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.7jWycVYFgZ1BMxch] einsetzt, dein Angriff <strong>nur ein Wesen</strong> zum Ziel hat und du einen <strong>Schild</strong> ausgerüstet hast, darfst du dieses Wesen bis zum Ende deines nächsten Zuges <strong>herausfordern</strong>. Die <strong>Herausforderung</strong> endet auch, wenn dieses Wesen von jemand anderem <strong>herausgefordert</strong> wird oder wenn du ein anderes Wesen <strong>herausforderst</strong>.</p><p>Das Wesen, das du <strong>herausforderst</strong>, muss dich zu den Zielen seiner Angriffe und offensiven Zauber ( @ICON[offensive] ) zählen, wenn es dazu in der Lage ist. Wenn du dem Wesen, das du <strong>herausforderst</strong>, mit einem <strong>freien Angriff</strong> mit <strong>einer einhändigen Nahkampfwaffe</strong> oder einer <strong>Spezialwaffe</strong> der Kategorie <strong>Dolch</strong> oder <strong>Schwert</strong> Schaden zufügst, darfst du ihm außerdem einmal pro Zug (auch in den Zügen anderer Wesen) 5 Zusatzschaden zufügen.</p>"
+    },
+    "Bullet Break": {
+      "name": "Kugelbruch",
+      "source": "AHF157",
+      "summary": "Mache einen Gegenangriff mit Schusswaffen, nachdem du Kreuzfeuer benutzt hast.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Scharfschütze</strong> gemeistert haben.</p></blockquote><p>Nachdem du einen <strong>Fernkampfangriff</strong> mit der Fähigkeit @UUID[Compendium.projectfu.skills.Item.sIkQa2NzkqsvczBr] negiert hast, darfst du, sofern das Ergebnis der Präzisionsprobe eine <strong>gerade Zahl</strong> war, mit einer <strong>Fernkampf-Schusswaffe</strong>, die du ausgerüstet hast, einen <strong>freien Angriff</strong> gegen den Angreifer ausführen. Dieser Angriff muss diesen Gegner als <strong>einziges</strong> Ziel haben; behandle deinen <strong>höheren Wurf (HW)</strong> als gleich 0, wenn du den Schaden berechnest, den er verursacht.</p>"
+    },
+    "Bullet Time": {
+      "name": "Zeitlupe",
+      "source": "ATF177",
+      "summary": " Gewinne mehrere Vorteile durch Ausweichen und Gestohlene Zeit.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Entropist</strong> und <strong>Schurke</strong> gemeistert und eine oder mehrere der Fähigkeiten <strong>Ausweichen</strong> und <strong>Gestohlene Zeit</strong> erworben haben.</p></blockquote><p>Du erhältst einen Bonus auf deinen Initiative-Modifikator in Höhe<strong>【deiner FS in Ausweichen + deiner FS in Gestohlene Zeit】</strong>.</p><p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> trägst, wird jeglicher Schaden, den du erleidest, um einen Betrag in Höhe<strong>【deiner FS in Ausweichen】</strong>reduziert (wird <strong>vor</strong> Schadensaffinitäten angewendet), und du verursachst Zusatzschaden in Höhe<strong>【deiner FS in Gestohlene Zeit】</strong>.</p>",
+      "effects": [{
+        "name": "Zeitlupe",
+        "source": "ATF177",
+        "description": "<p>Du erhältst einen Bonus auf deinen Initiative-Modifikator in Höhe<strong>【deiner FS in Ausweichen + deiner FS in Gestohlene Zeit】</strong>.</p><p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> trägst, wird jeglicher Schaden, den du erleidest, um einen Betrag in Höhe<strong>【deiner FS in Ausweichen】</strong>reduziert (wird <strong>vor</strong> Schadensaffinitäten angewendet), und du verursachst Zusatzschaden in Höhe<strong>【deiner FS in Gestohlene Zeit】</strong>.</p>"}]
+    },
+    "Card Vanguard": {
+      "name": "Vorhutkarte",
+      "source": "LU25",
+      "summary": "Platziere Karten als Vorhutkarten",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Kartenass</strong> gemeistert und die Fähigkeit <strong>Magische Karten</strong> erworben haben.</p></blockquote><p>Wenn du während eines Konflikts <strong>zwei oder weniger Vorhutkarten</strong> im Spiel hast, kannst du eine Aktion ausführen, um <strong>1 Karte</strong> aus deiner Hand zu wählen und sie verdeckt als <strong>Vorhutkarte</strong> abzulegen; tust du das, ziehst du 1 Karte von deinem <strong>Deck</strong>.</p><p>Wenn du Schaden erleidest und eine oder mehrere <strong>Vorhutkarten</strong> im Spiel hast, darfst du eine von ihnen aufdecken und oben auf deinen <strong>Ablagestapel</strong> legen: Wenn du das tust und diese Karte ein <strong>Joker</strong> ist oder ihre <strong>Farbe</strong> mit der Art des erlittenen Schadens übereinstimmt, erleidest du stattdessen keinen Schaden und erhältst die gleiche Anzahl an Geistpunkten zurück. Wenn du am Ende eines Konflikts eine oder mehrere <strong>Vorhutkarten</strong> im Spiel hast, mische sie zurück in dein <strong>Deck</strong>.</p>"
+    },
+    "Ceaseless Battlefield": {
+      "name": "Rastloses Schlachtfeld",
+      "source": "AHF158",
+      "summary": "Halbiere die GP-Kosten der Fähigkeiten des Kommandanten.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Kommandant</strong> gemeistert haben.</p></blockquote><p>Die GP-Kosten für @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr],  @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp] und @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX] werden halbiert.</p>"
+    },
+    "Cheer Up!": {
+      "name": "Kopf hoch!",
+      "source": "ANF164",
+      "summary": "Stärkt Mein Vertrauen in dich.",
+      "desc": "<blockquote><p><strong>Voraussetzungen:</strong> Du musst eine oder mehrere der Klassen <strong>Kantor</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>136</strong>), <strong>Esper</strong> (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>150</strong>) und <strong>Orator</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>204</strong>) gemeistert und die Fähigkeit <strong>Mein Vertrauen in dich</strong> erworben haben.</p></blockquote><p>Wenn du @UUID[Compendium.projectfu.skills.Item.lK9onKSiMuQEe3zd] auf einen anderen Spielercharakter anwendest, wählt dieser Charakter <strong>Geschicklichkeit, Einsicht, Macht</strong> oder <strong>Willenskraft</strong>: Das gewählte Attribut wird bis zum Ende der Szene oder bis du <strong>Mein Vertrauen in dich</strong> erneut auf ihn anwendest als um eine Würfelgröße erhöht behandelt (bis zu einem Maximum von <strong>W12</strong>).</p><hr><ul><li><p><strong>Verbündeter erhält:</strong> @EFFECT[dex-up e:eos i:1 t:source], @EFFECT[ins-up e:eos i:1 t:source], @EFFECT[mig-up e:eos i:1 t:source], or @EFFECT[wlp-up e:eos i:1 t:source]</p></li></ul>"
+    },
+    "Chimeric Mastery": {
+      "name": "Meisterliche Chimäristik",
+      "source": "GRW237",
+      "summary": "Lerne Zauber von neuen Spezies und erhöhe dein Zauber-Limit.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Chimärist</strong> gemeistert haben.</p></blockquote><p>Wähle zwei Spezies von Wesen aus <strong>Konstrukt, Dämon, Elementar</strong> und <strong>Untot</strong>. Du kannst <strong>Zauber-Nachahmung</strong> nun benutzen, um Zauber von Wesen der gewählten Spezies zu lernen.</p><p>Diese heldenhafte Fähigkeit <strong>kann bis zu zweimal erworben werden</strong>, wobei du jeweils zwei Spezies aus der obigen Liste auswählen kannst.</p><p>Wenn du diese Fähigkeit erwirbst, erhöhst du auch deine Höchstgrenze für gemerkte Chimäristen-Zauber um 2.</p>"
+    },
+    "Chimeric Soul": {
+      "name": "Seele der Chimäre",
+      "source": "ANF167",
+      "summary": "Das Wirken von Chimäristen-Zaubern gewährt Vorteile, die von der Spezies abhängen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Chimärist</strong> und <strong>Mutant</strong> (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>154</strong>) gemeistert haben und die Fähigkeit <strong>Zauber-Nachahmung</strong> erworben haben.</p></blockquote><p>Wenn du einen deiner Chimäristen-Zauber wirkst, erhältst du einen Vorteil, der auf der Spezies</p><p>des Wesens basiert, von dem du den Zauber ursprünglich gelernt hast. Wähle eine Option: Du erhältst Resistenz gegen beide Schadensarten, die mit dieser Spezies verbunden sind; <strong>oder</strong> du verursachst 5 Zusatzschaden, wenn du Schaden einer Art verursachst, die mit dieser Spezies verbunden ist. Der gewählte Vorteil hält bis zum Ende der Szene an oder bis du wieder einen Chimäristen-Zauber wirkst.</p><p>Die Schadensarten, die jeder Spezies zugeordnet sind, sind <strong>Luft</strong> und <strong>Eis</strong> (<strong>Bestie</strong>), <strong>Feuer</strong> und <strong>Eis</strong> (<strong>Dämon</strong>), <strong>Luft</strong> und <strong>Blitz</strong> (<strong>Elementar</strong>), <strong>Erde</strong> und <strong>Gift</strong> (<strong>Konstrukt</strong>), <strong>Blitz</strong> und <strong>Feuer</strong> (<strong>Monster</strong>), <strong>Erde</strong> und <strong>Licht</strong> (<strong>Pflanze</strong>), <strong>Finster</strong> und <strong>Gift</strong> (<strong>Untote</strong>).</p><hr><ul><li><p><strong>Resistenzen:</strong> @TYPE[affinity air,ice resistance e:eos i:1 t:source]{Effekt: Bestienresistenz}, @TYPE[affinity earth,poison resistance e:eos i:1 t:source]{Effekt: Konstruktresistenz}, @TYPE[affinity fire,ice resistance e:eos i:1 t:source]{Effekt: Dämonenresistenz}, @TYPE[affinity air,bolt resistance e:eos i:1 t:source]{Effekt: Elementarresistenz}, @TYPE[affinity bolt,fire resistance e:eos i:1 t:source]{Effekt: Monsterresistenz}, @TYPE[affinity earth,light resistance e:eos i:1 t:source]{Effekt: Pflanzenresistenz}, or @TYPE[affinity dark,poison resistance e:eos i:1 t:source]{Effekt: Untotenresistenz}</p></li><li><p><strong>Zusatzschaden:</strong> (TBA)</p></li></ul>"
+    },
+    "Clean Slate": {
+      "name": "Neubeginn",
+      "source": "AHF158",
+      "summary": "Entferne Zauber und Statuseffekte von Wesen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Symbolist</strong> gemeistert haben.</p></blockquote><p>Du kannst eine Aktion ausführen und bis zu 30 Geistpunkte ausgeben, um für je 5 GP, die du auf diese Weise ausgibst, ein Wesen auszuwählen, das du sehen kannst. Jedes Wesen, das du auf diese Weise auswählst, erholt sich von allen Statuseffekten und wird von sämtlichen Zaubern mit der <strong>Dauer</strong> „Szene“, die es beeinflusst haben, nicht mehr beeinflusst. </p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[5 mp]{1 Wesen: 5 GP}, @LOSS[10 mp]{2 Wesen: 10 GP}, @LOSS[15 mp]{3 Wesen: 15 GP}, @LOSS[20 mp]{4 Wesen: 20 GP}, @LOSS[25 mp]{5 Wesen: 25 GP}, or @LOSS[30 mp]{6 Wesen: 30 GP}</p></li></ul>"
+    },
+    "Cleansing Moonlight": {
+      "name": "Reinigendes Mondlicht",
+      "source": "ANF166",
+      "summary": "Deine Zauber können Statuseffekte und Zauber von Zielen entfernen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Entropist</strong> und <strong>Spiritist</strong> gemeistert haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem offensiven Zauber ( @ICON[offensive] ) triffst, kannst du, wenn du eine arkane Waffe ausgerüstet hast und der höhere Wurf deiner Magieprobe 8 oder höher beträgt, dafür sorgen, dass jedes dieser Wesen von keinen Zaubern mit der Dauer „Szene“ mehr betroffen ist, die gerade auf sie wirken.</p><p>Wenn du einen Zauber auf einen oder mehrere Verbündete wirkst, darfst du, wenn du eine arkane Waffe ausgerüstet hast, einen der Statuseffekte benommen, wütend, vergiftet, erschüttert, verlangsamt und geschwächt wählen: Wenn du das tust, erholt sich jedes Ziel von dem gewählten Statuseffekt.</p>"
+    },
+    "Comet": {
+      "name": "Komet",
+      "source": "GRW236",
+      "summary": "Erlerne den Zauber Komet.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Entropist</strong> gemeistert haben.</p></blockquote><p>Du lernst den ultimativen <strong>Entropisten</strong>-Zauber: <strong>Komet</strong>.<br></p><table border=\"1\"><colgroup><col style=\"width:13%\"><col style=\"width:13%\"><col style=\"width:28%\"><col style=\"width:46%\"></colgroup><tbody><tr><td style=\"text-align:center\"><p><strong>Komet</strong></p></td><td style=\"text-align:center\"><p><strong>GP: </strong>50</p></td><td style=\"text-align:center\"><p><strong>Ziel: </strong>Speziell</p></td><td style=\"text-align:center\"><p><strong>Dauer: </strong>Unmitttelbar</p></td></tr></tbody></table><p>Du reißt ein großes Portal zum Kosmos auf und rufst astrale Trümmer aus der klaffenden Leere herab. Wähle eine Option: Ein Wesen, das du sehen kannst, erleidet @DMG[60 untyped]; <strong>oder</strong> du wählst eine beliebige Anzahl von Wesen, die du sehen kannst, und jedes von ihnen erleidet @DMG[44 untyped]. <br>Diese Werte erhöhen sich um 5, sofern du <strong>auf Stufe 20</strong> oder höher bist, oder um 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p><p>Schaden, den dieser Zauber verursacht, hat keine Schadensart (er wird also nicht von Schadens-Affinitäten beeinflusst).</p><hr><p>Füge den <strong>Entropisten</strong>-Zauber @UUID[Compendium.projectfu.spells.Item.Vem0KAbARyK1FtPk] zu deinem Charakterbogen hinzu.</p>"
+    },
+    "Decoy Bait": {
+      "name": "Köder",
+      "source": "ATF174",
+      "summary": "Falkenauge erzeugt einen Köder und gewährt einen strafenden Angriff.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Scharfschütze</strong> gemeistert und die Fähigkeit <strong>Falkenauge</strong> erworben haben.</p></blockquote><p>Wenn du deine Fähigkeit @UUID[Compendium.projectfu.skills.Item.hmDCgX5OEk5l4uXW] einsetzt und die <strong>erste Option</strong> wählst, darfst du 10 Geistpunkte ausgeben, wenn kein <strong>Köder</strong> in der Szene ist. Wenn du das tust, erschaffst du einen <strong>Köder</strong> mit Lebenspunkten, die<strong>【der Hälfte deiner Stufe + (deiner FS in Falkenauge multipliziert mit 5)】</strong>entsprechen.</p><p>Wenn ein Gegner, der deinen <strong>Köder</strong> sehen kann, einem oder mehreren Wesen Schaden zufügt, erleidet dein <strong>Köder</strong> automatisch Schaden <strong>anstelle eines dieser Wesen</strong>, das <strong>zufällig</strong> ausgewählt wird (dein <strong>Köder</strong> wird stets so behandelt, als hätte er eine neutrale Affinität zu allen Schadensarten und könnte keine andere Affinität erhalten).</p><p>Wenn ein Gegner die Lebenspunkte deines <strong>Köders</strong> auf 0 reduziert, wird dein <strong>Köder</strong> automatisch zerstört, und du würfelst [[/r 1d10]]{1W10}. Wenn die gewürfelte Zahl gleich hoch wie oder niedriger als<strong>【3 + deine FS in Falkenauge】</strong>ist, darfst du sofort einen <strong>freien Angriff</strong> mit einem <strong>Bogen</strong> oder einer <strong>Schusswaffe</strong> ausführen, die du ausgerüstet hast. Dieser Angriff kann nur diesen Gegner zum Ziel haben, erhält einen Bonus in Höhe<strong>【deiner FS in Falkenauge】</strong>auf die Präzisionsprobe und sein Schaden ignoriert Immunitäten und Resistenzen.</p><p>Dein <strong>Köder</strong> kann keine Lebenspunkte zurückgewinnen und wird am Ende der Szene automatisch zerstört. Beschreibe unbedingt, wie er aussieht!</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[10 mp]</p></li><li><p>Importiere für die <strong>Automatisierung</strong> diesen Akteur in deine Welt: @UUID[Compendium.projectfu.npcs.Actor.3Nt3Kj1uUlYg7P1E]</p></li><li><p>Navigiere dann im Bogen des Akteurs in den '<strong>Einstellungen</strong>'-Tab. Wähle bei '<strong>Spieler</strong>' den Akteur aus, dem dieser Köder gehört und wähle bei '<strong>Fähigkeit</strong>' die Fähigkeit '<strong>Falkenauge</strong>'</p></li></ul>"
+    },
+    "Deep Pockets": {
+      "name": "Tiefe Taschen",
+      "source": "GRW239",
+      "summary": "Reduziere die Kosten für Inventarpunkte.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Bastler</strong> gemeistert haben.</p></blockquote><p>Wenn du Inventarpunkte ausgibst, gibst du 1 Inventarpunkt weniger aus (mindestens 1).</p>",
+      "effects": [{
+        "name": "Tiefe Taschen",
+        "source": "GRW239",
+        "description": "<p>Wenn du Inventarpunkte ausgibst, gibst du 1 Inventarpunkt weniger aus (mindestens 1).</p>"
+      }]
+    },
+    "Disarming Rhetoric": {
+      "name": "Entwaffnende Rhetorik",
+      "source": "GRW235",
+      "summary": "Bringe Gegner zum Rückzug.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Orator</strong> gemeistert haben.</p></blockquote><p>Während einer Konflikt-Szene kannst du eine Aktion ausführen und ein Wesen im <strong>Soldaten</strong>-Rang wählen, das dich hören und verstehen kann (die Spielleiterin muss dir sagen, wer ein gültiges Ziel ist). Falls dieses Wesen <strong>erschüttert</strong> ist oder sich in einer <strong>Krise</strong> befindet, darfst du eine Anzahl von Geistpunkten in Höhe von<strong>【20 + der halben Stufe des Wesens】</strong>ausgeben, damit es den Konflikt friedlich verlässt.</p><p>Beschreibe, wie du es davon überzeugst, aufzuhören.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[20+(@target.level.value/2) mp]{20 + der halben Stufe des Wesens GP}</p></li></ul>"
+    },
+    "Double Arrow": {
+      "name": "Doppelpfeil",
+      "source": "AHF155",
+      "summary": "Greife zweimal mit Bögen an.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kommandant</strong> und <strong>Scharfschütze</strong> gemeistert haben.</p></blockquote><p>Wenn du die <strong>Angriffs</strong>-Aktion mit einer <strong>Fernkampfwaffe</strong> ausführst, die zur Kategorie <strong>Bogen</strong> gehört, darfst du, sofern du <strong>keine andere Waffe ausgerüstet</strong> hast, zwei getrennte Angriffe statt einem ausführen (gegen dasselbe Ziel oder gegen verschiedene Ziele). Tust du das, folgen beide Angriffe den Regeln für den <strong>Kampf mit zwei Waffen</strong>: Jeder Angriff verliert das <strong>Multi</strong>-Merkmal und kann es nicht mehr erhalten, und du behandelst den höheren Wurf jeder Präzisionsprobe im Hinblick auf die Bestimmung des Schadens so, als sei er 0.</p><p>Beachte, dass diese Fähigkeit <strong>nicht</strong> mit der Anpassung <strong>Schnell</strong> einer Spezialwaffe <strong>kombiniert werden kann</strong> (die Verwendung von <strong>Doppelpfeil</strong> mit einem <strong>schnellen</strong> Bogen erlaubt also nicht mehr als zwei Angriffe).</p>"
+    },
+    "Dreamslice": {
+      "name": "Traumschnitt",
+      "source": "ATF176",
+      "summary": "Schattenschlag reduziert GP und verursacht Aktionsverlust, wenn Schwerter benutzt werden.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Finsterschneide</strong> und <strong>Esper</strong> gemeistert haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem Angriff deiner Fähigkeit @UUID[Compendium.projectfu.skills.Item.W5hE9L8x7AsJI7a1] unter Verwendung einer Waffe der Kategorie <strong>Schwert</strong> triffst, verliert jedes dieser Wesen eine Anzahl an Geistpunkten in Höhe<strong>【der Zahl, die du mit deinem Machtwürfel für Schattenschlag gewürfelt hast】</strong>.Wenn<strong>【die Zahl, die du mit deinem Machtwürfel für Schattenschlag gewürfelt hast】mindestens 8</strong> beträgt, darfst du ein Wesen wählen, das von dem Angriff getroffen wurde. Wenn dieses Wesen dein <strong>Fokus</strong> ist oder du eine <strong>Bindung</strong> zu ihm hast, führt dieses Wesen in seinem nächsten Zug eine Aktion weniger aus (bis zu einem Minimum von null Aktionen).</p><hr><ul><li><p><strong>Ziel verliert:</strong> @LOSS[(^backlash(mig,hp)+$sl) mp]</p></li></ul>"
+    },
+    "Duel Master": {
+      "name": "Duellmeister",
+      "source": "LU24",
+      "summary": "Dein Magisches Paar verstärkt deine Angriffe.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kartenass</strong>, <strong>Furie</strong>, <strong>Schurke</strong>, <strong>Scharfschütze</strong> und <strong>Waffenmeister</strong> gemeistert und die Fähigkeit <strong>Magische</strong> <strong>Karten</strong> erworben haben.</p></blockquote><p>Wenn du den Effekt von <strong>Magisches Paar</strong> abhandelst und mit einer Waffe der Kategorie <strong>Arkan</strong> oder <strong>Werfen</strong> angreifst, verursachst du Zusatzschaden in Höhe des<strong>【gemeinsamen Wertes der abgehandelten Karten】</strong>und erhältst eine Menge an Geistpunkten zurück, die dem Doppelten des<strong>【gemeinsamen Wertes der abgehandelten Karten】</strong>entspricht (wenn du z. B. ein <strong>5er</strong>-Paar abhandelst, kannst du 5 Zusatzschaden verursachen und 10 Geistpunkte zurückgewinnen).</p>"
+    },
+    "Dynamic Synchronization": {
+      "name": "Dynamische Abstimmung",
+      "source": "ATF172",
+      "summary": "Schließe dich mit einem anderen Piloten oder Passagier zusammen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Pilot</strong> gemeistert haben.</p></blockquote><p>Wenn du zu Beginn deines Zuges während eines Konflikts dein <strong>persönliches Fahrzeug</strong> steuerst, kannst du eine Option wählen: Du <strong>stimmst dich</strong> mit einem anderen Spielercharakter <strong>ab</strong>, der in der Szene anwesend ist und sein eigenes <strong>persönliches Fahrzeug</strong> fährt, oder du <strong>stimmst dich</strong> mit einem anderen Spielercharakter <strong>ab</strong>, der Passagier in deinem <strong>persönlichen Fahrzeug</strong> ist. Beschreibe, wie ihr euch zusammentut! Du und der gewählte Charakter erhaltet <strong>beide</strong> die folgenden Vorteile, solange die <strong>Abstimmung</strong> aktiv bleibt:</p><ul><li><p>Wenn du eine Probe abelgst, darfst du die aktuellen Attributs-Würfelgrößen des anderen SC anstelle der deinen verwenden (für einen oder beide Würfel).</p></li><li><p>Wenn du Schaden verursachst, verursachst du Zusatzschaden in Höhe<strong>【der Stärke deiner Bindung zum anderen SC plus der Stärke seiner Bindung mit dir】</strong>.</p></li><li><p>Du kannst eine Aktion nutzen, um einen <strong>freien Angriff</strong> mit einem <strong>aktivierten oder deaktivierten Waffenmodul</strong> des <strong>persönlichen Fahrzeugs</strong> auszuführen, in dem sich der andere SC gerade befindet.</p></li><li><p>Wenn dein Zug endet und der andere SC in dieser Runde noch nicht an der Reihe war, darf er seinen Zug <strong>direkt</strong> nach deinem Zug ausführen.</p></li></ul><p>Diese <strong>Abstimmung</strong> dauert bis zum Ende der Szene an oder bis du oder der andere Spielercharakter stirbt, bewusstlos wird, die Szene verlässt, sich mit jemand anderem <strong>abstimmt</strong> oder sich nicht mehr an Bord eines <strong>persönlichen Fahrzeugs</strong> befindet.</p>a"
+    },
+    "Effect: Challenge": {
+      "name": "Effekt: Herausfordern",
+      "effects": [{  
+        "name": "Effekt: Herausfordern",
+        "description": "<p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.7jWycVYFgZ1BMxch] einsetzt, dein Angriff <strong>nur ein Wesen</strong> zum Ziel hat und du einen <strong>Schild</strong> ausgerüstet hast, darfst du dieses Wesen bis zum Ende deines nächsten Zuges <strong>herausfordern</strong>. Die <strong>Herausforderung</strong> endet auch, wenn dieses Wesen von jemand anderem <strong>herausgefordert</strong> wird oder wenn du ein anderes Wesen <strong>herausforderst</strong>.</p><p>Das Wesen, das du <strong>herausforderst</strong>, muss dich zu den Zielen seiner Angriffe und offensiven Zauber ( @ICON[offensive] ) zählen, wenn es dazu in der Lage ist. Wenn du dem Wesen, das du <strong>herausforderst</strong>, mit einem <strong>freien Angriff</strong> mit <strong>einer einhändigen Nahkampfwaffe</strong> oder einer <strong>Spezialwaffe</strong> der Kategorie <strong>Dolch</strong> oder <strong>Schwert</strong> Schaden zufügst, darfst du ihm außerdem einmal pro Zug (auch in den Zügen anderer Wesen) 5 Zusatzschaden zufügen.</p>"
+      }]
+    },
+    "Effect: Heroic Companion": {
+      "name": "Effekt: Heldenhafter Begleiter",
+      "source": "GRW235",
+      "effects": [{
+        "name": "Effekt: Heldenhafter Begleiter",
+        "description": "<ul><li><p>Die maximalen Lebenspunkte deines Begleiters erhöhen sich um 10.</p></li><li><p>Wähle eines der Attribute deines Begleiters: <strong>Geschicklichkeit</strong>, <strong>Einsicht</strong>, <strong>Macht</strong> oder <strong>Willenskraft</strong>. Das gewählte Attribut wird permanent um eine Würfelgröße erhöht (bis zu einer maximalen Größe von <strong>W12</strong>).</p></li></ul>",
+        "source": "GRW235"
+      }]
+    },
+    "Effect: Iron Forest": {
+      "name": "Effekt: Eiserner Wald",
+      "source": "AHF155",
+      "effects": [{
+        "name": "Effekt: Eiserner Wald",
+        "description": "<p>Wenn du mit einer Waffe der Kategorie <strong>Speer</strong> ein oder mehrere Wesen mit einem <strong>Nahkampfangriff</strong> triffst und <strong>keine andere Waffe ausgerüstet</strong> hast, kannst du 20 Geistpunkte ausgeben und eines dieser Wesen auswählen. Wenn du dies tust, fügt der Angriff jedem seiner Ziele die <strong>Hälfte</strong> des normalen Schadens zu, und du wählst eine der folgenden Aktionsarten: <strong>Angriff, Beschützen, Zielsetzung, Zauber</strong> oder <strong>Fähigkeit</strong>. Von nun an muss das gewählte Wesen 10 Geistpunkte ausgeben, wann immer es diese Art von Aktion ausführen will. Falls es das nicht kann, muss es eine andere Aktionsart ausführen. Dieser Effekt hält bis zum Beginn deines nächsten Zuges an oder bis du diese Fähigkeit erneut einsetzt.</p>",
+        "source": "AHF155"
+      }]
+    },
+    "Effect: Power Chord": {
+      "name": "Effekt: Powerchord",
+      "source": "AHF158",
+      "effects": [{
+        "name": "Effekt: Powerchord",
+        "description": "<p>Wenn du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> singst, darfst du die Kosten der <strong>Strophe</strong> in Geistpunkten verdoppeln <strong>oder</strong> 1 Fabula-Punkt ausgeben. Tust du das, erhalten du und jeder Verbündete, der dich hören kann, bis zum Beginn deines nächsten Zuges den folgenden Vorteil: Deine Präzisionsproben lösen einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (sofern die Probe kein <strong>Patzer</strong> ist).</p>",
+        "source": "AHF158"
+      }]
+    },
+    "Effect: Power Nap": {
+      "name": "Effekt: Kraftnickerchen",
+      "source": "ANF64",
+      "effects": [{
+        "name": "Effekt: Kraftnickerchen",
+        "description": "<p>Wenn du während eines Konflikts am Zug bist, kannst du eine Aktion nutzen, um eine Menge an Lebenspunkten und Geistpunkten in Höhe von<strong>【20 + der Hälfte deiner Stufe】</strong>wiederherzustellen und dich von allen Statuseffekten zu erholen. Wenn du das tust, endet dein Zug <strong>sofort</strong>, du verlierst die Fähigkeit <strong>zu hören und zu sehen</strong>, und deine Werte für <strong>Verteidigung und Magie-Verteidigung</strong> werden auf <strong>5</strong> gesetzt und können in keiner Weise modifiziert werden (du kannst aber immer noch die Fähigkeit <strong>Schutz</strong> aus der Klasse <strong>Wächter</strong> benutzen, wenn du sie erworben hast!). Diese Mali halten bis zum Beginn deines nächsten Zuges, bis du <strong>Lebenspunkte verlierst</strong> oder bis du <strong>von einem Angriff oder einem offensiven Zauber ( @ICON[offensive] ) getroffen wirst</strong> an.</p>",
+        "source": "ANF164"
+      }]
+    },
+    "Effect: Predictable!": {
+      "name": "Effekt: Vorhersehbar!",
+      "source": "GRW240",
+      "effects": [{
+        "name": "Effekt: Vorhersehbar!",
+        "source": "GRW240",
+        "description": "<p>Wähle eine der folgenden Aktionsarten: <strong>Angriff</strong>, <strong>Beschützen</strong>, <strong>Zielsetzung</strong>, <strong>Zauber</strong> oder <strong>Fähigkeit</strong>. Bis zum Beginn deines nächsten Zuges muss das Wesen @LOSS[20 mp] ausgeben, wenn es diese Aktion ausführen will. Kann sie das nicht, muss sie eine andere Aktion ausführen.</p>"
+      }]
+    },
+    "Effect: Rampart": {
+      "name": "Effekt: Bollwerk",
+      "effects": [{
+        "name": "Effekt: Bollwerk",
+        "description": "<p>In der ersten Runde jeder Konflikt-Szene bist du resistent gegen alle Schadensarten und kannst keine Statuseffekte erleiden (du erholst dich jedoch nicht von bereits bestehenden Statuseffekten). Diese Vorteile gelten nur bis zum Ende der ersten Runde.</p>"
+      }]
+    },
+    "Effect: Showstopper": {
+      "name": "Effekt: Unterbrechung",
+      "source": "AHF161",
+      "effects": [{
+        "name": "Effekt: Unterbrechung",
+        "description": "<p>Wenn du zu Beginn deines Zuges während eines Konflikts keine <strong>martialische Rüstung</strong> ausgerüstet hast, darfst du 1 Fabula-Punkt ausgeben, um sofort <strong>bis zu drei verschiedene Tänze</strong> der dir bekannten Tänzen in der von dir bevorzugten Reihenfolge aufführen, ohne deren GP-Kosten zu bezahlen. Wenn du das tust, kannst du bis zum Ende deines nächsten Zuges <strong>keine Tänze mehr aufführen</strong>.</p>"
+      }]
+    },
+    "Effect: Side by Side": {
+      "name": "Effekt: Seite an Seite",
+      "source": "ANF167",
+      "effects": [{
+        "name": "Effekt: Seite an Seite",
+        "source": "ANF167",
+        "description": "<p>Wenn dein Begleiter Schaden verursacht, verursacht er 5 Zusatzschaden.</p>"
+      }]
+    },
+    "Effect: Silent Hunter": {
+      "name": "Effekt: Leiser Jäger",
+      "source": "ANF165",
+      "effects": [{
+        "name": "Effekt: Leiser Jäger",
+        "source": "ANF165",
+        "description": "<p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.tiu0D74YNxirN6Tr] einsetzt, um einen <strong>freien Angriff</strong> mit einer Waffe der Kategorie <strong>Bogen, Speer</strong> oder <strong>Werfen</strong> auszuführen, verursacht der Angriff Zusatzschaden in Höhe<strong>【deiner Fähigkeitsstufe in Hohe Geschwindigkeit multipliziert mit 5】</strong>.</p><p>Wenn du außerdem ein oder mehrere Wesen mit einer Waffe der Kategorie <strong>Bogen, Speer</strong> oder <strong>Werfen</strong> angreifst, können diese Wesen bis zum Ende der laufenden Runde keine <strong>freien Angriffe</strong> ausführen.</p>"
+      }]
+    },
+    "Effect: Vanish": {
+      "name": "Effekt: Verschwinden",
+      "source": "GRW240",
+      "effects": [{
+        "name": "Effekt: Verschwinden",
+        "source": "GRW240",
+        "description": "<p>Wenn du ein oder mehrere Wesen mit einem Angriff triffst, darfst du 1 Fabula-Punkt ausgeben. Tust du das, kann jedes dieser Wesen bis zum Beginn deines nächsten Zuges keine Aktion ausführen, bei der es dich sehen muss.</p>"
+      }]
+    },
+    "Ephemeral Tranquility": {
+      "name": "Flüchtige Ruhe",
+      "source": "ANF164",
+      "summary": "Verbessert Halluzination und Torpor und entfernt Statuseffekte, die LP-Verlust verursachen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Tänzer</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>148</strong>), Esper (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>150</strong>), <strong>Schurke</strong>, <strong>Spiritist</strong> und <strong>Symbolist</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>142</strong>) gemeistert haben.</p></blockquote><p>Wenn du die Zauber @UUID[Compendium.projectfu.spells.Item.JTyMViMTOUrc7bms] oder @UUID[Compendium.projectfu.spells.Item.9ENpDMvIOH9FJAka] wirkst (siehe <strong>Grundregelwerk</strong>, Seite <strong>214–215</strong>), kannst du <strong>beide</strong> Statuseffekte auf jedes Ziel anwenden, das von dem Zauber getroffen wird.</p><p>Während eines Konflikts kannst du eine Aktion nutzen und bis zu 20 Geistpunkte ausgeben. Für je 10 auf diese Weise ausgegebene Geistpunkte darfst du einen anderen Gegner wählen, den du sehen kannst und der unter <strong>zwei oder mehr Statuseffekten</strong> leidet. Jeder auf diese Weise gewählte Gegner erholt sich von <strong>allen</strong> Statuseffekten und verliert eine Anzahl an Lebenspunkten, die<strong>【der Hälfte deiner Stufe + (der Anzahl der Statuseffekte, von denen sich der Gegner auf diese Weise erholt hat, multipliziert mit 10)】</strong>entspricht. Dann erhältst du 20 Geistpunkte für jeden Gegner zurück, der durch diesen Effekt in eine <strong>Krise</strong> geraten ist oder auf 0 Lebenspunkte reduziert wurde.</p><hr><ul><li><p><strong>You bezahlst:</strong> @LOSS[10 mp] oder @LOSS[20 mp]</p></li><li><p><strong>Ziel verliert:</strong> @LOSS[(@source.level.value/2)+($tsc*10) hp]</p></li><li><p><strong>Du regenerierst:</strong> @GAIN[20 mp]</p></li></ul>"
+    },
+    "Extra HP": {
+      "name": "Zusatz-LP",
+      "source": "GRW241",
+      "summary": "Erhöhe deine maximalen Lebenspunkte.",
+      "desc": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um 10.</p><p>Die Menge der zusätzlichen LP erhöht sich auf 20, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>",
+      "effects": [{
+        "name": "Zusatz-LP",
+        "source": "GRW241",
+        "description": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um 10.</p><p>Die Menge der zusätzlichen LP erhöht sich auf 20, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Extra IP": {
+      "name": "Zusatz-IP",
+      "source": "GRW241",
+      "summary": "Erhöhe deine maximalen Inventarpunkte.",
+      "desc": "<p>Erhöhe deine maximalen Inventarpunkte dauerhaft um 4.</p>",
+      "effects": [{
+        "name": "Zusatz-IP",
+        "source": "GRW241",
+        "description": "<p>Erhöhe deine maximalen Inventarpunkte dauerhaft um 4.</p>"
+      }]
+    },
+    "Extra MP": {
+      "name": "Zusatz-GP",
+      "source": "GRW241",
+      "summary": "Erhöhe deine maximalen Geistpunkte.",
+      "desc": "<p>Erhöhe deine maximalen Geistpunkte dauerhaft um 10.</p><p>Die Menge der zusätzlichen GP erhöht sich auf 20, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>",
+      "effects": [{
+        "name": "Zusatz-GP",
+        "source": "GRW241",
+        "description": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um 10.</p><p>Die Menge der zusätzlichen LP erhöht sich auf 20, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Extra Spells": {
+      "name": "Zusatz-Zauber",
+      "source": "GRW241",
+      "summary": "Erlerne zwei Zauber aus einer Klasse deiner Wahl.",
+      "desc": "<p>Wenn du diese Fähigkeit erwirbst, kannst du zwei beliebige Zauber aus einer der folgenden Listen lernen: <strong>Elementarist</strong>, <strong>Entropist</strong> oder <strong>Spiritist</strong>. Beide Zauber müssen aus der gleichen Liste stammen und entsprechen den Standardregeln für das Wirken von Zaubern dieser Klasse.</p>"
+    },
+    "Fast Rituals": {
+      "name": "Schnelle Rituale",
+      "source": "AHF159",
+      "summary": "Reduziere die Anzahl der Abschnitte für Ritual-Uhren in Konflikten.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Chimärist</strong>, <strong>Elementarist</strong>, <strong>Entropist</strong> und <strong>Spiritist</strong> gemeistert haben.</p></blockquote><p>Wenn du ein Ritual während einer Konflikt-Szene initiierst, wird die Ritual-Uhr mit <strong>zwei Abschnitten weniger</strong> als normal erstellt – mit mindestens <strong>vier Abschnitten</strong>.</p>"
+    },
+    "Fitcast": {
+      "name": "Mächtiger Zauber",
+      "source": "ANF165",
+      "summary": "Benutze Macht für Magieproben und behandle Waffen, die Macht nutzen, als arkan.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Chimärist</strong>, <strong>Finsterschneide</strong>, <strong>Esper</strong> (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>150</strong>), <strong>Furie</strong> und <strong>Reisender</strong> gemeistert haben.</p></blockquote><p>Wenn du eine Magieprobe für einen Zauber oder ein Ritual ablegst, darfst du eines der Attribute durch <strong>Macht</strong> ersetzen (z. B.<strong>【MAT + MAT】</strong>für ein Chimäristik-Ritual).<br>Solange die <strong>Präzisions</strong>-Formel einer Waffe, die du ausgerüstet hast, <strong>Macht</strong> enthält, darfst du diese Waffe für Fähigkeiten und Effekte, die sie erfordern, als zur Kategorie <strong>Arkan</strong> gehörig behandeln.</p>"
+    },
+    "Fleeting Moment": {
+      "name": "Flüchtiger Moment",
+      "source": "AHF156",
+      "summary": "Füge den höheren Wurf hinzu, wenn du mit einem Schwert einen Gegenangriff ausführst.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Waffenmeister</strong> gemeistert und die Fähigkeit <strong>Gegenangriff</strong> erworben haben.</p></blockquote><p>Wenn du einen @UUID[Compendium.projectfu.skills.Item.XhcTVGtGEk7L2Ddq] mit einer <strong>Nahkampfwaffe</strong> der Kategorie <strong>Schwert</strong> ausführst, darfst du deinen höheren Wurf zum Schaden addieren, den der Angriff verursacht (du musst ihn nicht als gleich 0 behandeln).</p>"
+    },
+    "For a Better Future": {
+      "name": "Für eine bessere Zukunft",
+      "source": "ANF162",
+      "summary": "Verwende Handelspunkte anstelle von Fabula-Punkten und verbessere Siedlungen mit Spenden.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Händler</strong> gemeistert und die Fähigkeiten <strong>Echter Schatz</strong> und <strong>Handelsreisender</strong> erworben haben.</p></blockquote><p>Wenn du einen oder mehrere Fabula-Punkte ausgeben musst – wenn du dies <strong>nicht</strong> tust, um <strong>die Geschichte zu verändern</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>98</strong>) –, kannst du stattdessen entsprechend viele Handelspunkte ausgeben. Beschreibe, welche Erinnerungen an deine Tauschgeschäfte und Reisen dir Stärke verleihen!</p><p>Wenn du <strong>zwei oder mehr</strong> Handelspunkte durch die Fähigkeiten @UUID[Compendium.projectfu.skills.Item.lFYCdvybWS7x8e6L] oder @UUID[Compendium.projectfu.skills.Item.zXB7pBEv1JED1xkh] erhältst, darfst du dich dazu entscheiden, stattdessen <strong>genau 1 Handelspunkt</strong> zu erhalten. Wenn du das tust, wähle du eine Siedlung im Umkreis von <strong>1 Reisetag</strong> von deiner Position aus und erhöhe ihren <strong>Wohlstand</strong> um einen Betrag, der<strong>【deiner Fähigkeitsstufe in Handelsreisender + deiner Fähigkeitsstufe in Echter Schatz】</strong>entspricht; der <strong>Wohlstand</strong> einer Siedlung beginnt bei 0 und hat keine Obergrenze.</p><p>Die folgende Tabelle zeigt die Effekte deiner Spenden auf die Siedlung und auf alles, was sich im Umkreis von <strong>1 Reisetag</strong> von ihr befindet.</p><table><tbody><tr><th><p>Wohlstand</p></th><th><p>Effekte innerhalb von 1 Reisetag der Siedlung</p></th></tr><tr><td><p>10 oder mehr</p></td><td><p>Wenn du oder ein Verbündeter einen Preis in Zenit zahlen müssen, egal aus welchem Grund, werden diese Kosten <strong>halbiert</strong>.</p></td></tr><tr><td><p>15 oder mehr</p></td><td><p>Die Menschen nehmen dich und deine Verbündeten gerne auf: In diesem Bereich kannst du dich immer frei <strong>ausruhen</strong>, ohne Zenit auszugeben. Außer dem wird für alle <strong>Reisewürfe</strong> in diesem Bereich nie ein größerer Würfel als ein <strong>W8</strong> verwendet.</p></td></tr><tr><td><p>20 oder mehr</p></td><td><p>Wenn ein Bösewicht in diesem Bereich Ultima-Punkte ausgibt, muss er <strong>doppelt</strong> so viele Ultima-Punkte ausgeben.</p></td></tr></tbody></table>"
+    },
+    "Forbidden Rite": {
+      "name": "Verbotener Ritus",
+      "source": "LU24",
+      "summary": "Erhalte Zugang zum Verbotener Monarch Set. Dein Ablagestapel gewährt dir Stärke.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kartenass</strong> und <strong>Arkanist</strong> gemeistert und <strong>3 Fähigkeitsstufen</strong> in der Fähigkeit <strong>Magische Karten</strong> erworben haben.</p></blockquote><p>Solange sich <strong>eine oder mehrere Karten</strong> in deinem <strong>Ablagestapel</strong> befinden, bist du resistent gegen die Schadensart, die der Farbe der Karte oben auf deinem <strong>Ablagestapel</strong> entspricht (wenn diese Karte ein Joker ist, bist du resistent gegen alle vier Schadensarten: <strong>Luft</strong>, <strong>Erde</strong>, <strong>Feuer</strong> und <strong>Eis</strong>).</p><p>Du fügst außerdem den folgenden <strong>Effekt</strong> zu deiner Liste von <strong>Sets</strong> hinzu:</p><table border=\"1\"><colgroup><col style=\"width:28%\"><col style=\"width:72%\"></colgroup><tbody><tr><td><p><strong>Effekt</strong></p></td><td><p><strong>Set-Voraussetzungen</strong></p></td></tr><tr><td><p><strong>Verbotener Monarch</strong></p></td><td><p><strong>4 Karten</strong> mit <strong>gleichem Wert</strong>, von denen <strong>keine</strong> ein <strong>Joker</strong> ist <strong>+ 1 Joker</strong></p></td></tr></tbody></table><p>Du fügst jedem in der Szene anwesenden Gegner 777 Schaden zu; die Schadensart ist Licht, wenn<strong>【der gemeinsame Wert der 4 Karten】gerade</strong> ist, oder <strong>Finster</strong>, wenn diese Summe <strong>ungerade</strong> ist.</p><p>Falls sich ein <strong>Joker</strong> in deinem <strong>Ablagestapel</strong> befindet, ignoriert der Schaden, der durch diesen Effekt verursacht wird, Immunitäten und Resistenzen.</p>"
+    },
+    "Grand Summoning": {
+      "name": "Hohe Beschwörung",
+      "source": "AHF156",
+      "summary": "Beschwöre Arkana als Wesen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Arkanist</strong> gemeistert haben, und dein Charakter muss <strong>mindestens auf Stufe 30</strong> sein.</p></blockquote><p>Wenn du ein Arkanum beschwörst, kannst du dich dafür entscheiden, 1 Fabula-Punkt und die Hälfte deiner aktuellen Lebenspunkte (abgerundet) auszugeben, um deine Lebenskraft in eine vollständige Manifestation ihrer Macht zu verwandeln. Wenn du das tust, manifestiert sich das Arkanum als Wesen der Spezies <strong>Dämon</strong> im <strong>Soldaten</strong>-Rang unter deiner Kontrolle (es zählt als Verbündeter und hat seinen eigenen unabhängigen Zug während Konflikten; wenn du diese Fähigkeit während einer Konflikt-Szene einsetzt, tritt das Arkanum <strong>am Ende</strong> der laufenden Runde in die Szene ein). Außerdem erhältst du keinen der <strong>Verschmelzen</strong>-Vorteile, die du normalerweise genießen würdest, wenn du dieses Arkanum beschwörst. Das beschworene Wesen hat das folgende Profil:</p><ul><li><p>Die <strong>Stufe</strong> entspricht deiner Stufe (damit erhält es die Boni auf Proben und Schaden, die unter Schritt <strong>8</strong> auf Seite <strong>303</strong> des <strong>Grundregelwerks</strong> aufgeführt sind).</p></li><li><p>Ein <strong>W10</strong> in einem Attribut deiner Wahl und ein <strong>W8</strong> in allen anderen Attributen.</p></li><li><p><strong>Maximale Lebenspunkte</strong> in Höhe von<strong>【der doppelten Macht-Würfelgröße des Wesens plus der Hälfte deiner maximalen Lebenspunkte】</strong>.Das Wesen hat <strong>keine Geistpunkte</strong>.</p></li><li><p>Resistenz gegen <strong>zwei</strong> Schadensarten deiner Wahl.</p></li><li><p>Das Wesen erhält alle <strong>Verschmelzen</strong>-Vorteile, die dir das Arkanum normalerweise beim Beschwören gewährt (Schadens-Affinitäten, Immunität gegen Statuseffekte, erhöhte Attributs-Größen etc.). Wenn ein <strong>Verschmelzen</strong>-Vorteil dazu führen würde, dass das Arkanum entlassen wird, wird das beschworene Wesen verschwinden, es sei denn, du gibst 20 Geistpunkte aus.</p></li><li><p>Ein <strong>Nahkampf-Basis-Angriff</strong>, dessen Präzisionsprobe auf zwei verschiedenen Attributen deiner Wahl basiert und<strong>【HW + 8】physischen</strong> Schaden verursacht. Wähle <strong>zwei verschiedene Optionen</strong>: Der Angriff ist ein <strong>Fernkampfangriff</strong>; <strong>oder</strong> er verursacht 4 Zusatzschaden; <strong>oder</strong> er verursacht Schaden einer anderen Schadensart als <strong>physisch</strong>; <strong>oder</strong> die Präzisionsprobe basiert auf einem einzelnen Attribut.</p></li><li><p>Das Wesen kann die <strong>Fähigkeits</strong>-Aktion ausführen, um einen der <strong>Entlassen</strong>-Effekte hervorzurufen, die normalerweise von diesem Arkanum gewährt werden, aber dies zu tun sorgt dafür, dass das beschworene Wesen verschwindet, es sei denn, du gibst 20 Geistpunkte aus.</p></li></ul><p>Die folgenden Regeln gelten, wenn du ein Arkanum mit <strong>Hoher Beschwörung</strong> beschwörst:</p><ul><li><p>Das Wesen wird immer mit vollen Lebenspunkten und ohne Statuseffekte beschworen.</p></li><li><p>Das Wesen verschwindet, wenn es 0 Lebenspunkte erreicht, wenn du stirbst, das Bewusstsein verlierst oder die Szene verlässt, oder wenn du ein Arkanum erneut <strong>beschwörst (mit Hoher Beschwörung oder ohne)</strong>. Das Wesen verschwindet auch, wenn eine Szene endet, oder wenn du ihm einfach befiehlst, dies zu tun (dies löst <strong>nicht</strong> den entsprechenden <strong>Entlassen</strong>-Effekt des Arkanums aus).</p></li><li><p>Notiere dir alle Entscheidungen für <strong>Attribute</strong> und den <strong>Basis-Angriff</strong>, die du beim ersten <strong>Beschwören</strong> eines bestimmten Arkanums getroffen hast: Diese Entscheidungen bleiben unverändert, wenn du dasselbe Arkanum in Zukunft erneut mithilfe der <strong>Hohen Beschwörung</strong> beschwörst.</p></li></ul><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 fp] und @LOSS[@actor.resources.hp.value/2 hp]{die Hälfte deiner aktuellen Lebenspunkte (abgerundet) GP}</p></li></ul>"
+    },
+    "Greater Akromorphosis": {
+      "name": "Höhere Akromorphose",
+      "source": "ATF173",
+      "summary": "Erhalte verschiedene Vorteile, die von der Kategorie deiner waffenlosen Schläge abhängen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Mutant</strong> gemeistert und die Fähigkeit <strong>Akromorphose</strong> erworben haben.</p></blockquote><p>Du erhältst die folgenden Vorteile basierend auf der aktuellen Kategorie deiner <strong>waffenlosen Schläge</strong>.</p><ul><li><p><strong>Arkan, Raufen, Dolch, Werfen</strong>: Bei deinen Angriffen mit <strong>waffenlosen Schlägen</strong> entspricht die Verteidigung jedes Ziels seiner aktuellen Einsicht-Würfelgröße.</p></li><li><p><strong>Bogen, Schwert</strong>: Deine Angriffe mit <strong>waffenlosen Schlägen</strong>, die <strong>zwei oder mehr Wesen</strong> zum Ziel haben, verursachen 5 Zusatzschaden.</p></li><li><p><strong>Schusswaffe, Schwere Waffe</strong>: Deine <strong>waffenlosen Schläge</strong> fügen <strong>Konstrukten</strong> sowie Wesen, die keine Konstrukte sind und mindestens einen <strong>Schild</strong> und/oder eine <strong>martialische Rüstung</strong> tragen, 5 Zusatzschaden zu.</p></li><li><p><strong>Flegel, Speer</strong>: Du erhältst einen Bonus von +2 auf Verteidigung, und deine Angriffe mit <strong>waffenlosen Schlägen</strong> können <strong>fliegende</strong> Wesen zum Ziel haben.</p></li></ul><p>Wenn deine <strong>waffenlosen Schläge mehr als einer Kategorie</strong> zugeordnet werden (z. B. durch die heldenhafte Fähigkeit @UUID[Compendium.projectfu.heroic-skills.Item.s316rQUTr3lgeTx7]; siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>153</strong>), erhältst du alle Vorteile der entsprechenden Kategorien.</p>"
+    },
+    "Greater Chloromancy": {
+      "name": "Verbesserte Chloromantie",
+      "source": "ANF169",
+      "summary": "Verbessere Effekte von Magiesamen und manipuliere die Vegetation.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Floralist</strong> gemeistert haben.</p></blockquote><p>Einmal pro Zug, wenn ein <strong>Magiesamen</strong> deinen <strong>Garten</strong> verlässt, darfst du 20 Geistpunkte ausgeben, wenn dieser <strong>Magiesamen</strong> einen oder mehrere Effekte „am Ende deines Zuges“ hat. Wenn du das tust, reproduziere <strong>einen</strong> dieser Effekte (du kannst auch einen Effekt wählen, der nicht zu den aktuellen Abschnitten deiner <strong>Wachstumsuhr</strong> passt).</p><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.ilAq8Q2OSE3oCVdi] erworben hast, können deine Rituale jetzt auch Wesen vom Rang eines <strong>Soldaten</strong> beeinflussen und kontrollieren, die zur <strong>Pflanzen</strong>-Spezies gehören (du kannst sie aber dennoch nicht <strong>erschaffen</strong>).</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[20 mp]</p></li></ul>"
+    },
+    "Greater Ecdysis": {
+      "name": "Höhere Ecdysis",
+      "source": "ATF173",
+      "summary": "Ecdysis ermöglicht es dir, Statuseffekte und Zauber zu beenden.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Mutant</strong> gemeistert haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.ij6vcA9nnD915bgI] einsetzt, kannst du zusätzlich eine oder beide Optionen wählen: Du erholst dich von allen Statuseffekten <strong>und/oder</strong> du wirst – sofern du von einem oder mehreren Zaubern mit einer <strong>Dauer</strong> „Szene“ betroffen bist – von keinem dieser Zauber mehr beeinflusst.</p>"
+    },
+    "Greater Theriomorphosis": {
+      "name": "Höhere Theriomorphose",
+      "source": "ATF174",
+      "summary": "Agiere nach Theriomorphose.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Mutant</strong> gemeistert haben.</p></blockquote><p>Wenn du in deinem Zug während eines Konflikts die Fähigkeit @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8] einsetzt und dies nicht durch die Fähigkeit <strong>Genoclepsis</strong> geschehen ist, darfst du die Effekte von <strong>bis zu drei Therioformen</strong> jener, die du gelernt hast, aktivieren (anstatt von zwei). Danach kannst du sofort eine zusätzliche Aktion ausführen. Diese zusätzliche Aktion kann <strong>nicht</strong> für die Fähigkeit <strong>Theriomorphose</strong> verwendet werden.</p>"
+    },
+    "Green Thumb": {
+      "name": "Grüner Daumen",
+      "source": "ANF163",
+      "summary": "Beschleunige oder verzögere das Wachstum deiner Magiesamen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Floralist</strong> gemeistert haben.</p></blockquote><p>Wenn du <strong>1 oder mehr Abschnitte deiner Wachstumsuhr füllst</strong>, kannst du eine Option wählen: Du füllst <strong>1 zusätzlichen Abschnitt</strong> deiner Wachstumsuhr; <strong>oder</strong> du füllst <strong>1 Abschnitt weniger</strong> auf deiner Wachstumsuhr (bis zu einem Minimum von 0 gefüllten Abschnitten). Wenn du das tust, kannst du diesen Effekt erst dann wieder nutzen, wenn deine <strong>Wachstumsuhr</strong> komplett leer ist.</p><p>Zusätzlich ignoriert der Schaden, den deine <strong>Magiesamen</strong> verursachen, Resistenzen.</p>"
+    },
+    "Harvester of Sorrow": {
+      "name": "Harvester of Sorrow",
+      "source": "LU6",
+      "summary": "Verbessere die Potenz deiner Entzugs-Zauber.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Entropist</strong> und <strong>Nekromant</strong> gemeistert haben und sowohl den Zauber <strong>Seele entziehen</strong> als auch <strong>Vitalität entziehen</strong> gelernt haben.</p></blockquote><p>Wenn du den Zauber @UUID[Compendium.projectfu.spells.Item.300SqWOqTrc7Qb3L] oder @UUID[Compendium.projectfu.spells.Item.HCknXFHu7q0bJ2Cg] wirkst, erhältst du <strong>so viele</strong> Geistpunkte bzw. Lebenspunkte zurück, <strong>wie</strong> das Ziel verloren hat (anstatt sie zu halbieren). Zusätzlich verliert das Ziel durch <strong>Seele entziehen【HW + 20】</strong>Geistpunkte, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder<strong>【HW + 25】</strong>Geistpunkte, wenn du auf <strong>Stufe 40 oder höher</strong> bist, anstatt der normalen<strong>【HW + 15】</strong>.</p>"
+    },
+    "Heartbreaker": {
+      "name": "Herzensbrecher",
+      "source": "GRW236",
+      "summary": "Opfere LP für enormen Schaden.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Finsterschneide</strong> gemeistert haben.</p></blockquote><p>Wenn du ein Wesen mit einem Angriff triffst, der nur dieses Wesen zum Ziel hatte und du eine Bindung zu ihm hast, darfst du die Hälfte deiner aktuellen Lebenspunkte ausgeben (abgerundet). <br>Tust du das, verursacht der Angriff zusätzlichen Schaden in Höhe von<strong>【10 multipliziert mit der Stärke deiner Bindung zum Ziel】</strong>.</p><p>Du kannst diese Fähigkeit nur in deinem Zug während eines Konflikts und nur einmal pro Runde einsetzen.</p><hr><ul><li><p><strong>Du verlierst:</strong> @LOSS[@source.level.value/2 hp]{Hälfte deiner aktuellen Lebenspunkte ausgeben (abgerundet) LP}</p></li><li><p><strong>Ziel verliert:</strong> @DMG[10 untyped]{1 Bindung: 10 Typlos}, @DMG[20 untyped]{2 Bindungen: 20 Typlos} oder @DMG[30 untyped]{3 Bindungen: 30 Typlos}</p></li></ul>"
+    },
+    "Heroic Companion": {
+      "name": "Heldenhafter Begleiter",
+      "source": "GRW235",
+      "summary": "Dein Begleiter wird stärker.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Reisender</strong> gemeistert haben, und du musst die Fähigkeit Treuer Begleiter erworben haben.</p></blockquote><p>Deine Bindung zu deinem Begleiter wird stärker.<br>Du erhältst die folgenden Vorteile:</p><ul><li><p>Die maximalen Lebenspunkte deines Begleiters erhöhen sich um 10.</p></li><li><p>Wähle eines der Attribute deines Begleiters: <strong>Geschicklichkeit</strong>, <strong>Einsicht</strong>, <strong>Macht</strong> oder <strong>Willenskraft</strong>. Das gewählte Attribut wird permanent um eine Würfelgröße erhöht (bis zu einer maximalen Größe von <strong>W12</strong>).</p></li><li><p>Der Begleiter erhält eine zusätzliche Fähigkeit. Wenn du Stufe 40 erreichst – oder sie bereits erreicht hast – erhält der Begleiter eine zusätzliche Fähigkeit. Stelle sicher, dass du deine Fähigkeitswahl mit der Spielleiterin und den anderen Spielern absprichst.</p></li></ul><hr><ul><li><p><strong>Begleiter erhält:</strong> @UUID[Compendium.projectfu.heroic-skills.Item.qZPjSnXWgwN7Wg0t]</p></li><li><p>Navigiere zum Tab \"<strong>Effekte</strong>\" im Aktiven Effekt, wähle ein Attribut, das erhöht werden soll und entferne den Rest.</p></li></ul>"
+    },
+    "Hit the Nerve": {
+      "name": "Nerv treffen",
+      "source": "ATF175",
+      "summary": "Nutze Tadeln, um wütenden Wesen Schaden zuzufügen und Vorteile gegen wütende Wesen zu erlangen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kantor</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>136</strong>) und <strong>Orator</strong> gemeistert und die Fähigkeit <strong>Tadeln</strong> erworben haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.DtEiCkDsC1amYABn] erfolgreich gegen einen Gegner einsetzt, von dem du <strong>eine oder mehrere Eigenschaften</strong> kennst, erhältst du Geistpunkte in Höhe der <strong>Hälfte</strong> der verlorenen GP des Ziels zurück, und du kannst es <strong>wütend</strong> werden lassen, anstatt die üblichen Statuseffekte zu erzeugen.</p><p>Wenn du eine <strong>Konkurrenzprobe</strong> gegen ein <strong>wütendes</strong> Wesen oder eine <strong>Präzisions</strong>- bzw. <strong>Magieprobe</strong> für einen Angriff oder einen offensiven Zauber ( @ICON[offensive] ) ablegst, der ein oder mehrere <strong>wütende</strong> Wesen zum Ziel hat, löst du einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (sofern die Probe kein <strong>Patzer</strong> ist).</p><hr><ul><li><p><strong>Du regenerierst</strong>: @GAIN[(&sl('condemn')*10)/2 mp]{Hälfte der verlorenen GP des Ziels GP}</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[enraged]</p></li></ul>"
+    },
+    "Hope": {
+      "name": "Hoffnung",
+      "source": "GRW236",
+      "summary": "Erlerne den Zauber Hoffnung.",
+      "desc": "<blockquote><p><strong>Voraussetzungen:</strong> Du musst die Klasse <strong>Spiritist</strong> gemeistert haben.</p></blockquote><p>Du lernst den ultimativen Spiritisten-Zauber: <strong>Hoffnung</strong>.</p><table border=\"1\"><colgroup><col style=\"width:12%\"><col style=\"width:16%\"><col style=\"width:26%\"><col style=\"width:46%\"></colgroup><tbody><tr><td style=\"text-align:center\"><p><strong>Hoffnung</strong></p></td><td style=\"text-align:center\"><p><strong>GP: </strong>40</p></td><td style=\"text-align:center\"><p><strong>Ziel: </strong>Speziell</p></td><td style=\"text-align:center\"><p><strong>Dauer: </strong>Unmittelbar</p></td></tr></tbody></table><p>Du entfachst die Flammen des Mutes und der Hoffnung in einem besiegten Helden neu. Wähle einen Spielercharakter, der <strong>kapituliert</strong> hat, aber noch in der Szene ist: Dieser Spielercharakter kommt sofort wieder zu Bewusstsein und erhält eine Anzahl an Lebenspunkten zurück, die seinem <strong>Krisenwert</strong> entspricht. Beachte, dass dieser Zauber die <strong>Konsequenzen</strong> des Kapitulierens des Charakters nicht rückgängig macht und nichts nützt, wenn der Charakter die Szene als Teil seiner Kapitulation verlassen hat – z. B. wenn er gefangen genommen und weggeschleppt wurde oder wenn er in einer Paralleldimension gefangen ist usw.</p><p>Ein Spielercharakter kann nur einmal pro Szene von diesem Zauber beeinflusst werden; wenn ein Charakter durch diesen Zauber wieder in den Konflikt gebracht wird und anschließend erneut 0 Lebenspunkte erreicht, muss er sich nach den normalen Regeln opfern oder kapitulieren (einschließlich einer neuen Konsequenz und 2 weiteren Fabula-Punkten, falls er kapituliert).</p><hr><ul><li><p>Füge den Zauber @UUID[Compendium.projectfu.spells.Item.xp65Fb9BoQuEN6hC] aus der <strong>Spiritisten</strong> Zauber-Liste zu deinem Charakterbogen hinzu.</p></li></ul>"
+    },
+    "Hoplite": {
+    "name": "Hoplit",
+    "source": "AHF157",
+    "summary": "Verstärke deine Angriffe, wenn du mit Waffe und Schild kämpfst.",
+    "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kommandant</strong> und <strong>Wächter</strong> gemeistert haben.</p></blockquote><p>Solange du eine <strong>Waffe</strong> in deinem <strong>Slot der primären Hand</strong> und einen <strong>Schild</strong> in deinem <strong>Slot der sekundären Hand</strong> ausgerüstet hast, verursachen deine Angriffe mit dieser Waffe 5 Zusatzschaden, und du erhältst einen Bonus von +1 auf Verteidigung.</p><p>Diese Fähigkeit kann <strong>weder</strong> mit Spezialwaffen mit der Anpassung Verstärkung der Verteidigung (Seite <strong>107</strong>) <strong>noch</strong> mit der Fähigkeit @UUID[Compendium.projectfu.skills.Item.aPQXTQegswRisA1R] (Seite <strong>217</strong> im <strong>Grundregelwerk</strong>) kombiniert werden.</p>",
+    "effects": [{
+      "name": "Hoplit",
+      "description": "<p>Solange du eine <strong>Waffe</strong> in deinem <strong>Slot der primären Hand</strong> und einen <strong>Schild</strong> in deinem <strong>Slot der sekundären Hand</strong> ausgerüstet hast, verursachen deine Angriffe mit dieser Waffe 5 Zusatzschaden, und du erhältst einen Bonus von +1 auf Verteidigung.</p>",
+      "source": "AHF157"
+    }]
+    },
+    "Inner Wellspring": {
+      "name": "Innere Quelle",
+      "source": "ANF166",
+      "summary": "Trage eine Elementarquelle deiner Wahl in dir.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Anrufer</strong> gemeistert haben.</p></blockquote><p>Wenn du diese heldenhafte Fähigkeit erwirbst und wann immer wenn du dich <strong>ausruhst</strong>, kannst du eine <strong>Elementarquelle</strong> wählen: <strong>Luft, Erde, Feuer, Blitz</strong> oder <strong>Wasser</strong>. Wenn du das tust, erhältst du bis zu deinem nächsten <strong>Ausruhen</strong> die folgenden Vorteile:</p><ul><li><p>Die gewählte <strong>Elementarquelle</strong> gilt <strong>immer</strong> in jeder Szene als verfügbar, zusätzlich zu den bereits verfügbaren <strong>Elementarquellen</strong>.</p></li><li><p>Du kannst Rituale der <strong>Elementaristik</strong>-Disziplin durchführen, aber nur, wenn diese Rituale das Element der gewählten <strong>Elementarquelle</strong> manipulieren.</p></li><li><p>Du erhältst Resistenz gegen die Schadensart, die der gewählten <strong>Elementarquelle</strong> entspricht.</p></li><li><p>Wenn du Schaden verursachst, kannst du die Schadensart in diejenige ändern, die der gewählten <strong>Elementarquelle</strong> entspricht. Wenn du das tust, ignoriert der Schaden Resistenzen.</p></li></ul>",
+      "effects":[
+        {
+          "name": "Innere Quelle: Luft",
+          "description": "",
+          "source": "ANF166"
+        },
+        {
+          "name": "Innere Quelle: Erde",
+          "description": "",
+          "source": "ANF166"
+        },
+        {
+          "name": "Innere Quelle: Feuer",
+          "description": "",
+          "source": "ANF166"
+        },
+        {
+          "name": "Innere Quelle: Blitz",
+          "description": "",
+          "source": "ANF166"
+        },
+        {
+          "name": "Innere Quelle: Eis",
+          "description": "",
+          "source": "ANF166"
+        }
+      ]
+    },
+    "Iron Forest": {
+      "name": "Eiserner Wald",
+      "source": "AHF157",
+      "summary": "Zwinge Gegner dazu, GP auszugeben, um nach einem Treffer mit einem Speer agieren zu können.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kommandant</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du mit einer Waffe der Kategorie <strong>Speer</strong> ein oder mehrere Wesen mit einem <strong>Nahkampfangriff</strong> triffst und <strong>keine andere Waffe ausgerüstet</strong> hast, kannst du 20 Geistpunkte ausgeben und eines dieser Wesen auswählen. Wenn du dies tust, fügt der Angriff jedem seiner Ziele die <strong>Hälfte</strong> des normalen Schadens zu, und du wählst eine der folgenden Aktionsarten: <strong>Angriff, Beschützen, Zielsetzung, Zauber</strong> oder <strong>Fähigkeit</strong>. Von nun an muss das gewählte Wesen 10 Geistpunkte ausgeben, wann immer es diese Art von Aktion ausführen will. Falls es das nicht kann, muss es eine andere Aktionsart ausführen. Dieser Effekt hält bis zum Beginn deines nächsten Zuges an oder bis du diese Fähigkeit erneut einsetzt.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[20 mp]</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.SZAZdgiDWIvxWE00]</p></li></ul>"
+    },
+    "Magic Guard": {
+      "name": "Magischer Schutz",
+      "source": "AHF157",
+      "summary": "Negiere gegnerische Zauber, während du beschützt.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst eine oder mehrere der Klassen <strong>Chimärist, Elementarist, Entropist</strong> und <strong>Spiritist</strong> gemeistert haben.</p></blockquote><p>Wenn du die <strong>Beschützen</strong>-Aktion ausführst und dich dafür entscheidest, <strong>kein</strong> anderes Wesen zu decken, erhältst du bis zum Beginn deines nächsten Zuges den folgenden Vorteil: Wenn ein Wesen, das du sehen kannst, einen Zauber wirkt, darfst du, nachdem dieses Wesen die GP-Kosten des Zaubers bezahlt hat, eine Menge an Geistpunkten in Höhe von<strong>【10 + den GP-Gesamtkosten des Zaubers】</strong>ausgeben, um das Wirken des Zaubers vollständig zu stoppen und seine Effekte zu negieren (der Zauber wird nicht gewirkt, aber das Wesen wird trotzdem so behandelt, als hätte es seine Aktion verbraucht).</p>"
+    },
+    "Make it or Break it": {
+      "name": "Alles oder nichts",
+      "source": "ATF171",
+      "summary": "Verdopple den HW eines Angriffs, riskiere aber, die Waffe zu beschädigen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Finsterschneide</strong> und <strong>Furie</strong> gemeistert haben.</p></blockquote><p>Wenn du mit einer Waffe angreifst, kannst du vor der Präzisionsprobe „Alles oder nichts“ verkünden. Wenn du das tust, wird der <strong>höhere Wurf</strong> der Probe <strong>verdoppelt</strong>, um den Schaden zu bestimmen, und du wendest die folgenden Mali an, wenn das Ergebnis eine gerade Zahl ist:</p><ul><li><p>Wenn die Waffe, die du benutzt hast, <strong>verändernd</strong> (siehe Seite <strong>113</strong>) ist, <strong>ändert sie sofort ihre Form</strong> und kann sie bis zum Ende der Szene <strong>nicht wieder ändern</strong>.</p></li><li><p>Wenn es sich bei der Waffe, die du benutzt hast, <strong>nicht um eine sich verändernde</strong> Waffe handelt oder wenn sie <strong>verändernd</strong> ist, <strong>ihre Form aber nicht ändern kann</strong> (siehe oben), wird sie <strong>in deinen Rucksack gelegt</strong> und kann bis zum Ende der Szene <strong>nicht ausgerüstet werden</strong>; du kannst jedoch <strong>sofort</strong> die <strong>Ausrüstungs</strong>-Aktion <strong>kostenfrei</strong> ausführen.</p></li></ul><p>Diese heldenhafte Fähigkeit gilt nicht für Angriffe mit <strong>waffenlosen Schlägen, improvisierten Waffen, Waffenmodulen</strong> (siehe Seite <strong>161</strong>) oder <strong>Doppelschilden</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>217</strong>).</p>"
+    },
+    "Mathemagic": {
+      "name": "Mathemagie",
+      "source": "GRW237",
+      "summary": "Erweitere Zauber mit dem Ziel „Einzeln“.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Lehrmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du einen Zauber mit dem <strong>Ziel</strong> „Ein Wesen“ wirkst, darfst du die <strong>GP-Gesamtkosten des Zaubers verdoppeln</strong>. Tust du das, wähle ein Attribut (<strong>Geschicklichkeit, Einsicht, Macht</strong> oder <strong>Willenskraft</strong>) und eine Würfelgröße (<strong>W6, W8, W10</strong> oder <strong>W12</strong>). Der Zauber zielt nun auf <strong>alle</strong> Wesen in der Szene, deren <strong>aktuelle</strong> Attributs-Würfelgröße deiner Wahl entspricht, unabhängig davon, ob es sich um Freunde oder Feinde handelt (es kann sogar sein, dass du dich selbst zum Ziel machst). Die Effekte des Zaubers werden vollständig auf jedes Ziel angewendet.</p><p>Wenn es sich um einen offensiven ( @ICON[offensive] ) Zauber handelt, gelten die normalen Regeln: Du legst eine einzelne Magieprobe ab und vergleichst sie mit der Magie-Verteidigung jedes Ziels, um zu bestimmen, wer von dem Zauber getroffen wird.</p>"
+    },
+    "Mimeoclepsis": {
+      "name": "Mimeoclepsis",
+      "source": "ATF175",
+      "summary": "Lerne Zauber durch Genoclepsis des Mutanten.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Chimärist</strong> oder <strong>Mutant</strong> gemeistert und die beiden Fähigkeiten <strong>Genoclepsis</strong> und <strong>Zauber-Nachahmung</strong> erworben haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.mWqx8pto9gbbwMoG] auf einen NSC anwendest und die Spezies dieses NSC zu jenen gehört, von denen du mit der Fähigkeit @UUID[Compendium.projectfu.skills.Item.yiX5sLJLKBh3UMmz] Zauber lernen kannst, muss die Spielleiterin alle <strong>Zauber</strong> aufdecken, die dieser NSC kennt. Wenn dieser NSC einen oder mehrere Zauber kennt, kannst du <strong>einen von diesen</strong> als eigenen Chimäristen-Zauber erlernen.</p>"
+    },
+    "Monkey Grip": {
+      "name": "Affengriff",
+      "source": "GRW234",
+      "summary": "Rüste einige zweihändige Waffen in einem Einhand-Slot aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Furie</strong> gemeistert haben. </p></blockquote><p>Du kannst zweihändige Waffen der Kategorien <strong>Flegel, Schwere Waffe, Speer</strong> oder <strong>Schwert</strong> in einem Einhand-Slot ausrüsten.</p><p>Damit kannst du zum Beispiel die Vorteile des <strong>Kampfes mit zwei Waffen</strong> (Seite <strong>69</strong>) nutzen, während du ein Paar zweihändige Waffen führst, oder eine zweihändige Waffe in deiner <strong>primären Hand</strong> und einen Schild in deiner <strong>sekundären Hand</strong> halten.</p>"
+    },
+    "Nebulization": {
+      "name": "Zerstäubung",
+      "source": "ATF177",
+      "summary": "Deine Tränke werden durch wiederholten Gebrauch gestärkt.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Bastler</strong> gemeistert und den <strong>fortgeschrittenen</strong> Vorteil <strong>Alchemie</strong> der Fähigkeit <strong>Hilfsmittel</strong> erworben haben.</p></blockquote><p>Wenn du einen <strong>Trank</strong> herstellst, erhältst du <strong>1 Zerstäubungspunkt</strong> bzw. <strong>2 Zerstäubungspunkte</strong>, wenn der Trank mit dem Vorteil <strong>Alchemie</strong> der Fähigkeit <strong>Hilfsmittel</strong> hergestellt wurde.</p><p>Tränke und Elementare Splitter, die du herstellst, verursachen Zusatzschaden in Höhe des <strong>Doppelten</strong> deiner aktuellen Zerstäubungspunkte.</p><p>Tränke, die du herstellst und die Lebenspunkte und/oder Geistpunkte wiederherstellen, geben zusätzliche LP und/oder GP in Höhe<strong>【deiner aktuellen Zerstäubungspunkte multipliziert mit 5】</strong>zurück.</p><p>Du darfst nie mehr als <strong>5 Zerstäubungspunkte</strong> haben, und du verlierst sie am Ende jeder Szene.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[rising-tide update 1]{Erhalte 1 Zerstäubungspunkt}, @PROGRESS[rising-tide update 2]{Erhalte 2 Zerstäubungspunkte} oder @PROGRESS[rising-tide reset]{Zerstäubungspunkte zurücksetzen}</p></li><li><p><strong>Du regenerierst:</strong> @GAIN[@item.rp.current*5 hp]{Zerstäubungspunkte × 5 LP} und/oder @GAIN[@item.rp.current*5 mp]{Zerstäubungspunkte × 5 GP}</p></li></ul>"
+    },
+    "Overload Burst": {
+      "name": "Überlastender Ausbruch",
+      "source": "ATF176",
+      "summary": "Perform an additional action, then leave the vehicle.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Pilot</strong> gemeistert und die Fähigkeit <strong>Kompressionstechnik</strong> erworben haben.</p></blockquote><p>Wähle eine Schadensart (<strong>Blitz, Finster, Feuer, Eis</strong> oder <strong>Licht</strong>).</p><p>Wenn deine Lebenspunkte zum ersten Mal während einer Szene auf 0 reduziert werden, kannst du wählen, stattdessen auf genau 1 Lebenspunkt zu verbleiben, sofern du dein <strong>persönliches Fahrzeug</strong> steuerst. Wenn du das tust, <strong>verlassen</strong> du und alle Passagiere dein <strong>persönliches Fahrzeug</strong>, das dann aus der Spielwelt <strong>verschwindet</strong>. Dann darfst du einem einzelnen Wesen, das du sehen kannst, Schaden in Höhe deines <strong>Krisenwertes</strong> zufügen. Dieser entspricht der Schadensart, die du aus der obigen Liste ausgewählt hast. Wenn dein <strong>persönliches Fahrzeug</strong> auf diese Weise aus der Spielwelt verschwindet, kostet der nächste Einsatz deiner Fähigkeit @UUID[Compendium.projectfu.skills.Item.kMQH13lhWY4Mlbh8] zusätzlich 1 Fabula-Punkt.</p><hr><ul><li><p><strong>Du regenerierst:</strong> @GAIN[1 hp]</p></li><li><p><strong>Ziel verliert:</strong> @DMG[@source.resources.hp.max/2 bolt]{Krisen-LP}, @DMG[@source.resources.hp.max/2 dark]{Krisen-LP}, @DMG[@source.resources.hp.max/2 fire]{Krisen-LP}, @DMG[@source.resources.hp.max/2 ice]{Krisen-LP} oder @DMG[@source.resources.hp.max/2 light]{Krisen-LP}</p></li></ul>"
+    },
+    "Paso Doble": {
+      "name": "Paso Doble",
+      "source": "AHF158",
+      "summary": "Die GP-Kosten von Folge meinem Beispiel werden ignoriert, wenn du dich in einer Krise befindest.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Tänzer</strong> gemeistert und die Fähigkeit <strong>Folge meinem Beispiel</strong> erworben haben.</p></blockquote><p>Während du dich in einer <strong>Krise</strong> befindest, ignorierst du die GP-Kosten für deine Fähigkeit @UUID[Compendium.projectfu.skills.Item.3mqtdzwMU62J1ogW].</p>",
+      "effects": [{
+        "name": "Paso Doble",
+        "source": "AHF158",
+        "description": "Während du dich in einer Krise befindest, ignorierst du die GP-Kosten für deine Fähigkeit <strong>Folge meinem Beispiel</strong>."
+      }]
+    },
+    "Perfect Aim": {
+      "name": "Perfektes Zielen",
+      "source": "GRW238",
+      "summary": "Wähle zwei Optionen, wenn du den Warnschuss einsetzt.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Scharfschütze</strong> gemeistert und die Fähigkeit <strong>Warnschuss</strong> erworben haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem <strong>Fernkampfangriff</strong> triffst und dich dafür entscheidest, keinen Schaden zu verursachen, um die Vorteile der Fähigkeit @UUID[Compendium.projectfu.skills.Item.Ovmw7cMrN6qvagG4] zu erhalten, kannst du zwei Optionen statt einer wählen (z. B. könntest du jedes Wesen sowohl <strong>erschüttern</strong> als auch <strong>verlangsamen</strong> oder jedem Wesen einen Statuseffekt hinzufügen und gleichzeitig seine Geistpunkte senken).</p>"
+    },
+    "Pillage": {
+      "name": "Plündern",
+      "source": "GRW238",
+      "summary": "Stehle von mehreren Wesen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Schurke</strong> gemeistert und die Fähigkeit <strong>Seelenraub</strong> erworben haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.bpCv5Vkr1aWZiFSw] einsetzt, kannst du eine beliebige Anzahl von Wesen gleichzeitig als Ziel wählen (du legst eine einzige Probe ab und vergleichst sie mit der Magie-Verteidigung jedes Wesens, das du zu bestehlen versuchst).</p>"
+    },
+    "Power Chord": {
+      "name": "Powerchord",
+      "source": "AHF158",
+      "summary": "Erhöhe die kritische Erfolgschance von Verbündeten mit Liedern.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Kantor</strong> gemeistert haben.</p></blockquote><p>Wenn du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> singst, darfst du die Kosten der <strong>Strophe</strong> in Geistpunkten verdoppeln <strong>oder</strong> 1 Fabula-Punkt ausgeben. Tust du das, erhalten du und jeder Verbündete, der dich hören kann, bis zum Beginn deines nächsten Zuges den folgenden Vorteil: Deine Präzisionsproben lösen einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (sofern die Probe kein <strong>Patzer</strong> ist).</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 fp]</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.BMx3YxxDpgUahmgI]</p></li></ul>",
+      "effects": [{
+        "name": "Powerchord",
+        "description": "<p>Wenn du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> singst, darfst du die Kosten der <strong>Strophe</strong> in Geistpunkten verdoppeln <strong>oder</strong> 1 Fabula-Punkt ausgeben. Tust du das, erhalten du und jeder Verbündete, der dich hören kann, bis zum Beginn deines nächsten Zuges den folgenden Vorteil: Deine Präzisionsproben lösen einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (sofern die Probe kein <strong>Patzer</strong> ist).</p>",
+        "source": "AHF158"
+      }]      
+    },
+    "Power Nap": {
+      "name": "Kraftnickerchen",
+      "source": "ANF164",
+      "summary": "Mache während eines Konflikts ein kleines Nickerchen, um deine Kräfte wieder aufzutanken.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Wächter</strong>, <strong>Händler</strong> und <strong>Reisender</strong> gemeistert haben.</p></blockquote><p>Wenn du während eines Konflikts am Zug bist, kannst du eine Aktion nutzen, um eine Menge an Lebenspunkten und Geistpunkten in Höhe von<strong>【20 + der Hälfte deiner Stufe】</strong>wiederherzustellen und dich von allen Statuseffekten zu erholen. Wenn du das tust, endet dein Zug <strong>sofort</strong>, du verlierst die Fähigkeit <strong>zu hören und zu sehen</strong>, und deine Werte für <strong>Verteidigung und Magie-Verteidigung</strong> werden auf <strong>5</strong> gesetzt und können in keiner Weise modifiziert werden (du kannst aber immer noch die Fähigkeit @UUID[Compendium.projectfu.skills.Item.Z4WIA15aR4uLL5ES] aus der Klasse <strong>Wächter</strong> benutzen, wenn du sie erworben hast!). Diese Mali halten bis zum Beginn deines nächsten Zuges, bis du <strong>Lebenspunkte verlierst</strong> oder bis du <strong>von einem Angriff oder einem offensiven Zauber ( @ICON[offensive] ) getroffen wirst</strong> an.</p><hr><ul><li><p><strong>Du regenerierst:</strong> @GAIN[20+($cl/2) hp]{【20 + der Hälfte deiner Stufe】LP} und @GAIN[20+($cl/2) mp]{【20 + der Hälfte deiner Stufe】MP}</p></li><li><p><strong>Du erleidest:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.dweyiPp3Ujt9sE43]</p></li></ul>"
+    },
+    "Powerful Shot": {
+      "name": "Kraftvoller Schuss",
+      "source": "GRW237",
+      "summary": "Teile Zusatzschaden im Fernkampf aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Scharfschütze</strong> gemeistert haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem <strong>Fernkampfangriff</strong> triffst, fügt dieser Angriff jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>",
+      "effects":[{
+        "name": "Kraftvoller Schuss",
+        "source": "GRW237",
+        "description": "<p>Wenn du ein oder mehrere Wesen mit einem <strong>Fernkampfangriff</strong> triffst, fügt dieser Angriff jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Powerful Spell": {
+      "name": "Kraftvoller Zauber",
+      "source": "GRW237",
+      "summary": "Teile Zusatzschaden mit Zaubern aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der folgenden Klassen gemeistert haben: <strong>Chimärist</strong>, <strong>Elementarist</strong>, <strong>Entropist</strong> oder <strong>Spiritist</strong>.</p></blockquote><p>Wenn du einen <strong>Zauber</strong> wirkst, der einem oder mehreren Wesen <strong>Schaden zufügt</strong>, fügt dieser Zauber jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>",
+      "effects": [{
+        "name": "Kraftvoller Zauber",
+        "source": "GRW237",
+        "description": "<p>Wenn du einen <strong>Zauber</strong> wirkst, der einem oder mehreren Wesen <strong>Schaden zufügt</strong>, fügt dieser Zauber jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Powerful Strike": {
+      "name": "Kraftvoller Schlag",
+      "source": "GRW236",
+      "summary": "Teile Zusatzschaden im Nahkampf aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der folgenden Klassen gemeistert haben: <strong>Furie</strong> oder <strong>Waffenmeister</strong>.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem <strong>Nahkampfangriff</strong> triffst, fügt dieser Angriff jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>",
+      "effects": [{
+        "name": "Kraftvoller Schlag",
+        "source": "GRW236",
+        "description": "<p>Wenn du ein oder mehrere Wesen mit einem <strong>Nahkampfangriff</strong> triffst, fügt dieser Angriff jedem Wesen 5 Zusatzschaden zu.</p><p>Die Menge an Zusatzschaden erhöht sich auf 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Predictable!": {
+      "name": "Vorhersehbar!",
+      "source": "GRW240",
+      "summary": "Zwinge einen Gegner, GP auszugeben, um bestimmte Aktionen auszuführen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen:</strong> Du musst die Klasse <strong>Lehrmeister</strong> gemeistert haben.</p></blockquote><p>Während eines Konflikts kannst du eine Aktion ausführen und 20 Geistpunkte ausgeben, um die kommenden Bewegungen eines Wesens, das du sehen kannst, vorherzusehen, sofern du zwei oder mehr <strong>Eigenschaften</strong> dieses Wesens kennst. Tust du das, wähle eine der folgenden Aktionsarten: <strong>Angriff</strong>, <strong>Beschützen</strong>, <strong>Zielsetzung</strong>, <strong>Zauber</strong> oder <strong>Fähigkeit</strong>. Bis zum Beginn deines nächsten Zuges muss das Wesen 20 Geistpunkte ausgeben, wenn es diese Aktion ausführen will. Kann sie das nicht, muss sie eine andere Aktion ausführen.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[20 mp]</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.1Oq4CktThiUInrbk]</p></li></ul>"
+    },
+    "Psychic Field": {
+      "name": "Übersinnliches Feld",
+      "source": "ATF177",
+      "summary": "Übertrage einige deiner übersinnlichen Gaben auf deine Verbündeten.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Esper</strong> gemeistert haben.</p></blockquote><p>Deine <strong>Gaben</strong> mit dem <strong>Ereignis</strong> „Wenn du <strong>Schaden verursachst</strong>“ können auch verwendet werden, „wenn ein Verbündeter, der dich hören kann, <strong>Schaden verursacht</strong>“.</p><p>Die Effekte deiner Gabe @UUID[Compendium.projectfu.skills.Item.aqgXqI567dkudwMN] (sofern du sie erworben hast), ändert sich zu: „Gegen diese Probe entsprechen deine Werte für Verteidigung und Magie-Verteidigung und die jedes Verbündeten, der dich hören kann, <strong>【deiner aktuellen Willenskraft-Würfelgröße + (der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr multipliziert mit 2)】</strong>(du kannst auch deine normalen Werte verwenden, wenn diese besser sind).“</p>"
+    },
+    "Pulse of the Maggots": {
+      "name": "Pulse of the Maggots",
+      "source": "LU7",
+      "summary": "Grabpunkte verändern deine Schadensaffinitäten.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Nekromant</strong> gemeistert haben.</p></blockquote><p>Solange du <strong>mindestens 1 Grabpunkt</strong> hast, erhältst du Immunität gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>, Resistenz gegen <strong>physischen</strong> Schaden und Anfälligkeit für <strong>Lichtschaden</strong>. Diese Affinitäten <strong>überschreiben</strong> alle anderen Affinitäten für diese Schadensarten und können <strong>auf keine Weise</strong> verändert werden, solange du mindestens 1 Grabpunkt hast.</p>",
+      "effects": [{
+        "name": "Pulse of the Maggots",
+        "source": "LU7",
+        "description": "<p>Solange du <strong>mindestens 1 Grabpunkt</strong> hast, erhältst du Immunität gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>, Resistenz gegen <strong>physischen</strong> Schaden und Anfälligkeit für <strong>Lichtschaden</strong>. Diese Affinitäten <strong>überschreiben</strong> alle anderen Affinitäten für diese Schadensarten und können <strong>auf keine Weise</strong> verändert werden, solange du mindestens 1 Grabpunkt hast.</p>"
+      }]
+    },
+    "Pulverizing Strike": {
+      "name": "Pulverisierender Schlag",
+      "source": "AHF158",
+      "summary": "Durchbrechen verursacht Schaden mit schweren Waffen. ",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Finsterschneide</strong>, <strong>Furie</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du ein Wesen mit @UUID[Compendium.projectfu.skills.Item.WZDdQfw9VF64La2P] triffst und mit einer <strong>Nahkampfwaffe</strong> der Kategorie <strong>Schwere Waffe</strong> angreifst, darfst du den Angriff Schaden in Höhe deines <strong>höheren Wurfs (HW)</strong> anrichten lassen, anstatt keinen Schaden zu verursachen. Jede Quelle für Zusatzschaden, einschließlich des Zusatzschadens aus der dritten Option der Durchbrechen-Fähigkeit selbst, gilt weiterhin – ignoriere den Schaden, den die Waffe verursacht.</p>"
+    },
+    "Quantum Magicannon": {
+      "name": "Quanten-Magikanone",
+      "source": "ATF175",
+      "summary": "Verbessere deine Magikanone und verwende sie für mächtige Angriffe.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Bastler</strong> gemeistert und den <strong>fortgeschrittenen</strong> Vorteil <strong>Magitech</strong> der Fähigkeit <strong>Hilfsmittel</strong> erworben haben.</p></blockquote><p>Deine Angriffe mit der @UUID[Compendium.projectfu.consumables.Item.AbazTRyaMTW4ouhx] verursachen 5 Zusatzschaden.</p><p>Wenn du die <strong>Angriffs</strong>-Aktion mit deiner <strong>Magikanone</strong> ausführst und <strong>keine andere Waffe ausgerüstet</strong> hast, kannst du eine Option wählen: Zerstöre die <strong>Magikanone</strong> und stelle <strong>sofort kostenfrei</strong> eine neue her, die du ausrüstest (die IP-Kosten werden ignoriert), wobei du diese neu ausgerüstete Magikanone für deinen Angriff verwendest; <strong>oder</strong> der Angriff erhält <strong>Multi (3); oder</strong> du führst zwei getrennte Angriffe statt einem einzelnen aus, indem du die Regeln für den <strong>Kampf mit zwei Waffen</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>69</strong>) befolgst.</p><hr><ul><li><p><strong>Magikanone erhält:</strong> @EFFECT[Compendium.projectfu.equipment-effects.Item.Xyj06G4k7oBerngN]{Waffenschaden Hoch}</p></li></ul>"
+    },
+    "Quick Scan": {
+      "name": "Schneller Scan",
+      "source": "ATF175",
+      "summary": "Untersuche mehrere Wesen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Lehrmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du während eines Konflikts die <strong>Untersuchen</strong>-Aktion ausführst, kannst du die <strong>Profile aller Gegner</strong> untersuchen, die du sehen kannst. Wenn du das tust, führst du eine einzelne Probe auf <strong>【EIN + EIN】</strong>aus und wendest das Ergebnis <strong>separat</strong> auf jeden Gegner an (siehe <strong>Grundregelwerk</strong>, Seite <strong>319</strong>).</p><p>Hast du jedoch die Fähigkeit @UUID[Compendium.projectfu.skills.Item.J5KbrSiczxizbdM3] erworben, kann diese Probe sie <strong>nicht</strong> auslösen.</p>"
+    },
+    "Rampart": {
+      "name": "Bollwerk",
+      "source": "GRW234",
+      "summary": "Widerstehe Schaden und Statuseffekten in der ersten Runde.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Wächter</strong> gemeistert haben.</p></blockquote><p>In der ersten Runde jeder Konflikt-Szene bist du resistent gegen alle Schadensarten und kannst keine Statuseffekte erleiden (du erholst dich jedoch nicht von bereits bestehenden Statuseffekten). Diese Vorteile gelten nur bis zum Ende der ersten Runde.</p><hr><ul><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.OpGuNhPQN1GOOxXQ e:eor i:1 t:self]</p></li></ul>"
+    },
+    "Repetition": {
+      "name": "Wiederholung",
+      "source": "GRW241",
+      "summary": "Führe Tadeln oder Ermutigen zweimal aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Orator</strong> gemeistert haben.</p></blockquote><p>Einmal pro Runde während eines Konflikts darfst du, nachdem du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.DtEiCkDsC1amYABn] oder @UUID[Compendium.projectfu.skills.Item.04DiGVKhF3DtmJ4n] eingesetzt hast, dieselbe Fähigkeit sofort wieder anwenden (auf dasselbe Ziel oder ein anderes). Du musst dennoch die Geistpunkt-Kosten für den zweiten Einsatz der Fähigkeit bezahlen.</p>"
+    },
+    "Revelation": {
+      "name": "Offenbarung",
+      "source": "GRW238",
+      "summary": "Binde ein bisher unbekanntes Arkanum und verbessere Entlassen-Effekte.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Arkanist</strong> gemeistert haben.</p></blockquote><p>Du nimmst Kontakt zu einem unbekannten Arkanum auf und bindest es an deine Seele. Dieses Arkanum muss etwas sein, das du zusammen mit dem Rest der Gruppe entwickelst; solange du lebst, kann niemand sonst in deiner Welt dieses Arkanum binden.</p><p>Einmal pro Szene, während du mit einem Arkanum <strong>verschmolzen</strong> bist, kannst du eine Aktion ausführen und 2 Fabula-Punkte ausgeben, um den <strong>Entlassen</strong>-Effekt dieses Arkanums (falls vorhanden) <strong>auszulösen</strong>, ohne es zu entlassen. Dies löst nicht die Fähigkeit @UUID[Compendium.projectfu.skills.Item.hEj8s21iAOPhDtJN] (<strong>Grundregelwerk</strong>, Seite <strong>177</strong>) aus.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[2 fp]</p></li></ul>"
+    },
+    "Rising Tide": {
+      "name": "Ansteigende Flut",
+      "source": "AHF158",
+      "rp": "Bravourpunkte",
+      "summary": "Erhalte Vorteile für aufeinanderfolgende Angriffe mit Raufen-Waffen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Furie</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du einen <strong>Nahkampfangriff</strong> mit einer Waffe der Kategorie <strong>Raufen</strong> ausführst und <strong>keine martialische Rüstung und keinen Schild ausgerüstet hast</strong>, erhältst du <strong>1 Bravourpunkt</strong>.</p><p>Deine <strong>Nahkampfangriffe</strong> mit Waffen, die zur Kategorie <strong>Raufen</strong> gehören, verursachen Zusatzschaden in Höhe deiner aktuellen <strong>Bravourpunkte</strong>.</p><p>Am Ende jeder Szene oder wenn du am Ende deines Zuges <strong>5 oder mehr Bravourpunkte</strong> hast, <strong>musst</strong> du alle deine gesammelten <strong>Bravourpunkte</strong> ausgeben und 10 Lebenspunkte und Geistpunkte zurückgewinnen.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[rising-tide update 1]{Erhalte 1 Bravourpunkt} oder @PROGRESS[rising-tide reset]{Bravourpunkte zurücksetzen}</p></li><li><p><strong>Du regenerierst:</strong> @GAIN[10 hp] und/oder @GAIN[10 mp]</p></li></ul>",
+      "effects": [{
+        "name": "Ansteigende Flut",
+        "source": "AHF158",
+        "description": "<p>Deine <strong>Nahkampfangriffe</strong> mit Waffen, die zur Kategorie <strong>Raufen</strong> gehören, verursachen Zusatzschaden in Höhe deiner aktuellen <strong>Bravourpunkte</strong>.</p>"
+      }]
+    },
+    "Ritual Seals": {
+      "name": "Ritualsiegel",
+      "source": "AHF159",
+      "summary": "Baue Rituale in Siegel ein.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Symbolist</strong> gemeistert haben.</p></blockquote><p>Wenn du ein Ritual außerhalb einer Konflikt-Szene durchführst und die <strong>Gesamtkosten</strong> des Rituals <strong>60 Geistpunkte oder weniger</strong> betragen, kannst du den Vorgang unmittelbar vor der Magieprobe abbrechen und den Effekt des Rituals in einem <strong>Ritualsiegel</strong> speichern, das du auf einer berührbaren Oberfläche platzieren kannst. Wenn du das tust, nenne eine <strong>Bedingung</strong> – das kann alles von „wenn ich in die Krise gerate“ bis „sobald ich mit den Fingern schnippe“ sein. Wenn diese Bedingung erfüllt ist, verschwindet das <strong>Siegel</strong> und das Ritual wird am Ort des <strong>Siegels</strong> entfesselt: Du legst die Magieprobe ab und handelst die Effekte wie gewohnt ab (auch wenn du bewusstlos oder nicht in der Szene bist).</p><p>Du kannst nur ein <strong>Ritualsiegel</strong> gleichzeitig aktiv haben – wenn du stirbst oder ein neues <strong>Ritualsiegel</strong> erschaffst, verschwindet das zuvor erschaffene.</p>"
+    },
+    "Showstopper": {
+      "name": "Unterbrechung",
+      "source": "AHF161",
+      "summary": "Führe drei Tänze auf, lege dann eine Pause ein.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Tänzer</strong> gemeistert haben.</p></blockquote><p>Wenn du zu Beginn deines Zuges während eines Konflikts keine <strong>martialische Rüstung</strong> ausgerüstet hast, darfst du 1 Fabula-Punkt ausgeben, um sofort <strong>bis zu drei verschiedene Tänze</strong> der dir bekannten Tänzen in der von dir bevorzugten Reihenfolge aufführen, ohne deren GP-Kosten zu bezahlen. Wenn du das tust, kannst du bis zum Ende deines nächsten Zuges <strong>keine Tänze mehr aufführen</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 fp]</p></li><li><p><strong>Du erleidest:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.WJD7tqc73P24UFg4]</p></li></ul>"
+    },
+    "Side by Side": {
+      "name": "Seite an Seite",
+      "source": "ANF167",
+      "summary": "Verbessere deine Synergie mit deinem Treuen Begleiter.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Reisender</strong> gemeistert und die Fähigkeit <strong>Treuer Begleiter</strong> erworben haben.</p></blockquote><p>Wenn dein Begleiter Schaden verursacht, verursacht er 5 Zusatzschaden.</p><p>Wenn dein Begleiter eine Probe ablegt, darfst du 1 Fabula-Punkt ausgeben und dich auf eine <strong>Eigenschaft</strong> deines Begleiters <strong>berufen</strong>, um ihn einen oder beide Würfel neu würfeln zu lassen (wie in den Regeln auf Seite <strong>46</strong> des <strong>Grundregelwerks</strong> beschrieben).</p><p>Nachdem du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.L34pOGhdH0ZwV4Bt] eingesetzt hast, um deinen Begleiter während deines Zuges eine Aktion ausführen zu lassen, darfst du eine Option wählen (nachdem die Aktion des Begleiters abgehandelt wurde): Du und dein Gefährte erhaltet jeweils 10 Geistpunkte zurück; <strong>oder</strong> beim ersten Mal, bei dem du oder dein Gefährte vor dem Ende eures nächsten Zuges eine Probe ablegt, erhält diese Probe einen Bonus in Höhe<strong>【deiner Stufe in Treuer Begleiter】</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 fp]</p></li><li><p><strong>Ziele regenerieren:</strong> @GAIN[10 mp]</p></li><li><p><strong>Begleiter erhält:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.tfiHN8sIoo9lMl0C]</p></li></ul>a"
+    },
+    "Silent Hunter": {
+      "name": "Leiser Jäger",
+      "source": "ANF165",
+      "summary": "Verbessere Hohe Geschwindigkeit mit Bögen, Speeren und Wurfwaffen und verweigere freie Angriffe.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Schurke, Scharfschütze</strong> und <strong>Waffenmeister</strong> gemeistert und die Fähigkeit <strong>Hohe Geschwindigkeit</strong> erworben haben.</p></blockquote><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.tiu0D74YNxirN6Tr] einsetzt, um einen <strong>freien Angriff</strong> mit einer Waffe der Kategorie <strong>Bogen, Speer</strong> oder <strong>Werfen</strong> auszuführen, verursacht der Angriff Zusatzschaden in Höhe<strong>【deiner Fähigkeitsstufe in Hohe Geschwindigkeit multipliziert mit 5】</strong>.</p><p>Wenn du außerdem ein oder mehrere Wesen mit einer Waffe der Kategorie <strong>Bogen, Speer</strong> oder <strong>Werfen</strong> angreifst, können diese Wesen bis zum Ende der laufenden Runde keine <strong>freien Angriffe</strong> ausführen.</p><hr><ul><li><p><strong>Du erhältst:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.ZtkCjHSDVNy27Oid]</p></li></ul>"
+    },
+    "Skillful Dosage": {
+      "name": "Geschickte Dosierung",
+      "source": "ANF163",
+      "summary": "Delikatessen, Tränke und Zauber heilen über maximale LP und GP hinaus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Gourmet, Lehrmeister, Händler</strong> und <strong>Bastler</strong> gemeistert haben.</p></blockquote><p><strong>Tränke</strong> und <strong>Delikatessen</strong>, die du herstellst, sowie <strong>Zauber</strong>, die du wirkst, können jetzt bewirken, dass Wesen Lebenspunkte und Geistpunkte über ihre <strong>maximalen LP und GP</strong> hinaus zurückerhalten. Dies <strong>kann nicht</strong> dazu führen, dass die aktuellen LP und/oder GP eines Wesens 150 % der jeweiligen Maximalwerte übersteigen; am Ende jeder Szene, wenn die aktuellen LP und/oder GP eines Wesens immer noch über ihren Maximalwerten liegen, werden sie auf den Maximalwert gesetzt.</p>"
+    },
+    "Specialty of the House": {
+      "name": "Spezialität des Hauses",
+      "source": "ANF168",
+      "summary": "Bereite eine einzigartige Delikatesse mit alternativen Effekten zu.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Gourmet</strong> gemeistert haben.</p></blockquote><p>Wenn du diese heldenhafte Fähigkeit erwirbst, wähle <strong>drei verschiedene Geschmacksrichtungen</strong> aus: <strong>Bitter, Salzig, Sauer, Süß</strong> und/oder <strong>Umami</strong>. Wähle dann <strong>drei verschiedene Effekte</strong> aus den folgenden:</p><ul><li><p>Du fügst jedem Ziel dieser <strong>Delikatesse</strong> 20 <strong>(wähle eine Art: @DMG[20 dark], @DMG[20 light])</strong> Schaden zu. Dieser Betrag erhöht sich auf 30 Schaden, wenn du <strong>auf Stufe 30 oder höher</strong> bist. Wähle die Art dieses Effekts, wenn du diese heldenhafte Fähigkeit erwirbst.</p></li><li><p>Im nächsten Zug jedes Ziels dieser <strong>Delikatesse</strong> wird der gesamte Schaden, den es verursacht, zu <strong>(wähle eine Art: @TYPE[damage all dark], @TYPE[damage all light])</strong>, und seine Schadensart kann sich nicht ändern. Wähle die Art dieses Effekts, wenn du diese heldenhafte Fähigkeit erwirbst.</p></li><li><p>Für jedes Ziel dieser <strong>Delikatesse</strong> gilt: Wenn es von einem oder mehreren Zaubern mit der <strong>Dauer</strong> „Szene“ betroffen ist, ist es stattdessen von keinem dieser Zauber mehr betroffen.</p></li><li><p>Wähle dich selbst oder einen Verbündeten, den du sehen kannst. Für jedes Ziel dieser <strong>Delikatesse</strong> gilt: Wenn dieses Ziel das nächste Mal vor dem Ende dieser Szene einen Angriff ausführt oder einen offensiven Zauber ( @ICON[offensive] ) wirkt, muss es das gewählte Wesen zu den Zielen dieses Angriffs oder Zaubers zählen (falls möglich).</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> wird @EFFECT[enraged].</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> wird @EFFECT[poisoned].</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> regeneriert @GAIN[30 hp] und @GAIN[30 mp] bzw. @GAIN[40 hp] und @GAIN[40 mp], wenn du <strong>auf Stufe 30 oder höher</strong> bist.</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> erholt sich von einem einzigen Status seiner Wahl.</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> erholt sich von <strong>benommen, wütend</strong> und <strong>erschüttert</strong>.</p></li><li><p>Jedes Ziel dieser <strong>Delikatesse</strong> erholt sich von <strong>vergiftet, verlangsamt</strong> und <strong>geschwächt</strong>.</p></li></ul><p>Wenn du während eines Konflikts eine <strong>Delikatesse</strong> aus <strong>genau 3 Zutaten</strong> herstellst, darfst du <strong>alle</strong> normalen Effekte dieser <strong>Delikatesse</strong> ignorieren, wenn jede Zutat einen anderen <strong>Geschmack</strong> hat als die, die du beim Erwerb dieser heldenhaften Fähigkeit gewählt hast. Wenn du das tust, darfst du stattdessen <strong>einen, zwei</strong> oder <strong>alle</strong> Effekte anwenden, die du beim Erwerb dieser heldenhaften Fähigkeit gewählt hast.</p>"
+    },
+    "Spider’s Web": {
+      "name": "Spinnennetz",
+      "source": "AHF159",
+      "summary": "Greife zweimal mit Flegeln an.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Furie</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du die <strong>Angriffs</strong>-Aktion mit einer <strong>Nahkampfwaffe</strong> ausführst, die zur Kategorie <strong>Flegel</strong> gehört, darfst du, sofern du <strong>keine andere Waffe ausgerüstet</strong> hast, zwei getrennte Angriffe statt einem ausführen (gegen dasselbe Ziel oder gegen verschiedene Ziele). Tust du das, folgen beide Angriffe den Regeln für den <strong>Kampf mit zwei Waffen</strong>: Jeder Angriff verliert das <strong>Multi</strong>-Merkmal und kann es nicht mehr erhalten, und du behandelst den höheren Wurf jeder Präzisionsprobe im Hinblick auf die Bestimmung des Schadens so, als sei er 0.</p><p>Beachte, dass diese Fähigkeit <strong>nicht</strong> mit der Anpassung <strong>Schnell</strong> einer Spezialwaffe <strong>kombiniert werden kann</strong> (die Verwendung von <strong>Spinnennetz</strong> mit einem <strong>schnellen</strong> Flegel erlaubt also nicht mehr als zwei Angriffe).</p>"
+    },
+    "Status Immunity": {
+      "name": "Status-Immunität",
+      "source": "GRW238",
+      "summary": "Ignoriere einen Statuseffekt.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Reisender</strong> gemeistert haben.</p></blockquote><p>Du wirst vollständig immun gegen einen einzelnen Statuseffekt deiner Wahl.</p>",
+      "effects": [{
+        "name": "Dazed Immunity",
+        "source": "GRW238",
+        "description": "<p>Du wirst vollständig immun gegen einen einzelnen Statuseffekt deiner Wahl.</p>"
+      }]
+    },
+    "Steel Witch": {
+      "name": "Stahlhexe",
+      "source": "ATF176",
+      "summary": "Erhalte Vorteile, wenn du Zauber in einem persönliches Fahrzeug wirkst.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Pilot</strong> gemeistert haben.</p></blockquote><p>Wenn du während eines Konflikts den <strong>ersten</strong> Zauber deines Zuges wirkst und dein <strong>persönliches Fahrzeug</strong> steuerst, darfst du eine Option wählen (nach der Abhandlung des Zaubers): Wähle ein aktiviertes Modul und <strong>deaktiviere</strong> es, um danach ein deaktiviertes Modul zu wählen und zu <strong>aktivieren; oder</strong> der nächste Zauber, den du vor Ende der Szene wirkst und der Schaden verursacht, verursacht 5 Zusatzschaden; <strong>oder</strong> der nächste Zauber, den du vor Ende der Szene wirkst und der einem oder mehreren Wesen Lebenspunkte zurückgibt, gibt jedem dieser Wesen 10 zusätzliche LP zurück.</p><hr><ul><li><p><strong>Zauber erhält:</strong> @EFFECT[Compendium.projectfu.actor-effects.Item.hQ4zcpGgtwoEOgbR e:eos i:1 t:self]{Zauberschaden Hoch} oder @GAIN[10 hp]</p></li></ul>"
+    },
+    "Strength of Five Wellsprings": {
+      "name": "Stärke der fünf Quellen",
+      "source": "ANF169",
+      "summary": "Anrufungen verbessern Attribute.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Anrufer</strong> gemeistert haben.</p></blockquote><p>Nachdem du während eines Konflikts eine <strong>Anrufung</strong> durchgeführt hast, erhöhen du <strong>und</strong> bis zu ein Verbündeter, den du sehen kannst, die Würfelgröße eines eurer Attribute um eins (bis zu einem Maximum von <strong>W12</strong>). Diese Erhöhung dauert bis zum Ende der Szene oder bis du diese Fähigkeit erneut nutzt, und das Attribut basiert auf der <strong>Elementarquelle</strong>, die du angerufen hast: <strong>Blitz (Macht), Erde (ein Attribut deiner Wahl), Feuer (Geschicklichkeit), Luft (Einsicht)</strong> oder <strong>Wasser (Willenskraft)</strong>.</p><hr><ul><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.actor-effects.Item.4G5iaieFDwGiIVrw e:eos i:1 t:source]{EIN Hoch (Luft)}, @EFFECT[Compendium.projectfu.actor-effects.Item.vv2cqUDHaCJLmEYw e:eos i:1 t:source]{GES Hoch (Feuer)}, @EFFECT[Compendium.projectfu.actor-effects.Item.hX70STpGG5fgAAkp e:eos i:1 t:source]{MAT Hoch (Blitz)} oder @EFFECT[Compendium.projectfu.actor-effects.Item.nXxz7GyqeIGtQpMG e:eos i:1 t:source]{WLK Hoch (Wasser)}</p></li></ul>"
+    },
+    "Swirling Swarm": {
+      "name": "Wirbelnder Schwarm",
+      "source": "AHF161",
+      "rp": "Momentum-Punkte",
+      "summary": "Erhalte Vorteile für aufeinanderfolgende Angriffe mit Wurfwaffen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Tänzer, Furie</strong> und <strong>Scharfschütze</strong> gemeistert haben.</p></blockquote><p>Wenn du einen <strong>Fernkampfangriff</strong> mit einer Waffe der <strong>Werfen</strong>-Kategorie ausführst und <strong>keine martialische Rüstung und keine Schilde ausgerüstet hast</strong>, erhältst du <strong>1 Momentum-Punkt</strong>.</p><p>Du darfst nie mehr als <strong>5 Momentum-Punkte</strong> haben.</p><p>Deine <strong>Fernkampfangriffe</strong> mit Waffen, die zur <strong>Werfen</strong>-Kategorie gehören, verursachen Zusatzschaden in Höhe deiner aktuellen <strong>Momentum-Punkte</strong>.</p><p>Wenn dich ein Wesen mit einem Angriff trifft, der auf deine <strong>Verteidigung</strong> abzielt, <strong>musst</strong> du all deine gesammelten <strong>Momentum-Punkte</strong> ausgeben und deinen Verteidigungswert gegen diesen Angriff um den gleichen Wert erhöhen (dadurch kann der Treffer in einen Misserfolg verwandelt werden).</p><p>Am Ende jeder Szene verlierst du außerdem alle <strong>Momentum-Punkte</strong>.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[swirling-swarm update 1]{Momentum-Punkt erhalten} oder @PROGRESS[swirling-swarm reset]{Momentum-Punkte zurücksetzen}</p><p></p></li></ul>",
+      "effects": [{
+        "name": "Wirbelnder Schwarm (VERT)",
+        "source": "AHF161",
+        "description": "<p>Wenn dich ein Wesen mit einem Angriff trifft, der auf deine <strong>Verteidigung</strong> abzielt, <strong>musst</strong> du all deine gesammelten <strong>Momentum-Punkte</strong> ausgeben und deinen Verteidigungswert gegen diesen Angriff um den gleichen Wert erhöhen (dadurch kann der Treffer in einen Misserfolg verwandelt werden).</p>"
+        },{
+        "name": "Wirbelnder Schwarm (ANG)",
+        "source": "AHF161",
+        "description": "<p>Deine <strong>Fernkampfangriffe</strong> mit Waffen, die zur <strong>Werfen</strong>-Kategorie gehören, verursachen Zusatzschaden in Höhe deiner aktuellen <strong>Momentum-Punkte</strong>.</p>"
+      }]
+    },
+    "Tabula Rasa": {
+      "name": "Tabula Rasa",
+      "source": "AHF160",
+      "summary": "Your Skills cause HP loss.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Kommandant</strong> gemeistert haben.</p></blockquote><p>Nach dem Einsatz der Fähigkeiten @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp] oder @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX] kannst du, sofern du dich in einer <strong>Krise</strong> befindest, jedes gegnerische Wesen in der Szene 10 Lebenspunkte verlieren lassen. Dieser Wert erhöht sich auf 20 Lebenspunkte, wenn du <strong>auf Stufe 20 oder höher</strong> bist, oder auf 30 Lebenspunkte, wenn du <strong>auf Stufe 40 oder höher</strong> bist.</p><hr><ul><li><p><strong>Ziele verlieren:</strong> @LOSS[&step(10,20,30) hp]{10|20|30 LP}</p></li></ul>",
+      "effects": [{
+        "name": "Tabula Rasa",
+        "source": "AHF160",
+        "description": "<p>Nach dem Einsatz der Fähigkeiten <strong>Edikt des Bischofs</strong> oder <strong>Rochade</strong> kannst du, sofern du dich in einer <strong>Krise</strong> befindest, jedes gegnerische Wesen in der Szene 10 Lebenspunkte verlieren lassen. Dieser Wert erhöht sich auf 20 Lebenspunkte, wenn du <strong>auf Stufe 20 oder höher</strong> bist, oder auf 30 Lebenspunkte, wenn du <strong>auf Stufe 40 oder höher</strong> bist.</p>"
+      }]
+    },
+    "Tempest Strike": {
+      "name": "Sturmangriff",
+      "source": "GRW240",
+      "summary": "Konzentriere Multi-Angriffe auf ein einziges Ziel.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Wenn du einen <strong>Nahkampfangriff</strong> mit dem <strong>Multi</strong>-Merkmal ausführst und nur ein Wesen als Ziel wählst, verursacht der Angriff 5 Zusatzschaden, wenn der Angriff <strong>Multi (2)</strong> hatte, oder 10 Zusatzschaden, wenn der Angriff <strong>Multi (3 oder höher)</strong> hatte.</p>",
+      "effects": [{
+        "name": "Sturmangriff: Multi(2)",
+        "source": "GRW240",
+        "description": "<p>Wenn du einen <strong>Nahkampfangriff</strong> mit dem <strong>Multi</strong>-Merkmal ausführst und nur ein Wesen als Ziel wählst, verursacht der Angriff 5 Zusatzschaden, wenn der Angriff <strong>Multi (2)</strong> hatte, oder 10 Zusatzschaden, wenn der Angriff <strong>Multi (3 oder höher)</strong> hatte.</p>"
+      },{
+        "name": "Sturmangriff: Multi(3)",
+        "source": "GRW239",
+        "description": "<p>Wenn du einen <strong>Nahkampfangriff</strong> mit dem <strong>Multi</strong>-Merkmal ausführst und nur ein Wesen als Ziel wählst, verursacht der Angriff 5 Zusatzschaden, wenn der Angriff <strong>Multi (2)</strong> hatte, oder 10 Zusatzschaden, wenn der Angriff <strong>Multi (3 oder höher)</strong> hatte.</p>"
+      }]
+    },
+    "Theme Song": {
+      "name": "Titellied",
+      "source": "AHF160",
+      "summary": "Erhalte ein Titellied mit einer Vielzahl von Vorteilen.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Kantor</strong> gemeistert haben.</p></blockquote><p>Wenn du diese Fähigkeit erwirbst, erhältst du ein <strong>Titellied</strong> – gib ihm einen Namen und weise ihm eine <strong>Tonart</strong> aus den erlernten zu (du kannst dafür auch ein Lied aus der realen Welt wählen).</p><p>Einmal pro Konflikt-Szene, darfst du dein <strong>Titellied</strong> beginnen, nachdem du eine <strong>Strophe</strong> in der Tonart deines Titellieds gesungen hast – falls es ein echtes Lied ist, ist es eine gute Idee, es im Hintergrund abzuspielen!</p><p>Während du dein Titellied singst, erhältst du die folgenden Vorteile:</p><ul><li><p>Du erhältst Resistenz gegen<strong>【Tonarten-Schadensart des Titellieds】</strong>.</p></li><li><p>Wenn du<strong>【Tonarten-Schadensart des Titellieds】</strong>verursachst, verursachst du 5 Zusatzschaden, und die Schadensart kann nicht geändert werden.</p></li><li><p>Die GP-Kosten für das Singen von <strong>Strophen</strong> in derselben Tonart wie dein <strong>Titellied</strong> werden halbiert. Dieser Vorteil gilt für dich und <strong>alle</strong> deine Verbündeten, die <strong>Strophen</strong> singen können.</p></li></ul><p>Das <strong>Titellied</strong> hält bis zum Ende der Szene an oder bis du die Szene verlässt, stirbst oder bewusstlos wirst. Das <strong>Titellied</strong> endet auch, sobald du eine <strong>Strophe</strong> in einer anderen <strong>Tonart</strong> als der des <strong>Titellieds</strong> singst, wenn dein Zug endet und du keine <strong>Strophe</strong> gesungen hast oder wenn ein anderer Charakter sein <strong>Titellied</strong> beginnt.</p>"
+    },
+    "Triple Slash": {
+      "name": "Dreifacher Schnitt",
+      "source": "AHF155",
+      "summary": "Rüste drei Dolche/Schwerter aus und führe dreifache Angriffe aus.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Tänzer</strong> und <strong>Waffenmeister</strong> gemeistert haben.</p></blockquote><p>Solange du in jedem deiner normalen Handslots eine einhändige <strong>Nahkampfwaffe</strong> hast, die zu den Kategorien <strong>Dolch</strong> oder <strong>Schwert</strong> gehört, darfst du deinen <strong>Rüstungsslot</strong> wie einen zweiten Slot für die <strong>sekundäre Hand</strong> behandeln. Du darfst diesen speziellen Slot nur verwenden, um eine einhändige <strong>Nahkampfwaffe</strong> auszurüsten, die zu den Kategorien <strong>Dolch</strong> oder <strong>Schwert</strong> gehört – beachte, dass die Fähigkeit <strong>Affengriff keine</strong> Zweihandwaffen in Einhandwaffen verwandelt und daher nicht in Kombination mit <strong>Dreifacher Schnitt</strong> verwendet werden kann.</p><p>Wenn du die <strong>Angriffs</strong>-Aktion ausführst, während du drei <strong>Dolche</strong> und/oder <strong>Schwerter</strong> ausgerüstet hast, darfst du mit jeder Waffe einmal angreifen. Dabei gelten die üblichen Regeln für den <strong>Kampf mit zwei Waffen</strong>: Jeder der drei Angriffe verliert das Multi-Merkmal und kann es nicht mehr erhalten, und du behandelst den <strong>höheren Wurf (HW)</strong> jeder Präzisionsprobe im Hinblick auf die Bestimmung des Schadens so, als sei er 0.</p><hr><ul><li><p>Navigiere für die <strong>Automatisierung</strong> in den Tab '<strong>Gegenstände</strong>', wo sich die Waffe befindet, die du ausrüsten möchtest und mache einen <strong>[STRG]+Klick</strong> auf das Icon in der '<strong>Ausrüsten?</strong>'-Spalte. Der Gegenstand wird dann in der <strong>Zusatzhand</strong> ausgerüstet. Rüste Waffen in der Haupt- und der Neben-Hand aus. <strong>[SHIFT]-Klicke</strong> jede Waffe, um sie mit <strong>HW Null</strong> zu würfeln. Stelle sicher, dass dein <strong>Rüstungsplatz</strong> leer ist.</p></li></ul>"
+    },
+    "Unbreakable": {
+      "name": "Unerschütterlich",
+      "source": "GRW240",
+      "summary": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Wächter</strong> gemeistert haben.</p></blockquote><p>Einmal pro Szene, wenn du kurz davor bist, 0 Lebenspunkte zu erreichen, kannst du stattdessen entscheiden, dem Schmerz zu widerstehen und auf genau 1 Lebenspunkt reduziert zu werden.</p><hr><ul><li><p><strong>Du regenerierst:</strong> @GAIN[1 hp]</p></li></ul>"
+    },
+    "Upgrade": {
+      "name": "Upgrade",
+      "source": "GRW241",
+      "summary": "Modify equipment abilities.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Bastler</strong> gemeistert haben.</p></blockquote><p>Einmal pro <strong>Ausruhen</strong> darfst du eine Option wählen: Füge einem einzelnen Ausrüstungsgegenstand (Waffe, Rüstung oder Schild), der noch keine <strong>Qualität</strong> hat, eine hinzu <strong>oder</strong> ersetze die aktuelle <strong>Qualität</strong> eines einzelnen Ausrüstungsgegenstandes durch eine andere.</p><p>Wenn du diese Fähigkeit einsetzt, musst du eine Qualität aus der Standardliste für diese Itemart auswählen, sofern der mit dieser Besonderheit verbundene Kostenmodifikator <strong>+1.000 Zenit oder weniger</strong> beträgt. Danach musst du eine Menge Zenit ausgeben, die dem <strong>doppelten</strong> Kostenmodifikator der gewählten Besonderheit entspricht. Das modifizierte Item ist am Ende des Ausruhens fertig; du kannst nur <strong>ein Item pro Ausruhen</strong> modifizieren.</p><p>Die Standardliste der <strong>Waffenbesonderheiten</strong> findest du im <strong>Grundregelwerk</strong> auf Seite <strong>269</strong>, die Standardliste der <strong>Rüstungs-</strong> und <strong>Schildbesonderheiten</strong> auf Seite <strong>280</strong>.</p>",
+      "effects": [{
+        "name": "Upgrade",
+        "source": "GRW241",
+        "description": "<p>Einmal pro <strong>Ausruhen</strong> darfst du eine Option wählen: Füge einem einzelnen Ausrüstungsgegenstand (Waffe, Rüstung oder Schild), der noch keine <strong>Qualität</strong> hat, eine hinzu <strong>oder</strong> ersetze die aktuelle <strong>Qualität</strong> eines einzelnen Ausrüstungsgegenstandes durch eine andere.</p>"
+      }]
+    },
+    "Vanish": {
+      "name": "Verschwinden",
+      "source": "GRW240",
+      "summary": "Verschwinde nach einem Angriff.",
+      "desc": "<blockquote><p><strong>Voraussetzungen</strong>: Du musst die Klasse <strong>Schurke</strong> gemeistert haben.</p></blockquote><p>Wenn du ein oder mehrere Wesen mit einem Angriff triffst, darfst du 1 Fabula-Punkt ausgeben. Tust du das, kann jedes dieser Wesen bis zum Beginn deines nächsten Zuges keine Aktion ausführen, bei der es dich sehen muss.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 fp]</p></li><li><p><strong>Du erhältst:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.4suciB7e8kbt17Zh]</p></li></ul>"
+    },
+    "Volcano": {
+      "name": "Vulkan",
+      "source": "GRW240",
+      "summary": "Erlerne den Zauber Vulkan.",
+      "desc": "<blockquote><p><strong>Voraussetzungen: </strong>Du musst die Klasse <strong>Elementarist</strong> gemeistert haben.</p></blockquote><p>Du lernst den ultimativen <strong>Elementaristen</strong>-Zauber: <strong>Vulkan</strong>.</p><table border=\"1\"><colgroup><col style=\"width:15%\"><col style=\"width:13%\"><col style=\"width:27%\"><col style=\"width:45%\"></colgroup><tbody><tr><td style=\"text-align:center\"><p><strong>Vulkan</strong></p></td><td style=\"text-align:center\"><p><strong>GP:</strong> 40</p></td><td style=\"text-align:center\"><p><strong>Ziel:</strong> Speziell</p></td><td style=\"text-align:center\"><p><strong>Dauer:</strong> Unmittelbar</p></td></tr></tbody></table><p>Du kanalisierst die Wut des Planeten in eine mächtige Welle aus Feuer und Magma. Wähle eine Option: Ein Wesen, das du sehen kannst, erleidet <strong>@DMG[50 fire]</strong>; <strong>oder</strong> du wählst eine beliebige Anzahl von Wesen, die du sehen kannst, und jedes von ihnen erleidet <strong>@DMG[30 fire]</strong>. Diese Werte erhöhen sich um 5, sofern du auf <strong>Stufe 20 oder höher</strong> bist, oder um 10, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p><p>Schaden, der durch diesen Zauber verursacht wird, <strong>ignoriert Resistenzen und Immunitäten</strong>.</p><hr><p>Füge den Zauber @UUID[Compendium.projectfu.spells.Item.BfZqKbr38FBxLtmH] von der <strong>Elementaristen </strong>Zauber-Liste zu deinem Charakterbogen hinzu</p>"
+    },
+    "Wise Counsel": {
+      "name": "Weiser Rat",
+      "source": "ANF169",
+      "summary": "Deine Unterstützungsproben gewähren dem Anführer zusätzliche Vorteile.",
+      "desc": "<p><strong>Voraussetzungen</strong>: Du musst eine oder mehrere der Klassen <strong>Kommandant</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>140</strong>), <strong>Lehrmeister</strong> und <strong>Orator</strong> gemeistert haben.</p><p>Wenn du eine <strong>Unterstützungsprobe</strong> ablegst und der <strong>Anführer</strong> der Gruppenprobe dich hören und verstehen kann, darfst du <strong>【EIN + EIN】, 【EIN + WLK】</strong> oder <strong>【WLK + WLK】</strong> anstelle der normalen Attribute verwenden, die für die Unterstützungsprobe erforderlich sind.</p><p>Beschreibe, wie du deinen Rat anbietest!</p><p>Zusätzlich darfst du @LOSS[10 mp] ausgeben, wenn du die Option <strong>Teamwork</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>76</strong>) nutzt, um die Probe eines anderen Spielercharakters während dessen Zug in einer Konflikt-Szene zu unterstützen. Wenn du das tust, kannst du <strong>bis zu zwei</strong> der folgenden Vorteile wählen:</p><ul><li><p>Dieser Charakter erhält @GAIN[20 mp] zurück.</p></li><li><p>Dieser Charakter erholt sich von <strong>benommen, wütend</strong> und <strong>erschüttert</strong>.</p></li><li><p>Am Ende des Zuges dieses Charakters wählst du eine Option: Führe einen <strong>freien Angriff</strong> mit einer Waffe aus, die du ausgerüstet hast; <strong>oder</strong> führe die <strong>Zaubern</strong>-Aktion kostenlos aus, indem du einen Zauber wirkst, dessen GP-Gesamtkosten <strong>20 entsprechen oder niedriger sind</strong>.</p></li><li><p>Wenn dieser Charakter bei seiner Probe erfolgreich ist und die Probe ihm erlaubt, einen oder mehrere Abschnitte einer Uhr zu füllen oder zu löschen, darf er 1 weiteren Abschnitt der Uhr füllen oder löschen.</p></li></ul>"
+    }
+  }
+}

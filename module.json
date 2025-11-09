@@ -1,7 +1,7 @@
 {
   "id": "fabula-ultima-de",
   "title": "Project Fabula Ultima - Deutsche Kompendium-Übersetzung",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "compatibility": {
     "minimum": "12",
     "verified": "13.350",
@@ -9,7 +9,7 @@
   },
   "authors": [
     {
-      "name": "Stefan",
+      "name": "Rusty",
       "discord": "wrecko0n",
       "flags": {}
     }

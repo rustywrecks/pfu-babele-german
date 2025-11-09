@@ -38,9 +38,12 @@
 		"Ingredients": "Zutaten"
 	},
 	"mapping": {
+		"class": {
+		"path": "system.class.value",
+		"converter": "classNames"
+		},
 		"featType": "system.featureType",
 		"Description": "system.description",
-		"class": "system.class.value",
 		"source": "system.source.value",
 		"src": "system.source",
 		"merge": "system.data.merge",
@@ -197,41 +200,36 @@
 			"name": "[Handout: Das Deck verwalten]",
 			"source": "LU22",
 			"src": "LU22",
-			"Description": "<h1>DAS DECK VERWALTEN</h1><p>Dein <strong>Deck</strong> ist ein echter Kartensatz, den du nach Belieben zusammenstellen kannst, vorausgesetzt, die Rückseiten der Karten sind identisch und du hältst dich an die folgenden Einschränkungen:</p><ul><li><p>Das Deck enthält genau <strong>30 Karten</strong>: <strong>2 Joker</strong> sowie <strong>28</strong> Karten, die in <strong>4 Arten</strong> unterteilt sind, die Farben genannt werden; in einem Standard-Poker-Deck sind die Farben zum Beispiel Kreuz ( @ICON[club] ), Karo ( @ICON[diamond] ), Herz ( @ICON[heart] ) und Pik ( @ICON[spade] ). Wenn du das Deck deines Charakters erstellst, ordnest du jeder Farbe eine andere Schadensart zu: <strong>Luft</strong>, <strong>Erde</strong>, <strong>Feuer</strong> und <strong>Eis</strong>.</p></li><li><p>Das Deck enthält <strong>7 Karten</strong> jeder <strong>Farbe</strong> mit den <strong>Werten 1 bis 7</strong>.</p></li></ul><p>Die einfachste Vorgehensweise ist die Verwendung eines Pokerspiels (ohne <strong>Bildkarten</strong> und <strong>Karten mit den Werten 8 bis 10</strong>), aber du kannst auch die kleinen Arkana aus dem Tarot, Karten aus Sammelkartenspielen und vieles mehr verwenden; achte nur darauf, dass die Kombinationen leicht zu erkennen sind.</p><ul><li><p>Wenn ein <strong>Konflikt</strong> beginnt, mischst du alle 30 Karten deines <strong>Decks</strong> und legst sie <strong>verdeckt</strong> vor dir ab. Dann ziehst du <strong>5 Karten</strong>, um deine <strong>Starthand</strong> zu bilden.</p></li><li><p>Wenn du Karten ziehen musst und dein <strong>Deck</strong> nicht genug hat, ziehe so viele wie möglich, <strong>mische deinen Ablagestapel in das Deck</strong>, lege ihn <strong>verdeckt</strong> vor dich und ziehe dann weiter.</p></li><li><p>Wenn du Karten von deinem <strong>Deck</strong> ziehst, werden sie auf deine <strong>Hand</strong> genommen. Normalerweise kannst nur du deine <strong>Hand</strong> sehen, aber du kannst sie anderen zeigen, wenn du das möchtest.</p></li><li><p>Wenn du Karten aus deiner <strong>Hand</strong> ablegst, lege sie <strong>offen</strong> auf deinen <strong>Ablagestapel</strong> – in der Reihenfolge, die du bevorzugst. Die Reihenfolge der Karten auf deinem <strong>Ablagestapel</strong> kann jedoch nicht verändert werden.</p></li></ul><p>Dein <strong>Deck</strong>, deine <strong>Hand</strong> und dein <strong>Ablagestapel</strong> (sowie alle Fähigkeiten und Effekte, die mit ihnen verbunden sind) sind nur während Konflikt-Szenen verfügbar; am Ende jedes Konflikts mischst du alle 30 Karten zurück in dein <strong>Deck</strong> und legst es beiseite.</p><h3>EIN SET ABHANDELN</h3><p>Um einen bestimmten Effekt zu erzielen, muss ein <strong>Set genau</strong> den Anforderungen entsprechen (wenn du z. B. ein <strong>Set aus 5 Karten mit demselben Wert</strong> abhandelst, erfüllt es nicht die Anforderungen eines Jackpots; es muss aus <strong>genau 4 Karten</strong> bestehen).</p><ul><li><p>Wenn du ein <strong>Set</strong> abhandelst, das <strong>Joker</strong> enthält, wählst du deren <strong>Farbe</strong> und <strong>Wert</strong> (<strong>1</strong> bis <strong>7</strong>).</p></li></ul><p>Wenn ein Set die Anforderungen von zwei oder mehr Effekten erfüllt, musst du <strong>nur einen</strong> dieser Effekte auswählen und anwenden.</p><h3><strong>Effekte</strong></h3><p>@UUID[Compendium.projectfu.skills.Item.FVmAbnxp6kZyoqkN]{[Handout: Set-Effekte]}</p>"
+			"Description": "<h1>DAS DECK VERWALTEN</h1><p>Dein <strong>Deck</strong> ist ein echter Kartensatz, den du nach Belieben zusammenstellen kannst, vorausgesetzt, die Rückseiten der Karten sind identisch und du hältst dich an die folgenden Einschränkungen:</p><ul><li><p>Das Deck enthält genau <strong>30 Karten</strong>: <strong>2 Joker</strong> sowie <strong>28</strong> Karten, die in <strong>4 Arten</strong> unterteilt sind, die Farben genannt werden; in einem Standard-Poker-Deck sind die Farben zum Beispiel Kreuz ( @ICON[club] ), Karo ( @ICON[diamond] ), Herz ( @ICON[heart] ) und Pik ( @ICON[spade] ). Wenn du das Deck deines Charakters erstellst oderdnest du jeder Farbe eine andere Schadensart zu: <strong>Luft</strong>, <strong>Erde</strong>, <strong>Feuer</strong> und <strong>Eis</strong>.</p></li><li><p>Das Deck enthält <strong>7 Karten</strong> jeder <strong>Farbe</strong> mit den <strong>Werten 1 bis 7</strong>.</p></li></ul><p>Die einfachste Vorgehensweise ist die Verwendung eines Pokerspiels (ohne <strong>Bildkarten</strong> und <strong>Karten mit den Werten 8 bis 10</strong>), aber du kannst auch die kleinen Arkana aus dem Tarot, Karten aus Sammelkartenspielen und vieles mehr verwenden; achte nur darauf, dass die Kombinationen leicht zu erkennen sind.</p><ul><li><p>Wenn ein <strong>Konflikt</strong> beginnt, mischst du alle 30 Karten deines <strong>Decks</strong> und legst sie <strong>verdeckt</strong> vor dir ab. Dann ziehst du <strong>5 Karten</strong>, um deine <strong>Starthand</strong> zu bilden.</p></li><li><p>Wenn du Karten ziehen musst und dein <strong>Deck</strong> nicht genug hat, ziehe so viele wie möglich, <strong>mische deinen Ablagestapel in das Deck</strong>, lege ihn <strong>verdeckt</strong> vor dich und ziehe dann weiter.</p></li><li><p>Wenn du Karten von deinem <strong>Deck</strong> ziehst, werden sie auf deine <strong>Hand</strong> genommen. Normalerweise kannst nur du deine <strong>Hand</strong> sehen, aber du kannst sie anderen zeigen, wenn du das möchtest.</p></li><li><p>Wenn du Karten aus deiner <strong>Hand</strong> ablegst, lege sie <strong>offen</strong> auf deinen <strong>Ablagestapel</strong> – in der Reihenfolge, die du bevorzugst. Die Reihenfolge der Karten auf deinem <strong>Ablagestapel</strong> kann jedoch nicht verändert werden.</p></li></ul><p>Dein <strong>Deck</strong>, deine <strong>Hand</strong> und dein <strong>Ablagestapel</strong> (sowie alle Fähigkeiten und Effekte, die mit ihnen verbunden sind) sind nur während Konflikt-Szenen verfügbar; am Ende jedes Konflikts mischst du alle 30 Karten zurück in dein <strong>Deck</strong> und legst es beiseite.</p><h3>EIN SET ABHANDELN</h3><p>Um einen bestimmten Effekt zu erzielen, muss ein <strong>Set genau</strong> den Anforderungen entsprechen (wenn du z. B. ein <strong>Set aus 5 Karten mit demselben Wert</strong> abhandelst, erfüllt es nicht die Anforderungen eines Jackpots; es muss aus <strong>genau 4 Karten</strong> bestehen).</p><ul><li><p>Wenn du ein <strong>Set</strong> abhandelst, das <strong>Joker</strong> enthält, wählst du deren <strong>Farbe</strong> und <strong>Wert</strong> (<strong>1</strong> bis <strong>7</strong>).</p></li></ul><p>Wenn ein Set die Anforderungen von zwei oder mehr Effekten erfüllt, musst du <strong>nur einen</strong> dieser Effekte auswählen und anwenden.</p><h3><strong>Effekte</strong></h3><p>@UUID[Compendium.projectfu.skills.Item.FVmAbnxp6kZyoqkN]{[Handout: Set-Effekte]}</p>"
 		},
 		"Double or Nothing": {
 			"name": "Doppelt oder nichts",
 			"source": "LU21",
 			"src": "LU21",
-			"class": "Kartenass",
 			"Description": "<p>Bevor du eine Präzisionsprobe, eine Magieprobe für einen offensiven Zauber ( @ICON[offensive] ) oder eine Probe zum Vor- oder Zurückdrehen einer Uhr ablegst, kannst du <strong>Doppelt oder nichts</strong> verkünden. Wenn du das tust und die Probe einen <strong>kritischen Erfolg</strong> auslöst, <strong>verdoppelst</strong> du den Schaden des Angriffs oder Zaubers bzw. die gefüllten oder gelöschten Abschnitte der Uhr; jede andere Art von Erfolg wird jedoch zu einem <strong>Misserfolg</strong>.</p>"
 		},
 		"High or Low": {
 			"name": "Hoch oder Niedrig",
 			"source": "LU21",
 			"src": "LU21",
-			"class": "Kartenass",
 			"Description": "<p>Wenn du einen <strong>kritischen Erfolg</strong> oder einen <strong>Patzer</strong> erzielst, darfst du 1 Karte von deinem <strong>Deck</strong> ziehen. Wenn du das tust, wirf 1 Karte von deiner <strong>Hand</strong> ab.</p>"
 		},
 		"Magic Cards": {
 			"name": "Magische Karten",
 			"source": "LU21",
 			"src": "LU21",
-			"class": "Kartenass",
 			"Description": "<p>Du erhältst ein <strong>Deck</strong>, eine <strong>Hand</strong> und einen <strong>Ablagestapel</strong> (siehe nächste Seite).</p><p style='text-align: justify'>Während eines Konflikts kannst du eine Aktion ausführen und bis zu<strong>【10 + (FS × 5)】</strong>Geistpunkte (mindestens 10) ausgeben. Wenn du das tust, <strong>handle</strong> für je 5 GP, die du auf diese Weise ausgibst, <strong>1 Karte</strong> aus deiner <strong>Hand ab</strong> (bis zu einem Maximum von 5 Karten; diese Karten bilden ein <strong>Set</strong>).</p><p style='text-align: justify'>Nachdem du den Effekt des <strong>Sets</strong> (falls vorhanden) abgehandelt hast, <strong>wirf</strong> diese Karten <strong>ab</strong> und ziehe entsprechend viele Karten von deinem <strong>Deck</strong>.</p><hr><ul><li><p>Für mehr Informationen zur Deckabhandlung und Effekten schaue hier: @UUID[Compendium.projectfu.handouts.JournalEntry.hs3GyWJls59GhaNz]{Deck Regeln}</p></li><li><p><strong>Du bezahlst: </strong>@LOSS[10+(&sl('magic-cards')*5) mp]{10 + (FS × 5) GP}</p></li></ul>"
 		},
 		"Mulligan": {
 			"name": "Mulligan",
 			"source": "LU21",
 			"src": "LU21",
-			"class": "Kartenass",
 			"Description": "<p>Am Ende deines Zuges darfst du während eines Konflikts bis zu<strong>【FS】</strong>Karten von deiner <strong>Hand</strong> abwerfen. Wenn du das tust, ziehe entsprechend viele Karten von deinem <strong>Deck</strong>.</p>"
 		},
 		"Trap Card": {
 			"name": "Fallenkarte",
 			"source": "LU21",
 			"src": "LU21",
-			"class": "Kartenass",
 			"Description": "<p>Nachdem ein Gegner, den du sehen kannst, während eines Konflikts eine Aktion ausgeführt hat, darfst du eine der <strong>Farben</strong> deines <strong>Decks</strong> ausrufen (nachdem die Aktion abgehandelt wurde) und die erste Karte, die unten unter deinem <strong>Deck</strong> liegt, offen auf deinen <strong>Ablagestapel</strong> legen. Falls diese Karte ein <strong>Joker</strong> ist oder ihre <strong>Farbe</strong> mit der von dir angegebenen übereinstimmt, darfst du sofort die Zaubern-Aktion kostenlos ausführen und einen Zauber wirken, dessen <strong>Geistpunkt-Gesamtkosten</strong> <strong>gleich hoch wie oder niedriger als【FS × 5】</strong>sind (du musst dennoch seine GP-Kosten bezahlen).</p>"
 		},
 		"[Handout: Arcana Rules]": {
@@ -438,7 +436,7 @@
 			"name": "Arkanum des Turms",
 			"src": "GRW181",
 			"domains": "Urteil, Schutz, Opferung",
-			"merge": "<ul><li><p>Wenn du dieses Arkanum beschwörst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>. Bis dieses Arkanum entlassen wird, ist jeder deiner Verbündeten in der Szene resistent gegen die gewählte Schadensart (<strong>du erhältst diese Resistenz nicht</strong>).</p></li></ul><hr><ul><li><p><strong>Verbündete erhalten:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], or @TYPE[affinity ice resistance]</p></li></ul>",
+			"merge": "<ul><li><p>Wenn du dieses Arkanum beschwörst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>. Bis dieses Arkanum entlassen wird, ist jeder deiner Verbündeten in der Szene resistent gegen die gewählte Schadensart (<strong>du erhältst diese Resistenz nicht</strong>).</p></li></ul><hr><ul><li><p><strong>Verbündete erhalten:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance] oder @TYPE[affinity ice resistance]</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Urteil</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: jedes von ihnen erleidet <strong>@DMG[&step(30,40,50) light]{30|40|50 Licht} schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p></li></ul>",
 			"origin": "Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid",
 			"rounds": "1",
@@ -484,35 +482,30 @@
 			"name": "Arkaner Kreis",
 			"source": "GRW177",
 			"src": "GRW177",
-			"class": "Arkanist",
 			"Description": "<p><span>Nachdem du in deinem Zug während eines Konflikts (siehe <strong>Grundregelwerk S. 178</strong>) ein Arkanum freiwillig <strong>entlässt</strong>, darfst du, sofern dieses Arkanum während desselben Zugs nicht <strong>beschworen</strong> wurde und du eine <strong>arkane</strong> Waffe ausgerüstet hast, sofort die <strong>Zaubern</strong>-Aktion kostenlos ausführen. Der Zauber, den du auf diese Weise wirkst, muss <strong>Geistpunkt-Gesamtkosten von【FS × 5】oder weniger</strong> aufweisen (du musst trotzdem die GP-Kosten des Zaubers bezahlen).</span></p>"
 		},
 		"Arcane Regeneration": {
 			"name": "Arkane Regeneration",
 			"source": "GRW177",
 			"src": "GRW177",
-			"class": "Arkanist",
 			"Description": "<p><span>Wenn du ein Arkanum beschwörst, erhältst du sofort<strong>【FS × 5】</strong>Lebenspunkte.</span></p><hr><p>@GAIN[5*&sl('arcane-regeneration') hp]{5|10 LP}</p>"
 		},
 		"Bind and Summon": {
 			"name": "Binden und Beschwören",
 			"source": "GRW177",
 			"src": "GRW177",
-			"class": "Arkanist",
 			"Description": "<p><span>Du kannst Arkana an deine Seele <strong>binden</strong> und sie später <strong>beschwören</strong>. Die Spielleiterin erklärt dir die Einzelheiten jedes Bindungsprozesses, wenn du das erste Mal auf das betreffende Arkanum triffst.</span></p><p><span>Du kannst eine Aktion ausführen und @LOSS[40 mp] ausgeben, um ein Arkanum zu <strong>beschwören</strong>, das du gebunden hast: Die Einzelheiten dieses Vorgangs werden auf der nächsten Seite erklärt.</span></p><p><span>Wählst du diese Fähigkeit bei der Charaktererstellung, beginnst du das Spiel mit einem bereits an dich gebundenen Arkanum deiner Wahl, das du aus der Liste auf den nächsten Seiten auswählen kannst. Ansonsten kannst du neue Arkana nur durch Erkundung und Fortschritt in der Geschichte erhalten.</span></p><p>Beschreibung sowie Regeln für sämtliche Arkana können in diesem Handout gefunden werden: @UUID[Compendium.projectfu.handouts.JournalEntry.sO33zynz6ZsBDpFR]{[Handout: Arkana Regeln]}</p>"
 		},
 		"Emergency Arcanum": {
 			"name": "Notfall-Arkanum",
 			"source": "GRW177",
 			"src": "GRW177",
-			"class": "Arkanist",
 			"Description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, werden die Kosten für das Beschwören deiner Arkana um<strong>【FS × 5】</strong>Geistpunkte reduziert.</p>"
 		},
 		"Ritual Arcanism": {
 			"name": "Ritueller Arkanismus",
 			"source": "GRW177",
 			"src": "GRW177",
-			"class": "Arkanist",
 			"Description": "<p><span>Du kannst Rituale der <strong>Arkanismus</strong>-Disziplin durchführen, solange ihre Effekt in die <strong>Domänen</strong> einer oder mehrerer Arkana fällt, die du gebunden hast (siehe <strong>Grundregelwerk</strong>, Seite <strong>178ff</strong>).</span></p><p><span>Arkanismus-Rituale verwenden<strong>【WLK + WLK】</strong>für die Magieprobe.</span></p>"
 		},
 		"Effect: Resonance Damage": {
@@ -657,28 +650,24 @@
 			"name": "Magischer Gesang",
 			"source": "AHF137",
 			"src": "AHF137",
-			"class": "Kantor",
 			"Description": "<p><span>Wenn du während einer Konflikt-Szene am Zug bist, kannst du eine Aktion ausführen und eine variable Anzahl an GP ausgeben, um Stimme und Musik zu einem magischen Effekt zu verweben, der als <strong>Strophe</strong> bekannt ist.</span></p><p><span>Du darfst nur <strong>eine Strophe</strong> pro Zug singen, auch wenn du Zugang zu mehreren Aktionen hast; die vollständigen Regeln für <strong>Strophen</strong> findest du ab der nächsten Seite.</span></p><p><span>Wenn du diese Fähigkeit zum ersten Mal erwirbst, lernst du <strong>alle drei Lautstärken</strong> sowie <strong>eine</strong> <strong>Tonart</strong> und <strong>einen Ton</strong> (siehe nächste Seite). Immer wenn du diese Fähigkeit erneut erwirbst, kannst du <strong>eine Tonart oder einen Ton</strong> lernen (du entscheidest).</span></p><hr><ul><li><p>Eine Aufschlüsselung der <strong>Strophen </strong>und eine Liste der <strong>Tonarten</strong> und <strong>Töne</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.q4PpsRwoiMTRKUeJ]{Strophen-Regeln}</p></li><li><p>Anweisungen zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.q4PpsRwoiMTRKUeJ.JournalEntryPage.W6dLZ4wOhSMKKwsC]{Strophen VTT Anweisungen}</p></li></ul>"
 		},
 		"Resonance": {
 			"name": "Resonanz",
 			"source": "AHF137",
 			"src": "AHF137",
-			"class": "Kantor",
 			"Description": "<p><span>Nachdem du einen oder mehrere Gegner mit einer <strong>Strophe</strong> beeinflusst hast, kannst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, eine Option wählen: Bis zum Beginn deines nächsten Zuges fügen deine Verbündeten diesen Gegnern<strong>【FS】</strong>Zusatzschaden zu; <strong>oder</strong> bis zum Beginn deines nächsten Zuges erhältst du <strong>jedes Mal 【FS】</strong>Geistpunkte, wenn einer dieser Gegner Schaden erleidet (falls dieselbe Quelle zwei oder mehr dieser Gegner gleichzeitig Schaden zufügt, erhältst du<strong>【FS】</strong>GP für jeden verletzten Gegner).</span></p><hr><ul><li><p><strong>Du erhältst:</strong> @GAIN[$sl mp]{Regeneriere FS GP}</p></li><li><p><strong>Ziel:</strong> @EFFECT[Compendium.projectfu.skills.KgYNKoG8RE2NvCiV]{Effekt: Resonanzschaden}</p></li></ul>"
 		},
 		"Siren's Song": {
 			"name": "Lied der Sirene",
 			"source": "AHF137",
 			"src": "AHF137",
-			"class": "Kantor",
 			"Description": "<p>Du erhältst die Befähigung, Rituale der <strong>Ritualistik</strong>-Disziplin durchzuführen; außerdem kannst du <strong>Ritualistik</strong> nutzen, um <strong>auf dem Gehör basierende Illusionen</strong> zu erzeugen.</p>"
 		},
 		"Sound Barrier": {
 			"name": "Schallbarriere",
 			"source": "AHF137",
 			"src": "AHF137",
-			"class": "Kantor",
 			"Description": "<p>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher <strong>physischer</strong> Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</p><hr><ul><li><p><strong>Du erhältst:</strong> @EFFECT[Compendium.projectfu.skills.Item.e85QX4FWBQxwTt8V]{Effekt: Schallbarriere}</p></li></ul>",
 			"img": "systems/projectfu/styles/static/compendium/classes/chanter/chanter_sound_barrier.png",
 			"origin": "Compendium.projectfu.skills.Item.9xjUyytWiDxFhqdV",
@@ -705,7 +694,6 @@
 			"name": "Vibrato",
 			"source": "AHF137",
 			"src": "AHF137",
-			"class": "Kantor",
 			"Description": "<p>Nachdem du eine <strong>Strophe</strong> mit <strong>niedriger</strong> oder <strong>mittlerer Lautstärke</strong> gesungen hast, kannst du einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die du ausgerüstet hast; behandle deinen <strong>höheren Wurf (HW)</strong> als gleich 0, wenn du den Schaden dieses Angriffs berechnest.</p>"
 		},
 		"Verse": {
@@ -717,14 +705,12 @@
 			"name": "Verzehren",
 			"source": "GRW189",
 			"src": "GRW189",
-			"class": "Chimärist",
 			"Description": "<p><span>Nachdem du einem oder mehreren Wesen mit einem Zauber Schaden zugefügt hast, erhältst du, sofern du eine <strong>Arkane</strong>, <strong>Dolch</strong>- oder <strong>Flegelwaffe</strong> ausgerüstet hast, <strong>【FS × 2】</strong>Geistpunkte.</span></p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[$sl*2 mp]{FS × 2}</p></li></ul>"
 		},
 		"Feral Speech": {
 			"name": "Sprache der Natur",
 			"source": "GRW189",
 			"src": "GRW189",
-			"class": "Chimärist",
 			"Description": "<p>Du kannst mit Wesen der Spezies <strong>Bestie</strong>, <strong>Monster</strong> und <strong>Pflanze</strong> kommunizieren.</p>",
 			"disabled": "false",
 			"fxName0": "Sprache der Natur",
@@ -742,21 +728,18 @@
 			"name": "Pathogenese",
 			"source": "GRW189",
 			"src": "GRW189",
-			"class": "Chimärist",
 			"Description": "<p>Wenn du einem oder mehreren Wesen mit einem deiner Chimäristen-Zauber Schaden zufügst, wird jedes dieser Wesen, das von derselben <strong>Spezies</strong> ist wie jenes Wesen, von dem du den Zauber ursprünglich gelernt hast, <strong>vergiftet</strong>.</p><hr><ul><li><p><strong>Ziel erleidet: </strong>@EFFECT[poisoned]</p></li></ul>"
 		},
 		"Ritual Chimerism": {
 			"name": "Rituelle Chimäristik",
 			"source": "GRW189",
 			"src": "GRW189",
-			"class": "Chimärist",
 			"Description": "<p>Du kannst Rituale durchführen, deren Effekte in die <strong>Chimäristik</strong>-Disziplin fallen.</p><p>Wenn du diese Fähigkeit erwirbst, wähle<strong>【EIN + WLK】oder【MAT + WLK】</strong>.Von nun an werden deine Chimäristik-Rituale die gewählten Attribute für die Magieprobe verwenden.</p>"
 		},
 		"Spell Mimic": {
 			"name": "Zauber-Nachahmung",
 			"source": "GRW189",
 			"src": "GRW189",
-			"class": "Chimärist",
 			"Description": "<p><span>Wenn du siehst, wie ein Wesen der Spezies <strong>Bestie</strong>, <strong>Monster</strong> oder <strong>Pflanze</strong> einen Zauber wirkt, kannst du diesen Zauber sofort als eigenen Chimäristen-Zauber erlernen: Tust du das, notiere die <strong>Spezies</strong> des Wesens, von dem du ihn gelernt hast.</span></p><p><span>Wenn du diese Fähigkeit zum ersten Mal erwirbst, wähle<strong>【EIN + WLK】</strong>oder<strong>【MAT + WLK】</strong>. Von nun an werden deine offensiven ( @ICON[offensive] ) Chimäristen-Zauber die gewählten Attribute für die Magieprobe verwenden, unabhängig von den Attributen, die das Wesen verwendet, von dem du den Zauber gelernt hast.</span></p><p><span>Du kannst dir <strong>bis zu【FS + 2】verschiedene Chimäristen-Zauber</strong> auf diese Weise merken. Willst du einen neuen Chimäristen-Zauber auswendig lernen, hast dein Limit aber bereits erreicht, musst du einen deiner alten Zauber vergessen und ihn durch den neuen Zauber ersetzen.</span></p>"
 		},
 		"Effect: Bishop's Edict (Extra Damage)": {
@@ -803,36 +786,31 @@
 			"name": "Edikt des Bischofs",
 			"source": "AHF141",
 			"src": "AHF141",
-			"class": "Kommandant",
 			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen und 10 Geistpunkte ausgeben, um eine Option zu wählen: Alle GP-Kosten werden verdoppelt; <strong>oder</strong> alle Schadensquellen verursachen<strong>【FS × 3】</strong>Zusatzschaden.</p><p>Der gewählte Effekt hält bis zum Beginn deines nächsten Zuges an.</p><hr><ul><li><p><strong>Alle erhalten:</strong> @EFFECT[Compendium.projectfu.skills.Item.uxc0tTLb3If2Denp]{Effekt: Edikt des Bischofs (Zusatz-Schaden)}</p></li></ul>"
 		},
 		"Charging Cavalry": {
 			"name": "Anstürmende Kavallerie",
 			"source": "AHF141",
 			"src": "AHF141",
-			"class": "Kommandant",
 			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen und @LOSS[10 MP] ausgeben, um einen Verbündeten zu wählen, der dich hören kann. Dieser Verbündete kann sofort einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die er ausgerüstet hat (oder einen <strong>Basis-Angriff</strong>, falls er ein NSC ist). Er erhält einen Bonus in Höhe von<strong>【FS】</strong>auf die Präzisionsprobe, behandelt aber seinen <strong>höherer Wurf (HW)</strong> bei der Berechnung des Schadens als gleich 0.</p>"
 		},
 		"Crushing Chariot": {
 			"name": "Zermalmender Streitwagen",
 			"source": "AHF141",
 			"src": "AHF141",
-			"class": "Kommandant",
 			"Description": "<p>Nachdem du <strong>Edikt des Bischofs</strong>, <strong>Anstürmende Kavallerie </strong>oder <strong>Rochade</strong> eingesetzt hast, darfst du einen anderen Spielercharakter wählen, der dich hören kann und in dieser Runde noch seinen Zug ausführen muss. Dieser Charakter darf in dieser Runde seinen Zug sofort nach deinem ausführen.</p><hr><ul><li><p><strong>Auslöser:</strong> @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Edikt des Bischofs}, @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr]{Anstürmende Kavallerie}, <strong>oder</strong> @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]</p></li></ul>"
 		},
 		"King's Castle": {
 			"name": "Rochade",
 			"source": "AHF141",
 			"src": "AHF141",
-			"class": "Kommandant",
 			"Description": "<p><span>Während eines Konflikts kannst du eine Aktion ausführen und 10 Geistpunkte ausgeben, um eine Option zu wählen: Kein Wesen kann Lebenspunkte oder Geistpunkte wiederherstellen; <strong>oder</strong> alle Effekte, die Geistpunkte wiederherstellen, stellen<strong>【FS × 5】</strong>zusätzliche Geistpunkte wieder her. Der gewählte Effekt hält bis zum Beginn deines nächsten Zuges an.</span></p><hr><ul><li><p><strong>Alle erhalten:</strong> @EFFECT[Compendium.projectfu.skills.Item.DRnzFsqj5BimQFa5]{Effekt: Rochade (Zusatz-GP)}</p></li></ul>"
 		},
 		"Queen's Gambit": {
 			"name": "Damengambit",
 			"source": "AHF141",
 			"src": "AHF141",
-			"class": "Kommandant",
-			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen, um mit einer Waffe, die du ausgerüstet hast, einen <strong>freien Angriff</strong> auszuführen, wobei dein <strong>höherer Wurf (HW)</strong> bei der Berechnung des Schadens als gleich 0 behandelt wird. Nachdem der Angriff abgehandelt wurde, darfst du eine Option wählen: Ein Verbündeter, der dich hören kann, erhält<strong>【5 + (FS × 5)】</strong>Lebenspunkte zurück; oder du darfst sofort eine Fähigkeit aus <strong>Edikt des Bischofs</strong>, <strong>Anstürmende Kavallerie</strong> oder <strong>Rochade</strong> die du erworben hast, frei einsetzen (und die entsprechenden GP ausgeben).</p><hr><ul><li><p><strong>Ein Verbündeter regeneriert:</strong> @GAIN[5+($sl*5) hp]{5 + (FS × 5) LP}</p></li><li><p><strong>Freie Fertigkeit:</strong> @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Edikt des Bischofs,}, @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr]{Anstürmende Kavallerie}, or @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]</p></li></ul>"
+			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen, um mit einer Waffe, die du ausgerüstet hast, einen <strong>freien Angriff</strong> auszuführen, wobei dein <strong>höherer Wurf (HW)</strong> bei der Berechnung des Schadens als gleich 0 behandelt wird. Nachdem der Angriff abgehandelt wurde, darfst du eine Option wählen: Ein Verbündeter, der dich hören kann, erhält<strong>【5 + (FS × 5)】</strong>Lebenspunkte zurück; oder du darfst sofort eine Fähigkeit aus <strong>Edikt des Bischofs</strong>, <strong>Anstürmende Kavallerie</strong> oder <strong>Rochade</strong> die du erworben hast, frei einsetzen (und die entsprechenden GP ausgeben).</p><hr><ul><li><p><strong>Ein Verbündeter regeneriert:</strong> @GAIN[5+($sl*5) hp]{5 + (FS × 5) LP}</p></li><li><p><strong>Freie Fertigkeit:</strong> @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Edikt des Bischofs,}, @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr]{Anstürmende Kavallerie} oder @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]</p></li></ul>"
 		},
 		"Effect: Hydra Dance": {
 			"name": "Effekt: Hydra-Tanz",
@@ -897,7 +875,7 @@
 		"Griffin Dance": {
 			"name": "Greifen-Tanz",
 			"src": "AHF150",
-			"keyDesc": "<p>Wähle eine Option: Du erhältst Resistenz gegen <strong>Luftschaden</strong>; <strong>oder</strong> jeglicher Schaden, den deine Angriffe und Zauber verursachen, wird zu <strong>Luftschaden</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[10 mp] | @LOSS[5 mp]</p></li><li><p><strong>Du erhältst:</strong> @TYPE[affinity air resistance e:sot i:1 t:source]{Greifen-Tanz: Resistenz}, or @TYPE[damage all air e:sot i:1 t:source]{Greifen-Tanz: Schaden}</p></li></ul>"
+			"keyDesc": "<p>Wähle eine Option: Du erhältst Resistenz gegen <strong>Luftschaden</strong>; <strong>oder</strong> jeglicher Schaden, den deine Angriffe und Zauber verursachen, wird zu <strong>Luftschaden</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[10 mp] | @LOSS[5 mp]</p></li><li><p><strong>Du erhältst:</strong> @TYPE[affinity air resistance e:sot i:1 t:source]{Greifen-Tanz: Resistenz} oder @TYPE[damage all air e:sot i:1 t:source]{Greifen-Tanz: Schaden}</p></li></ul>"
 		},
 		"Hydra Dance": {
 			"name": "Hydra-Tanz",
@@ -942,7 +920,7 @@
 		"Phoenix Dance": {
 			"name": "Phönix-Tanz",
 			"src": "AHF151",
-			"keyDesc": "<p>Wähle eine Option: Du erhältst Resistenz gegen <strong>Feuerschaden</strong>; <strong>oder</strong> jeglicher Schaden, den deine Angriffe und Zauber verursachen, wird zu <strong>Feuerschaden</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[10 mp] | @LOSS[5 mp]</p></li><li><p><strong>Du erhältst:</strong> @TYPE[affinity fire resistance e:sot i:1 t:source]{Phönix-Tanz: Resistenz}, or @TYPE[damage all fire e:sot i:1 t:source]{Phönix-Tanz: Schaden}</p></li></ul>"
+			"keyDesc": "<p>Wähle eine Option: Du erhältst Resistenz gegen <strong>Feuerschaden</strong>; <strong>oder</strong> jeglicher Schaden, den deine Angriffe und Zauber verursachen, wird zu <strong>Feuerschaden</strong>.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[10 mp] | @LOSS[5 mp]</p></li><li><p><strong>Du erhältst:</strong> @TYPE[affinity fire resistance e:sot i:1 t:source]{Phönix-Tanz: Resistenz} oder @TYPE[damage all fire e:sot i:1 t:source]{Phönix-Tanz: Schaden}</p></li></ul>"
 		},
 		"Satyr Dance": {
 			"name": "Satyr-Tanz",
@@ -963,21 +941,18 @@
 			"name": "Tanzen",
 			"source": "AHF149",
 			"src": "AHF149",
-			"class": "Tänzer",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit nimmst, lernst du einen <strong>Tanz</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>150</strong> <strong>ff</strong>).</p><p>Wenn du in einer Konflikt-Szene am Zug bist und keine <strong>martialische Rüstung</strong> trägst, darfst du @LOSS[10 mp] ausgeben, um <strong>einen Tanz aufzuführen</strong>, den du gelernt hast. Das erfordert keine Aktion, kann aber nur <strong>vor oder nach</strong> einer Aktion und nur <strong>einmal pro Zug</strong> ausgeführt werden. Wenn du in deinem vorherigen Zug in dieser Szene bereits einen <strong>anderen Tanz</strong> aufgeführt hast, werden die Kosten für den neuen <strong>Tanz</strong> auf @LOSS[5 MP] reduziert.</p><p>Einige <strong>Tänze</strong> sind <strong>unmittelbar</strong> und werden sofort abgehandelt, während andere einen Effekt haben, der <strong>bis zum Beginn deines nächsten Zuges</strong> anhält.</p><hr><ul><li><p><span>Für mehr Informationen zu <strong>Tanzen</strong> und einer Liste an Tänzen schaue hier: </span>@UUID[Compendium.projectfu.handouts.JournalEntry.cH2N0pg4NeNZpaM5]{Tänze Regeln}</p></li><li><p><strong>Du bezahlst (verringert):</strong> @LOSS[5 mp]</p></li></ul>"
 		},
 		"Follow My Lead": {
 			"name": "Folge meinem Beispiel",
 			"source": "AHF149",
 			"src": "AHF149",
-			"class": "Tänzer",
 			"Description": "<p>Wenn du einen Tanz mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ aufführst, darfst du zusätzliche @LOSS[10 mp] ausgeben. Wenn du das tust, wähle einen Verbündeten, zu dem du sehen kannst und zu dem du eine Bindung der <strong>Zuneigung</strong> hast: Wende die Vorteile des <strong>Tanzes</strong> sowohl auf diesen Verbündeten als auch auf dich an (die Vorteile gelten bis zum Beginn <strong>deines</strong> nächsten Zuges).</p>"
 		},
 		"Frenetic Footwork": {
 			"name": "Frenetische Beinarbeit",
 			"source": "AHF149",
 			"src": "AHF149",
-			"class": "Tänzer",
 			"Description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ erhältst du bis zum Beginn deines nächsten Zuges einen Bonus in Höhe von<strong>【FS × 2】</strong>auf alle Konkurrenzproben, die sich auf <strong>Akrobatik</strong>, <strong>Koordination</strong> oder <strong>Geschwindigkeit</strong> beziehen.</p>",
 			"fxName0": "Frenetische Beinarbeit",
 			"fxDesc0": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ erhältst du bis zum Beginn deines nächsten Zuges einen Bonus in Höhe von<strong>【FS × 2】</strong>auf alle Konkurrenzproben, die sich auf <strong>Akrobatik</strong>, <strong>Koordination</strong> oder <strong>Geschwindigkeit</strong> beziehen.</p>",
@@ -1002,14 +977,12 @@
 			"name": "Schneller Wechsel",
 			"source": "AHF149",
 			"src": "AHF149",
-			"class": "Tänzer",
 			"Description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> darfst du die <strong>Ausrüstungs</strong>-Aktion kostenfrei ausführen.</p>"
 		},
 		"Wardancer": {
 			"name": "Schlachttänzer",
 			"source": "AHF149",
 			"src": "AHF149",
-			"class": "Tänzer",
 			"Description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> verursachen deine Angriffe mit <strong>Raufen</strong>, <strong>Dolch</strong>, <strong>Flegel</strong> und <strong>Werfen【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges. Wenn du eine <strong>arkane</strong> Waffe ausgerüstet hast, verursachen offensive Zauber ( @ICON[offensive] ), die du wirkst, ebenfalls<strong>【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges.</p>",
 			"fxName0": "Schlachttänzer",
 			"rounds": "1",
@@ -1049,14 +1022,12 @@
 			"name": "Qualen",
 			"source": "GRW199",
 			"src": "GRW199",
-			"class": "Finsterschneide",
 			"Description": "<p>Nachdem du einem oder mehreren Wesen Schaden zugefügt hast und du eine <strong>Bindung</strong> zu mindestens einem dieser Wesen hast, kannst du<strong>【FS × 2】</strong>Lebenspunkte und<strong>【FS × 2】</strong>Geistpunkte zurückerhalten.</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[$sl*2 hp]{FS × 2 LP}, and @GAIN[$sl*2 mp]{FS × 2 GP}</p></li></ul>"
 		},
 		"Dark Blood": {
 			"name": "Finsteres Blut",
 			"source": "GRW199",
 			"src": "GRW199",
-			"class": "Finsterschneide",
 			"Description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, bist du resistent gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>.</p>",
 			"rounds": "1",
 			"fxName0": "Finsteres Blut",
@@ -1086,7 +1057,6 @@
 			"name": "Herz der Finsternis",
 			"source": "GRW199",
 			"src": "GRW199",
-			"class": "Finsterschneide",
 			"Description": "<p>Du kannst einmal pro Szene, wenn du eine <strong>Krise</strong> gerätst, ein bestimmtes Wesen wählen, das du sehen kannst und zu dem du keine <strong>Bindung</strong> hast. Wenn du das tust, dann erschaffe eine <strong>Bindung des Hasses</strong> zu diesem Wesen.</p>",
 			"rounds": "1",
 			"fxName0": "Herz der Finsternis",
@@ -1115,35 +1085,30 @@
 			"name": "Schmerzhafte Lektion",
 			"source": "GRW199",
 			"src": "GRW199",
-			"class": "Finsterschneide",
 			"Description": "<p>Wenn du durch ein anderes Wesen Lebenspunkte verlierst (durch einen Angriff, einen Zauber oder eine andere Methode), kannst du bei diesem Wesen sofort und kostenlos die <strong>Untersuchen</strong>-Aktion (siehe <strong>Grundregelwerk</strong>, Seite <strong>74</strong>) ausführen. Tust du das, erhältst du einen Bonus in Höhe von<strong>【FS】</strong>auf deine Probe.</p><p>Denke daran, dass du denselben Aspekt eines Wesens nur einmal untersuchen kannst.</p>"
 		},
 		"Shadow Strike": {
 			"name": "Schattenschlag",
 			"source": "GRW199",
 			"src": "GRW199",
-			"class": "Finsterschneide",
 			"Description": "<p>Du hast gelernt, deine Lebenskraft in deine Angriffe zu leiten. Du kannst eine Aktion ausführen, um einen <strong>Schattenschlag</strong> zu vollführen: Würfle mit deinem aktuellen <strong>Macht</strong>-Würfel und verliere Lebenspunkten in Höhe<strong>【der gewürfelten Zahl auf deinem Macht-Würfel】</strong>.Hat dies deine Lebenspunkte nicht auf 0 reduziert, kannst du einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die du ausgerüstet hast: Trifft dieser Angriff ein oder mehrere Ziele, verursacht er zusätzlichen Schaden in Höhe von<strong>【FS + der gewürfelten Zahl auf deinem Macht-Würfel】</strong>.Allerdings wird der gesamte Schaden, den dieser Angriff verursacht, <strong>finster</strong> und seine Schadensart kann nicht geändert werden.</p>"
 		},
 		"Cataclysm": {
 			"name": "Kataklysmus",
 			"source": "GRW191",
 			"src": "GRW191",
-			"class": "Elementarist",
 			"Description": "<p>Wenn du einen Zauber mit der Dauer „Unmittelbar“ wirkst und eine <strong>arkane</strong> Waffe ausgerüstet hast, kannst du die <strong>GP-Gesamtkosten des Zaubers</strong> um bis zu<strong>【FS × 10】</strong>Geistpunkte <strong>erhöhen</strong>. Wenn du dies tust und der Zauber einem oder mehreren Wesen Schaden zufügt, fügt er jedem Wesen 5 Zusatzschaden für je 10 Geistpunkte zu, um die du seine GP-Gesamtkosten erhöht hast.</p>"
 		},
 		"Elemental Magic": {
 			"name": "Elementarmagie",
 			"source": "GRW191",
 			"src": "GRW191",
-			"class": "Elementarist",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, lernst du einen Elementaristen-Zauber (siehe die nächsten beiden Seiten). (<strong>Grundregelwerk</strong>, page <strong>192 ff </strong>oder @UUID[Compendium.projectfu.spells.Item.GOEbYMBu3cGnszWt]{[Elementaristen Zauber]}).</p><p>Offensive @ICON[offensive] Elementaristen-Zauber verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p>"
 		},
 		"Magic Artillery": {
 			"name": "Magische Artillerie",
 			"source": "GRW191",
 			"src": "GRW191",
-			"class": "Elementarist",
 			"Description": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, erhältst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, einen Bonus in Höhe von<strong>【FS × 2】</strong>auf deine Magieprobe.</p>",
 			"rounds": "1",
 			"disabled": "false",
@@ -1165,14 +1130,12 @@
 			"name": "Rituelle Elementaristik",
 			"source": "GRW191",
 			"src": "GRW191",
-			"class": "Elementarist",
 			"Description": "<p>Du kannst Rituale durchführen, deren Effekte in die <strong>Elementaristik</strong>-Disziplin fallen.</p><p>Elementaristik-Rituale verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p>"
 		},
 		"Spellblade": {
 			"name": "Zauberklinge",
 			"source": "GRW191",
 			"src": "GRW191",
-			"class": "Elementarist",
 			"Description": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, der <strong>ein einzelnes Wesen</strong> zum Ziel hat, dessen <strong>Geistpunkt-Gesamtkosten【FS × 10】oder weniger</strong> betragen und du eine oder mehrere <strong>Bogen</strong>-, <strong>Raufen</strong>-, <strong>Dolch</strong>-, <strong>Flegel</strong>-, <strong>Speer</strong>- oder <strong>Schwertwaffen</strong> ausgerüstet hast, darfst du eine dieser Waffen wählen. Tust du das, wird deine Magieprobe für den Zauber die Präzisionsproben-Formel der gewählten Waffe verwenden; zum Beispiel verwendet die Magieprobe für einen Elementaristen-Zauber, der durch ein Bronzeschwert gewirkt wird (Seite <strong>131</strong>), <strong>【GES + MAT】+1</strong> anstelle von<strong>【EIN + WLK】</strong>.</p>",
 			"img": "systems/projectfu/styles/static/compendium/classes/elementalist/elementalist_spellblade.png",
 			"fxName0": "Zauberklinge",
@@ -1190,35 +1153,30 @@
 			"name": "GP absorbieren",
 			"source": "GRW195",
 			"src": "GRW195",
-			"class": "Entropist",
 			"Description": "<p>Nachdem du Schaden erlitten hast, kannst du sofort<strong>【FS × 2】</strong>Geistpunkte zurückerhalten.</p><hr><ul><li><p>Du regenerierst: @GAIN[2*$sl mp]{FS × 2 GP}</p></li></ul>"
 		},
 		"Entropic Magic": {
 			"name": "Entropische Magie",
 			"source": "GRW195",
 			"src": "GRW195",
-			"class": "Entropist",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, lernst du einen @UUID[Compendium.projectfu.spells.Item.fIzsuP7ro97Xc8H0]{[Entropisten-Zauber]} (siehe <strong>Grundregelwerk</strong>, Seite <strong>196 ff</strong>).</p><p>Offensive ( @ICON[offensive] ) Entropisten-Zauber verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p><p> </p>"
 		},
 		"Lucky Seven": {
 			"name": "Glückliche Sieben",
 			"source": "GRW195",
 			"src": "GRW195",
-			"class": "Entropist",
 			"Description": "<p>Du hast eine <strong>Glückszahl</strong>; zu Beginn jeder Sitzung ist diese Zahl <strong>7</strong>. Einmal pro Szene, nachdem du eine Probe abgelegt hast, darfst du den Wert auf einem der Würfel, die du gewürfelt hast, durch deine Glückszahl ersetzen (auch wenn dies ein unmögliches Ergebnis ergeben würde, wie zum Beispiel eine 7 auf einem W6). Tust du das, wird der ersetzte Wert zu deiner <strong>neuen</strong> Glückszahl.</p>"
 		},
 		"Ritual Entropism": {
 			"name": "Rituelle Entropistik",
 			"source": "GRW195",
 			"src": "GRW195",
-			"class": "Entropist",
 			"Description": "<p>Du kannst Rituale durchführen, deren Effekte in die Entropistik-Disziplin fallen.</p><p>Entropistik-Rituale verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p><p>Regeln für Rituale können im Grundregelwerk auf Seite <strong>118 ff </strong>gefunden werden.</p>"
 		},
 		"Stolen Time": {
 			"name": "Gestohlene Zeit",
 			"source": "GRW195",
 			"src": "GRW195",
-			"class": "Entropist",
 			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen, um den Fluss der Zeit zu stören, indem du bis zu<strong>【FS × 5】</strong>Geistpunkte ausgibst. Für jeweils 5 Geistpunkte, die du auf diese Weise ausgibst, wählst du eine Option:</p><ul><li><p>Ein Wesen, das du sehen kannst, wird <strong>@EFFECT[slow]</strong>;</p></li><li><p><strong>oder</strong> ein Wesen, das du sehen kannst, erholt sich von <strong>verlangsamt</strong>;</p></li><li><p><strong>oder</strong> ein Wesen, das du sehen kannst, darf sofort die <strong>Ausrüstungs</strong>-Aktion kostenlos ausführen;</p></li><li><p><strong>oder</strong> du wählst einen Verbündeten, den du sehen kannst und der in dieser Runde noch nicht am Zug war: Dieser Verbündete darf in dieser Runde unmittelbar nach dir am Zug sein.</p></li></ul><p>Jede Option kann nur einmal pro Anwendung dieser Fähigkeit gewählt werden.</p><hr><p><strong>Eine </strong>Option - @LOSS[5 mp]</p><p><strong>Zwei</strong> Optionen - @LOSS[10 mp]</p><p><strong>Drei</strong> Optionen - @LOSS[15 mp]</p><p><strong>Vier</strong> Optionen - @LOSS[20 mp]</p>"
 		},
 		"Cognitive Focus (Check Bonus)": {
@@ -1490,42 +1448,36 @@
 		"Cognitive Focus": {
 			"name": "Kognitiver Fokus",
 			"source": "ATF151",
-			"class": "Esper",
 			"Description": "<p>Zu Beginn deines Zuges während eines Konflikts darfst du einen Verbündeten, der dich hören kann, <strong>oder</strong> einen Gegner, den du sehen kannst, wählen, der <strong>benommen</strong>, <strong>wütend</strong> und/oder <strong>erschüttert</strong> ist. Bis zum Beginn deines nächsten Zuges wird das gewählte Wesen zu deinem <strong>Fokus</strong>.</p><p>Du erhältst einen Bonus in Höhe von <strong>【FS】</strong> auf Proben, mit denen du deinen Fokus untersuchst, sowie auf Präzisions- und Magieproben für Angriffe und offensive Zauber (@ICON[offensive]), zu deren Zielen auch dein <strong>Fokus</strong> gehört. Wenn du deinen Fokus dazu bringst, Lebenspunkte und/oder Geistpunkte wiederherzustellen, erhält er <strong>【FS × 2】</strong>zusätzliche LP bzw. GP zurück.</p><hr><ul><li><p><strong>Du erhältst: </strong>@EFFECT[Compendium.projectfu.skills.TnDgm6eYgHSKNkDT]{Kognitiver Fokus (Probenbonus)}</p></li><li><p><strong>Fokus regeneriert: </strong>@GAIN[2*$sl hp]{SL × 2 HP}, und/oder @GAIN[2*$sl mp]{SL × 2 MP}</p></li><li><p><strong>Ziel erhält: </strong>@EFFECT[Compendium.projectfu.skills.GqxqSdf1UMKkJH1U]{Effekt: Kognitiver Fokus}</p></li></ul>"
 		},
 		"Hypercognition": {
 			"name": "Hyperkognition",
 			"source": "ATF151",
 			"src": "ATF151",
-			"class": "Esper",
 			"Description": "<p>Die GP-Gesamtkosten deiner <strong>Zauber</strong> und <strong>Strophen</strong>, zu deren Zielen dein <strong>Fokus</strong> gehört, werden um<strong>【FS】</strong>reduziert bzw. um<strong>【FS × 2】</strong>,wenn dein Fokus das einzige Ziel ist (bis zu einem Minimum von 0 Geistpunkten).</p>"
 		},
 		"Navigator": {
 			"name": "Navigator",
 			"source": "ATF151",
 			"src": "ATF151",
-			"class": "Esper",
 			"Description": "<p>Du kannst mit jedem vernunftbegabten Verbündeten, der sich im <strong>Umkreis von 1 Reisetag</strong> um dich befindet, telepathisch kommunizieren; ihr seid <strong>in der Lage</strong>, euch für die Anwendung von Fähigkeiten und Effekten <strong>gegenseitig zu hören</strong>.</p><p>Du erhältst die Befähigung, Rituale der <strong>Ritualistik</strong>-Disziplin durchzuführen. <strong>Darüber hinaus</strong> kannst du die Ritualistik nutzen, um Wesen in das Seelen-Netzwerk hinein- und aus ihm herauszubringen und um Informationen zu erhalten und Entitäten zu verfolgen, während sie sich im Seelen-Netzwerk befinden.</p>"
 		},
 		"Psychic Gifts": {
 			"name": "Übersinnliche Gaben",
 			"source": "ATF151",
 			"src": "ATF151",
-			"class": "Esper",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit wählst, erhältst du eine <strong>Übersinnliche Gabe</strong>.</p><p>Die Regeln für Gaben und für die <strong>Gehirnwellenuhr</strong> findest du auf der nächsten Seite. (<strong>Atlas: Techno Fantasy</strong>, Seite <strong>152</strong>)</p><hr><ul><li><p>Für eine Anleitung und eine Liste der Übersinnlichen Gaben siehe hier: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]{Übersinnliche Gaben Regeln}</p></li></ul><ul><li><p>Anweisungen zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc.JournalEntryPage.uafn9l51ROzc9q0w]{Übersinnliche Gaben VTT Anweisungen}</p></li></ul>"
 		},
 		"Psychokinesis": {
 			"name": "Psychokinese",
 			"source": "ATF151",
 			"src": "ATF151",
-			"class": "Esper",
 			"Description": "<p>Wenn du eine Präzisionspobe ablegst, darfst du einen der Attributs-Würfel durch <strong>Willenskraft</strong> ersetzen (z. B. <strong>【GES + WLK】</strong>für einen Kurzbogen). Außerdem können deine <strong>Nahkampfangriffe</strong> mit Waffen der Kategorien <strong>Arkan</strong> oder <strong>Schwert fliegende</strong> Wesen zum Ziel haben.</p>"
 		},
 		"Effect: Provoke": {
 			"name": "Effekt: Provozieren",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"fxDesc0": "<p>Du bist gezwungen, deine Aufmerksamkeit auf den Charakter zu richten, der dich provoziert hat.</p><p><em>Füge zu Automatisierungszwecken</em> @EFFECT[Compendium.projectfu.conditions-effects.vuJGp3kTdnZeEqQO] <em>separat hinzu.</em></p>",
 			"img": "systems/projectfu/styles/static/compendium/classes/fury/fury_provoke.png",
 			"rounds": "1",
@@ -1549,7 +1501,6 @@
 			"name": "Adrenalin",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"Description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, verursachst du<strong>【FS × 2】</strong>zusätzlichen Schaden (sei es mit Angriffen, Zaubern, Arkana, Items oder einer anderen Methode).</p>",
 			"fxName0": "Adrenalin",
 			"fxDesc0": "<p>Solange du dich in einer <strong>Krise</strong> befindest, verursachst du<strong>【FS × 2】</strong>zusätzlichen Schaden (sei es mit Angriffen, Zaubern, Arkana, Items oder einer anderen Methode).</p>",
@@ -1569,35 +1520,30 @@
 			"name": "Raserei",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"Description": "<p>Deine Präzisionsproben mit <strong>Raufen</strong>-, <strong>Dolch</strong>-, <strong>Flegel</strong>- und <strong>Wurfwaffen</strong> lösen einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (und die Probe kein <strong>Patzer</strong> ist).</p>"
 		},
 		"Indomitable Spirit": {
 			"name": "Unbeugsamer Geist",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"Description": "<p>Wenn du einen oder mehrere Fabula-Punkte ausgibst, erhältst du einen zusätzlichen Vorteil – wähle eine Option: Du erhältst<strong>【FS × 5】</strong>Lebenspunkte zurück; <strong>oder</strong> du erhältst<strong>【FS × 5】</strong>Geistpunkte zurück; <strong>oder</strong> du erholst dich von einem einzelnen Statuseffekt deiner Wahl.</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[5*$sl hp]{FS × 5 LP} oder @GAIN[5*$sl mp]{FS × 5 GP}</p></li></ul>"
 		},
 		"Provoke": {
 			"name": "Provozieren",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"Description": "<p>Du kannst eine Aktion ausführen und <strong>@LOSS[5 mp]</strong> ausgeben, um eine Konkurrenzprobe auf<strong>【MAT + WLK】</strong>gegen ein Wesen abzulegen, das du sehen kannst – beschreibe, wie du es verspottest! Falls du Erfolg hast, wird das Ziel wütend und ist gezwungen, seine Aufmerksamkeit auf dich zu richten (seine Angriffe und offensiven Zauber müssen dich nach Möglichkeit zu den Zielen zählen). Dieser Zwang endet, solltest du bewusstlos werden oder die Szene verlassen, sollte das Wesen nicht mehr wütend sein oder sollte es von jemand anderem erfolgreich provoziert werden.</p><p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Proben auf<strong>【MAT + WLK】</strong>für diese Fähigkeit.</p><hr><ul><li><p><strong>Du würfelst: </strong>@CHECK[mig wlp ($sl)]{Konkurrenzprobe auf【MAT + WLK + FS】}</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[enraged] @EFFECT[Compendium.projectfu.skills.SBaaNDpwZQDafu3J]{Effekt: Provozieren}</p></li></ul>"
 		},
 		"Withstand": {
 			"name": "Widerstehen",
 			"source": "GRW201",
 			"src": "GRW201",
-			"class": "Furie",
 			"Description": "<p>Wenn du die <strong>@EFFECT[guard]</strong> -Aktion ausführst und dich dafür entscheidest, ein anderes Wesen <strong>nicht</strong> zu decken, erhältst du Lebenspunkte in Höhe von<strong>【FS multipliziert mit der höchsten Stärke unter deinen Bindungen】</strong>und wählst <strong>Macht</strong> oder <strong>Willenskraft</strong>: Du behandelst das gewählte Attribut bis zum Ende deines nächsten Zuges so, als wäre es eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[1*$sl hp]{FS × 1 Emotion LP}, @GAIN[2*$sl hp]{FS × 2 Emotionen LP} oder @GAIN[3*$sl hp]{FS × 3 Emotionen LP}</p></li><li><p><strong>Du erhältst: </strong>@EFFECT[mig-up e:eot i:2], oder @EFFECT[wlp-up e:eot i:2]</p></li></ul>"
 		},
 		"Twin Shields": {
 			"name": "Doppelschilde",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Verursacht zusätzlichen Schaden in Höhe deiner <strong>【FS】</strong> in <strong>Meisterliche Verteidigung</strong>.</p>",
 			"rounds": "1",
 			"disabled": "false",
@@ -1617,14 +1563,12 @@
 			"name": "Leibwache",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Wenn du die @EFFECT[guard] -Aktion ausführst, um ein anderes Wesen zu decken, erhält dieses Wesen bis zum Beginn deines nächsten Zuges <strong>Resistenz</strong> gegen alle Schadensarten.</p><hr><ul><li><p><strong>Ziel erhält:</strong> @EFFECT[cover] + @TYPE[affinity all resistance e:sot i:1 t:source]</p></li></ul>"
 		},
 		"Defensive Mastery": {
 			"name": "Meisterliche Verteidigung",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Solange du mit einem <strong>Schild</strong> oder einer <strong>martialischen Rüstung</strong> ausgerüstet bist, wird jeglicher Schaden, den du erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> den Schadens-Affinitäten angewandt).</p>",
 			"fxName0": "Meisterliche Verteidigung",
 			"img": "systems/projectfu/styles/static/compendium/classes/guardian/guardian_defensive_mastery.png",
@@ -1644,14 +1588,12 @@
 			"name": "Doppelschild",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Du kannst jetzt einen <strong>Schild</strong> in deinem Slot für die <strong>primäre Hand</strong> ausrüsten. Solange du zwei Schilde ausgerüstet hast, profitierst du von den Vorteilen beider Items und kannst sie wie die folgende kombinierte zweihändige Nahkampf-<strong>Raufen</strong>-Waffe behandeln:</p><table style=\"width:98.7597%\" border=\"1\"><colgroup><col style=\"width:14.4654%\"><col style=\"width:20.7547%\"><col style=\"width:23.2618%\"><col style=\"width:41.5181%\"></colgroup><tbody><tr><td><p><strong>WAFFE</strong></p></td><td><p><strong>PRÄZISION</strong></p></td><td><p><strong>SCHADEN</strong></p></td><td><p><strong>EIGENSCHAFT</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h]</strong></p></td><td><p><strong>【MAT + MAT】</strong></p></td><td><p><strong>【HW + 5】</strong>physisch</p></td><td><p>Verursacht zusätzlichen Schaden in Höhe deiner<strong>【FS】</strong>in <strong>@UUID[Compendium.projectfu.skills.Item.7wF1oulk0Zn7ITTF]{Meisterliche Verteidigung}</strong> (oben).</p></td></tr></tbody></table><hr><ul><li><p><strong>Zur Automatisierung </strong>ziehe die @UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h] auf dein Charakterblatt. Navigiere zum <strong>Gegenstände</strong> Tab, wo sich die <strong>Zwillingsschilde</strong> befinden und mach einen <strong>Strg+Klick</strong> auf das Icon in der <strong>Ausrüsten?</strong> Spalte. Der Gegenstand wird in der <strong>Zusatzhand</strong> ausgerüstet.<br>Du kannst so auch beide Schilde in deiner Haupt- und Nebenhand ausrüsten.</p></li></ul>"
 		},
 		"Fortress": {
 			"name": "Festung",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um<strong>【SL × 3】</strong>.</p>",
 			"fxName0": "Festung",
 			"_id": "6qHoygYUxyY8biDV",
@@ -1669,21 +1611,18 @@
 			"name": "Schutz",
 			"source": "GRW217",
 			"src": "GRW217",
-			"class": "Wächter",
 			"Description": "<p>Wenn ein anderes Wesen von einem <strong>Angriff</strong>, einem <strong>Zauber</strong> oder einer anderen <strong>Gefahr</strong> bedroht wird, kannst du seinen Platz einnehmen (alle Proben, die zu der Gefahr gehören, werden gegen dich abgelegt; du kannst den Einsatz dieser Fähigkeit <strong>vor oder nach</strong> dem Ablegen der Proben ankündigen). Hat dich die Gefahr bereits beeinflusst, beeinflusst sie dich <strong>zweimal</strong> (handle beide Fälle getrennt ab); du kannst auch nicht mehrere Wesen vor derselben Gefahr schützen. Setzt du diese Fähigkeit während eines Konflikts ein, kannst du sie erst wieder zu Beginn deines nächsten Zuges einsetzen.</p>"
 		},
 		"Flash of Insight": {
 			"name": "Gedankenblitz",
 			"source": "GRW203",
 			"src": "GRW203",
-			"class": "Lehrmeister",
 			"Description": "<p>Wenn du bei einer Probe zum Erforschen eines Wesens, eines Items oder eines Ortes – dazu gehört auch die <strong>Untersuchen</strong>-Aktion während eines Konflikts – eine <strong>13 oder höher</strong> würfelst, darfst du der Spielleiterin bis zu<strong>【FS】</strong>Fragen zum Gegenstand deiner Untersuchung stellen. Du kannst diese Fragen sofort stellen oder für später aufheben; immer wenn du eine dieser Fragen stellst, wird die Spielleiterin wahrheitsgemäß antworten, und du beschreibst den Denkprozess deines Charakters.</p><p>Diese Fähigkeit kann nur einmal auf dasselbe Wesen, Item oder denselben Ort angewendet werden.</p>"
 		},
 		"Focused": {
 			"name": "Fokussiert",
 			"source": "GRW203",
 			"src": "GRW203",
-			"class": "Lehrmeister",
 			"Description": "<p>Erhöhe deine maximalen Geistpunkte dauerhaft um<strong>【FS × 3】</strong>.</p><p>Wenn du eine Offene Probe auf<strong>【EIN + EIN】</strong>ablegst, erhältst du einen Bonus in Höhe von<strong>【FS】</strong>auf diese Probe (dies gilt nur für Offene Proben).</p><hr><ul><li><p><strong>Du würfelst</strong>: @CHECK[ins ins ($sl)]</p></li></ul>",
 			"fxName0": "Fokussiert",
 			"img": "systems/projectfu/styles/static/compendium/classes/loremaster/loremaster_focused.png",
@@ -1699,35 +1638,30 @@
 			"name": "Wissen ist Macht",
 			"source": "GRW203",
 			"src": "GRW203",
-			"class": "Lehrmeister",
 			"Description": "<p>Wenn du eine Präzisionsprobe ablegst, darfst du <strong>einen</strong> der Attributs-Würfel durch <strong>Einsicht</strong> ersetzen (z. B. <strong>【EIN + EIN】</strong>für eine <strong>Pistole</strong> oder <strong>【EIN + MAT】</strong>für eine <strong>Kriegsaxt</strong>).</p>"
 		},
 		"Quick Assessment": {
 			"name": "Schnelle Beurteilung",
 			"source": "GRW203",
 			"src": "GRW203",
-			"class": "Lehrmeister",
 			"Description": "<p>Zu Beginn eines Konflikts darfst du bis zu<strong>【FS × 5】</strong>Geistpunkte ausgeben. Für je 5 Geistpunkte, die du auf diese Weise ausgibst, wählst du eine Option: Wähle ein Wesen, das du sehen kannst, und die Spielleiterin deckt eine seiner <strong>Eigenschaften</strong> auf; <strong>oder</strong> nenne eine Schadensart und wähle ein Wesen, das du sehen kannst, und die SL deckt die <strong>Affinität</strong> des Wesens zu dieser Schadensart auf.</p>"
 		},
 		"Trained Memory": {
 			"name": "Geschultes Gedächtnis",
 			"source": "GRW203",
 			"src": "GRW203",
-			"class": "Lehrmeister",
 			"Description": "<p>Du kannst dich perfekt an die Details jeder Szene erinnern, in der du während der letzten Wochen warst. Du kannst in deinem Geist „in der Zeit zurückgehen“, um solche Szenen erneut zu untersuchen und zu erforschen – deine Fähigkeit <strong>Gedankenblitz</strong> kann auch auf diese Erinnerungen angewendet werden.</p>"
 		},
 		"Akromorphosis": {
 			"name": "Akromorphose",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"Description": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p><p>Zu Beginn deines Zuges während eines Konflikts darfst du eine Waffenkategorie wählen, die nicht <strong>Raufen</strong> ist. Wenn du das tust, gehören deine <strong>waffenlosen Schläge</strong> jetzt zu der gewählten Kategorie. Wenn du <strong>Bogen</strong>, <strong>Schusswaffe</strong> oder <strong>Werfen</strong> wählst, werden sie zu <strong>Fernkampf</strong>- statt <strong>Nahkampfwaffen</strong>. Wenn du <strong>Dolch</strong> oder <strong>Schwert</strong> wählst, können sie nicht mit dem <strong>Dreifachen Schnitt</strong> (siehe <strong>Atlas: High Fantasy</strong>, Seite <strong>155</strong>) eingesetzt werden. Diese Änderungen gelten bis zum Beginn deines nächsten Zuges.</p><hr><ul><li><p>Für <strong>Automatisierung, </strong>füge @UUID[Compendium.projectfu.skills.XlN2TtdK4Sn4ssQS]{Waffenloser Schlag: Mutant} zu deinem Charakterbogen hinzu, um die Boni direkt einrechnen zu lassen.</p></li></ul>"
 		},
 		"Biophagy": {
 			"name": "Biophage",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"Description": "<p>Nachdem einer deiner Angriffe oder offensiven Zauber (@ICON[offensive]) dazu führt, dass ein oder mehrere Gegner Lebenspunkte verlieren, kannst du<strong>【FS × 5】</strong>Lebenspunkte zurückerhalten, wenn du dich in einer <strong>Krise</strong> befindest.</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[$sl*5 hp]{SL × 5 HP}</p></li></ul>",
 			"fxName0": "Biophage",
 			"img": "icons/magic/control/debuff-energy-hold-yellow.webp",
@@ -1742,21 +1676,18 @@
 			"name": "Ecdysis",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"Description": "<p>Wenn du durch Schaden Lebenspunkte verlierst und dieser Schaden <strong>nicht physischer</strong> Art war, kannst du 10 Lebenspunkte ausgeben, um resistent gegen diese Schadensart zu werden, bis du diese Fähigkeit erneut einsetzt. Du kannst diese Fähigkeit nicht einsetzen, wenn deine LP dadurch auf 0 sinken würden.</p><hr><ul><li><p><strong>Du erhältst:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], @TYPE[affinity ice resistance], @TYPE[affinity light resistance], @TYPE[affinity poison resistance]</p></li></ul>"
 		},
 		"Genoclepsis": {
 			"name": "Genoclepsis",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"Description": "<p>Wenn du einem oder mehreren NSC Schaden zufügst, erfährst du ihre <strong>Spezies</strong>, <strong>und die SL wählt【FS】Therioformen</strong> aus, die zu diesen NSC passen (siehe nächste Seite): Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8] erworben hast, darfst du sofort ihre LP-Kosten bezahlen und sie einsetzen, um diese <strong>Therioformen</strong> anzunehmen (auch wenn sie nicht zu denen gehören, die du gelernt hast).</p><hr><ul><li><p><span>Für eine Erklärung und Liste der <strong>Therioformen</strong>, siehe hier</span>:<strong> </strong>@UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]{Therioform Regeln}</p></li></ul>"
 		},
 		"Theriomorphosis": {
 			"name": "Theriomorphose",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, lernst du eine <strong>Therioform</strong> (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>156ff</strong>)</p><p>Du kannst eine Aktion einsetzen und <strong>ein Drittel deiner aktuellen Lebenspunkte</strong> (abgerundet) ausgeben, um die Effekte von <strong>bis zu zwei Therioformen</strong> zu entfalten, die du gelernt hast. Die Einzelheiten dieser Verwandlung werden auf der oben angegebenen Seite erklärt.</p><hr><ul><li><p>Für eine Erklärung und Liste der <strong>Therioformen</strong>, siehe hier:<strong> </strong>@UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]</p></li><li><p><strong>Kosten:</strong> @LOSS[(@target.resources.hp.value/3) hp]{1/3 der aktuellen LP}</p></li></ul>"
 		},
 		"Effect: Akromorphosis": {
@@ -1784,7 +1715,6 @@
 			"Description": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>",
 			"source": "ATF155",
 			"src": "ATF155",
-			"class": "Mutant",
 			"img": "systems/projectfu/styles/static/compendium/classes/mutant/mutant_akromorphosis.png",
     		"origin": "Compendium.projectfu.skills.Item.WV3lBnVzMFBB2irj",
 			"fxName0": "Effekt: Akromorphose",
@@ -1922,42 +1852,36 @@
 			"name": "Beyond The Realms Of Death",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"Description": "<p>Wenn ein anderes Wesen, das du sehen kannst, in einer Krise Lebenspunkte verliert, erhältst du, sofern es nicht <strong>untot</strong> ist, <strong>1 Grabpunkt</strong>. Du darfst nie mehr als<strong>【FS + 1】</strong>Grabpunkte haben.</p><p>Wenn du 0 Lebenspunkte erreichst, <strong>verlierst du alle Grabpunkte</strong>; wenn du auf diese Weise mindestens 1 Grabpunkt verloren hast und dies das erste Mal ist, dass du in dieser Szene auf 0 LP reduziert wirst, kapitulierst du nicht und opferst dich auch nicht: Stattdessen erhältst du eine Menge an LP zurück, die<strong>【FS multipliziert mit der Anzahl der auf diese Weise verlorenen Grabpunkte】</strong>entspricht.</p><hr><ul><li><p><strong>Du regenerierst:</strong> @GAIN[(@item.level.value)+(@item.rp.current) hp]{FS × verlorene Grabpunkte LP}</p></li></ul>"
 		},
 		"Children Of The Grave": {
 			"name": "Children Of The Grave",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"Description": "<p>Du kannst immer mit <strong>untoten</strong> Wesen verbal kommunizieren. Einmal pro Szene darfst du einem <strong>Untoten</strong> eine einzelne Frage stellen; er ist gezwungen, wahrheitsgemäß zu antworten.</p>"
 		},
 		"Fear Is The Key": {
 			"name": "Fear Is The Key",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"Description": "<p>Nachdem du einen oder mehrere Gegner dazu gebracht hast, Lebenspunkte zu verlieren, erhältst du, sofern du die Fähigkeit <strong>Beyond the Realms of Death</strong> erworben hast und mindestens einer von ihnen <strong>erschüttert</strong> und/oder <strong>geschwächt</strong> ist, 1 Grabpunkt und erhältst<strong>【FS × 2】</strong>Lebenspunkte und Geistpunkte zurück.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[beyond-the-realms-of-death update 1]{Erhalte 1 Grabpunkt}</p></li><li><p><strong>Du regenerierst: </strong>@GAIN[2*$sl hp]{FS × 2 LP} and<strong> </strong>@GAIN[2*$sl mp]{FS × 2 GP}</p></li></ul>"
 		},
 		"For Whom The Bell Tolls": {
 			"name": "For Whom The Bell Tolls",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"Description": "<p>Wenn du <strong>einem Wesen mit einem Zauber Schaden zufügst</strong>, darfst du, sofern dieser Zauber <strong>nur diesem Wesen Schaden zufügt</strong>, 1 Grabpunkt ausgeben. Tust du das, wähle eine Option: Falls das Wesen unter einem oder mehreren Statuseffekten leidet, fügt der Zauber zusätzlichen Schaden in Höhe von<strong>【(FS × 2) + der Anzahl der Statuseffekte dieses Wesens】</strong>zu; <strong>oder</strong> falls das Wesen unter keinen Statuseffekten leidet, wird es <strong>erschüttert</strong>.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[beyond-the-realms-of-death update -1]{Bezahle 1 Grabpunkt}</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.Jc1KEmU0iN7Ul8dZ]{Effekt: For Whom The Bell Tolls}, oder @EFFECT[shaken]</p></li></ul>"
 		},
 		"Rondo Of Nightmare": {
 			"name": "Rondo Of Nightmare",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"Description": "<p>Wenn du einen offensiven Zauber ( @ICON[offensive] ) mit dem <strong>Ziel</strong> „Ein Wesen“ wirkst, darfst du 2 Grabpunkte ausgeben, um ihn auf <strong>alle</strong> Wesen wirken zu lassen, die du sehen kannst und die sich in der Szene befinden (lege eine einzelne Magieprobe ab und halte mit der Magie-Verteidigung jedes Wesens dagegen). Tust du das, wird sämtlicher Schaden, den der Zauber verursacht, <strong>finster</strong>, und seine Schadensart kann sich nicht ändern.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[beyond-the-realms-of-death update -2]{Bezahle 2 Grabpunkte}</p></li></ul>"
 		},
 		"Effect: For Whom The Bell Tolls": {
 			"name": "Effekt: For Whom The Bell Tolls",
 			"source": "LU5",
 			"src": "LU5",
-			"class": "Nekromant",
 			"fxDesc0": "<p>Wenn du <strong>einem Wesen mit einem Zauber Schaden zufügst</strong>, darfst du, sofern dieser Zauber <strong>nur diesem Wesen Schaden zufügt</strong>, 1 Grabpunkt ausgeben. Tust du das, wähle eine Option: Falls das Wesen unter einem oder mehreren Statuseffekten leidet, fügt der Zauber zusätzlichen Schaden in Höhe von<strong>【(FS × 2) + der Anzahl der Statuseffekte dieses Wesens】</strong>zu.</p>",
 			"fxName0": "Effekt: For Whom The Bell Tolls",
 			"img": "systems/projectfu/styles/static/compendium/classes/necromancer/for_whom_the_bell_tolls.png",
@@ -1979,77 +1903,66 @@
 			"name": "Tadeln",
 			"source": "GRW205",
 			"src": "GRW205",
-			"class": "Orator",
 			"Description": "<p>Du darfst eine Aktion ausführen und 5 Geistpunkte ausgeben, um eine Konkurrenzprobe auf<strong>【EIN + WLK】</strong>gegen ein Wesen abzulegen, das dich hören und verstehen kann – beschreibe deine Anschuldigungen! Falls du erfolgreich bist, verliert das Ziel<strong>【FS × 10】</strong>Geistpunkte und wird <strong>benommen</strong> oder <strong>erschüttert</strong> (deine Wahl).</p><p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Probe auf<strong>【EIN + WLK】</strong>für diese Fähigkeit.</p><hr><ul><li><p><strong>Konkurrenzprobe würfeln: </strong>@CHECK[ins wlp ($sl)] gegen @CHECK[ins wlp]</p></li><li><p><strong>Ziel verliert</strong>: @LOSS[$sl*10 mp]{FS × 10 GP}</p></li><li><p><strong>Ziel erleidet:</strong> @EFFECT[dazed] oder @EFFECT[shaken]</p></li></ul>"
 		},
 		"Encourage": {
 			"name": "Ermutigen",
 			"source": "GRW205",
 			"src": "GRW205",
-			"class": "Orator",
-			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen und 5 Geistpunkte ausgeben, um ein anderes Wesen zu wählen, das dich hören und verstehen kann. Dieses Wesen erhält<strong>【FS × 5】</strong>Lebenspunkte zurück und wählt <strong>Geschicklichkeit, Einsicht, Macht, </strong>oder <strong>Willenskraft</strong>: Es behandelt das gewählte Attribut bis zum Beginn deines nächsten Zuges so, als wäre es eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p><hr><ul><li><p><strong>Ziel regeneriert: </strong>@GAIN[5*$sl hp]{FS × 5 LP}</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[dex-up e:sot i:1 t:source], @EFFECT[ins-up e:sot i:1 t:source], @EFFECT[mig-up e:sot i:1 t:source], or @EFFECT[wlp-up e:sot i:1 t:source]</p></li></ul>"
+			"Description": "<p>Während eines Konflikts kannst du eine Aktion ausführen und 5 Geistpunkte ausgeben, um ein anderes Wesen zu wählen, das dich hören und verstehen kann. Dieses Wesen erhält<strong>【FS × 5】</strong>Lebenspunkte zurück und wählt <strong>Geschicklichkeit, Einsicht, Macht, </strong>oder <strong>Willenskraft</strong>: Es behandelt das gewählte Attribut bis zum Beginn deines nächsten Zuges so, als wäre es eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p><hr><ul><li><p><strong>Ziel regeneriert: </strong>@GAIN[5*$sl hp]{FS × 5 LP}</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[dex-up e:sot i:1 t:source], @EFFECT[ins-up e:sot i:1 t:source], @EFFECT[mig-up e:sot i:1 t:source] oder @EFFECT[wlp-up e:sot i:1 t:source]</p></li></ul>"
 		},
 		"My Trust In You": {
 			"name": "Mein Vertrauen in Dich",
 			"source": "GRW205",
 			"src": "GRW205",
-			"class": "Orator",
 			"Description": "<p>Wenn ein anderer Spielercharakter, der dich hören kann, eine Probe ablegt, darfst du 1 Fabula-Punkt ausgeben und dich auf eine seiner <strong>Eigenschaften</strong> oder <strong>Bindungen</strong> berufen, um ihn Würfel neu würfeln zu lassen oder das Ergebnis der Probe zu verbessern (nach den normalen Regeln). Falls du eine <strong>Bindung</strong> zu diesem Charakter hast, erhält er dann<strong>【FS × 10】</strong>Geistpunkte zurück.</p><hr><ul><li><p><strong>Ziel regeneriert</strong>: @GAIN[10*$sl mp]{FS × 10 GP}</p></li></ul>"
 		},
 		"Persuasive": {
 			"name": "Überzeugend",
 			"source": "GRW205",
 			"src": "GRW205",
-			"class": "Orator",
 			"Description": "<p>Wenn du erfolgreich eine Probe ablegst, um Abschnitte einer Uhr zu füllen oder zu löschen, darfst du, sofern deine Vorgehensweise auf <strong>Charme</strong>, <strong>Diplomatie</strong>, <strong>Täuschung</strong> oder <strong>Einschüchterung</strong> beruhte, bis zu<strong>【FS × 20】</strong>Geistpunkte ausgeben. Tust du das, füllst oder löschst du einen zusätzlichen Abschnitt der Uhr für je 20 Geistpunkte, die du auf diese Weise ausgibst.</p>"
 		},
 		"Unexpected Ally": {
 			"name": "Unerwarteter Verbündeter",
 			"source": "GRW205",
 			"src": "GRW205",
-			"class": "Orator",
 			"Description": "<p>Du kannst eine Aktion ausführen und 1 Fabula-Punkt ausgeben, um ein <strong>nicht-feindliches</strong> Wesen zu wählen, das dich hören und verstehen kann. Tust du das, wird dieses Wesen dir gegenüber hilfsbereit, solange du freundlich und respektvoll zu ihm bist und deine Bitten angemessen sind.</p>"
 		},
 		"Compression Tech": {
 			"name": "Kompressionstechnik",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Solange sich niemand an Bord deines <strong>persönlichen Fahrzeugs</strong> befindet, kannst du es jederzeit sicher aus der Spielwelt verschwinden lassen. Welche Magie oder Technologie ermöglicht dies?</p><p>Wenn dein <strong>persönliches Fahrzeug</strong> nicht in der Spielwelt ist und du dich in einem Raum befindest, der groß genug ist, damit es hineinpasst, kannst du die <strong>Inventar</strong>-Aktion ausführen und <strong>@LOSS[2 ip]</strong> ausgeben, um das Fahrzeug in deiner Nähe erscheinen zu lassen und es kostenfrei zu <strong>betreten</strong>.</p>"
 		},
 		"Heart in the Engine": {
 			"name": "Herz des Antriebs",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Zu Beginn deines Zuges während eines Konflikts darfst du @LOSS[10 mp] ausgeben, wenn du dein <strong>persönliches Fahrzeug</strong> steuerst. Tust du dies, wähle eine Option: Wenn du das nächste Mal in diesem Zug Schaden verursachst, verursache<strong>【FS × 2】</strong>Zusatzschaden; <strong>oder</strong> wenn du das nächste Mal vor dem Beginn deines nächsten Zuges Schaden erleidest, wird dieser Schaden um<strong>【FS × 2】</strong>reduziert (dies kommt vor Schadensaffinitäten zum Tragen); <strong>oder</strong> du erholst dich entweder vom Statuseffekt <strong>verlangsamt</strong> oder <strong>geschwächt</strong> (wähle selbst).</p><hr><ul><li><p><strong>Du erhältst:</strong> @UUID[Compendium.projectfu.skills.Item.XoMumkEXtYQOF7Et]{Effekt: Herz des Antriebs (Offensiv)}, oder @UUID[Compendium.projectfu.skills.Item.VM5F00GYKYInRjgM]{Effekt: Herz des Antriebs (Defensiv)}</p></li></ul>"
 		},
 		"Personal Vehicle": {
 			"name": "Persönliches Fahrzeug",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Wenn du diese Fähigkeit erwirbst, erhältst du ein <strong>persönliches Fahrzeug</strong> mit einem <strong>Rahmen</strong> deiner Wahl und <strong>drei verschiedenen Modulen</strong> deiner Wahl (siehe <strong>Atlas: Techno Fantasy</strong>, Seite <strong>160</strong>).</p><p>Wenn du diese Fähigkeit erneut erwirbst, erhältst du <strong>zwei zusätzliche Module</strong> deiner Wahl.</p><hr><ul><li><p>Für eine Erklärung der <strong>Fahrzeug</strong> Regeln und eine Liste aller <strong>Fahrzeug Module</strong>, siehe hier: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG]</p></li><li><p>Anweisungen zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG.JournalEntryPage.7R1h5R48OHr4m7hq]{Pilot VTT Anweisungen}</p></li></ul>"
 		},
 		"Strong Grip": {
 			"name": "Starker Griff",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Wenn du eine Präzisionsprobe mit einem <strong>Waffenmodul</strong> ablegst, kannst du eines der Attribute durch <strong>Macht</strong> ersetzen (z. B.<strong>【MAT + WLK】</strong>für ein <strong>arkanes Modul</strong>).</p>"
 		},
 		"Flexible Configuration": {
 			"name": "Flexible Konfiguration",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Wenn du die <strong>Ausrüstungs</strong>- oder <strong>Beschützen</strong>-Aktion ausführst, während du dein <strong>persönliches</strong> <strong>Fahrzeug</strong> steuerst, kannst du bis zu<strong>【FS】</strong>seiner aktivierten Module auswählen und sie <strong>deaktivieren</strong>. Wenn du das tust, wähle eine Anzahl seiner <strong>deaktivierten</strong> Module in gleicher Höhe und aktiviere sie.</p>"
 		},
 		"Effect: Heart in the Engine (Defensive)": {
 			"name": "Effekt: Herz des Antriebs (Defensiv)",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
 			"rounds": "1",
 			"fxName0": "Effekt: Herz des Antriebs (Defensiv)",
@@ -2070,7 +1983,6 @@
 			"name": "Effekt: Herz des Antriebs (Offensiv)",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
 			"rounds": "1",
 			"fxName0": "Effekt: Herz des Antriebs (Offensiv)",
@@ -2091,42 +2003,36 @@
 			"name": "[Handout: Rüstungsmodule]",
 			"source": "ATF161",
 			"src": "ATF161",
-			"class": "Pilot",
 			"Description": "<p>Während ein Pilot ein <strong>persönliches Fahrzeug</strong> mit einem aktivierten <strong>Rüstungsmodul</strong> fährt, hat er keinen Zugriff auf den üblichen Inhalt seines <strong>Rüstungsslots</strong>. Stattdessen wird dieser Slot als durch das <strong>Rüstungsmodul</strong> des <strong>persönlichen Fahrzeugs</strong> belegt angesehen. Wenn das <strong>persönliche Fahrzeug</strong> kein Rüstungsmodul aktiviert hat, kann der Pilot seine ausgerüstete Rüstung weiterhin wie gewohnt benutzen.</p><ul><li><p>Sobald der Pilot aufhört, ein <strong>persönliches Fahrzeug</strong> mit aktiviertem <strong>Rüstungsmodul</strong> zu steuern, hat er sofort wieder Zugriff auf seine üblicherweise ausgerüstete Rüstung.</p></li><li><p>Rüstungsmodule, die mit <strong>@ICON[martial]</strong> gekennzeichnet sind, werden in Bezug auf Fähigkeiten und andere Effekte als <strong>martialische</strong> Rüstungen betrachtet und setzen die Verteidigung und die Magie-Verteidigung des Piloten auf <strong>feste Werte</strong> (Boni durch Schilde und andere Effekte gelten weiterhin). Beachte, dass ein Pilot diese Module auch dann ausrüsten kann, <strong>wenn er normalerweise nicht in der Lage ist</strong>, martialische Rüstungen auszurüsten.</p></li></ul><blockquote><p><em>Ein Pilot mit der Klasse <strong>Wächter</strong> profitiert zum Beispiel von der Fähigkeit <strong>Meisterliche Verteidigung</strong>, wenn er ein <strong>persönliches Fahrzeug</strong> mit einem Modul für <strong>schwere Panzerung</strong> steuert, aber er profitiert nicht von der Fähigkeit <strong>Ausweichen</strong>, die ihm die Klasse <strong>Schurke</strong> gewährt.</em></p></blockquote>"
 		},
 		"[Handout: Other Rules]": {
 			"name": "[Handout: Weitere Regeln]",
 			"source": "ATF162",
 			"src": "ATF162",
-			"class": "Pilot",
 			"Description": "<h3>SCHADEN UND REPARATUREN</h3><p>Das <strong>persönliche Fahrzeug</strong> eines Piloten hat keine eigenen Werte und wird wie eine Erweiterung des Piloten selbst behandelt. Es kann als erzählerische Konsequenz der <strong>Kapitulation</strong> des Piloten beschädigt oder vorübergehend unbrauchbar gemacht werden, aber es kann nicht zerstört werden, es sei denn, der Spieler stimmt dem zu.</p><p>Die Reparatur eines erzählerisch beschädigten <strong>persönlichen Fahrzeugs</strong> erfordert einen Betrag an Zenit, der<strong>【der FS des Piloten in Persönliches Fahrzeug multipliziert mit 100】</strong>entspricht. Andererseits sollte die Wiederherstellung eines zerstörten <strong>persönlichen Fahrzeugs</strong> Teil des Handlungsbogens des Piloten sein (deshalb sollte es nur zerstört werden, wenn der Spieler damit einverstanden ist).</p><p></p><h3>SELTENE MODULE ALS BELOHNUNGEN</h3><p>Die Spielleiterin sollte neue Module (oder verbesserte Versionen bestehender Module) für den Piloten in die Belohnungen der Kampagne aufnehmen.</p><ul><li><p>Jedes der auf den folgenden Seiten vorgestellten <strong>Waffen- und Rüstungsmodule</strong> hat einen Grundpreis von 500 Zenit, und ihre seltenen Versionen können nach den Regeln für <strong>seltene Items</strong> im <strong>Grundregelwerk</strong> ab Seite <strong>266</strong> gestaltet werden. Es gibt jedoch zwei Ausnahmen: Der Schaden eines Waffenmoduls kann nur um 4 Punkte erhöht werden, indem man seine Kosten um 200 Zenit erhöht (es kann nie zweihändig werden), und <strong>ein Waffenmodul kann nie martialisch werden</strong> (auch nicht, wenn seine Schadensformel<strong>【HW + 10】</strong>oder höher wird).</p></li><li><p>Jedes <strong>Unterstützungsmodul</strong>, das auf den folgenden Seiten vorgestellt wird, sollte etwa 1.000 Zenit kosten. Wenn du eigene Unterstützungsmodule erstellst, vergleiche sie mit den vorhandenen, um ihre Kosten in Zenit zu ermitteln. Sie sind <strong>seltene</strong> Items.</p></li><li><p>Die Spezialregeln einiger Waffenmodule (z. B. das <strong>Claymore-Modul</strong>, das verhindert, dass man andere Waffenmodule aktivieren kann, oder der ganze Effekt des <strong>Schild-Moduls</strong>) sind <strong>keine Qualitäten</strong> und können daher nicht verloren gehen oder ersetzt werden. Wenn ein bestimmtes Modul eine Qualität aufweist, wird diese Qualität <strong>vor</strong> den Sonderregeln aufgeführt.</p></li><li><p>Ein Pilot kann seltene Module erwerben, indem er sie in speziellen Läden kauft, Fabriken oder Labore erkundet oder als Belohnung nach dem Sieg über Roboter oder künstliche Gegner erhält. Einige Beispiele für seltene Waffenmodule findest du auf Seite <strong>86</strong>.</p></li></ul><p>Zum Schluss noch eine allgemeine Regel: Ein Pilot sollte <strong>niemals</strong> Zugang zu zwei oder mehr Unterstützungsmodulen mit unterschiedlichen Namen haben, deren Effekte ähnlich und/oder kumulativ sind.</p><p></p><h3>ZUSAMMENSPIEL MIT DER BASTLER-KLASSE</h3><p>Ein Charakter mit der Klasse <strong>Bastler</strong> kann die heldenhafte Fähigkeit @UUID[Compendium.projectfu.heroic-skills.Item.xbTcxx4ysOWOamZP] sowie die Regeln für <strong>Projekte</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>239</strong> und <strong>134</strong>) nutzen, um Module zu verbessern oder neue Anpassungen für das <strong>persönliche Fahrzeug</strong> des Piloten zu erfinden. Er könnte zum Beispiel einen Reaktor einbauen, der den Raumflug ermöglicht, oder eine Antenne, die antimagische Wellen aussendet.</p><p>Wenn es um spezielle Module geht, die im Rahmen von Projekten erstellt werden, sollte die Gruppe als Ganzes darauf achten, dass diese die Stärken und Rollen der anderen Charaktere <strong>nicht beeinträchtigen</strong>. Es kann eine gute Idee sein, derartigen Modulen eine limitierte Anzahl von Einsatzmöglichkeiten oder interessante Makel zu geben, die zu schwierigen Entscheidungen und denkwürdigen Szenen führen können.</p>"
 		},
 		"[Handout: Support Modules]": {
 			"name": "[Handout: Unterstützungsmodule]",
 			"source": "ATF162",
 			"src": "ATF162",
-			"class": "Pilot",
 			"Description": "<p>Unterstützungsmodule bieten eine Reihe verschiedener Vorteile; diese Vorteile gelten oft nicht nur für den Piloten, sondern auch für die Passagiere des Fahrzeugs.</p><ul><li><p>Ein <strong>persönliches Fahrzeug</strong> kann nicht <strong>mehr als ein aktiviertes Unterstützungsmodul mit demselben Namen</strong> haben.</p></li><li><p>Einige Unterstützungsmodule sind besonders komplex oder sperrig und zählen für das Limit der insgesamt aktivierten Module als <strong>zwei Module</strong>.</p></li></ul>"
 		},
 		"[Handout: Vehicle Rules]": {
 			"name": "[Handout: Fahrzeug-Regeln]",
 			"source": "ATF160",
 			"src": "ATF160",
-			"class": "Pilot",
 			"Description": "<p>Für das <strong>persönliche Fahrzeug</strong> eines Piloten gelten besondere Regeln.</p><ul><li><p>Das <strong>Betreten</strong> des <strong>persönlichen Fahrzeugs</strong> während eines Konflikts erfordert die Aktion <strong>Zielsetzung</strong>. Normalerweise ist keine Probe erforderlich, aber die Spielleiterin kann eine <strong>Uhr</strong> einführen, wenn es ernste Gefahren oder Hindernisse gibt. Wenn das <strong>persönliche Fahrzeug</strong> zu Beginn des Konflikts zugänglich ist, können die Charaktere es <strong>unmittelbar</strong> vor der Initiativeprobe <strong>betreten</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>59</strong>).</p></li><li><p>Das <strong>Verlassen</strong> des <strong>persönlichen Fahrzeugs</strong> erfordert keine Aktion, aber während eines Konflikts kann dies nur in deinem Zug – <strong>vor oder nach einer Aktion</strong> – erfolgen.</p></li><li><p>Das <strong>persönliche Fahrzeug</strong> kann je nach <strong>Rahmen</strong> und <strong>Modulen</strong> eine variable Anzahl menschengroßer Wesen aufnehmen, aber <strong>nur sein Pilot darf es steuern</strong>. Außerdem können die anderen Passagiere <strong>keine Wesen decken</strong>, wenn sie die <strong>Beschützen</strong>-Aktion ausführen.</p></li><li><p>Die <strong>maximale Anzahl von Modulen, die gleichzeitig</strong> auf einem <strong>persönlichen Fahrzeug aktiviert</strong> sind, entspricht<strong>【3 + der FS des Piloten in Persönliches Fahrzeug】</strong>.Der Pilot kann die aktivierten und deaktivierten Module seines persönlichen Fahrzeugs außerhalb von Konflikten frei neu zuordnen.</p></li></ul><p>Ein <strong>persönliches Fahrzeug</strong> besteht aus den folgenden Elementen:</p><ul><li><p>Einem <strong>Rahmen</strong>, der seine allgemeine Form bestimmt: @UUID[Compendium.projectfu.vehicle-modules.Item.f3h3SoN0g7i31Kj9] für Reittiere, Motorräder, kleine Raumjäger, Skateboards und Ähnliches; @UUID[Compendium.projectfu.vehicle-modules.Item.WG1xG12wMYh2ROoP] für elektrische Rüstungen und mechanische Gliedmaßen; @UUID[Compendium.projectfu.vehicle-modules.Item.2AYyeXm0V4Fu1x6G] für große Kampfroboter, die von innen gesteuert werden. Jeder Pilot muss den <strong>Rahmen</strong> für sein <strong>persönliches Fahrzeug</strong> auswählen, wenn er die Fähigkeit erhält. Dieser bleibt für den Rest des Spiels unverändert, also wähle ihn passend zum Stil und zu der Persönlichkeit deines Charakters aus, und bedenke die Rolle, die das Fahrzeug in der Kampagne spielen wird. Ein Kampfflugzeug macht zum Beispiel nicht viel Sinn, wenn deine Geschichte in den Slums einer Cyberpunk-Megapolis spielt (wie wäre es stattdessen mit einem Anti-Schwerkraft-Motorrad?).</p></li><li><p>Einer variable Anzahl von <strong>Waffen</strong>-, <strong>Rüstungs</strong>- und <strong>Unterstützungsmodulen</strong>, die mit den Kontrollsystemen des <strong>persönlichen Fahrzeugs</strong> verbunden werden können (aktiviert) oder inaktiv bleiben, aber immer noch am Rahmen befestigt sind (deaktiviert). Einige Optionen, wie die Fähigkeit @UUID[Compendium.projectfu.skills.Item.BuqR9EZDFMn5lDGG] und das Modul @UUID[Compendium.projectfu.vehicle-modules.Item.7qyCrf1eK0X6bYTH], ermöglichen es dir, Module schnell zu aktivieren und zu deaktivieren oder ein deaktiviertes Modul kurz zu aktivieren.</p></li></ul><p>Auf den nächsten Seiten findest du eine ausführliche Erklärung der verschiedenen Modultypen und der Regeln, die für sie gelten, gefolgt von Listen für <strong>Standardrahmen</strong> und -<strong>module</strong>.</p>"
 		},
 		"[Handout: Weapon Modules]": {
 			"name": "[Handout: Waffenmodule]",
 			"source": "ATF159",
 			"src": "ATF159",
-			"class": "Pilot",
 			"Description": "<p>Während ein Pilot ein <strong>persönliches Fahrzeug</strong> mit einem oder mehreren aktivierten <strong>Waffenmodulen</strong> fährt, hat er keinen Zugriff auf den üblichen Inhalt seiner <strong>Handslots</strong>. Stattdessen werden diese Slots als von den <strong>Waffenmodulen</strong> des <strong>persönlichen Fahrzeugs</strong> belegt betrachtet. Wenn das <strong>persönliche Fahrzeug</strong> keine <strong>Waffenmodule</strong> aktiviert hat, kann der Pilot seine ausgerüsteten Waffen und Schilde weiterhin wie gewohnt benutzen.</p><ul><li><p>Sobald der Pilot aufhört, ein <strong>persönliches Fahrzeug</strong> mit aktivierten <strong>Waffenmodulen</strong> zu steuern, hat er sofort wieder Zugriff auf alle üblicherweise ausgerüsteten Waffen und Schilde.</p></li><li><p>Jedes <strong>Waffenmodul</strong> zählt in Bezug auf Fähigkeiten und Effekte des Charakters als <strong>einhändige</strong>, <strong>nicht martialische Waffe</strong> (mit Ausnahme des <strong>Schild-Moduls</strong>, das wie ein Schild behandelt wird). Wenn du die Waffenmodule deines <strong>persönlichen Fahrzeugs</strong> einrichtest, gib an, welches Modul deinen <strong>Slot</strong> für die <strong>primäre</strong> und welches den für die <strong>sekundäre Hand</strong> belegen wird.</p></li><li><p>Einige Waffenmodule sind sperrig und verhindern, dass du andere Waffenmodule (auch <strong>Schild-Module</strong>!) auf demselben <strong>persönlichen Fahrzeug</strong> aktivieren kannst.</p></li></ul><blockquote><p>Zum Beispiel kann ein <strong>Axt-Modul</strong> mit der Fähigkeit <strong>Gegenangriff</strong> sowie ein <strong>Gewehr-Modul</strong> mit der Fähigkeit <strong>Kreuzfeuer</strong> verwendet werden (siehe <strong>Grundregelwerk</strong>, Seiten <strong>219</strong> und <strong>209</strong>).</p></blockquote><p>Da jedes Waffenmodul wie eine Einhandwaffe behandelt wird, profitiert ein Pilot, der ein <strong>persönliches Fahrzeug</strong> mit zwei aktivierten Waffenmodulen derselben Kategorie steuert, von den Regeln für den <strong>Kampf mit zwei Waffen</strong> – und wenn er die heldenhafte Fähigkeit <strong>Beidhändig</strong> (siehe <strong>Grundregelwerk</strong>, Seite <strong>234</strong>) besitzt, kann er dies mit zwei beliebigen aktivierten Waffenmodulen tun!</p>"
 		},
 		"Cheap Shot": {
 			"name": "Hinterhältiger Schlag",
 			"source": "GRW211",
 			"src": "GRW211",
-			"class": "Schurke",
 			"Description": "<p>Wenn du ein Wesen mit einem Angriff triffst, der <strong>nur</strong> dieses Wesen zum Ziel hatte, und es unter <strong>einem oder mehreren Statuseffekten</strong> leidet, kannst du Zusatzschaden in Höhe von<strong>【FS + der Anzahl der Statuseffekte des Wesens】</strong>verursachen.</p>"
 		},
 		"Dodge": {
@@ -2134,7 +2040,6 @@
 			"source": "GRW211",
 			"src": "GRW211",
 			"fxFlSource0": "GRW211",
-			"class": "Schurke",
 			"Description": "<p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> ausgerüstet hast, wird dein Verteidigungswert um<strong>【FS】</strong>erhöht.</p>",
 			"disabled": "false",
 			"fxName0": "Ausweichen",
@@ -2152,42 +2057,36 @@
 			"name": "Hohe Geschwindigkeit",
 			"source": "GRW211",
 			"src": "GRW211",
-			"class": "Schurke",
 			"Description": "<p>Am Anfang eines Konflikts kannst du @LOSS[10 mp] ausgeben. Wenn du das tust, wähle eine Option und wende sie vor Beginn der ersten Runde an: Führe einen <strong>freien Angriff</strong> mit einer Waffe aus, die du ausgerüstet hast, <strong>oder</strong> führe eine <strong>Aufhalten</strong>- oder <strong>Zielsetzungs</strong>-Aktion aus. Du erhältst außerdem einen Bonus in Höhe von<strong>【FS】</strong>auf alle Proben, die du im Rahmen der gewählten Option ablegst.</p>"
 		},
 		"See You Later": {
 			"name": "Bis später",
 			"source": "GRW211",
 			"src": "GRW211",
-			"class": "Schurke",
 			"Description": "<p>Du kannst eine Aktion ausführen und 1 Fabula-Punkt ausgeben, um aus der aktuellen Szene zu verschwinden und in einer <strong>anderen</strong> Szene, in der ein anderer Spielercharakter anwesend ist, wieder aufzutauchen, wann immer du willst. Beschreibe, auf welche Weise du geflohen bist und auf wundersame Weise hierhergekommen bist!</p>"
 		},
 		"Soul Steal": {
 			"name": "Seelenraub",
 			"source": "GRW211",
 			"src": "GRW211",
-			"class": "Schurke",
 			"Description": "<p>Du darfst eine Aktion ausführen, um eine Probe auf<strong>【GES + WLK】</strong>gegen die Magie-Verteidigung eines Wesens, das du sehen kannst, abzulegen. Falls du erfolgreich bist und das Ziel ein <strong>Soldat</strong> ist, erhältst du<strong>【FS】I</strong>nventarpunkte zurück; falls es sich um eine <strong>Elite</strong> oder einen <strong>Champion</strong> handelt, gibt dir die SL den <strong>Seelenschatz</strong> des Ziels, ein Item im Wert von mindestens<strong>【der Stufe des Ziels multipliziert mit 30 bzw. mit 50, falls es sich um einen Bösewicht handelt】</strong>Zenit. Dieser <strong>Seelenschatz</strong> erscheint in deinem Rucksack; ein Wesen kann nur einmal erfolgreich mit dieser Fähigkeit bestohlen werden.</p><p>Du erhältst einen Bonus von<strong>【FS】</strong>auf deine Proben auf<strong>【GES + WLK】</strong>für diese Fähigkeit.</p><hr><ul><li><p><strong>Du würfelst: </strong>@CHECK[dex wlp ($sl)]</p></li><li><p><strong>Du regenerierst: </strong>@GAIN[$sl ip]{Soldat: FS IP}</p></li></ul>"
 		},
 		"Barrage": {
 			"name": "Sperrfeuer",
 			"source": "GRW209",
 			"src": "GRW209",
-			"class": "Scharfschütze",
 			"Description": "<p>Wenn du einen <strong>Fernkampfangriff</strong> ausführst, kannst du 10 Geistpunkte ausgeben, um eine Option zu wählen: Der Angriff erhält <strong>Multi (2)</strong>; <strong>oder</strong> du erhöhst die <strong>Multi</strong>-Eigenschaft des Angriffs um eins, bis zu einem Maximum von <strong>Multi (3)</strong>.</p>"
 		},
 		"Crossfire": {
 			"name": "Kreuzfeuer",
 			"source": "GRW209",
 			"src": "GRW209",
-			"class": "Scharfschütze",
 			"Description": "<p>Nachdem ein Wesen, das du sehen kannst, einen <strong>Fernkampfangriff</strong> ausgeführt hat, kannst du eine Anzahl von Geistpunkten in Höhe des Gesamtergebnisses seiner Präzisionsprobe ausgeben, damit der Angriff automatisch gegen alle Ziele fehlschlägt. Du kannst diese Fähigkeit nur einsetzen, wenn du eine <strong>Fernkampfwaffe</strong> ausgerüstet hast, und sie hat keinen Effekt, falls die Präzisionsprobe ein <strong>kritischer Erfolg</strong> war.</p>"
 		},
 		"Hawkeye": {
 			"name": "Falkenauge",
 			"source": "GRW209",
 			"src": "GRW209",
-			"class": "Scharfschütze",
 			"Description": "<p>Wenn du die <strong>Beschützen</strong>-Aktion ausführst und dich dafür entscheidest, ein anderes Wesen <strong>nicht</strong> zu decken, kannst du eine Option wählen: Der nächste <strong>Fernkampfangriff</strong>, den du vor dem Ende der aktuellen Szene ausführst, verursacht<strong>【FS × 2】</strong>zusätzlichen Schaden; <strong>oder</strong> du kannst sofort einen <strong>freien Angriff</strong> mit einem <strong>Bogen</strong> oder einer <strong>Schusswaffe</strong>, die du ausgerüstet hast, ausführen, wobei dein <strong>höherer Wurf (HW)</strong> bei der Berechnung des Schadens dieses Angriffs als 0 gilt.</p><hr><ul><li><p><strong>Du erhältst: </strong>@EFFECT[Compendium.projectfu.skills.Item.enboiNabyACt4OUB]{Effekt: Falkenauge (Fernkampf Hoch)}</p></li></ul>"
 		},
 		"Ranged Weapon Mastery": {
@@ -2195,7 +2094,6 @@
 			"source": "GRW209",
 			"src": "GRW209",
 			"fxFlSource0": "GRW209",
-			"class": "Scharfschütze",
 			"Description": "<p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Fernkampfwaffen</strong>.</p>",
 			"fxName0": "Meisterlicher Fernkampf",
 			"fxDesc0": "<p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Fernkampfwaffen</strong>.</p>",
@@ -2213,14 +2111,12 @@
 			"name": "Warnschuss",
 			"source": "GRW209",
 			"src": "GRW209",
-			"class": "Scharfschütze",
 			"Description": "<p>Wenn du ein oder mehrere Ziele mit einem <strong>Fernkampfangriff</strong> triffst, der Schaden verursachen würde, kannst du den Angriff keinen Schaden verursachen lassen. Tust du dies, wähle eine Option:</p><p>Jedes Ziel, das von dem Angriff getroffen wird, wird <strong>erschüttert;</strong> <strong>oder</strong> jedes Ziel, das von dem Angriff getroffen wird, wird <strong>verlangsamt; oder</strong> jedes Ziel, das von dem Angriff getroffen wird, verliert【FS × 10】Geistpunkte. Beschreibe dein Manöver!</p><hr><ul><li><p><strong>Ziele erleiden: </strong>@EFFECT[shaken], @EFFECT[slow] oder @LOSS[10*$sl mp]{FS × 10 GP}</p></li></ul>"
 		},
 		"Effect: Hawkeye (Range Weapon Up)": {
 			"name": "Effekt: Falkenauge (Fernkampf Hoch)",
 			"source": "GRW209",
 			"src": "GRW209",
-			"class": "Scharfschütze",
 			"img": "systems/projectfu/styles/static/compendium/classes/sharpshooter/sharpshooter_hawkeye.png",
 			"rounds": "1",
 			"disabled": "false",
@@ -2241,70 +2137,60 @@
 			"name": "Heilende Kraft",
 			"source": "GRW213",
 			"src": "GRW213",
-			"class": "Spiritist",
 			"Description": "<p>Wenn du einen Zauber wirkst, der einen oder mehrere Verbündete zum Ziel hat, kannst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, jedem dieser Verbündeten eine Anzahl von Lebenspunkten zurückgeben, die<strong>【FS, multipliziert mit der Anzahl deiner Bindung】</strong>entspricht.</p><p>Diese Heilung ist unabhängig von jeglicher Heilung, die durch die Effekte des Zaubers verursacht wird.</p><hr><ul><li><p><strong>Ziel regeneriert:</strong> @GAIN[$sl*$bc hp]{FS × Gesamtanzahl Bindungen LP}</p></li></ul>"
 		},
 		"Ritual Spiritism": {
 			"name": "Ritueller Spiritismus",
 			"source": "GRW213",
 			"src": "GRW213",
-			"class": "Spiritist",
 			"Description": "<p>Du kannst Rituale durchführen, deren Effekt in die <strong>Spiritismus</strong>-Disziplin fällt.</p><p>Spiritismus-Rituale verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p>"
 		},
 		"Spiritual Magic": {
 			"name": "Spirituelle Magie",
 			"source": "GRW213",
 			"src": "GRW213",
-			"class": "Spiritist",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, lernst du einen Spiritisten-Zauber (<strong>Grundregelwerk</strong>, Seite <strong>213</strong>).</p><p>Offensive ( @ICON[offensive] ) Spiritisten-Zauber verwenden<strong>【EIN + WLK】</strong>für die Magieprobe.</p><hr><ul><li><p>Für eine Erklärung und Liste von Spiritisten <strong>Zaubern</strong> siehe hier: @UUID[Compendium.projectfu.handouts.JournalEntry.L65ajg6cmHEk3zAP]</p></li></ul>"
 		},
 		"Support Magic": {
 			"name": "Unterstützende Magie",
 			"source": "GRW213",
 			"src": "GRW213",
-			"class": "Spiritist",
 			"Description": "<p>Wenn du einen Zauber wirkst, der ein oder mehrere Verbündete zum Ziel hat, darfst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, einen dieser Verbündeten wählen, zu dem du eine <strong>Bindung</strong> hast. Tust du das, erhält dieser Verbündete einen Bonus auf die nächste Probe, die er während der aktuellen Szene ausführt; dieser Bonus entspricht der <strong>Stärke</strong> deiner Bindung zu ihm.</p>"
 		},
 		"Vismagus": {
 			"name": "Vismagus",
 			"source": "GRW213",
 			"src": "GRW213",
-			"class": "Spiritist",
 			"Description": "Wenn du einen Zauber wirkst und nicht genug Geistpunkte hast, um die Gesamtkosten zu bezahlen, kannst du stattdessen die doppelte Anzahl an Lebenspunkten ausgeben. Du kannst diese Fähigkeit nicht einsetzen, wenn du dadurch auf 0 Lebenspunkte sinken würdest. Würdest du durch einen auf diese Weise gewirkten Zauber Lebenspunkte zurückerhalten, bekommst du stattdessen keine Lebenspunkte zurück (der Zauber funktioniert bei jedem anderen Ziel normal)."
 		},
 		"Magic Symbols": {
 			"name": "Magische Symbole",
 			"source": "AHF143",
 			"src": "AHF143",
-			"class": "Symbolist",
 			"Description": "<p>Wenn ein Verbündeter eines deiner <strong>Symbole</strong> trägt, kann er die <strong>Zaubern</strong>-Aktion ausführen und das Symbol zerstören, um einen einzelnen Zauber, der <strong>dir</strong> bekannt ist, zu wirken, solange die <strong>Geistpunkt-Gesamtkosten gleich hoch wie oder niedriger als【FS × 10】</strong>sind (der Verbündete muss dennoch die GP-Kosten bezahlen).</p><hr><p>Fähigkeitsstufe <strong>1</strong> - <strong>10 MP</strong></p><p>Fähigkeitsstufe <strong>2</strong> - <strong>20 MP</strong></p><p>Fähigkeitsstufe <strong>3</strong> - <strong>30 MP</strong></p>"
 		},
 		"Mirage": {
 			"name": "Trugbild",
 			"source": "AHF143",
 			"src": "AHF143",
-			"class": "Symbolist",
 			"Description": "<p>Du erhältst die Befähigung, Rituale der <strong>Ritualistik</strong>-Disziplin durchzuführen; <strong>zusätzlich</strong> kannst du <strong>Ritualistik</strong> nutzen, um <strong>Illusionen auf Basis von Sicht</strong> zu erzeugen.</p>"
 		},
 		"Personal Touch": {
 			"name": "Persönliche Note",
 			"source": "AHF143",
 			"src": "AHF143",
-			"class": "Symbolist",
 			"Description": "<p>Wenn ein Wesen, das du sehen kannst und das eines deiner <strong>Symbole</strong> trägt, Schaden erleidet oder Lebenspunkte und/oder Geistpunkte zurückgewinnt, kannst du dieses Wesen<strong>【FS】</strong>Zusatzschaden erleiden oder<strong>【FS】</strong>zusätzliche Lebenspunkte und/oder Geistpunkte zurückgewinnen lassen.</p><hr><ul><li><p><strong>Verbündeter regeneriert: </strong>@GAIN[$sl hp]{FS LP} @GAIN[$sl mp]{FS GP}</p></li><li><p><strong>Ziel erleidet:</strong> @LOSS[$sl hp]{FS LP}</p></li></ul>"
 		},
 		"Symbolic Connection": {
 			"name": "Symbolische Verbindung",
 			"source": "AHF143",
 			"src": "AHF143",
-			"class": "Symbolist",
 			"Description": "<p>Du weißt immer genau, in welcher Richtung du ein Wesen findest, das eines deiner <strong>Symbole</strong> trägt, solange sich dieses Wesen innerhalb von <strong>2 Reisetagen</strong> von deiner Position befindet.</p>"
 		},
 		"Symbolism": {
 			"name": "Symbolismus",
 			"source": "AHF143",
 			"src": "AHF143",
-			"class": "Symbolist",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, lernst du <strong>zwei Symbole</strong> (<strong>Atlas: High Fantasy</strong>, Seite <strong>144ff</strong>).</p><p>Du kannst bis zu<strong>【FS + 1】Symbole gleichzeitig aktiv</strong> haben; wenn du mehr erschaffst, während du an deinem Limit bist, musst du zuerst einige deiner vorherigen <strong>Symbole</strong> auswählen und zerstören.</p><p>Du kannst die <strong>Inventar</strong>-Aktion ausführen und @LOSS[2 ip] ausgeben, um ein <strong>Symbol</strong> zu erschaffen, das du gelernt hast, und eine Option wählen: Wende dieses <strong>Symbol</strong> auf dich selbst an; <strong>oder</strong> wende dieses Symbol auf einen Verbündeten an, den du sehen kannst; <strong>oder</strong> führe einen <strong>freien Angriff</strong> mit einer Waffe aus, die du ausgerüstet hast. Dieser Angriff verursacht keinen Schaden, aber du wendest eine Kopie des gewählten <strong>Symbols</strong> auf jeden Gegner an, der von dem Angriff getroffen wird (jede Kopie zählt als ein eigenes <strong>Symbol</strong> gegen dein Limit oder<strong>【FS + 1】</strong>aktive <strong>Symbole</strong>).</p><p>Beschreibungen, sowie die Regeln für sämtliche Symbole findest du hier: <strong>@UUID[Compendium.projectfu.handouts.JournalEntry.t38IeNrS9T7NQspT]</strong></p>"
 		},
 		"[Handout: Symbol List]": {
@@ -2402,7 +2288,7 @@
     		"disabled": "true",
 			"img": "icons/magic/death/skull-poison-green.webp",
 			"_id": "1k3J3U9qsFPObWVa",
-			"keyDesc": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erleidet: </strong>@EFFECT[Compendium.projectfu.actor-effects.aI4tsuVswH5gfGab]{Effekt: Symbol der Schwäche (Luft)}, @EFFECT[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J]{Effekt: Symbol der Schwäche (Blitz)}, @EFFECT[Compendium.projectfu.actor-effects.zFQpa3KcSAmBCWdE]{Effekt: Symbol der Schwäche (Finster)}, @EFFECT[Compendium.projectfu.actor-effects.YpXM5ClzMzIcwCgd]{Effekt: Symbol der Schwäche (Erde}, @EFFECT[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We]{Effekt: Symbol der Schwäche (Feuer)}, @EFFECT[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0]{Effekt: Symbol der Schwäche (Eis)}, @EFFECT[Compendium.projectfu.actor-effects.aPBdnNy1hA8aRctl]{Effekt: Symbol der Schwäche (Licht)}, or @EFFECT[Compendium.projectfu.actor-effects.2sXIFIXiWxRHt8CP]{Effekt: Symbol der Schwäche (Gift)}</p></li></ul>",
+			"keyDesc": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erleidet: </strong>@EFFECT[Compendium.projectfu.actor-effects.aI4tsuVswH5gfGab]{Effekt: Symbol der Schwäche (Luft)}, @EFFECT[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J]{Effekt: Symbol der Schwäche (Blitz)}, @EFFECT[Compendium.projectfu.actor-effects.zFQpa3KcSAmBCWdE]{Effekt: Symbol der Schwäche (Finster)}, @EFFECT[Compendium.projectfu.actor-effects.YpXM5ClzMzIcwCgd]{Effekt: Symbol der Schwäche (Erde}, @EFFECT[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We]{Effekt: Symbol der Schwäche (Feuer)}, @EFFECT[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0]{Effekt: Symbol der Schwäche (Eis)}, @EFFECT[Compendium.projectfu.actor-effects.aPBdnNy1hA8aRctl]{Effekt: Symbol der Schwäche (Licht)} oder @EFFECT[Compendium.projectfu.actor-effects.2sXIFIXiWxRHt8CP]{Effekt: Symbol der Schwäche (Gift)}</p></li></ul>",
 			"fxDesc0": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p>",
 			"systemVersion": "#{VERSION}#",
 			"createdTime": "1730910825288",
@@ -2855,7 +2741,6 @@
 			"source": "GRW183",
 			"src": "GRW183",
 			"fxFlSource0": "GRW183",
-			"class": "Bastler",
 			"img": "systems/projectfu/styles/static/compendium/classes/tinkerer/tinkerer_emergency_item.png",
             "remaining": "1",
 			"disabled": "false",
@@ -2872,28 +2757,24 @@
 			"name": "Hilfsmittel",
 			"source": "GRW183",
 			"src": "GRW183",
-			"class": "Bastler",
 			"Description": "<p>Wenn du diese Fähigkeit zum ersten Mal erwirbst, wähle eine Hilfsmittelart: <strong>@UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]</strong>,<strong> @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]</strong>, oder <strong>@UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]</strong> (<strong>Grundregelwerk</strong>, Seite <strong>184ff</strong>). Du erhältst ihre <strong>grundlegenden Vorteile.</strong></p><p>Wann immer du diese Fähigkeit erneut wählst, wähle eine Option: Du erhältst die <strong>grundlegenden Vorteile</strong> einer neuen Hilfsmittelart; <strong>oder</strong> du erhältst die <strong>fortgeschrittenen Vorteile</strong> einer Hilfsmitteltart, deren <strong>grundlegende Vorteile</strong> du bereits erhalten hast; <strong>oder</strong> du erhältst die <strong>überlegenen Vorteile</strong> einer Hilfsmittelart, deren <strong>fortgeschrittene Vorteile</strong> du bereits erhalten hast.</p><hr><ul><li><p>Regeln und eine Liste aller <strong>Hilfsmittel</strong>, siehe hier<strong>:</strong> @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk]</p></li><li><p>Eine VTT Anleitung zur Automatisierung findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk.JournalEntryPage.7D5mpbaYddiztH1W]</p></li></ul>"
 		},
 		"Potion Rain": {
 			"name": "Trankregen",
 			"source": "GRW183",
 			"src": "GRW183",
-			"class": "Bastler",
 			"Description": "<p>Wenn du einen <strong>Trank</strong> herstellst, der die LP und/oder GP eines <strong>einzelnen</strong> Wesens wiederherstellt, kannst du ihn auf bis zu<strong>【FS】</strong>weitere Wesen wirken lassen. Tust du das, gibt der Trank jedem Wesen nur die Hälfte der normalen LP und GP zurück.</p><hr><ul><li><p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]: @GAIN[25 hp]</p></li><li><p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]: @GAIN[25 mp]</p></li></ul>"
 		},
 		"Secret Formula": {
 			"name": "Geheime Formel",
 			"source": "GRW183",
 			"src": "GRW183",
-			"class": "Bastler",
-			"Description": "<p>Wenn du einen <strong>Trank</strong> oder eine <strong>Magisphäre</strong> herstellst, dessen oder deren Effekt LP und/oder GP wiederherstellt, wird jede wiederhergestellte Menge um<strong>【FS × 5】</strong>erhöht.</p><p>Wenn du einen <strong>Elementaren Splitter</strong>, einen <strong>Trank</strong> oder eine <strong>Magisphäre</strong> herstellst, der oder die Schaden verursacht, verursacht dieses Item<strong>【FS】</strong>zusätzlichen Schaden.</p><hr><ul><li><p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]: @GAIN[50+($sl*5) hp]{50 + (FS × 5) lP}</p></li><li><p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]: @GAIN[50+($sl*5) mp]{50 + (FS × 5) GP}</p></li><li><p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Elementarer Splitter}: @DMG[10+($sl) air]{10 + FS Luft}, @DMG[10+($sl) bolt]{10 + FS Blitz}, @DMG[10+($sl) earth]{10 + FS Erd}, @DMG[10+($sl) fire]{10 + FS Feuer} , or @DMG[10+($sl) ice]{10 + FS Eis}</p></li></ul>"
+			"Description": "<p>Wenn du einen <strong>Trank</strong> oder eine <strong>Magisphäre</strong> herstellst, dessen oder deren Effekt LP und/oder GP wiederherstellt, wird jede wiederhergestellte Menge um<strong>【FS × 5】</strong>erhöht.</p><p>Wenn du einen <strong>Elementaren Splitter</strong>, einen <strong>Trank</strong> oder eine <strong>Magisphäre</strong> herstellst, der oder die Schaden verursacht, verursacht dieses Item<strong>【FS】</strong>zusätzlichen Schaden.</p><hr><ul><li><p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]: @GAIN[50+($sl*5) hp]{50 + (FS × 5) lP}</p></li><li><p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]: @GAIN[50+($sl*5) mp]{50 + (FS × 5) GP}</p></li><li><p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Elementarer Splitter}: @DMG[10+($sl) air]{10 + FS Luft}, @DMG[10+($sl) bolt]{10 + FS Blitz}, @DMG[10+($sl) earth]{10 + FS Erd}, @DMG[10+($sl) fire]{10 + FS Feuer}  oder @DMG[10+($sl) ice]{10 + FS Eis}</p></li></ul>"
 		},
 		"Visionary": {
 			"name": "Visionär",
 			"source": "GRW183",
 			"src": "GRW183",
-			"class": "Bastler",
 			"Description": "<p>Wenn du an einem <strong>Projekt</strong> arbeitest, werden bis zu<strong>【FS × 100】</strong>Zenit an Materialkosten automatisch bezahlt; zusätzlich generierst du jeden Tag einen zusätzlichen <strong>Fortschritt</strong> von<strong>【FS】</strong>.Wenn mehrere Charaktere mit dieser Fähigkeit an demselben Projekt arbeiten, sind die Effekte kumulativ.</p>"
 		},
 		"Gadget - Alchemy": {
@@ -2967,28 +2848,24 @@
 			"name": "Findig",
 			"source": "GRW207",
 			"src": "GRW207",
-			"class": "Reisender",
 			"Description": "<p>Du erhältst<strong>【FS】</strong>Inventarpunkte nach jedem <strong>Reisewurf</strong> (<strong>Grundregelwerk</strong>, Seite <strong>106</strong>).</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[$sl ip]{SL IP}</p></li></ul>"
 		},
 		"Tavern Talk": {
 			"name": "Tavernengespräch",
 			"source": "GRW207",
 			"src": "GRW207",
-			"class": "Reisender",
 			"Description": "<p>Wenn du dich in einem Gasthaus oder einer Taverne <strong>ausruhst</strong>, kannst du der Spielleiterin bis zu<strong>【FS】</strong>Fragen über deine Umgebung und die Menschen, die hier leben, stellen; die Spielleiterin antwortet wahrheitsgemäß und du beschreibst, wie du die Informationen gesammelt hast.</p>"
 		},
 		"Treasure Hunter": {
 			"name": "Schatzsucher",
 			"source": "GRW207",
 			"src": "GRW207",
-			"class": "Reisender",
 			"Description": "<p>Wenn deine Gruppe über die Weltkarte reist, machst du bei einem Wurf von<strong>【FS + 1】oder niedriger</strong> auf dem <strong>Reisewurf</strong> eine <strong>Entdeckung</strong> (statt nur bei einer <strong>1</strong>).</p>"
 		},
 		"Well-Traveled": {
 			"name": "Weitgereist",
 			"source": "GRW207",
 			"src": "GRW207",
-			"class": "Reisender",
 			"Description": "<p>Du reduzierst den Würfel für deine <strong>Reisewürfe</strong> um eine Würfelgröße (bis zu einem Minimum von <strong>W6</strong>).</p><p>Falls mehrere Charaktere diese Fähigkeit haben, sind die Effekte <strong>nicht</strong> kumulativ.</p>"
 		},
 		"Effect: Breach": {
@@ -2996,7 +2873,6 @@
 			"fxName0": "Effekt: Durchbrechen",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"fxDesc0": "<p>Wann immer du, vor Beginn des nächsten Zuges vom Waffenmeister, Schaden durch eine Quelle erleidest, fügt diese Quelle dir<strong>【FS × 2】</strong>Zusatzschaden zu.</p></p>",
 			"img": "systems/projectfu/styles/static/compendium/classes/weaponmaster/weaponmaster_breach.png",
 			"disabled": "false",
@@ -3016,28 +2892,24 @@
 			"name": "Klingensturm",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"Description": "<p>Wenn du einen <strong>Nahkampfangriff</strong> ausführst, kannst du @LOSS[10 mp] ausgeben, um eine Option zu wählen: Der Angriff erhält <strong>Multi (2)</strong>; <strong>oder</strong> du erhöhst das <strong>Multi</strong>-Merkmal des Angriffs um eins, bis zu einem Maximum von <strong>Multi (3)</strong>.</p>"
 		},
 		"Bone Crusher": {
 			"name": "Knochenbrecher",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"Description": "<p>Wenn du ein oder mehrere Ziele mit einem <strong>Nahkampfangriff</strong> triffst, der Schaden verursachen würde, kannst du den Angriff keinen Schaden verursachen lassen. Tust du das, wähle eine Option: Mache jedes Ziel, das von dem Angriff getroffen wird, <strong>benommen</strong>; <strong>oder</strong> mache jedes Ziel, das von dem Angriff getroffen wird, <strong>geschwächt</strong>; <strong>oder</strong> jedes Ziel, das von dem Angriff getroffen wird, verliert<strong>【FS × 10】</strong>Geistpunkte. Beschreibe dein Manöver!</p><hr><ul><li><p><strong>Ziel erleidet: </strong>@EFFECT[dazed], @EFFECT[weak], oder @LOSS[$sl*10 mp]{FS × 10 GP}</p></li></ul>"
 		},
 		"Breach": {
 			"name": "Durchbrechen",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"Description": "<p>Du kannst eine Aktion ausführen und 5 Geistpunkte ausgeben, um einen <strong>freien Angriff</strong> mit einer <strong>Nahkampfwaffe</strong> auszuführen, die du ausgerüstet hast. Dieser Angriff muss ein einzelnes Wesen zum Ziel haben. Wenn der Angriff erfolgreich ist, fügt er keinen Schaden zu und du wählst eine Option: Du zerstörst einen Schild, mit dem das Ziel ausgerüstet ist; <strong>oder</strong> du zerstörst die ausgerüstete Rüstung des Ziels; <strong>oder</strong> wann immer das Ziel vor Beginn deines nächsten Zuges Schaden durch eine Quelle erleidet, fügt diese Quelle ihm<strong>【FS × 2】</strong>Zusatzschaden zu.</p><hr><ul><li><p><strong>Ziel erleidet</strong>: @EFFECT[Compendium.projectfu.skills.Cc1391vhlS1yIMrI]</p></li></ul>"
 		},
 		"Counterattack": {
 			"name": "Gegenangriff",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"Description": "<p>Wenn ein Gegner dich <strong>mit einem Nahkampfangriff trifft oder verfehlt</strong> und das Ergebnis seiner Präzisionsprobe eine gerade Zahl war, darfst du einen <strong>freien Angriff</strong> gegen diesen Gegner ausführen (nachdem sein Angriff vollständig abgehandelt wurde). Dieser Angriff muss ein <strong>Nahkampfangriff</strong> sein und den Gegner als <strong>einziges</strong> Ziel haben; sieh deinen <strong>höchsten Wurf (HW)</strong> als 0 an, wenn du den Schaden berechnest, der durch diesen Angriff verursacht wird.</p>"
 		},
 		"Melee Weapon Mastery": {
@@ -3045,7 +2917,6 @@
 			"fxName0": "Meisterlicher Nahkampf",
 			"source": "GRW219",
 			"src": "GRW219",
-			"class": "Waffenmeister",
 			"Description": "<p><span>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Nahkampfwaffen</strong>.</span></p>",
 			"fxDesc0": "<p><span>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Nahkampfwaffen</strong>.</span></p>",
     		"_id": "Sks7cSsjFlEgMg53",
@@ -3061,35 +2932,30 @@
 			"name": "Kampfgärtnern",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<p>Nachdem du einen <strong>Magiesamen</strong> mit der Fähigkeit <strong>Chloromantie</strong> gepflanzt hast (nicht bei der Verwendung von <strong>Pfropfung</strong>), kannst du eine Option wählen: führe einen <strong>freien Angriff</strong> mit einer ausgerüsteten Waffe aus; <strong>oder</strong> führe die <strong>Zaubern</strong>-Aktion kostenlos aus, indem du einen Zauber wirkst, dessen Geistpunkt-Gesamtkosten<strong>【5 + (FS × 5)】</strong>entsprechen oder niedriger sind (du musst trotzdem seine GP-Kosten bezahlen). Behandle den <strong>höheren Wurf (HW)</strong> deiner Präzisions- oder Magieprobe bei der Bestimmung des Schadens, der durch diesen Angriff oder Zauber verursacht wird, als gleich 0.</p>"
 		},
 		"Chloromancy": {
 			"name": "Chloromantie",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<p>Jedes Mal, wenn du diese Fähigkeit erwirbst, entdeckst du <strong>eine neue Art von Magiesamen</strong> (siehe <strong>Atlas: Natural Fantasy</strong>, Seite <strong>144</strong>).</p><p>Wenn während eines Konflikts <strong>keine Magiesamen</strong> in deinem <strong>Garten</strong> sind, kannst du eine Aktion nutzen und 20 Geistpunkte ausgeben, um <strong>einen Magiesamen</strong> einer von dir entdeckten Art zu <strong>pflanzen</strong>. Die Regeln für den Garten und für das <strong>Magiesamen-Wachstum</strong> findest du auf den nächsten Seiten.</p><hr><ul><li><p>Für eine Erklärung und Liste der <strong>Magiesamen</strong>, siehe hier: @UUID[Compendium.projectfu.handouts.JournalEntry.16lV3Tse5aK9qipX]</p></li></ul><ul><li><p>VTT Anweisungen zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.16lV3Tse5aK9qipX.JournalEntryPage.8e8kglGnqyKy1Nju]</p></li></ul>"
 		},
 		"Graft": {
 			"name": "Pfropfung",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<p>Solange sich ein <strong>Magiesamen</strong> in deinem <strong>Garten</strong> befindet und <strong>1 oder mehrere Abschnitte</strong> deiner <strong>Wachstumsuhr</strong> gefüllt sind, darfst du eine Aktion nutzen, um diesen <strong>Magiesamen</strong> aus deinem <strong>Garten</strong> zu <strong>entfernen</strong>: Wenn du das tust, <strong>pflanze einen anderen Magiesamen</strong> der von dir entdeckten an (die aktuell gefüllten Abschnitte deiner Wachstumsuhr bleiben unverändert).</p>"
 		},
 		"Tree of Life": {
 			"name": "Baum des Lebens",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<p>Wenn du einen <strong>Magiesamen</strong> aus deinem <strong>Garten entfernst</strong>, darfst du ein Wesen wählen, das du sehen kannst: Befindet sich dieses Wesen in einer <strong>Krise</strong>, erhält es<strong>【5 + (FS × 5)】</strong>Lebenspunkte zurück.</p><hr><ul><li><p><strong>Ziel regeneriert:</strong> @GAIN[5+(5*$sl) hp]{5 + (FS × 5) LP}</p></li></ul>"
 		},
 		"Verdant Sway": {
 			"name": "Grünes Wogen",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<p>Du erhältst die Befähigung, Rituale der <strong>Ritualistik</strong>-Disziplin durchzuführen; <strong>zusätzlich</strong> kannst du <strong>Ritualistik</strong> einsetzen, um <strong>Pflanzen, Pollen, Sporen und Gifte zu erschaffen, zu beleben und/oder zu kontrollieren</strong> (aber du kannst auf diese Weise keine NSC der <strong>Pflanzen</strong>-Spezies erschaffen oder kontrollieren).</p>"
 		},
 		"Arctic Narcissus": {
@@ -3381,28 +3247,24 @@
 			"name": "[Handout: Magiesamen-Liste]",
 			"source": "ANF145",
 			"src": "ANF145",
-			"class": "Floralist",
 			"Description": "<h3>MAGIESAMEN LISTE</h3><p>Unten findest du eine Liste der Standard-<strong>Magiesamen</strong>, die jeder Floralist entdecken kann, wenn er Stufen in die Fähigkeit @UUID[Compendium.projectfu.skills.Item.ZmzDl88kGMvrumoJ] investiert.</p><p>Deine Gruppe kann auch gemeinsam neue <strong>Magiesamen</strong> erschaffen, und die Spielleiterin kann sie als <strong>Belohnung</strong> anbieten, unabhängig von deiner Investition in <strong>Chloromantie</strong>. Jeder Magiesamen ist etwa 1.000 Zenit wert; versuche, diese neuen <strong>Magiesamen</strong> auf einer ähnlichen Stärke wie die auf der Standardliste zu halten.</p><p></p><h3>ARKTISCHE NARZISSE</h3><p>Sie überlebt hartnäckig in gefrorenen Gegenden.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist resistent gegen <strong>Erd</strong>- und <strong>Eisschaden</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Du und deine Verbündeten in der Szene sind resistent gegen <strong>Erd</strong>- und <strong>Eisschaden</strong>.</p></td></tr></tbody></table><p>.</p><h3>GLÜHENDE CHRYSANTHEME</h3><p>Ihre dicken Blütenblätter ähneln einem ausbrechenden Vulkan.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1-3</strong></p></td><td><p>Wähle am Ende deines Zuges <strong>Erde</strong> oder <strong>Feuer</strong>. Bis du diesen Effekt erneut anwendest oder dieser <strong>Magiesamen</strong> nicht mehr in deinem <strong>Garten</strong> vorhanden ist, wird jeglicher Schaden, den du und alle Verbündeten in der Szene verursachen, zu der gewählten Schadensart. Die Art kann sich nicht ändern und er ignoriert Resistenzen.</p></td></tr></tbody></table><p>.</p><h3>WÜSTENDAHLIE</h3><p>Eine ausdauernde Pflanze, die keine Angst vor der Trockenheit der Dünen hat.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist resistent gegen <strong>Luft</strong>- und <strong>Feuerschaden</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Du und deine Verbündeten in der Szene sind resistent gegen <strong>Luft</strong>- und <strong>Feuerschaden</strong>.</p></td></tr></tbody></table><p>.</p><h3>GOLDER GINKGO</h3><p>Seine farbenfrohen Blätter zeigen seine Zähigkeit.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges erholen sich du und jeder Verbündete, den du sehen kannst, von <strong>benommen</strong>, <strong>wütend</strong> und <strong>erschüttert</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Am Ende deines Zuges erhalten du und jeder Verbündete, den du sehen kannst, Geistpunkte in Höhe von<strong>【5 + deiner Fähigkeitsstufe in Chloromantie】</strong>zurück.</p></td></tr></tbody></table><p>.</p><h3>GRUFT-AFFODILL</h3><p>Ehrwürdig und elegant verkörpert er die Unausweichlichkeit des Todes.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges darfst du einen Gegner wählen, den du sehen kannst. Wenn du das tust, wird dieser Gegner <strong>erschüttert</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Am Ende deines Zuges wird jeder Gegner, den du sehen kannst, <strong>erschüttert</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Am Ende deines Zuges fügst du jedem Gegner, den du sehen kannst und der erschüttert ist, eine Menge an Finsterschaden in Höhe von<strong>【15 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p></td></tr></tbody></table><p>.</p><h3>EINSIEDLER-IRIS</h3><p>Ihre Blätter beherbergen das Flüstern alten Wissens.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\">⏱</p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Wähle am Ende deines Zuges einen Gegner, den du sehen kannst. Die Spielleiterin deckt seine <strong>Stufe</strong>, seinen <strong>Rang</strong>, seine <strong>Spezies</strong>, seine <strong>maximalen Lebenspunkte</strong>, seine <strong>maximalen Geistpunkte</strong>, seine <strong>Eigenschaften</strong>, seine <strong>Attribute</strong>, seine <strong>Verteidigung</strong> und seine <strong>Magie-Verteidigung</strong> auf.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Wähle am Ende deines Zuges einen Gegner, den du sehen kannst. Die Spielleiterin deckt seine <strong>Stufe</strong>, seinen <strong>Rang</strong>, seine <strong>Spezies</strong>, seine <strong>maximalen Lebenspunkte</strong>, seine <strong>maximalen Geistpunkte</strong>, seine <strong>Eigenschaften</strong>, seine <strong>Attribute</strong>, seine <strong>Verteidigung</strong>, seine <strong>Magie-Verteidigung</strong> und seine <strong>Affinitäten</strong> auf.</p></td></tr></tbody></table><p>.</p><h3>HAKENBLATT-NACHTSCHATTEN</h3><p>Seine purpurnen Beeren enthalten ein tödliches magisches Gift.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Jeglicher Schaden, den du zufügst, wird zu <strong>Gift</strong>. Seine Schadensart kann sich nicht ändern und er ignoriert Immunitäten und Resistenzen.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Jeglicher Schaden, den du zufügst, wird zu Gift. Seine Schadensart kann sich nicht ändern und er ignoriert Immunitäten und Resistenzen. Wenn du in deinem Zug zum ersten Mal Giftschaden verursachst, fügst du außerdem Zusatzschaden in Höhe von<strong>【deiner Fähigkeitsstufe in Chloromantie】</strong>zu, und jedes Wesen, das auf diese Weise Lebenspunkte verloren hat, wird <strong>vergiftet</strong>.</p></td></tr></tbody></table><p>.</p><h3>SPITZWEISSDORN</h3><p>Gefällt Hexen und Chirurgen gleichermaßen wegen seiner reinigenden Eigenschaften.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist resistent gegen <strong>Finster</strong>- und <strong>Giftschaden</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Du und deine in der Szene anwesenden Verbündeten sind resistent gegen <strong>Finster</strong>- und <strong>Giftschaden</strong>.</p></td></tr></tbody></table><p>.</p><h3>MOND-MAGNOLIE</h3><p>Sie blüht in den dunkelsten Stunden der Nacht.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1-3</strong></p></td><td><p>Wähle am Ende deines Zuges <strong>Eis</strong> oder <strong>Licht</strong>. Bis du diesen Effekt erneut anwendest oder dieser <strong>Magiesamen</strong> nicht mehr in deinem <strong>Garten</strong> vorhanden ist, wird der gesamte Schaden, den du und alle Verbündeten in der Szene erleiden, zu der gewählten Schadensart. Seine Art kann sich nicht ändern und er ignoriert Resistenzen.</p></td></tr></tbody></table><p>.</p><h3>MEERESLOTUS</h3><p>Ein anmutiges Symbol der Gelassenheit und Weisheit.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist immun gegen <strong>benommen</strong> und <strong>verlangsamt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Du behandelst deine <strong>Geschicklichkeit</strong> und <strong>Einsicht</strong> als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Du und alle Verbündeten, die du sehen kannst, behandeln ihre <strong>Geschicklichkeit</strong> und <strong>Einsicht</strong> als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></td></tr></tbody></table><p>.</p><h3>PILGER-GAZANIA</h3><p>Ihre extravagante Blumenkrone steht für Reichtum.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1-2</strong></p></td><td><p>Wähle am Ende deines Zuges dich selbst <strong>oder</strong> einen anderen Spielercharakter, den du sehen kannst. Der gewählte Charakter erhält 2 Inventarpunkte zurück.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Am Ende deines Zuges erhalten du <strong>und</strong> jeder andere Spielercharakter, den du sehen kannst, 1 Inventarpunkt zurück.</p></td></tr></tbody></table><p>.</p><h3>TÄNZELNDER LÖWENZAHN</h3><p>Als Symbol für Energie und Lebendigkeit verbreitet er Samen durch stürmische Winde.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1-3</strong></p></td><td><p>Wähle am Ende deines Zuges <strong>Luft</strong> oder <strong>Blitz</strong>. Bis du diesen Effekt erneut anwendest oder dieser <strong>Magiesamen</strong> nicht mehr in deinem <strong>Garten</strong> vorhanden ist, wird der gesamte Schaden, den du und alle Verbündeten in der Szene erleiden, zu der gewählten Schadensart. Seine Art kann sich nicht ändern und er ignoriert Resistenzen.</p></td></tr></tbody></table><p>.</p><h3>MAJESTÄTISCHE PROTEA</h3><p>Eine farbenfrohe und ausdauernde Blume, die von einer alten Dynastie favorisiert wird.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist immun gegen <strong>erschüttert</strong> und <strong>geschwächt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Du behandelst deine <strong>Macht</strong> und <strong>Willenskraft</strong> als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Du und alle Verbündeten, die du sehen kannst, behandeln ihre <strong>Macht</strong> und <strong>Willenskraft</strong> als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></td></tr></tbody></table><p>.</p><h3>ARZNEI-LILIE</h3><p>Ihre eleganten Blüten filtern und reinigen die spirituelle Energie.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges erholen sich du und jeder Verbündete, den du sehen kannst, von <strong>vergiftet, verlangsamt</strong> und <strong>geschwächt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Am Ende deines Zuges erhalten du und jeder Verbündete, den du sehen kannst, Lebenspunkte in Höhe von<strong>【15 + deiner Fähigkeitsstufe in Chloromantie】</strong>zurück.</p></td></tr></tbody></table><p>.</p><h3>GEZACKTE ROSE</h3><p>Ihre Dornen bilden ein ebenso atemberaubendes wie gefährliches Geflecht.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges darfst du einen Gegner wählen, den du sehen kannst. Wenn du das tust, wird dieser Gegner <strong>verlangsamt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Am Ende deines Zuges wird jeder Gegner, den du sehen kannst, <strong>verlangsamt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Am Ende deines Zuges fügst du jedem Gegner, den du sehen kannst und der <strong>verlangsamt</strong> ist, <strong>physischen</strong> Schaden in Höhe von<strong>【15 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p></td></tr></tbody></table><p>.</p><h3>SILBER-STRELITZIA</h3><p>Ihre silbrigen Blüten können leicht mit Juwelen verwechselt werden.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist resistent gegen <strong>Blitz</strong>- und <strong>Lichtschaden</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2-3</strong></p></td><td><p>Du und deine Verbündeten in der Szene sind resistent gegen <strong>Blitz</strong>- und <strong>Lichtschaden</strong>.</p></td></tr></tbody></table><p>.</p><h3>STERNPFINGSTROSE</h3><p>Sie blickt schweigend in die himmlischen Weiten.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges darfst du einen Gegner wählen, den du sehen kannst. Wenn du das tust, wird dieser Gegner <strong>benommen</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Am Ende deines Zuges ist jeder Gegner, den du sehen kannst, <strong>benommen</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Am Ende deines Zuges fügst du jedem Gegner, den du sehen kannst und der <strong>benommen</strong> ist, <strong>Lichtschaden</strong> in Höhe von<strong>【15 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p></td></tr></tbody></table><p>.</p><h3>GESTREIFTE ORCHIDEE</h3><p>Jedes Segment dieser Pflanze ist mit Giftstoffen bedeckt.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1</strong></p></td><td><p>Am Ende deines Zuges darfst du einen Gegner wählen, den du sehen kannst. Wenn du das tust, wird dieser Gegner <strong>geschwächt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Am Ende deines Zuges wird jeder Gegner, den du sehen kannst, <strong>geschwächt</strong>.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Am Ende deines Zuges fügst du jedem Gegner, den du sehen kannst und der <strong>geschwächt</strong> ist, <strong>Giftschaden</strong> in Höhe von<strong>【15 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p></td></tr></tbody></table><p>.</p><h3><strong>SCHUTZAKAZIE</strong></h3><p>Ein Gewirr aus robusten Ästen, deren Dornen starkes Gift verbreiten.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>0-1</strong></p></td><td><p>Du bist resistent gegen <strong>physischen</strong> Schaden.</p></td></tr><tr><td><p style=\"text-align: center\"><strong>2</strong></p></td><td><p>Du bist resistent gegen <strong>physischen</strong> Schaden. Außerdem fügst du einem Wesen, das dich mit einem <strong>Nahkampfangriff</strong> trifft, <strong>physischen</strong> Schaden zu in Höhe von<strong>【5 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu (nachdem sein Angriff abgehandelt wurde).</p></td></tr><tr><td><p style=\"text-align: center\"><strong>3</strong></p></td><td><p>Du bist resistent gegen <strong>physischen</strong> Schaden. Außerdem fügst du einem Wesen, das dich mit einem <strong>Nahkampfangriff getroffen</strong> hat, <strong>physischen</strong> Schaden zu in Höhe von<strong>【5 + deiner Fähigkeitsstufe in Chloromantie】und Giftschaden in Höhe von【5 + deiner Fähigkeitsstufe in Chloromantie】</strong>zu (beides geschieht, nachdem der Angriff des Wesens abgehandelt wurde).</p></td></tr></tbody></table><p>.</p><h3>ZORNIGE NELKE</h3><p>Trotz ihrer Schönheit verströmen ihre gelben Blüten einen irritierenden, stechenden Geruch.</p><table><colgroup><col style=\"width:10%\"><col style=\"width:90%\"></colgroup><tbody><tr><td><p style=\"text-align: center\"><strong>⏱</strong></p></td><td><p><strong>Effekt</strong></p></td></tr><tr><td><p style=\"text-align: center\"><strong>1-4</strong></p></td><td><p>Wenn dieser <strong>Magiesamen</strong> deinen <strong>Garten</strong> verlässt, wähle bis zu einem Gegner, den du sehen kannst. Wenn der gewählte Gegner bis zum Ende deines nächsten Zuges einen Angriff durchführt oder einen offensiven Zauber (@ICON[offensive]) wirkt, muss er dich zu den Zielen dieses Angriffs oder Zaubers zählen (falls möglich).</p><p>Am Ende deines Zuges darfst du diesen <strong>Magiesamen</strong> aus deinem <strong>Garten</strong> entfernen; wenn du das tust, <strong>lösche</strong> alle Abschnitte deiner Wachstumsuhr.</p></td></tr></tbody></table><p>.</p>"
 		},
 		"[Handout: Magiseed Rules]": {
 			"name": "[Handout: Magiesamen-Regeln]",
 			"source": "ANF143",
 			"src": "ANF143",
-			"class": "Floralist",
 			"Description": "<h3>DER GARTEN</h3><p>Wenn du einen <strong>Magiesamen</strong> pflanzt, schlägt er in deinem <strong>Garten</strong> Wurzeln, bis er entfernt wird. Dein <strong>Garten</strong> ist ein abstrakter Raum, dessen Aussehen vom Aussehen deines Charakters abhängt: Er kann ein Topf auf seinem Rücken, eine Lücke entlang seiner Klinge oder sogar der Boden unter seinen Füßen sein. Dein <strong>Garten</strong> kann immer nur <strong>einen Magiesamen gleichzeitig</strong> enthalten, und jegliche <strong>Magiesamen</strong> in deinem <strong>Garten</strong> werden am Ende jeder Szene <strong>automatisch entfernt</strong>.</p><p></p><h3>DIE WACHSTUMSUHR</h3><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.ZmzDl88kGMvrumoJ] erwirbst, erhältst du auch eine <strong>Wachstumsuhr</strong>, die nur während Konflikt-Szenen vorhanden ist und den Zyklus des Lebens in deinem <strong>Garten</strong> darstellt.</p><ul><li><p>Deine Wachstumsuhr hat <strong>4 Abschnitte</strong> und beginnt jede Szene <strong>leer</strong>.</p></li><li><p>Wenn sich am Ende deines Zuges ein <strong>Magiesamen</strong> in deinem <strong>Garten</strong> befindet, <strong>fülle 1 Abschnitt</strong> deiner Wachstumsuhr; wenn sich <strong>dann</strong> noch ein <strong>Magiesamen</strong> in deinem <strong>Garten</strong> befindet und dieser <strong>Magiesamen</strong> einen Effekt „am Ende deines Zuges“ hat (siehe unten), wende diesen Effekt an.</p></li><li><p>Wenn du den <strong>vierten Abschnitt</strong> deiner Wachstumsuhr füllst, <strong>entferne</strong> den <strong>Magiesamen</strong> in deinem <strong>Garten</strong> und <strong>lösche dann alle Abschnitte</strong> deiner Wachstumsuhr.</p></li><li><p>Abschnitte deiner Wachstumsuhr können <strong>nur</strong> auf die oben beschriebene Weise, durch <strong>Brombeerherz</strong> und <strong>Grüner Daumen</strong> (Seiten <strong>161</strong> und <strong>163</strong>) oder durch Effekte, die <strong>explizit auf Wachstumsuhren wirken, gefüllt oder gelöscht werden</strong>.</p></li></ul><h3>MAGIESAMEN-EFFEKTE</h3><p><strong>Magiesamen</strong> können passive Effekte haben oder solche, die am <strong>Ende</strong> deines Zuges ausgelöst werden, <strong>nachdem</strong> deine Wachstumsuhr vorangeschritten ist.</p><ul><li><p>Die Effekte eines <strong>Magiesamens</strong> gelten nur, solange er sich in deinem <strong>Garten</strong> befindet, und sie hängen von der aktuellen Anzahl der gefüllten Abschnitte in deiner <strong>Wachstumsuhr</strong> (⏱) ab.</p></li><li><p>Du wendest <strong>nur</strong> den Effekt an, welcher der <strong>genauen Anzahl</strong> der aktuell gefüllten Abschnitte deiner Wachstumsuhr entspricht, und keinen Effekt, der darüber oder darunter liegt.</p></li><li><p>Wenn der Effekt eines Magiesamens Schaden verursacht, verursacht er 5 Zusatzschaden, wenn du auf <strong>Stufe 30 oder höher</strong> bist. Wenn der Effekt eines Magiesamens einen Lebenspunkt- und/oder Geistpunktverlust und/oder eine Genesung dieser verursacht, erhöht sich der Betrag um 10, wenn du auf <strong>Stufe 30 oder höher</strong> bist.</p></li></ul><h3>MAGIESAMEN-LISTE</h3><p>Unten und auf den nächsten Seiten findest du eine Liste der Standard-<strong>Magiesamen</strong>, die jeder Floralist entdecken kann, wenn er Stufen in die Fähigkeit <strong>Chloromantie</strong> investiert.</p><p>Deine Gruppe kann auch gemeinsam neue <strong>Magiesamen</strong> erschaffen, und die Spielleiterin kann sie als <strong>Belohnung</strong> anbieten, unabhängig von deiner Investition in <strong>Chloromantie</strong>. Jeder Magiesamen ist etwa 1.000 Zenit wert; versuche, diese neuen <strong>Magiesamen</strong> auf einer ähnlichen Stärke wie die auf der Standardliste zu halten.</p><p></p><h3>Magiesamen-Liste</h3><p>@UUID[Compendium.projectfu.skills.Item.NuJwnpRP7xREY9q5]</p>"
 		},
 		"[Handout: Invoker Rules]": {
 			"name": "[Handout: Anrufer Regeln]",
 			"source": "ANF140",
 			"src": "ANF140",
-			"class": "Anrufer",
 			"Description": "<h1>ANRUFUNGEN</h1><p><strong>@UUID[Compendium.projectfu.handouts.JournalEntry.JHjzGHXO9qm8HVW9]</strong></p><h3>VERFÜGBARE ELEMENTARQUELLEN BESTIMMEN</h3><p>In jeder Szene gewährt dir deine Umgebung <strong>zwei verschiedene Elementarquellen</strong>: Die Spielleiterin sagt dir, welche das sind. Vergiss nicht zu beschreiben, wie sich die Elementarquellen in der Szene manifestieren; es kann sich um natürliche Merkmale, Objekte oder sogar Wesen handeln.</p><blockquote><p><em><strong>Beispiel: </strong>Während eines Kampfes auf einem dampfbetriebenen Luftschiff inmitten von stürmischen Wolken würde eine beliebige Kombination aus <strong>Luft</strong>, <strong>Feuer</strong>, <strong>Blitz</strong> und <strong>Wasser</strong> Sinn ergeben.</em></p></blockquote><p></p><h3>EINE ANRUFUNG DURCHFÜHREN</h3><p>Wenn du eine <strong>Anrufung</strong> durchführst, wähle eine der Optionen aus, die dir in der Tabelle unten zur Verfügung stehen (vorausgesetzt, die entsprechende Elementarquelle ist in der Szene vorhanden); wende dann ihre Effekte auf <strong>ein</strong> Wesen an, das du sehen kannst.</p><p>Deine Fähigkeitsstufe in <strong>Anrufung</strong> bestimmt, auf welche Anrufungen du Zugriff hast: <strong>【FS 1】</strong> ermöglicht <strong>„Explosions“</strong>-Anrufungen, <strong>【FS 2】</strong> ermöglicht <strong>„Explosions“</strong>- <strong>und</strong> <strong>„Verhexungs“</strong>-Anrufungen und <strong>【FS 3】</strong> gibt dir Zugriff auf alle Anrufungen.</p><blockquote><p><em><strong>Beispiel: </strong>Wenn <strong>Luft-</strong> und <strong>Erd-</strong>Elementarquellen verfügbar sind und du Fähigkeitsstufe 2 hast, hast du Zugriff auf <strong>Luft-Explosion, Luft-Verhexung, Geo-Explosion</strong> und <strong>Geo-Verhexung</strong>.</em></p></blockquote><p>Wenn eine Anrufung Schaden verursacht, verursacht sie 5 Zusatzschaden, wenn du <strong>auf Stufe 20 oder höher</strong> bist, oder 10 Zusatzschaden, wenn du <strong>auf Stufe 40 oder höher</strong> bist.</p><p>Wenn eine Anrufung bewirkt, dass das Ziel Lebenspunkte zurückgewinnt oder Geistpunkte ver-liert, erhöht sich der Betrag um 10, wenn du <strong>auf Stufe 20 oder höher</strong> bist, oder um 20, wenn du <strong>auf Stufe 40 oder höher</strong> bist.</p><hr><p></p><h3>ELEMENTARQUELLEN UND ANRUFUNGEN</h3><h5></h5><h5><strong>LUFT-ELEMENTARQUELLEN</strong></h5><table><tbody><tr><td><p><strong>Luft-Elementarquelle</strong></p></td><td><p><strong>(Schadensart: Luft)</strong></p></td></tr><tr><td><p><strong>Luft-Explosion</strong></p></td><td><p>Du fügst dem Ziel @DMG[20 air] zu.</p></td></tr><tr><td><p><strong>Luft-Verhexung</strong></p></td><td><p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Blitz-</strong> und <strong>Feuerschaden</strong> verursachen. <strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.gLmFM7sGvsT3YEEQ]</p></td></tr><tr><td><p><strong>Brise</strong></p></td><td><p>Das Ziel gewinnt @GAIN[30 hp] zurück.</p></td></tr><tr><td><p><strong>Wirbelsturm</strong></p></td><td><p>Du fügst dem Ziel @DMG[10 air] zu, und es wird @EFFECT[dazed].</p></td></tr></tbody></table><hr><h5>ERD-ELEMENTARQUELLEN</h5><table><tbody><tr><td><p><strong>Erd-Elementarquelle</strong></p></td><td><p><strong>(Schadensart: Erde)</strong></p></td></tr><tr><td><p><strong>Geo-Explosion</strong></p></td><td><p>Du fügst dem Ziel @DMG[20 earth] zu.</p></td></tr><tr><td><p><strong>Geo-Verhexung</strong></p></td><td><p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft- </strong>und <strong>Eisschaden</strong> verursachen. <strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.XneKAK7lEd344SDX]</p></td></tr><tr><td><p><strong>Wachstum</strong></p></td><td><p>Das Ziel gewinnt @GAIN[30 hp] zurück.</p></td></tr><tr><td><p><strong>Treibsand</strong></p></td><td><p>Du fügst dem Ziel @DMG[10 earth] zu, und es wird @EFFECT[slow].</p></td></tr></tbody></table><hr><h5>FEUER-ELEMENTARQUELLEN</h5><table><tbody><tr><td><p><strong>Feuer-Elementarquelle</strong></p></td><td><p><strong>(Schadensart: Feuer)</strong></p></td></tr><tr><td><p><strong>Pyro-Explosion</strong></p></td><td><p>Du fügst dem Ziel @DMG[20 fire] zu.</p></td></tr><tr><td><p><strong>Pyro-Verhexung</strong></p></td><td><p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd- </strong>und<strong> Eisschaden</strong> verursachen. <strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.P35wmm9xOT0bnImB]</p></td></tr><tr><td><p><strong>Ausbruch</strong></p></td><td><p>Du fügst dem Ziel @DMG[10 fire] zu, und es wird @EFFECT[shaken].</p></td></tr><tr><td><p><strong>Rauch</strong></p></td><td><p>Das Ziel verliert @LOSS[20 mp] und wird außerdem @EFFECT[weak].</p></td></tr></tbody></table><hr><h5>BLITZ-ELEMENTARQUELLEN</h5><table><tbody><tr><td><p><strong>Blitz-Elementarquelle</strong></p></td><td><p><strong>(Schadensart: Blitz)</strong></p></td></tr><tr><td><p><strong>Elektro-Explosion</strong></p></td><td><p>Du fügst dem Ziel @DMG[20 bolt] zu.</p></td></tr><tr><td><p><strong>Elektro-Verhexung</strong></p></td><td><p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd</strong>- und <strong>Feuerschaden</strong> verursachen. <strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.Aotszm4Q25ys3Mbv]</p></td></tr><tr><td><p><strong>Reibungselektrizität</strong></p></td><td><p>Du fügst dem Ziel @DMG[10 bolt] zu, und es wird @EFFECT[slow].</p></td></tr><tr><td><p><strong>Donner</strong></p></td><td><p>Das Ziel verliert @LOSS[20 mp] und wird außerdem @EFFECT[dazed].</p></td></tr></tbody></table><hr><h5>WASSER-ELEMENTARQUELLEN</h5><table><tbody><tr><td><p><strong>Wasser-Elementarquelle</strong></p></td><td><p><strong>(Schadensart: Eis)</strong></p></td></tr><tr><td><p><strong>Hydro-Explosion</strong></p></td><td><p>Du fügst dem Ziel @DMG[20 ice] zu.</p></td></tr><tr><td><p><strong>Hydro-Verhexung</strong></p></td><td><p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft- </strong>und <strong>Blitzschaden</strong> verursachen. <strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.XpYrgDtYILIGS7Sf]</p></td></tr><tr><td><p><strong>Frösteln</strong></p></td><td><p>Das Ziel verliert @LOSS[20 mp] und wird außerdem @EFFECT[shaken].</p></td></tr><tr><td><p><strong>Frostbiss</strong></p></td><td><p>Du fügst dem Ziel @DMG[10 ice] zu, und es wird @EFFECT[weak].</p></td></tr></tbody></table>"
 		},
 		"Invocations": {
 			"name": "Anrufungen",
 			"source": "ANF140",
 			"src": "ANF140",
-			"class": "Anrufer",
 			"keyDesc": "<h3>VERFÜGBARE ELEMENTARQUELLEN BESTIMMEN</h3><p>In jeder Szene gewährt dir deine Umgebung <strong>zwei verschiedene Elementarquellen. </strong>(Siehe <strong>@UUID[Compendium.projectfu.handouts.JournalEntry.JHjzGHXO9qm8HVW9]</strong>)<strong><br></strong>Wenn du eine <strong>Anrufung</strong> durchführst, wähle eine der Optionen aus, die dir zur Verfügung stehen; wende dann ihre Effekte auf <strong>ein</strong> Wesen an, das du sehen kannst.</p>",
 			"aAirDesc": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Blitz-</strong> und <strong>Feuerschaden</strong> verursachen.</p><hr><ul><li><p><strong>Ziel erleidet:</strong> @EFFECT[Compendium.projectfu.skills.Item.gLmFM7sGvsT3YEEQ]</p></li></ul>",
 			"aAirName": "Luft-Verhexung",
@@ -3544,21 +3406,18 @@
 			"name": "Elementare Harmonie",
 			"source": "ANF139",
 			"src": "ANF139",
-			"class": "Anrufer",
 			"Description": "<p>Du kannst mit Wesen der <strong>Elementar</strong>-Spezies verbal kommunizieren.</p><p>Wenn du die Lebenspunkte eines Wesens mit einer <strong>Anrufung</strong> oder einem Zauber wiederherstellst, wird die wiederhergestellte Menge um<strong>【FS × 5】</strong>erhöht, wenn ein <strong>Elementar</strong> in der Szene anwesend ist.</p><hr><ul><li><p><strong>Ziel regeneriert:</strong> @GAIN[$sl*5 hp]{FS × 5 LP}</p></li></ul>"
 		},
 		"Invocation": {
 			"name": "Anrufung",
 			"source": "ANF139",
 			"src": "ANF139",
-			"class": "Anrufer",
 			"Description": "<p>Du kannst eine Aktion nutzen und 5 Geistpunkte ausgeben, um eine <strong>Anrufung</strong> durchzuführen, bei der du Energie aus einer der <strong>Elementarquellen</strong> in der Szene ziehst (siehe <strong>Atlas: Natural Fantasy</strong>, Seite <strong>140</strong>). Deine【FS】in dieser Fähigkeit bestimmt, zu welchen Anrufungen du Zugang hast.</p><hr><ul><li><p>Beschreibung sowie Regeln aller <strong>Anrufungen</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.JHjzGHXO9qm8HVW9]</p></li><li><p>Anweisungen zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.JHjzGHXO9qm8HVW9.JournalEntryPage.msH4dITSSkbnWnQd]</p></li></ul>"
 		},
 		"Linked Invocation": {
 			"name": "Verknüpfte Anrufung",
 			"source": "ANF139",
 			"src": "ANF139",
-			"class": "Anrufer",
 			"Description": "<p>Wenn du eine <strong>Anrufung</strong> durchführst, kannst du bis zu<strong>【FS × 10】</strong>zusätzliche Geistpunkte ausgeben. Für je 10 Geistpunkte, die du auf diese Weise ausgibst, kann die Anrufung ein weiteres Wesen zum Ziel haben, das du sehen kannst.</p>"
 		},
 		"Ripples": {
@@ -3566,7 +3425,6 @@
 			"fxName0": "Nachschlag: Präzisionsbonus",
 			"source": "ANF139",
 			"src": "ANF139",
-			"class": "Anrufer",
 			"Description": "<p>Wenn ein Gegner, den du sehen kannst, durch den verursachten Schaden eines deiner Verbündeten Lebenspunkte verliert und dieser Schaden durch eine oder mehrere deiner <strong>„Verhexungs“-Anrufungen</strong> erhöht wurde, darfst du einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die du ausgerüstet hast. Dieser Angriff kann nur diesen Gegner zum Ziel haben und erhält einen Bonus in Höhe von<strong>【FS】</strong>auf seine Präzisionsprobe. Wenn er erfolgreich ist, wird der gesamte Schaden zu derselben Schadensart, die dein Verbündeter verursacht hat, und <strong>alle „Verhexungs“-Anrufungen</strong>, die auf dem Ziel liegen, enden sofort, nachdem der Angriff abgehandelt worden ist.</p><p>Wenn zwei oder mehr Gegner diese Fähigkeit gleichzeitig auslösen, kannst du gegen <strong>jeden</strong> von ihnen einen <strong>freien Angriff</strong> ausführen, in beliebiger Reihenfolge.</p>",
 			"img": "systems/projectfu/styles/static/compendium/classes/invoker/ripples.png",
     		"origin": "Compendium.projectfu.skills.Item.ouhN6A6jFZO10eST",
@@ -3579,7 +3437,6 @@
 			"name": "Quellenerweiterung",
 			"source": "ANF139",
 			"src": "ANF139",
-			"class": "Anrufer",
 			"Description": "<p>Solange du eine Waffe der <strong>Kategorie Arkan, Bogen, Flegel, Raufen, Schwert</strong> oder <strong>Werfen</strong> ausgerüstet hast, verursachen deine „<strong>Explosions“-Anrufungen【FS】</strong>Zusatzschaden, und der Zusatzschaden deiner <strong>„Verhexungs“-Anrufungen</strong> wird um<strong>【FS】</strong>erhöht.</p>"
 		},
 		"Bitter": {
@@ -3616,7 +3473,6 @@
 			"name": "[Handout: Gourmet-Regeln]",
 			"source": "ANF154",
 			"src": "ANF154",
-			"class": "Gourmet",
 			"Description": "<h2>ZUTATEN & DELIKATESSEN</h2><blockquote><p>Der Tempel der fünf Gewürze soll das Rezept für ein Gericht enthalten, das die Seele eines Verstorbenen rufen kann.</p></blockquote><p>In der <strong>Gourmet</strong>-Klasse geht es darum, neue Geschmackskombinationen auszuprobieren und diese Kombinationen zu nutzen, um verschiedene Strategien zu entwickeln.</p><hr><h3>ZUTATEN ERHALTEN</h3><p><strong>Zutaten</strong> erhältst du normalerweise durch die Fähigkeiten @UUID[Compendium.projectfu.skills.Item.SkhjmD8IDm1yff3e] und @UUID[Compendium.projectfu.skills.Item.EU5astEIUK1d8Qk3]; du kannst sie auch als <strong>Belohnung</strong> während des Spiels erhalten. Wenn du eine <strong>Zutat</strong> erhältst, bist du dir nie ganz sicher, wie sie schmecken wird – würfle mit einem <strong>W6</strong>, um den <strong>Geschmack der Zutat</strong> anhand der Tabelle unten zu bestimmen, beschreibe dann ihr <strong>Aussehen</strong> und gib ihr einen <strong>Namen</strong>.</p><p>Du kannst <strong>Zutaten</strong> auch an Ständen, in Läden oder bei Händlern kaufen: Der Preis beträgt <strong>10 Zenit</strong> für eine <strong>Zutat</strong> mit einem zufälligen Geschmack oder <strong>20 Zenit</strong> für eine <strong>Zutat</strong> mit einem Geschmack deiner Wahl.</p><hr><h5><strong>ZUTATEN-GESCHMACK</strong></h5><p>@Embed[Compendium.projectfu.rollable-tables.RollTable.sKStLRxDOy1yZkuJ inline rollable]</p><hr><h3>GESCHMACKSRICHTUNGEN UND DELIKATESSEN</h3><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.SkhjmD8IDm1yff3e] einsetzt, kombinierst du zwei oder drei <strong>Zutaten</strong>, um eine besondere <strong>Delikatesse</strong> mit mächtigen Effekten herzustellen, die auf ihre Ziele angewendet werden.</p><ul><li><p>Jede <strong>unterschiedliche</strong> Kombination von <strong>zwei Geschmacksrichtungen</strong> (auch wenn es derselbeGeschmack ist, der zweimal verwendet wird!) fügt der <strong>Delikatesse</strong> einen <strong>Effekt</strong> hinzu.</p></li><li><p>Wenn du zwei <strong>Geschmacksrichtungen</strong> kombinierst, die du <strong>vorher noch nie kombiniert</strong> hast, bestimme den <strong>Effekt</strong> dieser Kombination, indem du mit einem <strong>W12</strong> würfelst und die Tabelle auf der nächsten Seite zurate ziehst; bei den meisten Einträgen musst du außerdem eine Auswahl treffen (z. B. eine bestimmte Schadensart oder einen Statuseffekt). Sobald du fertig bist, notierst du das Ergebnis in deinem @UUID[Compendium.projectfu.skills.Item.HQTDIy6suF8u6dAl]: Von diesem Moment an wird diese <strong>Geschmackskombination immer</strong> genau diesen <strong>Effekt</strong> haben, wenn du sie benutzt.</p></li><li><p>Niemals können zwei <strong>Geschmackskombinationen</strong> in deinem <strong>Kochbuchbogen identische Effekte</strong> haben. Wenn du den Effekt einer neuen Kombination bestimmst, musst du deine <strong>Wahl</strong> so treffen, dass das Ergebnis nicht schon vorhanden ist (z. B. indem du eine andere Schadensart oder einen anderen Statuseffekt auswählst); wenn dir das nicht gelingt, würfelst du den <strong>W12</strong> neu.</p></li><li><p>Wenn du fertig bist, enthält dein <strong>Kochbuchbogen</strong> insgesamt <strong>15 Effekte</strong>, einen für jedes mögliche Paar von <strong>Geschmacksrichtungen</strong>.</p></li></ul><blockquote><p><strong>Beispiel:</strong> Du kombinierst drei Zutaten, von denen eine <strong>salzig</strong> ist und zwei <strong>bitter</strong> sind. Die entstehende <strong>Delikatesse</strong> weist zwei Kombinationen auf (<strong>bitter + bitter</strong> und <strong>bitter + salzig</strong>) und hat somit zwei verschiedene Effekte.</p><p>In der Vergangenheit hast du <strong>bitter + bitter</strong> kombiniert und eine <strong>4</strong> gewürfelt, was bedeutet, dass der Effekt eine Genesung der GP ermöglicht; andererseits hast du noch nie <strong>bitter + salzig</strong> kombiniert, also musst du den Effekt dieser Kombination durch Würfeln bestimmen.</p><p>Du würfelst eine <strong>1</strong> und musst einen Statuseffekt für diesen Effekt wählen; da du dich in der Vergangenheit bereits für die Genesung von <strong>geschwächt</strong> für die Kombination <strong>sauer + süß</strong> entschieden hast, entscheidest du dich für <strong>benommen</strong>. Von nun an kannst du mit der Kombination <strong>bitter + salzig</strong> das Ziel immer von <strong>benommen</strong> heilen.</p><p>Nachdem du das getan hast, weißt du, dass deine <strong>Delikatesse</strong> jedem Ziel erlaubt, sich vom Statuseffekt <strong>benommen</strong> zu erholen und außerdem 40 Geistpunkte zurückzugewinnen.</p></blockquote><p><strong>Delikatessen</strong>, die du mit der Fähigkeit @UUID[Compendium.projectfu.skills.Item.SkhjmD8IDm1yff3e] herstellst, haben einen sofortigen Effekt und werden dann zerstört; wenn du Speisen mit einzigartigen Effekten zubereiten und später verwenden willst, musst du stattdessen die Regeln für <strong>Projekte</strong> anwenden (siehe <strong>Grundregelwerk</strong>, Seite <strong>134</strong>).</p><hr><h5>DELIKATESSEN</h5><p>@Embed[Compendium.projectfu.rollable-tables.RollTable.LeFYrfI8SzWK4GAa inline rollable]</p><hr><h3>SPEZIALREGELN FÜR EFFEKTE</h3><p>Delikatessen und ihre Effekte folgen ein paar besonderen Regeln.</p><ul><li><p>Jede <strong>Delikatesse</strong> hat immer <strong>einen, zwei oder drei Effekte</strong>, je nachdem, welche <strong>Geschmackskombinationen</strong> du benutzt hast (es können auch <strong>vier oder sechs</strong> Effekte sein, wenn du die heldenhafte Fähigkeit @UUID[Compendium.projectfu.heroic-skills.Item.562YcXPjzRCWpeLh] auf Seite <strong>167</strong> benutzt); du entscheidest, in welcher Reihenfolge du diese Effekte anwendest, und kannst auf eine beliebige Anzahl von ihnen <strong>verzichten</strong> (diese Wahl muss für alle Ziele der <strong>Delikatesse</strong> genau gleich sein).</p></li><li><p>Die Effekte <strong>5 bis 12</strong> können nur in Konflikt-Szenen angewendet werden.</p></li><li><p>Eine <strong>Delikatesse</strong> kann nur <strong>einen</strong> Effekt des Typs <strong>5</strong> haben (d. h. einen Effekt, der Schaden verursacht); wenn eine <strong>Delikatesse</strong> aufgrund der von dir verwendeten <strong>Geschmackskombinationen</strong> zwei oder mehr Effekte des Typs <strong>5</strong> hat, <strong>musst</strong> du einen davon wählen und auf den anderen verzichten.</p></li><li><p>Eine <strong>Delikatesse</strong> kann nur <strong>einen</strong> Effekt des Typs <strong>12</strong> haben (d. h. einen Effekt, der die Schadensart verändert); wenn eine <strong>Delikatesse</strong> aufgrund der von dir verwendeten <strong>Geschmackskombinationen</strong> zwei oder mehr Effekte des Typs <strong>12</strong> hat, <strong>musst</strong> du einen davon wählen und auf den anderen verzichten.</p></li></ul><p>Abgesehen davon sind alle Effekte einer <strong>Delikatesse</strong> kumulativ und werden in vollem Umfang auf jedes ihrer Ziele angewendet.</p><blockquote><p><strong>Beispiel:</strong> Wenn du einen Effekt des Typs <strong>2</strong> auf <strong>Süß + Umami</strong>, einen Effekt des Typs <strong>5</strong> auf <strong>Bitter + Umami</strong> und einen Effekt des Typs <strong>9</strong> auf <strong>Bitter + Süß</strong> erhältst, kann die Delikatesse, die diese Geschmacksrichtungen kombiniert, Schaden zufügen, einen Statuseffekt verursachen und auch die Anwendung von Zaubern für eine kurze Zeit verhindern!</p></blockquote><h3>UND ZUM SCHLUSS NOCH EIN KLEINER RATSCHLAG!</h3><p>Diese Klasse ist ziemlich untypisch: Es gibt keine wirkliche Möglichkeit, die Rolle deines Charakters perfekt zu kontrollieren, denn deine Fähigkeiten werden im Laufe der Kampagne prozedural generiert. Denke jedoch daran, dass <strong>du auch außerhalb von Konflikt-Szenen Delikatessen zubereiten kannst</strong>: Das kostet dich zwar einige Zutaten, aber du kannst die Effekte im Voraus „auskundschaften“ und in kritischen Situationen Fehler vermeiden. Achte außerdem darauf, welche Effekte am besten miteinander und mit dem Rest deiner Gruppe zusammenwirken, und nutze den Vorteil des <strong>Multi</strong>-Merkmals, um dieselbe <strong>Delikatesse</strong> auf zwei oder mehr Gegner anzuwenden!</p>"
 		},
 		"Cookbook": {
@@ -3647,70 +3503,60 @@
 			"name": "Kochen",
 			"source": "ANF153",
 			"src": "ANF153",
-			"class": "Gourmet",
 			"Description": "<p>Wenn du dich in einer Siedlung <strong>ausruhst</strong>, erhältst du【FS】Zutaten (siehe <strong>Atlas: Natural Fantasy</strong>, Seite <strong>154</strong>).</p><p>Du kannst eine Aktion nutzen und <strong>2 oder 3 Zutaten kombinieren</strong>, um eine <strong>Delikatesse</strong> zuzubereiten (siehe nächste Seite) sowie eine Option wählen: Du wendest ihre Effekte auf dich selbst oder einen Verbündeten an, den du sehen kannst; <strong>oder</strong> du führst einen <strong>freien Angriff</strong> mit einer Waffe aus, die du ausgerüstet hast. Dieser Angriff verursacht keinen Schaden, aber du wendest die Effekte der Delikatesse auf jeden Gegner an, der von dem Angriff getroffen wird.</p><p>Du kannst <strong>bis zu</strong> <strong>10 +【FS × 5】Zutaten</strong> bei dir tragen, und sie <strong>verderben nie, bis du sie benutzt</strong>; wenn du diese Fähigkeit bei der Charaktererschaffung nimmst, beginnst du das Spiel mit <strong>zehn</strong> Zutaten mit zufälligen Geschmacksrichtungen.</p><hr><ul><li><p>Für Regeln zum <strong>Kochen</strong> und eine Liste aller Zutaten & Delikatessen, siehe hier: @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4]</p></li><li><p>Anweisunge zur <strong>Automatisierung</strong> findest du hier: @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4.JournalEntryPage.fDzgptyBKkS5y2YY]</p></li></ul>"
 		},
 		"Knife and Fork": {
 			"name": "Messer und Gabel",
 			"source": "ANF153",
 			"src": "ANF153",
-			"class": "Gourmet",
 			"Description": "<p>Wenn du den durch die Fähigkeit Kochen gewährten <strong>freien Angriff</strong> ausführst, darfst du, wenn du <strong>nicht mehr als 2 Zutaten</strong> kombiniert hast, den Angriff ganz normal Schaden verursachen lassen. Wenn du das tust, behandelst du deinen <strong>höheren Wurf (HW)</strong> als 0, wenn du den Schaden berechnest, der durch diesen Angriff verursacht wird.</p>"
 		},
 		"Made with Love": {
 			"name": "Mit Liebe gemacht",
 			"source": "ANF153",
 			"src": "ANF153",
-			"class": "Gourmet",
 			"Description": "<p><span>Wenn du die Fähigkeit <strong>Kochen</strong> einsetzt und dich entscheidest, die Effekte der <strong>Delikatesse</strong> auf dich selbst oder einen Verbündeten, den du sehen kannst, anzuwenden, kannst du bis zu<strong>【FS × 10】</strong>GP ausgeben. Für je 10 GP, die du auf diese Weise ausgibst, kannst du die Effekte der <strong>Delikatesse</strong> auf einen weiteren Verbündeten anwenden, den du sehen kannst.</span></p>"
 		},
 		"Salt and Pepper": {
 			"name": "Salz und Pfeffer",
 			"source": "ANF153",
 			"src": "ANF153",
-			"class": "Gourmet",
 			"Description": "<p>Wenn du eine <strong>Delikatesse</strong> zubereitest, darfst du 2 Inventarpunkte ausgeben: Wenn du das tust, änderst du den <strong>Geschmack</strong> einer Zutat in einen anderen Geschmack deiner Wahl.</p>"
 		},
 		"Traveling Cook": {
 			"name": "Reisender Koch",
 			"source": "ANF153",
 			"src": "ANF153",
-			"class": "Gourmet",
 			"Description": "<p><span>Wenn du die Fähigkeit <strong>Kochen</strong> erworben hast, erhältst du nach jedem <strong>Reisewurf</strong></span><strong>【FS × 2】Zutaten</strong>.</p>"
 		},
 		"Expiration Date": {
 			"name": "Verfallsdatum",
 			"source": "ANF159",
 			"src": "ANF159",
-			"class": "Händler",
 			"Description": "<p>Wenn ein von dir hergestellter <strong>Trank</strong> oder eine von dir hergestellte <strong>Delikatesse</strong> (siehe <strong>Atlas: Natural Fantasy</strong>, Seite <strong>155</strong>), die <strong>keinen</strong> Schaden verursacht, dazu führt, dass ein oder mehrere Wesen Lebenspunkte zurückgewinnen, kannst du ihn bzw. sie stattdessen jedem dieser Wesen <strong>Giftschaden</strong> in Höhe von<strong>【der Hälfte deiner Stufe + (FS × 10)】</strong>zufügen lassen. Die Art dieses Schadens kann sich nicht ändern, und er wird <strong>halbiert</strong>, wenn du <strong>zwei oder mehr Wesen</strong> Schaden zufügst.</p><hr><ul><li><p><strong>Ziel verliert:</strong> @DMG[ ($cl/2)+($sl*10) poison]{Level/2 + (FS × 10) Gift (einzel)} oder @DMG[ (($cl/2)+($sl*10)/2) poison]{Level/2 + (FS × 10) /2 Gift (multi)}</p></li></ul>"
 		},
 		"I've Heard of It!": {
 			"name": "Davon habe ich gehört!",
 			"source": "ANF159",
 			"src": "ANF159",
-			"class": "Händler",
 			"Description": "<p>Wenn du oder ein Verbündeter, der dich hören und verstehen kann, eine Probe zum Untersuchen eines Wesens, eines Items oder eines Ortes durchführt, kannst du 1 Handelspunkt ausgeben, um einen Bonus in Höhe von<strong>【FS × 2】</strong>auf das Ergebnis dieser Probe zu gewähren.</p><hr><ul><li><p><strong>Du/Verbündeter würfelt:</strong> @CHECK[dex dex ($sl*2)]</p></li><li><p><strong>Ressource: </strong>@PROGRESS[winds-of-trade update -1]{Gib 1 Handelspunkt aus}</p></li></ul>"
 		},
 		"Private Stock": {
 			"name": "Privatbestand",
 			"source": "ANF159",
 			"src": "ANF159",
-			"class": "Händler",
 			"Description": "<p>Wenn du oder ein anderer Spielercharakter<strong>【FS + 2】</strong>oder weniger Inventarpunkte ausgibt, darfst du 1 Handelspunkt ausgeben, um diese Kosten zu ignorieren.</p><hr><ul><li><p><strong>Ressource:</strong> @PROGRESS[winds-of-trade update -1]{Gib 1 Handelspunkt aus}</p></li></ul>"
 		},
 		"Real Treasure": {
 			"name": "Echter Schatz",
 			"source": "ANF159",
 			"src": "ANF159",
-			"class": "Händler",
 			"Description": "<p>Wenn du einmal pro Sitzung einem NSC oder einer Gemeinschaft hilfst, <strong>Gier und Korruption zu besiegen, ihre Lebensqualität zu verbessern</strong> oder <strong>mit anderen Wesen zu koexistieren</strong>, erhältst du<strong>【FS + 1】</strong>Handelspunkte, wenn du die Fähigkeit <strong>Handelsreisender</strong> erworben hast.</p><hr><ul><li><p><strong>Ressource</strong>: @PROGRESS[winds-of-trade update 1+$sl]{Erhalte FS + 1 Handelspunkte}</p></li></ul>"
 		},
 		"Winds of Trade": {
 			"name": "Handelsreisender",
 			"source": "ANF159",
 			"src": "ANF159",
-			"class": "Händler",
 			"Description": "<p>Wenn du dich in einem Bereich <strong>ausruhst</strong>, in dem Handel möglich ist, erhältst du<strong>【FS + 1】</strong>Handelspunkte. Du darfst nie mehr als<strong>【FS + 3】</strong>Handelspunkte haben; wenn du diese Fähigkeit bei der Charaktererstellung erwirbst, beginnst du das Spiel mit 2 Handelspunkten.</p><p>Während einer <strong>Szene ohne Konflikt</strong> kannst du 2 Handelspunkte ausgeben, um eine Option zu wählen: Du stellst ein <strong>Material</strong> oder ein <strong>seltenes Item</strong> her, das von der Spielleiterin genehmigt wurde und dessen Wert in Zenit<strong>【deiner Stufe multipliziert mit 30】</strong>entspricht oder niedriger ist; <strong>oder</strong> du erschaffst einen NSC, der in der Nähe wohnt, und erklärst seinen Beruf sowie die Art und Weise, wie du ihn kennengelernt hast; dann sagt dir die Spielleiterin, was er im Austausch für seine Dienste verlangt.</p><hr><ul><li><p><strong>Rasten</strong>: @PROGRESS[winds-of-trade update $sl+1]{Erhalte FS + 1 Handelspunkte}</p></li><li><p><strong>Nicht-Konflikt Szene: </strong>@PROGRESS[winds-of-trade update -2]{Gib 2 Handelspunkte aus}</p></li></ul>"
 		}
 	}
