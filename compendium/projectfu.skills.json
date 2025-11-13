@@ -39,8 +39,12 @@
 	},
 	"mapping": {
 		"class": {
-		"path": "system.class.value",
-		"converter": "classNames"
+			"path": "system.class.value",
+			"converter": "classNames"
+		},
+		"effects": {
+			"path": "effects",
+			"converter": "effects"
 		},
 		"featType": "system.featureType",
 		"Description": "system.description",
@@ -56,49 +60,6 @@
 		"keyReco": "system.data.recovery",
 		"keyDesc": "system.data.description",
 		"trigger": "system.data.trigger",
-		"origin": "effects.0.origin",
-		"rounds": "effects.0.duration.rounds",
-		"fxDuStTime0": "effects.0.duration.startTime",
-		"fxDuSeconds0": "effects.0.duration.seconds",
-		"fxDuCombat0": "effects.0.duration.combat",
-		"fxDuTurns0": "effects.0.duration.turns",
-		"fxDuStRound0": "effects.0.duration.startRound",
-		"fxDuStTurn0": "effects.0.duration.startTurn",
-		"disabled": "effects.0.disabled",
-		"fxName0": "effects.0.name",
-		"img": "effects.0.img",
-		"_id": "effects.0._id",
-		"fxType0": "effects.0.type",
-		"fxSysType0": "effects.0.system.type",
-		"fxSysDuEve0": "effects.0.system.duration.event",
-		"fxSysDuInt0": "effects.0.system.duration.interval",
-		"fxSysDuTra0": "effects.0.system.duration.tracking",
-		"fxSysDuRem0": "effects.0.system.duration.remaining",
-		"crisisInteraction": "effects.0.system.predicate.crisisInteraction",
-		"fxDesc0": "effects.0.description",
-		"key": "effects.0.changes.0.key",
-		"mode": "effects.0.changes.0.mode",
-		"value": "effects.0.changes.0.value",
-		"key1": "effects.0.changes.1.key",
-		"mode1": "effects.0.changes.1.mode",
-		"value1": "effects.0.changes.1.value",
-		"key2": "effects.0.changes.2.key",
-		"mode2": "effects.0.changes.2.mode",
-		"value2": "effects.0.changes.2.value",
-		"key3": "effects.0.changes.3.key",
-		"mode3": "effects.0.changes.3.mode",
-		"value3": "effects.0.changes.3.value",
-		"key4": "effects.0.changes.4.key",
-		"mode4": "effects.0.changes.4.mode",
-		"value4": "effects.0.changes.4.value",
-		"CrisisInteraction": "effects.0.flags.projectfu.CrisisInteraction",
-		"fxFlType0": "effects.0.flags.projectfu.type",
-		"fxFlSource0": "effects.0.flags.projectfu.source",
-		"systemVersion": "effects.0._stats.systemVersion",
-		"createdTime": "effects.0._stats.createdTime",
-		"modifiedTime": "effects.0._stats.modifiedTime",
-		"lastModifiedBy": "effects.0._stats.lastModifiedBy",
-		"fxStatuses0": "effects.0.statuses.0",
 		"basic": "system.data.basic",
 		"advanced": "system.data.advanced",
 		"superior": "system.data.superior",
@@ -250,22 +211,11 @@
 			"domains": "Feuer, Hitze, Metall",
 			"merge": "<ul><li><p>Du bist resistent gegen <strong>Feuerschaden</strong>.</p></li><li><p>Jeglicher <strong>Feuerschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>",
 			"dismiss": "<p>Wenn du dieses Arkanum <strong>entlässt</strong>, wähle <strong>Schmieden</strong> oder <strong>Inferno</strong>:</p><ul><li><p><strong>Schmieden</strong>. Du stellst eine <strong>gewöhnliche Rüstung</strong>, einen <strong>gewöhnlichen Schild</strong> oder eine <strong>gewöhnliche Waffe</strong> deiner Wahl her (siehe Seiten <strong>130</strong> bis <strong>133</strong>). Wählst du diese Option erneut, verschwindet das zuvor erstellte Item. Stellst du auf diese Weise eine Waffe her, verursacht sie <strong>Feuerschaden</strong> statt <strong>physischem</strong> Schaden.</p></li></ul><ul><li><p><strong>Inferno</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet @DMG[&step(30,40,50) fire]{30|40|50 Feuer} <strong>Schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.BhLHFeKBx3zZRZD5",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Schmiede",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-forge.png",
-			"_id": "288fLvNbYksITV4Q",
-			"key": "system.affinities.fire",
-			"mode": "0",
-			"value": "upgrade",
-			"fxDesc0": "<ul><li><p>Du bist resistent gegen <strong>Feuerschaden</strong>.</p></li><li><p>Jeglicher <strong>Feuerschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW178",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725596736998",
-			"modifiedTime": "1741996346476",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Schmiede",
+				"source": "GRW179",
+				"description": "<ul><li><p>Du bist resistent gegen <strong>Feuerschaden</strong>.</p></li><li><p>Jeglicher <strong>Feuerschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Frost": {
 			"name": "Arkanum des Frosts",
@@ -273,25 +223,11 @@
 			"domains": "Kälte, Eis, Stille",
 			"merge": "<ul><li><p>Du bist resistent gegen <strong>Eisschaden</strong> und immun gegen <strong>wütend</strong>.</p></li><li><p>Jeglicher <strong>Eisschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Eiszeit. </strong>Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: jedes von ihnen erleidet <strong>@DMG[&step(30,40,50) ice]{30|40|50 Eis} schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.TKOESZqheitutkKB",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Frost",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-frost.png",
-			"_id": "NlNLwaqwYxflNKXr",
-			"key": "system.affinities.ice",
-			"mode": "0",
-			"value": "upgrade",
-			"key1": "system.immunities.enraged.base",
-			"mode1": "5",
-			"value1": "true",
-			"fxDesc0": "<ul><li><p>Du bist resistent gegen <strong>Eisschaden</strong> und immun gegen <strong>wütend</strong>.</p></li><li><p>Jeglicher <strong>Eisschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW179",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725596891866",
-			"modifiedTime": "1741996364875",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Frost",
+				"source": "GRW179",
+				"description": "<ul><li><p>Du bist resistent gegen <strong>Eisschaden</strong> und immun gegen <strong>wütend</strong>.</p></li><li><p>Jeglicher <strong>Eisschaden</strong>, den du verursachst, ignoriert Resistenzen.</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Gate": {
 			"name": "Arkanum des Tors",
@@ -299,25 +235,11 @@
 			"domains": "Raum, Reisen, Leere",
 			"merge": "<ul><li><p>Du bist resistent gegen <strong>Finsterschaden</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Magie-Verteidigung.</p></li></ul>",
 			"dismiss": "<p>Wenn du dieses Arkanum <strong>entlässt</strong>, wähle <strong>Vergessen</strong> oder <strong>Verzerren</strong>:</p><p><strong>Vergessen</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: jedes von ihnen erleidet <strong>@DMG[&step(30,40,50) dark]{30|40|50 Finster} schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p><p><strong>Verzerren</strong>. Du teleportierst dich und bis zu fünf andere bereitwillige Wesen in der Nähe an einen Ort, den du zuvor besucht hast, sofern dieser Ort innerhalb <strong>1 Reisetages</strong> liegt.</p>",
-			"origin": "Compendium.projectfu.skills.Item.UVmSApdqYNDILSFo",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Tor",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-gate.png",
-			"_id": "rPcwIcyyNMYQDwiO",
-			"key": "system.affinities.dark",
-			"mode": "0",
-			"value": "upgrade",
-			"key1": "system.derived.mdef.bonus",
-			"mode1": "2",
-			"value1": "1",
-			"fxDesc0": "<ul><li><p>Du bist resistent gegen <strong>Finsterschaden</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Magie-Verteidigung.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW181",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725597065537",
-			"modifiedTime": "1741996376257",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Tor",
+				"source": "GRW181",
+				"description": "<ul><li><p>Du bist resistent gegen <strong>Finsterschaden</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Magie-Verteidigung.</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Grimoire": {
 			"name": "Arkanum des Grimoires",
@@ -326,21 +248,11 @@
 			"merge": "<ul><li><p>Du kannst alle Sprachen lesen, schreiben, sprechen und verstehen.</p></li><li><p>Du behandelst deine <strong>Einsicht</strong> so, als wäre sie eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Orakel</strong>. Du stellst der Spielleiterin eine einzelne Frage. Die Spielleiterin muss wahrheitsgemäß antworten und die Vision beschreiben, die dir das Grimoire zeigt.</p></li><li><p>Sobald du diesen <strong>Entlassen</strong>-Effekt ausgelöst hat, steht er dir bis zum nächsten Morgengrauen nicht mehr zur Verfügung. Außerdem darf dieselbe Frage nie mehr als einmal gestellt werden. Die Spielleiterin hat das letzte Wort bei der Entscheidung, welche Fragen zu ähnlich sind, um noch einmal gestellt zu werden.</p></li></ul>",
 			"origin": "Compendium.projectfu.skills.Item.QbjAsEWA7R2HfFNg",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Grimoire",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-grimoire.png",
-			"_id": "N151Mbt6kugCFoBx",
-			"key": "system.attributes.ins",
-			"mode": "0",
-			"value": "upgrade",
-			"fxDesc0": "<ul><li><p>Du kannst alle Sprachen lesen, schreiben, sprechen und verstehen.</p></li><li><p>Du behandelst deine <strong>Einsicht</strong> so, als wäre sie eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW180",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725596664723",
-			"modifiedTime": "1741996385265",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Grimoire",
+				"source": "GRW180",
+				"description": "<ul><li><p>Du kannst alle Sprachen lesen, schreiben, sprechen und verstehen.</p></li><li><p>Du behandelst deine <strong>Einsicht</strong> so, als wäre sie eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>).</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Oak": {
 			"name": "Arkanum der Eiche",
@@ -348,57 +260,23 @@
 			"domains": "Erde, Pflanzen, Gift",
 			"merge": "<ul><li><p>Du bist resistent gegen <strong>Erd</strong>- und <strong>Giftschaden</strong> und immun gegen <strong>vergiftet</strong>.</p></li><li><p>Wann immer du Lebenspunkte zurückgewinnst, erhältst du 5 zusätzliche Lebenspunkte.</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Blüte.</strong> Wähle eine beliebige Anzahl von Wesen, die du sehen kannst (du kannst auch dich selbst wählen): jedes von ihnen erholt sich vom Statuseffekt <strong>vergiftet</strong> und erhält <span>@GAIN[&step(40,50,60) hp]{40|50|60 LP} zurück</span>. Dieser Wert erhöht sich auf <span>50 Lebenspunkte sofern du auf <strong>Stufe 20 oder höher</strong> bist, oder auf 60 Lebenspunkte</span>, sofern du auf <strong>Stufe 40 oder höher</strong> bist.</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.Y3OzDHLCogR32RlH",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Eiche",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-oak.png",
-			"_id": "TyNFvNkkXHQxaJeq",
-			"key": "system.affinities.earth",
-			"mode": "0",
-			"value": "upgrade",
-			"key1": "system.affinities.poison",
-			"mode1": "0",
-			"value1": "upgrade",
-			"key2": "system.immunities.poisoned.base",
-			"mode2": "5",
-			"value2": "true",
-			"key3": "system.bonuses.incomingRecovery.hp",
-			"mode3": "2",
-			"value3": "5",
-			"fxDesc0": "<ul><li><p>Du bist resistent gegen <strong>Erd</strong>- und <strong>Giftschaden</strong> und immun gegen <strong>vergiftet</strong>.</p></li><li><p>Wann immer du Lebenspunkte zurückgewinnst, erhältst du 5 zusätzliche Lebenspunkte.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW179",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725597554468",
-			"modifiedTime": "1744457070332",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Eiche",
+				"source": "GRW179",
+				"description": "<ul><li><p>Du bist resistent gegen <strong>Erd</strong>- und <strong>Giftschaden</strong> und immun gegen <strong>vergiftet</strong>.</p></li><li><p>Wann immer du Lebenspunkte zurückgewinnst, erhältst du 5 zusätzliche Lebenspunkte.</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Sky": {
 			"name": "Arkanum des Himmels",
 			"src": "GRW180",
 			"domains": "Nebel, Regen, Stürme",
-			"merge": "<ul><li><p>Du bist resistent gegen <strong>Luft</strong>- und <strong>Blitzschaden</strong>.</p></li><li><p>Du kannst eine Aktion ausführen, um die Wetterbedingungen für den nächsten Tag innerhalb eines Bereichs von <strong>zwei Reisetagen</strong> genau vorherzusagen – die Spielleiterin wird dir sagen, wie die Wetterbedingungen sein werden.</p></li></ul>",
+			"merge": "<ul><li><p>Du bist resistent gegen <strong>Luft</strong>- und <strong>Blitzschaden</strong>.</p></li><li><p>Du kannst eine Aktion ausführen, um die Wetterbedingungen für den nächsten Tag innerhalb eines Bereichs von <strong>zwei Reisetagen</strong> genau vorherzusagen – die Spielleiterin wird dir sagen, wie die Wetterbedingungen sein werden.</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Gewittersturm</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: jedes von ihnen erleidet @DMG[&step(30,40,50) bolt]{30|40|50 Blitz} <strong>Schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.zabsA5F47r9B5h4f",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Himmel",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-sky.png",
-			"_id": "Nm6hnzBAzx3GZpTj",
-			"key": "system.affinities.air",
-			"mode": "0",
-			"value": "upgrade",
-			"key1": "system.affinities.bolt",
-			"mode1": "0",
-			"value1": "upgrade",
-			"fxDesc0": "<ul><li><p>Du bist resistent gegen <strong>Luft</strong>- und <strong>Blitzschaden</strong>.</p></li><li><p>Du kannst eine Aktion ausführen, um die Wetterbedingungen für den nächsten Tag innerhalb eines Bereichs von <strong>zwei Reisetagen</strong> genau vorherzusagen – die Spielleiterin wird dir sagen, wie die Wetterbedingungen sein werden.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW180",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725597617033",
-			"modifiedTime": "1741996437105",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Himmel",
+				"source": "GRW180",
+				"description": "<ul><li><p>Du bist resistent gegen <strong>Luft</strong>- und <strong>Blitzschaden</strong>.</p></li><li><p>Du kannst eine Aktion ausführen, um die Wetterbedingungen für den nächsten Tag innerhalb eines Bereichs von <strong>zwei Reisetagen</strong> genau vorherzusagen – die Spielleiterin wird dir sagen, wie die Wetterbedingungen sein werden.</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Sword": {
 			"name": "Arkanum des Schwerts",
@@ -406,31 +284,11 @@
 			"domains": "Eroberung, Heldentum, Führung",
 			"merge": "<ul><li><p>Deine Angriffe verursachen 5 zusätzlichen Schaden, und der gesamte Schaden, den deine Angriffe verursachen, wird so behandelt, als hätte er keine Schadensart (und wird somit nicht von Schadens-Affinitäten beeinflusst). Solange du mit diesem Arkanum verschmolzen bist, kann der von deinen Angriffen verursachte Schaden keine Schadensart annehmen.</p></li><li><p>Wenn du einen Angriff ausführst, kannst du diesen Angriff das <strong>Multi</strong>-Merkmal (<strong>beliebig viele Ziele</strong>) erhalten lassen. Tust du dies, wird dieses Arkanum automatisch entlassen, nachdem der Angriff abgehandelt wurde (dies wird <strong>nicht</strong> als freiwillige Entlassung betrachtet).</p></li></ul>",
 			"dismiss": "<p>Ja, das Arkanum hat <span style='text-decoration: underline;'>wirklich</span> keine Entlassen-Effekte!</p>",
-			"origin": "Compendium.projectfu.skills.Item.n1djlSF3C4c6Hlf4",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Schwert",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-sword.png",
-			"_id": "K6M9JQ4eVGH6Qmaa",
-			"key": "system.bonuses.damage.melee",
-			"mode": "2",
-			"value": "5",
-			"key1": "system.bonuses.damage.ranged",
-			"mode1": "2",
-			"value1": "5",
-			"key2": "system.bonuses.damage.spell",
-			"mode2": "2",
-			"value2": "5",
-			"key3": "system.overrides.damageType.all.normal",
-			"mode3": "5",
-			"value3": "untyped",
-			"fxDesc0": "<ul><li><p>Deine Angriffe verursachen 5 zusätzlichen Schaden, und der gesamte Schaden, den deine Angriffe verursachen, wird so behandelt, als hätte er keine Schadensart (und wird somit nicht von Schadens-Affinitäten beeinflusst). Solange du mit diesem Arkanum verschmolzen bist, kann der von deinen Angriffen verursachte Schaden keine Schadensart annehmen.</p></li><li><p>Wenn du einen Angriff ausführst, kannst du diesen Angriff das <strong>Multi</strong>-Merkmal (<strong>beliebig viele Ziele</strong>) erhalten lassen. Tust du dies, wird dieses Arkanum automatisch entlassen, nachdem der Angriff abgehandelt wurde (dies wird <strong>nicht</strong> als freiwillige Entlassung betrachtet).</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW181",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725597746753",
-			"modifiedTime": "1742766587458",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Schwert",
+				"source": "GRW181",
+				"description": "<ul><li><p>Deine Angriffe verursachen 5 zusätzlichen Schaden, und der gesamte Schaden, den deine Angriffe verursachen, wird so behandelt, als hätte er keine Schadensart (und wird somit nicht von Schadens-Affinitäten beeinflusst). Solange du mit diesem Arkanum verschmolzen bist, kann der von deinen Angriffen verursachte Schaden keine Schadensart annehmen.</p></li><li><p>Wenn du einen Angriff ausführst, kannst du diesen Angriff das <strong>Multi</strong>-Merkmal (<strong>beliebig viele Ziele</strong>) erhalten lassen. Tust du dies, wird dieses Arkanum automatisch entlassen, nachdem der Angriff abgehandelt wurde (dies wird <strong>nicht</strong> als freiwillige Entlassung betrachtet).</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Tower": {
 			"name": "Arkanum des Turms",
@@ -438,19 +296,11 @@
 			"domains": "Urteil, Schutz, Opferung",
 			"merge": "<ul><li><p>Wenn du dieses Arkanum beschwörst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>. Bis dieses Arkanum entlassen wird, ist jeder deiner Verbündeten in der Szene resistent gegen die gewählte Schadensart (<strong>du erhältst diese Resistenz nicht</strong>).</p></li></ul><hr><ul><li><p><strong>Verbündete erhalten:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance] oder @TYPE[affinity ice resistance]</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Urteil</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: jedes von ihnen erleidet <strong>@DMG[&step(30,40,50) light]{30|40|50 Licht} schaden</strong>. Dieser Schaden ignoriert Resistenzen.</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Turm",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-tower.png",
-			"_id": "xy0M0poZ1no2aSAs",
-			"fxDesc0": "<ul><li><p>Wenn du dieses Arkanum beschwörst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>. Bis dieses Arkanum entlassen wird, ist jeder deiner Verbündeten in der Szene resistent gegen die gewählte Schadensart (<strong>du erhältst diese Resistenz nicht</strong>).</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW181",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725598799518",
-			"modifiedTime": "1741996480816",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Turm",
+				"source": "GRW181",
+				"description": "<ul><li><p>Wenn du dieses Arkanum beschwörst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong> oder <strong>Eis</strong>. Bis dieses Arkanum entlassen wird, ist jeder deiner Verbündeten in der Szene resistent gegen die gewählte Schadensart (<strong>du erhältst diese Resistenz nicht</strong>).</p></li></ul>"
+			}]
 		},
 		"Arcanum of the Wheel": {
 			"name": "Arkanum des Rads",
@@ -458,25 +308,11 @@
 			"domains": "Schicksal, Geschwindigkeit, Zeit",
 			"merge": "<ul><li><p>Du bist immun gegen <strong>verlangsamt</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Verteidigung.</p></li></ul>",
 			"dismiss": "<ul><li><p><strong>Zeitstillstand</strong>. Wähle eine beliebige Anzahl von Wesen, die du sehen kannst: Jedes von ihnen erleidet <strong>@EFFECT[slow]</strong>. Ist ein Wesen, das du auf diese Weise auswählst, bereits <strong>verlangsamt</strong>, führt dieses Wesen in seinem nächsten Zug eine Aktion weniger aus (bis zu einem Minimum von 0 Aktionen).</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.Dwq6JSEYmSlhpL3b",
-			"rounds": "1",
-			"fxName0": "Verschmolzen: Rad",
-			"img": "systems/projectfu/styles/static/compendium/classes/arcanist/arcanum/arcanum-of-the-wheel.png",
-			"_id": "ydG9HFnv5wiV0oTU",
-			"key": "system.derived.def.bonus",
-			"mode": "2",
-			"value": "1",
-			"key1": "system.immunities.slow.base",
-			"mode1": "5",
-			"value1": "true",
-			"fxDesc0": "<ul><li><p>Du bist immun gegen <strong>verlangsamt</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Verteidigung.</p></li></ul>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "GRW180",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1725598840239",
-			"modifiedTime": "1741996507806",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Verschmolzen: Rad",
+				"source": "GRW180",
+				"description": "<ul><li><p>Du bist immun gegen <strong>verlangsamt</strong>.</p></li><li><p>Du erhältst einen Bonus von +1 auf deine Verteidigung.</p></li></ul>"
+			}]
 		},
 		"Arcane Circle": {
 			"name": "Arkaner Kreis",
@@ -510,41 +346,19 @@
 		},
 		"Effect: Resonance Damage": {
 			"name": "Effekt: Resonanzschaden",
-			"rounds": "1",
-			"fxName0": "Effekt: Resonanzschaden",
-			"img": "systems/projectfu/styles/static/compendium/classes/chanter/chanter_resonance.png",
-			"_id": "Lev9SGzxq42XCB8M",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuTra0": "source",
-			"key": "system.bonuses.incomingDamage.all",
-			"mode": "2",
-			"value": "~&sl(\"resonance\")",
-			"fxDesc0": "<p>Du erleidest aufgrund der Fertigkeit @UUID[Compendium.projectfu.skills.kdL9oQYefqNlWqyD]<strong>【FS】</strong>zusätzlichen Schaden durch die Verbündeten des Kantors.</p>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "AHF137",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1742581876605",
-			"modifiedTime": "1742582016221",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Effekt: Resonanzschaden",
+				"source": "AHF137",
+				"description": "<p>Du erleidest aufgrund der Fertigkeit @UUID[Compendium.projectfu.skills.kdL9oQYefqNlWqyD]<strong>【FS】</strong>zusätzlichen Schaden durch die Verbündeten des Kantors.</p>"
+			}]
 		},
 		"Effect: Sound Barrier": {
 			"name": "Effekt: Schallbarriere",
-			"rounds": "1",
-			"fxName0": "Effekt: Schallbarriere",
-			"img": "systems/projectfu/styles/static/compendium/classes/chanter/chanter_sound_barrier.png",
-			"_id": "x7pVRBkWCUAvhThO",
-			"key": "system.bonuses.incomingDamage.physical",
-			"mode": "2",
-			"value": "-&sl(\"sound-barrier\")",
-			"fxDesc0": "<p><span>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher physischer Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</span></p>",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "AHF137",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744458722447",
-			"modifiedTime": "1744458770784",
-			"lastModifiedBy": "WNNELbIcUepK9pGq"
+			"effects": [{
+				"name": "Effekt: Schallbarriere",
+				"source": "AHF137",
+				"description": "<p><span>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher physischer Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</span></p>"
+			}]
 		},
 		"Key of Flame": {
 			"name": "Tonart der Flamme",
@@ -631,20 +445,20 @@
 		"[Handout: Key List]": {
 			"name": "[Handout: Tonart Liste]",
 			"source": "AHF138",
-			"src": "AHF139",
-			"Description": "<table style=\"width:96.5571%;height:153px;border:1px solid black\"><colgroup><col style=\"width:14.4231%\"><col style=\"width:16.8269%\"><col style=\"width:21.7949%\"><col style=\"width:21.9551%\"><col style=\"width:25.1603%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Tonart</strong></td><td style=\"height:17px;text-align:center\"><strong>Schadensart</strong></td><td style=\"height:17px;text-align:center\"><strong>Statuseffekt</strong></td><td style=\"height:17px;text-align:center\"><strong>Attribut</strong></td><td style=\"height:17px;text-align:center\"><strong>Genesung</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;text-align:left\"><strong>@UUID[Compendium.projectfu.skills.Item.cmo71xT0QgJCOOMp]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Feuer </strong>@ICON[fire]</span></td><td style=\"height:17px;text-align:center\"><strong>Erschüttert</strong></td><td style=\"height:17px;text-align:center\"><strong>Macht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.QZOttsghYTCeqnCx]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Eis </strong>@ICON[ice]</span></td><td style=\"height:17px;text-align:center\"><strong>Geschwächt</strong></td><td style=\"height:17px;text-align:center\"><strong>Willenskraft</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.qpRWVxEuy6iHiUCP]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Physisch </strong>@ICON[physical]</span></td><td style=\"height:17px;text-align:center\"><strong>Verlangsamt</strong></td><td style=\"height:17px;text-align:center\"><strong>Willenskraft</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.ymWN6HhIvwji1Y39]</strong></td><td style=\"height:17px;text-align:center\"><strong>Licht</strong> @ICON[light]</td><td style=\"height:17px;text-align:center\"><strong>Benommen</strong></td><td style=\"height:17px;text-align:center\"><strong>Einsicht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.zzyNprcgb1RF2niW]</strong></td><td style=\"height:17px;text-align:center\"><strong>Finster </strong>@ICON[dark]</td><td style=\"height:17px;text-align:center\"><strong>Geschwächt</strong></td><td style=\"height:17px;text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.dyyFIR6iB0brrh1I]</strong></td><td style=\"height:17px;text-align:center\"><strong>Erde </strong>@ICON[earth]</td><td style=\"height:17px;text-align:center\"><strong>Benommen</strong></td><td style=\"height:17px;text-align:center\"><strong>Macht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.GBEltqKPxdTA0ppJ]</strong></td><td style=\"height:17px;text-align:center\"><strong>Blitz </strong>@ICON[bolt]</td><td style=\"height:17px;text-align:center\"><strong>Erschüttert</strong></td><td style=\"height:17px;text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.zqNF92stxmhiX85K]</strong></td><td style=\"height:17px;text-align:center\"><strong>Luft</strong> @ICON[air]</td><td style=\"height:17px;text-align:center\"><strong>Verlangsamt</strong></td><td style=\"height:17px;text-align:center\"><strong>Einsicht</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr></tbody></table>"
+			"src": "AHF138",
+			"Description": "<table><colgroup><col style=\"width:15%\"><col style=\"width:16%\"><col style=\"width:22\"><col style=\"width:22\"><col style=\"width:25%\"></colgroup><tbody><tr><td><strong>Tonart</strong></td><td style=\"text-align:center\"><strong>Schadensart</strong></td><td style=\"text-align:center\"><strong>Statuseffekt</strong></td><td style=\"text-align:center\"><strong>Attribut</strong></td><td style=\"text-align:center\"><strong>Genesung</strong></td></tr><tr><td style=\"text-align:left\"><strong>@UUID[Compendium.projectfu.skills.Item.cmo71xT0QgJCOOMp]</strong></td><td style=\"text-align:center\"><strong>Feuer </strong>@ICON[fire]</td><td style=\"text-align:center\"><strong>Erschüttert</strong></td><td style=\"text-align:center\"><strong>Macht</strong></td><td style=\"text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.QZOttsghYTCeqnCx]</strong></td><td style=\"text-align:center\"><strong>Eis </strong>@ICON[ice]</td><td style=\"text-align:center\"><strong>Geschwächt</strong></td><td style=\"text-align:center\"><strong>Willenskraft</strong></td><td style=\"text-align:center\"><strong>Geistpunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.qpRWVxEuy6iHiUCP]</strong></td><td style=\"text-align:center\"><strong>Physisch </strong>@ICON[physical]</td><td style=\"text-align:center\"><strong>Verlangsamt</strong></td><td style=\"text-align:center\"><strong>Willenskraft</strong></td><td style=\"text-align:center\"><strong>Geistpunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.ymWN6HhIvwji1Y39]</strong></td><td style=\"text-align:center\"><strong>Licht</strong> @ICON[light]</td><td style=\"text-align:center\"><strong>Benommen</strong></td><td style=\"text-align:center\"><strong>Einsicht</strong></td><td style=\"text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.zzyNprcgb1RF2niW]</strong></td><td style=\"text-align:center\"><strong>Finster </strong>@ICON[dark]</td><td style=\"text-align:center\"><strong>Geschwächt</strong></td><td style=\"text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"text-align:center\"><strong>Geistpunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.dyyFIR6iB0brrh1I]</strong></td><td style=\"text-align:center\"><strong>Erde </strong>@ICON[earth]</td><td style=\"text-align:center\"><strong>Benommen</strong></td><td style=\"text-align:center\"><strong>Macht</strong></td><td style=\"text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.GBEltqKPxdTA0ppJ]</strong></td><td style=\"text-align:center\"><strong>Blitz </strong>@ICON[bolt]</td><td style=\"text-align:center\"><strong>Erschüttert</strong></td><td style=\"text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr><td><strong>@UUID[Compendium.projectfu.skills.Item.zqNF92stxmhiX85K]</strong></td><td style=\"text-align:center\"><strong>Luft</strong> @ICON[air]</td><td style=\"text-align:center\"><strong>Verlangsamt</strong></td><td style=\"text-align:center\"><strong>Einsicht</strong></td><td style=\"text-align:center\"><strong>Geistpunkte</strong></td></tr></tbody></table>"
 		},
 		"[Handout: Tone List]": {
 			"name": "[Handout: Ton Liste]",
 			"source": "AHF139",
 			"src": "AHF139",
-			"Description": "<table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>RUHIGER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.XCtijox9eBrBNSno]{Ruhiger Ton}</p></td></tr></tbody></table><p>Jedes Ziel erhält<strong>【Tonart-Genesung】</strong>in Höhe von<strong>【10 + das Doppelte deiner aktuellen Willenskraft-Würfelgröße】</strong>. Dieser Wert erhöht sich um 10, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder um 20, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>ENERGETISCHER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.XvkMOHPXUg0ikDkf]{Energetischer Ton}</p></td></tr></tbody></table><p>Wenn ein Ziel bis zum Beginn deines nächsten Zuges eine Probe mit einem<strong>【Tonart-Attribut】</strong>besteht und diese Probe ihm erlaubt, eine Uhr vor- oder zurückzudrehen, kann es einen zusätzlichen Abschnitt dieser Uhr füllen oder löschen.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>HEKTISCHER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.mtKts9zjHlweSVk4]{Hektischer Ton}</p></td></tr></tbody></table><p>Jedes Ziel erleidet<strong>【Tonart-Schadensart】</strong>in Höhe deiner <strong>doppelten</strong> aktuellen <strong>Willenskraft</strong>-Würfelgröße. Dieser Ton verursacht 10 Zusatzschaden, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder 20 Zusatzschaden, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>EINDRINGERLICHER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.CynydNkxJS1HZVlJ]{Eindringlicher Ton}</p></td></tr></tbody></table><p>Jedes Ziel erleidet<strong>【Tonart-Statuseffekt】</strong>. Jedes Ziel verliert außerdem Resistenz gegen<strong>【Tonart-Schadensart】</strong> (falls sie welche haben) bis zum Beginn deines nächsten Zuges.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>LEBHAFTER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.zLxqETSi6zbRkWKu]{Lebhafter Ton}</p></td></tr></tbody></table><p>Jedes Ziel behandelt sein<strong>【Tonart-Attribut】</strong>als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>) bis zum Beginn deines nächsten Zuges.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>BEDROHLICHER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.8QMh3jUtgmIMy9Jb]{Bedrohlicher Ton}</p></td></tr></tbody></table><p>Das erste Mal, wenn ein Ziel vor Beginn deines nächsten Zuges Schaden erleidet, wird dieser Schaden zu<strong>【Tonart-Schadensart】</strong>. Dies kann für jedes Ziel der Strophe einmal separat ausgelöst werden.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>FEIERLICHER TON</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p>@UUID[Compendium.projectfu.skills.Item.yidpNKJQMA7dSBsc]{Feierlicher Ton}</p></td></tr></tbody></table><p>Jedes Ziel erholt sich von<strong>【Tonart-Statuseffekt】</strong>. Jedes Ziel erhält außerdem Resistenz gegen<strong>【Tonart-Schadensart】</strong>bis zum Beginn deines nächsten Zuges.</p>"
+			"Description": "<table><tbody><tr><td><p><strong>RUHIGER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.XCtijox9eBrBNSno]</p></td></tr></tbody></table><p>Jedes Ziel erhält<strong>【Tonart-Genesung】</strong>in Höhe von<strong>【10 + das Doppelte deiner aktuellen Willenskraft-Würfelgröße】</strong>. Dieser Wert erhöht sich um 10, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder um 20, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p><table><tbody><tr><td><p><strong>ENERGETISCHER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.XvkMOHPXUg0ikDkf]</p></td></tr></tbody></table><p>Wenn ein Ziel bis zum Beginn deines nächsten Zuges eine Probe mit einem<strong>【Tonart-Attribut】</strong>besteht und diese Probe ihm erlaubt, eine Uhr vor- oder zurückzudrehen, kann es einen zusätzlichen Abschnitt dieser Uhr füllen oder löschen.</p><table><tbody><tr><td><p><strong>HEKTISCHER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.mtKts9zjHlweSVk4]</p></td></tr></tbody></table><p>Jedes Ziel erleidet<strong>【Tonart-Schadensart】</strong>in Höhe deiner <strong>doppelten</strong> aktuellen <strong>Willenskraft</strong>-Würfelgröße. Dieser Ton verursacht 10 Zusatzschaden, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder 20 Zusatzschaden, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p><table><tbody><tr><td><p><strong>EINDRINGERLICHER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.CynydNkxJS1HZVlJ]</p></td></tr></tbody></table><p>Jedes Ziel erleidet<strong>【Tonart-Statuseffekt】</strong>. Jedes Ziel verliert außerdem Resistenz gegen<strong>【Tonart-Schadensart】</strong> (falls sie welche haben) bis zum Beginn deines nächsten Zuges.</p><table><tbody><tr><td><p><strong>LEBHAFTER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.zLxqETSi6zbRkWKu]</p></td></tr></tbody></table><p>Jedes Ziel behandelt sein<strong>【Tonart-Attribut】</strong>als eine Würfelgröße höher (bis zu einem Maximum von <strong>W12</strong>) bis zum Beginn deines nächsten Zuges.</p><table><tbody><tr><td><p><strong>BEDROHLICHER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.8QMh3jUtgmIMy9Jb]</p></td></tr></tbody></table><p>Das erste Mal, wenn ein Ziel vor Beginn deines nächsten Zuges Schaden erleidet, wird dieser Schaden zu<strong>【Tonart-Schadensart】</strong>. Dies kann für jedes Ziel der Strophe einmal separat ausgelöst werden.</p><table><tbody><tr><td><p><strong>FEIERLICHER TON</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.yidpNKJQMA7dSBsc]</p></td></tr></tbody></table><p>Jedes Ziel erholt sich von<strong>【Tonart-Statuseffekt】</strong>. Jedes Ziel erhält außerdem Resistenz gegen<strong>【Tonart-Schadensart】</strong>bis zum Beginn deines nächsten Zuges.</p>"
 		},
 		"[Handout: Verses Rules]": {
 			"name": "[Handout: Strophen Regeln]",
 			"source": "AHF138",
 			"src": "AHF138",
-			"Description": "<h3>EINE STROPHE SINGEN</h3><p>Wenn du eine <strong>Strophe</strong> singst, kombinierst du eine <strong>Lautstärke</strong>, eine <strong>Tonart</strong> und einen <strong>Ton</strong>, den du gelernt hast. Diese drei Aspekte bestimmen die GP-Kosten, Ziele und Effekt der <strong>Strophe</strong>.</p><ul><li><p>Die <strong>Lautstärke</strong> bestimmt die Klangintensität deiner Strophe (und die Wesen, die du damit erreichen kannst).</p></li><li>Jeder <strong>Ton</strong> bestimmt die grundlegenden Effekte deiner <strong>Strophe</strong>. (Siehe hier: @UUID[Compendium.projectfu.skills.Item.dzv1DzQ6N3FKATek]{[Handout: Ton Liste]}).</li><li><p>Jede <strong>Tonart</strong> hat eine zugehörige <strong>Schadensart</strong>, einen <strong>Statuseffekt</strong>, ein <strong>Attribut</strong> und eine <strong>Genesung</strong> (Siehe hier: @UUID[Compendium.projectfu.skills.Item.c8jU0AIm1nOBRQaX]{[Handout: Tonart Liste]}). Diese modifizieren die Effekte, die durch den <strong>Ton</strong> deiner <strong>Strophe</strong> bestimmt werden.</p></li></ul><blockquote><p><em><strong>Beispiel</strong>: Du könntest eine <strong>niedrige Lautstärke</strong> mit der <strong>Tonart der Flamme</strong> und einem <strong>eindringlichen Ton</strong> kombinieren, um ein einzelnes Wesen für 10 Geistpunkte zu <strong>erschüttern</strong>, oder du könntest eine <strong>mittlere Lautstärke</strong> mit der <strong>Tonart des Eisens</strong> und eine <strong>energetisch Ton </strong>kombinieren, um deinen Verbündeten beim Einsatz von <strong>Willenskraft</strong> zusätzlichen Fortschritt auf Uhren zu ermöglichen.</em></p></blockquote><p></p><table style=\"width:96.8701%;height:68px;border:1px solid black\"><colgroup><col style=\"width:12.2257%\"><col style=\"width:4.85893%\"><col style=\"width:82.9154%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Lautstärke</strong></td><td style=\"text-align:center;height:17px\"><strong>GP</strong></td><td style=\"height:17px\"> <strong>Ziele</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Niedrig</strong></td><td style=\"text-align:center;height:17px\"><strong>10</strong></td><td style=\"height:17px\"> <span class=\"fontstyle0\">Du selbst <strong>oder</strong> ein anderes Wesen, das du sehen kannst und das dich hören kann.</span> </td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Mittel</strong></td><td style=\"text-align:center;height:17px\"><strong>20</strong></td><td style=\"height:17px\"> <span class=\"fontstyle0\">Jeder Verbündete, der dich hören kann.</span> </td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Hoch</strong></td><td style=\"text-align:center;height:17px\"><strong>30</strong></td><td style=\"height:17px\"> <span class=\"fontstyle0\">Jeder Gegner, der dich hören kann.</span> </td></tr></tbody></table><p> </p><table style=\"width:96.5571%;height:153px;border:1px solid black\"><colgroup><col style=\"width:14.4231%\"><col style=\"width:16.8269%\"><col style=\"width:21.7949%\"><col style=\"width:21.9551%\"><col style=\"width:25.1603%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><strong>Tonart</strong></td><td style=\"height:17px;text-align:center\"><strong>Schadensart</strong></td><td style=\"height:17px;text-align:center\"><strong>Statuseffekt</strong></td><td style=\"height:17px;text-align:center\"><strong>Attribut</strong></td><td style=\"height:17px;text-align:center\"><strong>Genesung</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;text-align:left\"><strong>@UUID[Compendium.projectfu.skills.Item.cmo71xT0QgJCOOMp]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Feuer </strong>@ICON[fire]</span></td><td style=\"height:17px;text-align:center\"><strong>Erschüttert</strong></td><td style=\"height:17px;text-align:center\"><strong>Macht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.QZOttsghYTCeqnCx]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Eis </strong>@ICON[ice]</span></td><td style=\"height:17px;text-align:center\"><strong>Geschwächt</strong></td><td style=\"height:17px;text-align:center\"><strong>Willenskraft</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.qpRWVxEuy6iHiUCP]</strong></td><td style=\"height:17px;text-align:center\"><span class=\"fontstyle0\"><strong>Physisch </strong>@ICON[physical]</span></td><td style=\"height:17px;text-align:center\"><strong>Verlangsamt</strong></td><td style=\"height:17px;text-align:center\"><strong>Willenskraft</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.ymWN6HhIvwji1Y39]</strong></td><td style=\"height:17px;text-align:center\"><strong>Licht</strong> @ICON[light]</td><td style=\"height:17px;text-align:center\"><strong>Benommen</strong></td><td style=\"height:17px;text-align:center\"><strong>Einsicht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.zzyNprcgb1RF2niW]</strong></td><td style=\"height:17px;text-align:center\"><strong>Finster </strong>@ICON[dark]</td><td style=\"height:17px;text-align:center\"><strong>Geschwächt</strong></td><td style=\"height:17px;text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.dyyFIR6iB0brrh1I]</strong></td><td style=\"height:17px;text-align:center\"><strong>Erde </strong>@ICON[earth]</td><td style=\"height:17px;text-align:center\"><strong>Benommen</strong></td><td style=\"height:17px;text-align:center\"><strong>Macht</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.GBEltqKPxdTA0ppJ]</strong></td><td style=\"height:17px;text-align:center\"><strong>Blitz </strong>@ICON[bolt]</td><td style=\"height:17px;text-align:center\"><strong>Erschüttert</strong></td><td style=\"height:17px;text-align:center\"><strong>Geschicklichkeit</strong></td><td style=\"height:17px;text-align:center\"><strong>Lebenspunkte</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><strong>@UUID[Compendium.projectfu.skills.Item.zqNF92stxmhiX85K]</strong></td><td style=\"height:17px;text-align:center\"><strong>Luft</strong> @ICON[air]</td><td style=\"height:17px;text-align:center\"><strong>Verlangsamt</strong></td><td style=\"height:17px;text-align:center\"><strong>Einsicht</strong></td><td style=\"height:17px;text-align:center\"><strong>Geistpunkte</strong></td></tr></tbody></table>"
+			"Description": "<h3>EINE STROPHE SINGEN</h3><p>Wenn du eine <strong>Strophe</strong> singst, kombinierst du eine <strong>Lautstärke</strong>, eine <strong>Tonart</strong> und einen <strong>Ton</strong>, den du gelernt hast. Diese drei Aspekte bestimmen die GP-Kosten, Ziele und Effekt der <strong>Strophe</strong>.</p><ul><li><p>Die <strong>Lautstärke</strong> bestimmt die Klangintensität deiner Strophe (und die Wesen, die du damit erreichen kannst).</p></li><li>Jeder <strong>Ton</strong> bestimmt die grundlegenden Effekte deiner <strong>Strophe</strong>. (Siehe hier: @UUID[Compendium.projectfu.skills.Item.dzv1DzQ6N3FKATek]{[Handout: Ton Liste]}).</li><li><p>Jede <strong>Tonart</strong> hat eine zugehörige <strong>Schadensart</strong>, einen <strong>Statuseffekt</strong>, ein <strong>Attribut</strong> und eine <strong>Genesung</strong> (Siehe hier: @UUID[Compendium.projectfu.skills.Item.c8jU0AIm1nOBRQaX]{[Handout: Tonart Liste]}). Diese modifizieren die Effekte, die durch den <strong>Ton</strong> deiner <strong>Strophe</strong> bestimmt werden.</p></li></ul><blockquote><p><em><strong>Beispiel</strong>: Du könntest eine <strong>niedrige Lautstärke</strong> mit der <strong>Tonart der Flamme</strong> und einem <strong>eindringlichen Ton</strong> kombinieren, um ein einzelnes Wesen für 10 Geistpunkte zu <strong>erschüttern</strong>, oder du könntest eine <strong>mittlere Lautstärke</strong> mit der <strong>Tonart des Eisens</strong> und eine <strong>energetisch Ton </strong>kombinieren, um deinen Verbündeten beim Einsatz von <strong>Willenskraft</strong> zusätzlichen Fortschritt auf Uhren zu ermöglichen.</em></p></blockquote><table><colgroup><col style=\"width:12%\"><col style=\"width:5%\"><col style=\"width:83%\"></colgroup><tbody><tr><td><p><strong>Lautstärke</strong></p></td><td style=\"text-align:center\"><p><strong>GP</strong></p></td><td><p><strong>Ziele</strong></p></td></tr><tr><td><p><strong>Niedrig</strong></p></td><td style=\"text-align:center\"><p><strong>10</strong></p></td><td><p>Du selbst <strong>oder</strong> ein anderes Wesen, das du sehen kannst und das dich hören kann.</p></td></tr><tr><td><p><strong>Mittel</strong></p></td><td style=\"text-align:center\"><p><strong>20</strong></p></td><td><p>Jeder Verbündete, der dich hören kann.</p></td></tr><tr><td><p><strong>Hoch</strong></p></td><td style=\"text-align:center\"><p><strong>30</strong></p></td><td><p>Jeder Gegner, der dich hören kann.</p></td></tr></tbody></table><table><colgroup><col style=\"width:14%\"><col style=\"width:17%\"><col style=\"width:22%\"><col style=\"width:22%\"><col style=\"width:25%\"></colgroup><tbody><tr><td><p><strong>Tonart</strong></p></td><td style=\"text-align:center\"><p><strong>Schadensart</strong></p></td><td style=\"text-align:center\"><p><strong>Statuseffekt</strong></p></td><td style=\"text-align:center\"><p><strong>Attribut</strong></p></td><td style=\"text-align:center\"><p><strong>Genesung</strong></p></td></tr><tr><td style=\"text-align:left\"><strong>@UUID[Compendium.projectfu.skills.Item.cmo71xT0QgJCOOMp]</strong></td><td style=\"text-align:center\"><p><strong>Feuer </strong>@ICON[fire]</p></td><td style=\"text-align:center\"><p><strong>Erschüttert</strong></p></td><td style=\"text-align:center\"><p><strong>Macht</strong></p></td><td style=\"text-align:center\"><p><strong>Lebenspunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.QZOttsghYTCeqnCx]</strong></p></td><td style=\"text-align:center\"><p><strong>Eis </strong>@ICON[ice]</p></td><td style=\"text-align:center\"><p><strong>Geschwächt</strong></p></td><td style=\"text-align:center\"><p><strong>Willenskraft</strong></p></td><td style=\"text-align:center\"><p><strong>Geistpunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.qpRWVxEuy6iHiUCP]</strong></p></td><td style=\"text-align:center\"><p><strong>Physisch </strong>@ICON[physical]</p></td><td style=\"text-align:center\"><p><strong>Verlangsamt</strong></p></td><td style=\"text-align:center\"><p><strong>Willenskraft</strong></p></td><td style=\"text-align:center\"><p><strong>Geistpunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.ymWN6HhIvwji1Y39]</strong></p></td><td style=\"text-align:center\"><p><strong>Licht</strong> @ICON[light]</p></td><td style=\"text-align:center\"><p><strong>Benommen</strong></p></td><td style=\"text-align:center\"><p><strong>Einsicht</strong></p></td><td style=\"text-align:center\"><p><strong>Lebenspunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.zzyNprcgb1RF2niW]</strong></p></td><td style=\"text-align:center\"><p><strong>Finster </strong>@ICON[dark]</p></td><td style=\"text-align:center\"><p><strong>Geschwächt</strong></p></td><td style=\"text-align:center\"><p><strong>Geschicklichkeit</strong></p></td><td style=\"text-align:center\"><p><strong>Geistpunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.dyyFIR6iB0brrh1I]</strong></p></td><td style=\"text-align:center\"><p><strong>Erde </strong>@ICON[earth]</p></td><td style=\"text-align:center\"><p><strong>Benommen</strong></p></td><td style=\"text-align:center\"><p><strong>Macht</strong></p></td><td style=\"text-align:center\"><p><strong>Lebenspunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.GBEltqKPxdTA0ppJ]</strong></p></td><td style=\"text-align:center\"><p><strong>Blitz </strong>@ICON[bolt]</p></td><td style=\"text-align:center\"><p><strong>Erschüttert</strong></p></td><td style=\"text-align:center\"><p><strong>Geschicklichkeit</strong></p></td><td style=\"text-align:center\"><p><strong>Lebenspunkte</strong></p></td></tr><tr><td><p><strong>@UUID[Compendium.projectfu.skills.Item.zqNF92stxmhiX85K]</strong></p></td><td style=\"text-align:center\"><p><strong>Luft</strong> @ICON[air]</p></td><td style=\"text-align:center\"><p><strong>Verlangsamt</strong></p></td><td style=\"text-align:center\"><p><strong>Einsicht</strong></p></td><td style=\"text-align:center\"><p><strong>Geistpunkte</strong></p></td></tr></tbody></table>"
 		},
 		"Magichant": {
 			"name": "Magischer Gesang",
@@ -669,26 +483,11 @@
 			"source": "AHF137",
 			"src": "AHF137",
 			"Description": "<p>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher <strong>physischer</strong> Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</p><hr><ul><li><p><strong>Du erhältst:</strong> @EFFECT[Compendium.projectfu.skills.Item.e85QX4FWBQxwTt8V]{Effekt: Schallbarriere}</p></li></ul>",
-			"img": "systems/projectfu/styles/static/compendium/classes/chanter/chanter_sound_barrier.png",
-			"origin": "Compendium.projectfu.skills.Item.9xjUyytWiDxFhqdV",
-			"fxName0": "Schallbarriere",
-			"_id": "wjcCWPhCefwBODlT",
-			"disabled": "true",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuInt0": "1",
-			"fxSysDuTra0": "self",
-			"fxSysDuRem0": "0",
-			"fxFlType0": "default",
-			"fxFlSource0": "AHF137",
-			"CrisisInteraction": "none",
-			"key": "system.bonuses.incomingDamage.physical",
-			"mode": "2",
-			"value": "-&sl(\"sound-barrier\")",
-			"fxDesc0": "<p><span>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher physischer Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</span></p>",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1739537111533",
-			"modifiedTime": "1744458771970",
-			"lastModifiedBy": "WNNELbIcUepK9pGq"
+			"effects": [{
+				"name": "Schallbarriere",
+				"source": "AHF137",
+				"description": "<p><span>Nachdem du eine <strong>Strophe</strong> mit <strong>mittlerer</strong> oder <strong>hoher Lautstärke</strong> gesungen hast, wird sämtlicher physischer Schaden, den du bis zum Beginn deines nächsten Zuges erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> Affinitäten angewendet).</span></p>"
+			}]
 		},
 		"Vibrato": {
 			"name": "Vibrato",
@@ -712,17 +511,11 @@
 			"source": "GRW189",
 			"src": "GRW189",
 			"Description": "<p>Du kannst mit Wesen der Spezies <strong>Bestie</strong>, <strong>Monster</strong> und <strong>Pflanze</strong> kommunizieren.</p>",
-			"disabled": "false",
-			"fxName0": "Sprache der Natur",
-			"_id": "kGje9s2Znry5fjz6",
-			"fxDesc0": "<p>Du kannst mit Wesen der Spezies <strong>Bestie</strong>, <strong>Monster</strong> und <strong>Pflanze</strong> kommunizieren.</p>",
-			"CrisisInteraction": "none",
-			"fxFlSource0": "GRW189",
-			"fxFlType0": "default",
-			"img": "systems/projectfu/styles/static/compendium/classes/chimerist/chimerist_feral_speech.png",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1741990464617",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Sprache der Natur",
+				"source": "GRW189",
+				"description": "<p>Du kannst mit Wesen der Spezies <strong>Bestie</strong>, <strong>Monster</strong> und <strong>Pflanze</strong> kommunizieren.</p>"
+			}]
 		},
 		"Pathogenesis": {
 			"name": "Pathogenese",
@@ -744,43 +537,19 @@
 		},
 		"Effect: Bishop's Edict (Extra Damage)": {
 			"name": "Effekt: Edikt des Bischofs (Zusatz-Schaden)",
-			"img": "systems/projectfu/styles/static/compendium/classes/commander/commander_bishops_edict.png",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Edikt des Bischofs (Zusatz-Schaden)",
-			"_id": "JzMDbxLQ1uT85e7C",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuInt0": "1",
-			"fxSysDuTra0": "source",
-			"fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.all",
-			"mode": "2",
-			"value": "~&sl(\"bishops-edict\")*3",
-			"fxDesc0": "<p>Alle Schadensquellen verursachen<strong>【FS × 3】</strong>Zusatzschaden.</p><p>Der gewählte Effekt hält bis zum Beginn deines nächsten Zuges an.</p>",
-			"createdTime": "1744460652448",
-			"lastModifiedBy": "WNNELbIcUepK9pGq",
-			"modifiedTime": "1744462940053",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Effekt: Edikt des Bischofs (Zusatz-Schaden)",
+				"source": "AHF141",
+				"description": "<p>Alle Schadensquellen verursachen<strong>【FS × 3】</strong>Zusatzschaden.</p><p>Der gewählte Effekt hält bis zum Beginn deines nächsten Zuges an.</p>"
+			}]
 		},
 		"Effect: King's Castle (Extra MP)": {
 			"name": "Effekt: Rochade (Zusatz-GP)",
-			"img": "systems/projectfu/styles/static/compendium/classes/commander/commander_kings_castle.png",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Rochade (Zusatz-GP)",
-			"_id": "2mQqAVnnbLdrFiG8",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuInt0": "1",
-			"fxSysDuTra0": "source",
-			"fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingRecovery.mp",
-			"mode": "2",
-			"value": "~&sl(\"kings-castle\")*5",
-			"fxDesc0": "<p><span>Alle Effekte, die Geistpunkte wiederherstellen, stellen<strong>【FS × 5】</strong>zusätzliche Geistpunkte wieder her</span></p>",
-			"createdTime": "1744461747223",
-			"lastModifiedBy": "WNNELbIcUepK9pGq",
-			"modifiedTime": "1744462736043",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Effekt: Rochade (Zusatz-GP)",
+				"source": "AHF141",
+				"description": "<p><span>Alle Effekte, die Geistpunkte wiederherstellen, stellen<strong>【FS × 5】</strong>zusätzliche Geistpunkte wieder her</span></p>"
+			}]
 		},
 		"Bishop's Edict": {
 			"name": "Edikt des Bischofs",
@@ -814,37 +583,19 @@
 		},
 		"Effect: Hydra Dance": {
 			"name": "Effekt: Hydra-Tanz",
-			"img": "icons/creatures/reptiles/serpent-horned-green.webp",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Hydra-Tanz",
-			"_id": "6pWZZ25JH3nhZdjg",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuInt0": "1",
-			"fxSysDuTra0": "self",
-			"fxSysDuRem0": "1",
-			"fxDesc0": "<p>Wähle eine Option, nachdem du <strong>Schaden erlitten</strong> hast: Du erhältst @GAIN[5 hp] zurück <strong>oder</strong> du erhältst @GAIN[5 mp] zurück.</p>",
-			"createdTime": "1742579460750",
-			"lastModifiedBy": "JXPd932s9DHQRD0w",
-			"modifiedTime": "1742579791240",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Effekt: Hydra-Tanz",
+				"source": "AHF150",
+				"description": "<p>Wähle eine Option, nachdem du <strong>Schaden erlitten</strong> hast: Du erhältst @GAIN[5 hp] zurück <strong>oder</strong> du erhältst @GAIN[5 mp] zurück.</p>"
+			}]
 		},
 		"Effect: Peacock Dance": {
 			"name": "Effekt: Pfauen-Tanz",
-			"img": "icons/commodities/materials/feather-colored-blue.webp",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Pfauen-Tanz",
-			"_id": "3OKMqmXgMxSVzoXI",
-			"fxSysDuEve0": "endOfScene",
-			"fxSysDuInt0": "1",
-			"fxSysDuTra0": "self",
-			"fxSysDuRem0": "1",
-			"fxDesc0": "<p>Wähle ein anderes Wesen, das dich sehen kann. Wenn dieses Wesen das nächste Mal während dieser Szene einen Angriff ausführt oder einen offensiven ( <span>@ICON[offensive] </span>) Zauber wirkt, muss dieser Angriff oder Zauber dich zu seinen Zielen zählen, wenn möglich.</p>",
-			"createdTime": "1744467622828",
-			"lastModifiedBy": "WNNELbIcUepK9pGq",
-			"modifiedTime": "1744467711716",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Effekt: Pfauen-Tanz",
+				"source": "AHF151",
+				"description": "<p>Wähle ein anderes Wesen, das dich sehen kann. Wenn dieses Wesen das nächste Mal während dieser Szene einen Angriff ausführt oder einen offensiven ( <span>@ICON[offensive] </span>) Zauber wirkt, muss dieser Angriff oder Zauber dich zu seinen Zielen zählen, wenn möglich.</p>"
+			}]
 		},
 		"[Handout: Dance List]": {
 			"name": "[Handout: Tanz-Liste]",
@@ -954,24 +705,11 @@
 			"source": "AHF149",
 			"src": "AHF149",
 			"Description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ erhältst du bis zum Beginn deines nächsten Zuges einen Bonus in Höhe von<strong>【FS × 2】</strong>auf alle Konkurrenzproben, die sich auf <strong>Akrobatik</strong>, <strong>Koordination</strong> oder <strong>Geschwindigkeit</strong> beziehen.</p>",
-			"fxName0": "Frenetische Beinarbeit",
-			"fxDesc0": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ erhältst du bis zum Beginn deines nächsten Zuges einen Bonus in Höhe von<strong>【FS × 2】</strong>auf alle Konkurrenzproben, die sich auf <strong>Akrobatik</strong>, <strong>Koordination</strong> oder <strong>Geschwindigkeit</strong> beziehen.</p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/dancer/dancer_frenetic_footwork.png",
-			"origin": "Compendium.projectfu.skills.Item.R0F1K6i1gjNWNklq",
-			"_id": "2IMJA47lvSXwD8a6",
-			"disabled": "true",
-			"fxSysDuEve0": "none",
-			"fxSysDuTra0": "self",
-			"key": "system.bonuses.accuracy.opposedCheck",
-			"mode": "2",
-			"value": "$sl*2",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "AHF149",
-			"createdTime": "1740175867509",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv",
-			"modifiedTime": "1741989445886",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Frenetische Beinarbeit",
+				"source": "AHF149",
+				"description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> mit der <strong>Dauer</strong> „Bis zum Beginn deines nächsten Zuges“ erhältst du bis zum Beginn deines nächsten Zuges einen Bonus in Höhe von<strong>【FS × 2】</strong>auf alle Konkurrenzproben, die sich auf <strong>Akrobatik</strong>, <strong>Koordination</strong> oder <strong>Geschwindigkeit</strong> beziehen.</p>"
+			}]
 		},
 		"Quick-Change": {
 			"name": "Schneller Wechsel",
@@ -984,39 +722,11 @@
 			"source": "AHF149",
 			"src": "AHF149",
 			"Description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> verursachen deine Angriffe mit <strong>Raufen</strong>, <strong>Dolch</strong>, <strong>Flegel</strong> und <strong>Werfen【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges. Wenn du eine <strong>arkane</strong> Waffe ausgerüstet hast, verursachen offensive Zauber ( @ICON[offensive] ), die du wirkst, ebenfalls<strong>【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges.</p>",
-			"fxName0": "Schlachttänzer",
-			"rounds": "1",
-			"fxDuTurns0": "0",
-			"fxDuStRound0": "0",
-			"fxDuStTurn0": "0",
-			"fxDesc0": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> verursachen deine Angriffe mit <strong>Raufen</strong>, <strong>Dolch</strong>, <strong>Flegel</strong> und <strong>Werfen【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges. Wenn du eine <strong>arkane</strong> Waffe ausgerüstet hast, verursachen offensive Zauber ( @ICON[offensive] ), die du wirkst, ebenfalls<strong>【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges.</p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/dancer/dancer_wardancer.png",
-			"origin": "Compendium.projectfu.skills.Item.R0F1K6i1gjNWNklq",
-			"_id": "K7muJlKr6uIPLdsE",
-			"disabled": "true",
-			"fxSysDuEve0": "none",
-			"fxSysDuTra0": "self",
-			"key": "system.bonuses.damage.brawling",
-			"mode": "2",
-			"value": "@system.level.value",
-			"key1": "system.bonuses.damage.dagger",
-			"mode1": "2",
-			"value1": "@system.level.value",
-			"key2": "system.bonuses.damage.flail",
-			"mode2": "2",
-			"value2": "@system.level.value",
-			"key3": "system.bonuses.damage.thrown",
-			"mode3": "2",
-			"value3": "@system.level.value",
-			"key4": "system.bonuses.damage.spell",
-			"mode4": "2",
-			"value4": "@system.level.value",
-			"CrisisInteraction": "none",
-			"fxFlType0": "default",
-			"fxFlSource0": "AHF149",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv",
-			"modifiedTime": "1741989492931",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Schlachttänzer",
+				"source": "AHF149",
+				"description": "<p>Nach dem Aufführen eines <strong>Tanzes</strong> verursachen deine Angriffe mit <strong>Raufen</strong>, <strong>Dolch</strong>, <strong>Flegel</strong> und <strong>Werfen【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges. Wenn du eine <strong>arkane</strong> Waffe ausgerüstet hast, verursachen offensive Zauber ( @ICON[offensive] ), die du wirkst, ebenfalls<strong>【FS】</strong>Zusatzschaden bis zum Beginn deines nächsten Zuges.</p>"
+			}]
 		},
 		"Agony": {
 			"name": "Qualen",
@@ -1029,57 +739,22 @@
 			"source": "GRW199",
 			"src": "GRW199",
 			"Description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, bist du resistent gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>.</p>",
-			"rounds": "1",
-			"fxName0": "Finsteres Blut",
-			"_id": "Iut1nlmgSnsh7FEY",
-			"key": "system.affinities.dark.current",
-			"mode": "4",
-			"value": "1",
-			"fyKey1": "system.affinities.poison.current",
-			"mode1": "4",
-			"value1": "1",
-			"fxDesc0": "<p>Solange du dich in einer <strong>Krise</strong> befindest, bist du resistent gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>.</p>",
-			"CrisisInteraction": "active",
-			"fxFlSource0": "GRW199",
-			"fxFlType0": "default",
-			"crisisInteraction": "active",
-			"fxSysDuEve0": "none",
-			"fxSysDuTra0": "self",
-			"img": "systems/projectfu/styles/static/compendium/classes/darkblade/darkblade_dark_blood.png",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1744468673736",
-			"lastModifiedBy": "WNNELbIcUepK9pGq",
-			"disabled": "false",
-			"origin": "Compendium.projectfu.skills.Item.CEP3nER80UBDH7a9"
-
+			"effects": [{
+				"name": "Finsteres Blut",
+				"source": "GRW199",
+				"description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, bist du resistent gegen <strong>Finsterschaden</strong> und <strong>Giftschaden</strong>.</p>"
+			}]
 		},
 		"Heart of Darkness": {
 			"name": "Herz der Finsternis",
 			"source": "GRW199",
 			"src": "GRW199",
 			"Description": "<p>Du kannst einmal pro Szene, wenn du eine <strong>Krise</strong> gerätst, ein bestimmtes Wesen wählen, das du sehen kannst und zu dem du keine <strong>Bindung</strong> hast. Wenn du das tust, dann erschaffe eine <strong>Bindung des Hasses</strong> zu diesem Wesen.</p>",
-			"rounds": "1",
-			"fxName0": "Herz der Finsternis",
-			"_id": "5i8vg0mr8lTsYgdU",
-			"key": "system.affinities.dark.current",
-			"mode": "4",
-			"value": "1",
-			"fyKey1": "system.affinities.poison.current",
-			"mode1": "4",
-			"value1": "1",
-			"fxDesc0": "<p>Du kannst einmal pro Szene, wenn du eine <strong>Krise</strong> gerätst, ein bestimmtes Wesen wählen, das du sehen kannst und zu dem du keine <strong>Bindung</strong> hast. Wenn du das tust, dann erschaffe eine <strong>Bindung des Hasses</strong> zu diesem Wesen.</p>",
-			"CrisisInteraction": "active",
-			"fxFlSource0": "GRW199",
-			"fxFlType0": "default",
-			"crisisInteraction": "active",
-			"fxSysDuEve0": "none",
-			"fxSysDuTra0": "self",
-			"img": "systems/projectfu/styles/static/compendium/classes/darkblade/darkblade_heart_of_darkness.png",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1741989231599",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv",
-			"disabled": "false",
-			"origin": "Compendium.projectfu.skills.Item.e6ids95gOPher40d"
+			"effects": [{
+				"name": "Herz der Finsternis",
+				"source": "GRW199",
+				"description": "<p>Du kannst einmal pro Szene, wenn du eine <strong>Krise</strong> gerätst, ein bestimmtes Wesen wählen, das du sehen kannst und zu dem du keine <strong>Bindung</strong> hast. Wenn du das tust, dann erschaffe eine <strong>Bindung des Hasses</strong> zu diesem Wesen.</p>"
+			}]
 		},
 		"Painful Lesson": {
 			"name": "Schmerzhafte Lektion",
@@ -1110,21 +785,11 @@
 			"source": "GRW191",
 			"src": "GRW191",
 			"Description": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, erhältst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, einen Bonus in Höhe von<strong>【FS × 2】</strong>auf deine Magieprobe.</p>",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Magische Artillerie",
-			"_id": "HmpPyOHEzMIoGVgk",
-			"key": "system.bonuses.accuracy.magicCheck",
-			"mode": "2",
-			"value": "2*@system.level.value",
-			"fxDesc0": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, erhältst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, einen Bonus in Höhe von<strong>【FS × 2】</strong>auf deine Magieprobe.</p>",
-			"modifiedTime": "1741989009557",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv",
-			"systemVersion": "#{VERSION}#",
-			"img": "systems/projectfu/styles/static/compendium/classes/elementalist/elementalist_magical_artillery.png",
-			"crisisInteraction": "none",
-			"fxSysDuEve0": "none",
-			"fxSysDuTra0": "self"
+			"effects": [{
+				"name": "Magische Artillerie",
+				"source": "GRW191",
+				"description": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, erhältst du, sofern du eine <strong>arkane</strong> Waffe ausgerüstet hast, einen Bonus in Höhe von<strong>【FS × 2】</strong>auf deine Magieprobe.</p>"
+			}]
 		},
 		"Ritual Elementalism": {
 			"name": "Rituelle Elementaristik",
@@ -1137,17 +802,11 @@
 			"source": "GRW191",
 			"src": "GRW191",
 			"Description": "<p>Wenn du einen offensiven ( @ICON[offensive] ) Zauber wirkst, der <strong>ein einzelnes Wesen</strong> zum Ziel hat, dessen <strong>Geistpunkt-Gesamtkosten【FS × 10】oder weniger</strong> betragen und du eine oder mehrere <strong>Bogen</strong>-, <strong>Raufen</strong>-, <strong>Dolch</strong>-, <strong>Flegel</strong>-, <strong>Speer</strong>- oder <strong>Schwertwaffen</strong> ausgerüstet hast, darfst du eine dieser Waffen wählen. Tust du das, wird deine Magieprobe für den Zauber die Präzisionsproben-Formel der gewählten Waffe verwenden; zum Beispiel verwendet die Magieprobe für einen Elementaristen-Zauber, der durch ein Bronzeschwert gewirkt wird (Seite <strong>131</strong>), <strong>【GES + MAT】+1</strong> anstelle von<strong>【EIN + WLK】</strong>.</p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/elementalist/elementalist_spellblade.png",
-			"fxName0": "Zauberklinge",
-			"_id": "DhBhEANF8jRMaBo4",
-			"key": "flags.projectfu.weaponMagicCheck",
-			"mode": "5",
-			"value": "true",
-			"fxDesc0": "<p>Deine <strong>Magieprobe</strong> für Elementaristen-Zauber verwendet die <strong>Präzisionsproben</strong>-Formel der <em>gewählten Waffe</em>.</p>",
-			"createdTime": "1743535722306",
-			"modifiedTime": "1743537376516",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Zauberklinge",
+				"source": "GRW191",
+				"description": "<p>Deine <strong>Magieprobe</strong> für Elementaristen-Zauber verwendet die <strong>Präzisionsproben</strong>-Formel der <em>gewählten Waffe</em>.</p>"
+			}]
 		},
 		"Absorb MP": {
 			"name": "GP absorbieren",
@@ -1181,202 +840,87 @@
 		},
 		"Cognitive Focus (Check Bonus)": {
 			"name": "Kognitiver Fokus (Probenbonus)",
-			"fxName0": "Kognitiver Fokus (Probenbonus)",
-			"fxDesc0": "<p>Du erhältst einen Bonus in Höhe von <strong>【FS】</strong> auf Proben, mit denen du deinen Fokus untersuchst, sowie auf Präzisions- und Magieproben für Angriffe und offensive Zauber (@ICON[offensive]), zu deren Zielen auch dein <strong>Fokus</strong> gehört.</p>",
-			"_id": "XMLHPxzVBIgKJTiT",
-			"img": "systems/projectfu/styles/static/compendium/classes/esper/esper_cognitive_focus.png",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuRem0": "1",
-			"fxSysDuTra0": "self",
-			"key": "system.bonuses.accuracy.accuracyCheck",
-			"mode": "2",
-			"value": "&sl('cognitive-focus')",
-			"key1": "system.bonuses.accuracy.magicCheck",
-			"mode1": "2",
-			"value1": "&sl('cognitive-focus')",
-			"createdTime": "1743877788036",
-			"modifiedTime": "1743878078300",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Kognitiver Fokus (Probenbonus)",
+				"source": "ATF151",
+				"description": "<p>Du erhältst einen Bonus in Höhe von <strong>【FS】</strong> auf Proben, mit denen du deinen Fokus untersuchst, sowie auf Präzisions- und Magieproben für Angriffe und offensive Zauber (@ICON[offensive]), zu deren Zielen auch dein <strong>Fokus</strong> gehört.</p>"
+			}]
 		},
 		"Effect: Atmokinesis (Air)": {
 			"name": "Effekt: Atmokinese (Luft)",
-			"fxName0": "Effekt: Atmokinese (Luft)",
-			"img": "icons/magic/lightning/bolt-strike-hand-gray.webp",
-			"_id": "dROM6eTY0mgTnrdo",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "air",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"modifiedTime": "1743876658859",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Atmokinese (Luft)",
+				"source": "ATF152"
+			}]
 		},
 		"Effect: Atmokinesis (Bolt)": {
 			"name": "Effekt: Atmokinese (Blitz)",
-			"fxName0": "Effekt: Atmokinese (Blitz)",
-			"img": "icons/magic/lightning/bolt-strike-hand-gray.webp",
-			"_id": "dROM6eTY0mgTnrdo",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "bolt",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"createdTime": "1743785564737",
-			"modifiedTime": "1743876668317",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Atmokinese (Blitz)",
+				"source": "ATF152"
+			}]
 		},
 		"Effect: Cognitive Focus": {
 			"name": "Effekt: Kognitiver Fokus",
-			"fxName0": "Effekt: Kognitiver Fokus",
-			"img": "systems/projectfu/styles/static/compendium/classes/esper/esper_cognitive_focus.png",
-			"fxDesc0": "<p>Wenn die Quelle dieses Effektes dafür sorgt, dass du <strong>Lebenspunkte</strong> und/oder <strong>Geistpunkte regenerierst</strong>, dann regenerierst du ebenfalls zusätzliche LP und/oder GP:</p><ul><li><p><strong>Du regenerierst:</strong> @GAIN[2*(~&sl('cognitive-focus')) hp] <strong>und/oder</strong> @GAIN[2*~&sl('cognitive-focus')) mp]</p></li></ul><p></p>",
-			"_id": "oV7VJZXAqDj5CyZC",
-			"rounds": "1",
-			"fxSysDuEve0": "startOfTurn",
-			"createdTime": "1742583758873",
-			"modifiedTime": "1743877700596",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Kognitiver Fokus",
+				"source": "ATF151",
+				"description": "<p>Wenn die Quelle dieses Effektes dafür sorgt, dass du <strong>Lebenspunkte</strong> und/oder <strong>Geistpunkte regenerierst</strong>, dann regenerierst du ebenfalls zusätzliche LP und/oder GP:</p><ul><li><p><strong>Du regenerierst:</strong> @GAIN[2*(~&sl('cognitive-focus')) hp] <strong>und/oder</strong> @GAIN[2*~&sl('cognitive-focus')) mp]</p></li></ul><p></p>"
+			}]
 		},
 		"Effect: Gravitokinesis (Earth)": {
 			"name": "Effekt: Gravitokinese (Erde)",
-			"fxName0": "Effekt: Gravitokinese (Erde)",
-			"img": "icons/magic/earth/projectile-stone-landslide.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "earth",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"createdTime": "1743876506348",
-			"modifiedTime": "1743876605712",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Gravitokinese (Erde)",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Gravitokinesis (Physical)": {
 			"name": "Effekt: Gravitokinese (Physisch)",
-			"fxName0": "Effekt: Gravitokinese (Erde)",
-			"img": "icons/magic/earth/projectile-stone-landslide.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "physical",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Gravitokinese (Physisch)",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Photokinesis (Dark)": {
 			"name": "Effekt: Photokinese (Finster)",
-			"fxName0": "Effekt: Photokinese (Finster)",
-			"img": "icons/magic/light/hand-sparks-smoke-green.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "dark",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Photokinese (Finster)",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Photokinesis (Light)": {
 			"name": "Effekt: Photokinese (Licht)",
-			"fxName0": "Effekt: Photokinese (Licht)",
-			"img": "icons/magic/light/hand-sparks-smoke-green.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "light",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1743876870546",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Photokinese (Licht)",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Psychic Shield": {
 			"name": "Effekt: Übersinnlicher Schild",
-			"fxName0": "Effekt: Übersinnlicher Schild",
-			"img": "icons/equipment/shield/heater-steel-gray.webp",
-			"_id": "Xrd3uuRrv6x4lRnR",
-			"rounds": "1",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.derived.mdef.value",
-			"mode": "4",
-			"value": "~&ats('wlp')+(~&cs('brainwave-clock)*2)",
-			"key1": "system.derived.def.value",
-			"mode1": "4",
-			"value1": "~&ats('wlp')+(~&cs('brainwave-clock)*2)",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1743843067862",
-			"modifiedTime": "1746873248749",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Übersinnlicher Schild",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Thermokinesis (Fire)": {
 			"name": "Effekt: Thermokinese (Feuer)",
-			"fxName0": "Effekt: Thermokinese (Feuer)",
-			"img": "icons/magic/fire/orb-fireball-puzzle.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "fire",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"systemVersion": "#{VERSION}#"
+			"effects": [{
+				"name": "Effekt: Thermokinese (Feuer)",
+				"source": "ATF153"
+			}]
 		},
 		"Effect: Thermokinesis (Ice)": {
 			"name": "Effekt: Thermokinese (Eis)",
-			"fxName0": "Effekt: Thermokinese (Eis)",
-			"img": "icons/magic/fire/orb-fireball-puzzle.webp",
-			"_id": "eDtBQ3oXUw4wGmcF",
-			"rounds": "1",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.overrides.damageType.all.priority",
-			"mode": "5",
-			"value": "ice",
-			"key1": "system.bonuses.damage.all",
-			"mode1": "2",
-			"value1": "2+&cs('brainwave-clock')",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1743877061758",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Thermokinese (Eis)",
+				"source": "ATF153"
+			}]
 		},
 		"[Handout: Psychic Gift List]": {
 			"name": "[Handout: Übersinnliche Gaben Liste]",
-			"source": "ATF152ff",
-			"src": "ATF152ff",
+			"source": "ATF152",
+			"src": "ATF152",
 			"Description": "<table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.PN6y0O0YDvtzFDAy]</strong></p></td><td><p style=\"text-align: center\">Wenn du <strong>Schaden verursachst</strong></p></td></tr></tbody></table><p>Dieser Schaden wird zu <strong>Luft</strong>- oder <strong>Blitzschaden</strong>, und seine Quelle verursacht Zusatzschaden in Höhe von<strong>【2 + der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr】</strong>.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.SbBJH4ofSkOHZ7Mo]</strong></p></td><td><p style=\"text-align: center\">Wenn ein NSC zu deinem <strong>Fokus</strong> wird oder wenn du eine <strong>Bindung</strong> zu einem NSC herstellst</p></td></tr></tbody></table><p>Stelle der Spielleiterin eine einzige Frage über diesen NSC, welche die Spielleiterin wahrheitsgemäß beantworten muss. Beschreibe dann, durch welche Empfindung dir diese Information offenbart wurde. Du darfst diese Gabe bei jedem NSC <strong>nur einmal</strong> einsetzen.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.sDiqo6su9LgYDQVh]</strong></p></td><td><p style=\"text-align: center\">Wenn du <strong>Schaden verursachst</strong></p></td></tr></tbody></table><p>Dieser Schaden wird zu <strong>Erd</strong>- oder <strong>physischem</strong> Schaden, und seine Quelle verursacht Zusatzschaden in Höhe von<strong>【2 + der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr】</strong>.Wenn die Quelle einem oder mehreren <strong>fliegenden</strong> Wesen Schaden zufügt, sind sie gezwungen, sofort zu landen.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.PN8CkQbxXS6v01gk]{Lebensübertragung}</strong></p></td><td><p style=\"text-align: center\">Wenn du <strong>einen oder mehrere Gegner dazu bringst, LP zu verlieren</strong></p></td></tr></tbody></table><p>Wähle dich selbst <strong>oder</strong> einen Verbündeten, der dein <strong>Fokus</strong> ist: Wenn das gewählte Wesen in einer Krise ist, erhält es eine Anzahl an Lebenspunkten zurück, die<strong>【5 + (der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr multipliziert mit 5)】</strong>entspricht.</p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.Gl94a8Sykg9WZhPs]</strong></p></td><td><p style=\"text-align: center\">Wenn du <strong>Schaden verursachst</strong></p></td></tr></tbody></table><p>Dieser Schaden wird zu <strong>Finster</strong>- oder <strong>Lichtschaden</strong>, und seine Quelle verursacht Zusatzschaden in Höhe von<strong>【2 + der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr】</strong>.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.RikYwc1dD7YIEn3k]{Übersinnlicher Rückschlag}</strong></p></td><td><p style=\"text-align: center\">Wenn ein Gegner <strong>bei einer Konkurrenzprobe</strong> gegen dich <strong>erfolgreich ist</strong> oder <strong>du dadurch Lebenspunkte verlierst</strong></p></td></tr></tbody></table><p>Dieser Gegner verliert eine Anzahl an Geistpunkten, die<strong>【5 + (der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr multipliziert mit 5)】</strong>entspricht. Wähle dann eine Option: Der Gegner wird <strong>benommen</strong> oder <strong>erschüttert</strong>.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.aqgXqI567dkudwMN]{Übersinnlicher Schild}</strong></p></td><td><p style=\"text-align: center\">Wenn ein Gegner, den du sehen kannst, <strong>eine Präzisions- oder Magieprobe ablegt</strong></p></td></tr></tbody></table><p>Für die Zwecke dieser Probe darfst du deine Verteidigung und deine Magie-Verteidigung so behandeln, als würde sie<strong>【deine aktuelle Willenskraft-Würfelgröße + (die Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr multipliziert mit 2)】</strong>betragen. Du kannst auch deine normalen Werte verwenden, wenn diese besser sind.</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.ohueXD1PGP1TTRlq]{Beruhigende Präsenz}</strong></p></td><td><p style=\"text-align: center\">Wenn du einen Verbündeten mit der <strong>Beschützen</strong>-Aktion <strong>gedeckt</strong> hast</p></td></tr></tbody></table><p>Dieser Verbündete erhält eine Menge an Geistpunkten zurück, die<strong>【10 + (der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr multipliziert mit 5)】</strong>entspricht. Wenn dieser Verbündete dein <strong>Fokus</strong> ist, erholt er sich von einem einzelnen Statuseffekt seiner Wahl (<strong>benommen</strong>, <strong>wütend</strong> oder <strong>erschüttert</strong>).</p><p></p><table border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>GABE</strong></p></td><td><p style=\"text-align: center\"><strong>EREIGNIS</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\"><p><strong>@UUID[Compendium.projectfu.skills.Item.rM8RIy8usVdVO0ro]</strong></p></td><td><p style=\"text-align: center\">Wenn du <strong>Schaden verursachst</strong></p></td></tr></tbody></table><p>Dieser Schaden wird zu <strong>Feuer</strong>- oder <strong>Eisschaden</strong>, und seine Quelle verursacht Zusatzschaden in Höhe von<strong>【2 + der Anzahl der gefüllten Abschnitte in deiner Gehirnwellenuhr】</strong>.</p>"
 		},
 		"[Handout: Psychic Gifts Rules]": {
@@ -1478,43 +1022,22 @@
 			"name": "Effekt: Provozieren",
 			"source": "GRW201",
 			"src": "GRW201",
-			"fxDesc0": "<p>Du bist gezwungen, deine Aufmerksamkeit auf den Charakter zu richten, der dich provoziert hat.</p><p><em>Füge zu Automatisierungszwecken</em> @EFFECT[Compendium.projectfu.conditions-effects.vuJGp3kTdnZeEqQO] <em>separat hinzu.</em></p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/fury/fury_provoke.png",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Provozieren",
-			"_id": "X0ncNBybozMcN7Z2",
-			"fxSysDuEve0": "endOfScene",
-			"key": "system.attributes.ins",
-			"mode": "0",
-			"value": "downgrade",
-			"key1": "system.attributes.dex",
-			"mode1": "0",
-			"value1": "downgrade",
-			"fxStatuses0": "provoked",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1742491472722",
-			"modifiedTime": "1744999458996",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Provozieren",
+				"source": "GRW201",
+				"description": "<p>Du bist gezwungen, deine Aufmerksamkeit auf den Charakter zu richten, der dich provoziert hat.</p><p><em>Füge zu Automatisierungszwecken</em> @EFFECT[Compendium.projectfu.conditions-effects.vuJGp3kTdnZeEqQO] <em>separat hinzu.</em></p>"
+			}]
 		},
 		"Adrenaline": {
 			"name": "Adrenalin",
 			"source": "GRW201",
 			"src": "GRW201",
 			"Description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, verursachst du<strong>【FS × 2】</strong>zusätzlichen Schaden (sei es mit Angriffen, Zaubern, Arkana, Items oder einer anderen Methode).</p>",
-			"fxName0": "Adrenalin",
-			"fxDesc0": "<p>Solange du dich in einer <strong>Krise</strong> befindest, verursachst du<strong>【FS × 2】</strong>zusätzlichen Schaden (sei es mit Angriffen, Zaubern, Arkana, Items oder einer anderen Methode).</p>",
-			"_id": "kTPwUE4IK9FTRBIX",
-			"rounds": "1",
-			"img": "systems/projectfu/styles/static/compendium/classes/fury/fury_adrenaline.png",
-			"CrisisInteraction": "active",
-			"crisisInteraction": "active",
-			"key": "system.bonuses.damage.all",
-			"mode": "2",
-			"value": "2*@system.level.value",
-			"modifiedTime": "1741976181611",
-			"systemVersion": "#{VERSION}#",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv"
+			"effects": [{
+				"name": "Adrenalin",
+				"source": "GRW201",
+				"description": "<p>Solange du dich in einer <strong>Krise</strong> befindest, verursachst du<strong>【FS × 2】</strong>zusätzlichen Schaden (sei es mit Angriffen, Zaubern, Arkana, Items oder einer anderen Methode).</p>"
+			}]
 		},
 		"Frenzy": {
 			"name": "Raserei",
@@ -1545,19 +1068,11 @@
 			"source": "GRW217",
 			"src": "GRW217",
 			"Description": "<p>Verursacht zusätzlichen Schaden in Höhe deiner <strong>【FS】</strong> in <strong>Meisterliche Verteidigung</strong>.</p>",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Doppelschilde",
-			"_id": "oaHQT6sqi0iC32QB",
-			"img": "systems/projectfu/styles/static/compendium/classes/guardian/twin-shields/twin-shields.png",
-			"fxDesc0": "<p>Verursacht zusätzlichen Schaden in Höhe deiner <strong>【FS】</strong> in <strong>Meisterliche Verteidigung</strong>.</p>",
-			"fxFlSource0": "GRW217",
-			"key": "system.damage.value",
-			"mode": "2",
-			"value": "&sl(\"defensive-mastery\")",
-			"lastModifiedBy": "4BP57v2riKcaALIW",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1745431208440"
+			"effects": [{
+				"name": "Doppelschilde",
+				"source": "GRW217",
+				"description": "<p>Verursacht zusätzlichen Schaden in Höhe deiner <strong>【FS】</strong> in <strong>Meisterliche Verteidigung</strong>.</p>"
+			}]
 		},
 		"Bodyguard": {
 			"name": "Leibwache",
@@ -1570,19 +1085,11 @@
 			"source": "GRW217",
 			"src": "GRW217",
 			"Description": "<p>Solange du mit einem <strong>Schild</strong> oder einer <strong>martialischen Rüstung</strong> ausgerüstet bist, wird jeglicher Schaden, den du erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> den Schadens-Affinitäten angewandt).</p>",
-			"fxName0": "Meisterliche Verteidigung",
-			"img": "systems/projectfu/styles/static/compendium/classes/guardian/guardian_defensive_mastery.png",
-			"_id": "w7qI5rqewX56TrEC",
-			"disabled": "false",
-			"fxDesc0": "<p>Solange du mit einem <strong>Schild</strong> oder einer <strong>martialischen Rüstung</strong> ausgerüstet bist, wird jeglicher Schaden, den du erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> den Schadens-Affinitäten angewandt).</p>",
-			"fxFlSource0": "GRW217",
-			"key": "system.bonuses.incomingDamage.all",
-			"mode": "2",
-			"value": "-@system.level.value",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1737920245228",
-			"modifiedTime": "1741975052104",
-			"lastModifiedBy": "4BP57v2riKcaALIW"
+			"effects": [{
+				"name": "Meisterliche Verteidigung",
+				"source": "GRW217",
+				"description": "<p>Solange du mit einem <strong>Schild</strong> oder einer <strong>martialischen Rüstung</strong> ausgerüstet bist, wird jeglicher Schaden, den du erleidest, um<strong>【FS】</strong>reduziert (wird <strong>vor</strong> den Schadens-Affinitäten angewandt).</p>"
+			}]
 		},
 		"Dual Shieldbearer": {
 			"name": "Doppelschild",
@@ -1595,17 +1102,11 @@
 			"source": "GRW217",
 			"src": "GRW217",
 			"Description": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um<strong>【SL × 3】</strong>.</p>",
-			"fxName0": "Festung",
-			"_id": "6qHoygYUxyY8biDV",
-			"disabled": "false",
-			"img": "systems/projectfu/styles/static/compendium/classes/guardian/guardian_fortress.png",
-			"fxDesc0": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um<strong>【SL × 3】</strong>.</p>",
-			"key": "system.resources.hp.bonus",
-			"mode": "2",
-			"value": "3*@system.level.value",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1744519197543",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Festung",
+				"source": "GRW217",
+				"description": "<p>Erhöhe deine maximalen Lebenspunkte dauerhaft um<strong>【SL × 3】</strong>.</p>"
+			}]
 		},
 		"Protect": {
 			"name": "Schutz",
@@ -1624,15 +1125,11 @@
 			"source": "GRW203",
 			"src": "GRW203",
 			"Description": "<p>Erhöhe deine maximalen Geistpunkte dauerhaft um<strong>【FS × 3】</strong>.</p><p>Wenn du eine Offene Probe auf<strong>【EIN + EIN】</strong>ablegst, erhältst du einen Bonus in Höhe von<strong>【FS】</strong>auf diese Probe (dies gilt nur für Offene Proben).</p><hr><ul><li><p><strong>Du würfelst</strong>: @CHECK[ins ins ($sl)]</p></li></ul>",
-			"fxName0": "Fokussiert",
-			"img": "systems/projectfu/styles/static/compendium/classes/loremaster/loremaster_focused.png",
-			"_id": "xbzOApLkBkOo2YeB",
-			"fxDesc0": "<p>Erhöhe deine maximalen Geistpunkte dauerhaft um<strong>【FS × 3】</strong>.</p>",
-			"disabled": "false",
-			"key": "system.resources.mp.bonus",
-			"mode": "2",
-			"value": "3*@system.level.value",
-			"fxFlSource0": "GRW203"
+			"effects": [{
+				"name": "Fokussiert",
+				"source": "GRW203",
+				"description": "<p>Erhöhe deine maximalen Geistpunkte dauerhaft um<strong>【FS × 3】</strong>.</p>"
+			}]
 		},
 		"Knowledge Is Power": {
 			"name": "Wissen ist Macht",
@@ -1663,14 +1160,11 @@
 			"source": "ATF155",
 			"src": "ATF155",
 			"Description": "<p>Nachdem einer deiner Angriffe oder offensiven Zauber (@ICON[offensive]) dazu führt, dass ein oder mehrere Gegner Lebenspunkte verlieren, kannst du<strong>【FS × 5】</strong>Lebenspunkte zurückerhalten, wenn du dich in einer <strong>Krise</strong> befindest.</p><hr><ul><li><p><strong>Du regenerierst: </strong>@GAIN[$sl*5 hp]{SL × 5 HP}</p></li></ul>",
-			"fxName0": "Biophage",
-			"img": "icons/magic/control/debuff-energy-hold-yellow.webp",
-			"_id": "RF4MLdS4Z8HonPLy",
-			"fxDesc0": "<p>Nachdem einer deiner Angriffe oder offensiven Zauber (@ICON[offensive]) dazu führt, dass ein oder mehrere Gegner Lebenspunkte verlieren, kannst du<strong>【FS × 5】</strong>Lebenspunkte zurückerhalten, wenn du dich in einer <strong>Krise</strong> befindest.</p>",
-			"crisisInteraction": "active",
-			"CrisisInteraction": "active",
-			"disabled": "false",
-			"rounds": "1"
+			"effects": [{
+				"name": "Biophage",
+				"source": "ATF155",
+				"description": "<p>Nachdem einer deiner Angriffe oder offensiven Zauber (@ICON[offensive]) dazu führt, dass ein oder mehrere Gegner Lebenspunkte verlieren, kannst du<strong>【FS × 5】</strong>Lebenspunkte zurückerhalten, wenn du dich in einer <strong>Krise</strong> befindest.</p>"
+			}]
 		},
 		"Ecdysis": {
 			"name": "Ecdysis",
@@ -1694,41 +1188,22 @@
 			"name": "Effekt: Akromorphose",
 			"source": "ATF155",
 			"src": "ATF155",
-			"fxName0": "Effekt: Akromorphose",
-			"img": "systems/projectfu/styles/static/compendium/classes/mutant/mutant_akromorphosis.png",
-			"origin": "Compendium.projectfu.skills.Item.WV3lBnVzMFBB2irj",
-			"fxid": "LxZDU3Qgsf5a6Vfh",
-			"fxDesc0": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>",
-            "key": "system.damage.value",
-            "mode": "2",
-            "value": "6+(&sl(\"akromorphosis\")l*2)",
-            "key1": "system.accuracy.value",
-            "mode1": "2",
-            "value1": "&sl(\"akromorphosis\")",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1740171581074",
-			"modifiedTime": "1740774915731",
-			"lastModifiedBy": "esOkelwPNblkbxW3"
+			"effects": [{
+				"name": "Effekt: Akromorphose",
+				"source": "ATF155",
+				"description": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>"
+			}]
 		},
 		"Unarmed Strike: Mutant": {
 			"name": "Waffenloser Schlag: Mutant",
 			"Description": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>",
 			"source": "ATF155",
 			"src": "ATF155",
-			"img": "systems/projectfu/styles/static/compendium/classes/mutant/mutant_akromorphosis.png",
-    		"origin": "Compendium.projectfu.skills.Item.WV3lBnVzMFBB2irj",
-			"fxName0": "Effekt: Akromorphose",
-			"fxDesc0": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>",
-            "key": "system.damage.value",
-            "mode": "2",
-            "value": "6+(&sl(\"akromorphosis\")l*2)",
-            "key1": "system.accuracy.value",
-            "mode1": "2",
-            "value1": "&sl(\"akromorphosis\")",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1740171581074",
-			"modifiedTime": "1740774915731",
-			"lastModifiedBy": "esOkelwPNblkbxW3"
+			"effects": [{
+				"name": "Effekt: Akromorphose",
+				"source": "ATF155",
+				"description": "<p>Deine <strong>waffenlosen Schläge</strong> verursachen<strong>【6 + (FS × 2)】</strong>Zusatzschaden, und du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf deine Präzisionsproben mit ihnen.</p>"
+			}]
 		},
 		"[Handout: Therioform List]": {
 			"name": "[Handout: Therioformen Liste]",
@@ -1783,17 +1258,11 @@
 			"src": "ATF157",
 			"summary": "Krebstiere, Schildkröten, gepanzerte Wesen und Fahrzeuge",
 			"Description": "<p>Du kannst deine Verteidigung als<strong>【13 + (deine halbe Fähigkeitsstufe in Theriomorphose)】</strong>betrachten (du kannst auch deine normalen Werte verwenden, wenn diese besser sind).</p>",
-			"disabled": "false",
-			"fxName0": "Placophora",
-    		"_id": "ZDcnVoPzAVT9GcRO",
-			"key": "system.derived.def.value",
-            "mode": "4",
-            "value": "floor(13+&sl('theriomorphosis')/2)",
-			"fxDesc0": "<p>Du kannst deine Verteidigung als<strong>【13 + (deine halbe Fähigkeitsstufe in Theriomorphose)】</strong>betrachten (du kannst auch deine normalen Werte verwenden, wenn diese besser sind).</p>",
-			"img": "icons/creatures/reptiles/turtle-shell-glowing-green.webp",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1747072288712",
-			"lastModifiedBy": "aXKDYFrGlbJKqLXI"
+			"effects": [{
+				"name": "Placophora",
+				"source": "ATF157",
+				"description": "<p>Du kannst deine Verteidigung als<strong>【13 + (deine halbe Fähigkeitsstufe in Theriomorphose)】</strong>betrachten (du kannst auch deine normalen Werte verwenden, wenn diese besser sind).</p>"
+			}]
 		},
 		"Pneumophora": {
 			"name": "Pneumophora",
@@ -1815,17 +1284,11 @@
 			"src": "ATF157",
 			"summary": "Fledermäuse, Vögel, geflügelte Insekten, fliegende Wesen",
 			"Description": "<p>Du bist in der Lage zu fliegen. Zusätzlich zu den offensichtlichen Vorteilen bei der Mobilität können deine <strong>Nahkampfangriffe fliegende</strong> Wesen treffen, und du kannst nicht als Ziel von <strong>Nahkampfangriffen</strong> gewählt werden, es sei denn, der Angreifer fliegt oder ist irgendwie in der Lage, fliegende Ziele zu erreichen.</p><p>Diese Vorteile gelten nicht, wenn du nicht frei fliegen kannst (z. B. wenn du dich in einem Fahrzeug befindest, das für menschengroße Wesen konzipiert ist, oder in einem engen Korridor). Wenn du während einer Konfliktszene <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidest, verlierst du diese Vorteile bis zum Beginn deines nächsten Zuges.</p>",
-			"img": "systems/projectfu/styles/static/statuses/Flying.webp",
-			"disabled": "false",
-			"fxName0": "Fliegend",
-			"_id": "QzF7RZb3rqHnybmZ",
-			"fxStatuses0": "flying",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744594087935",
-			"modifiedTime": "1744594136202",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Du bist in der Lage zu fliegen. Zusätzlich zu den offensichtlichen Vorteilen bei der Mobilität können deine <strong>Nahkampfangriffe fliegende</strong> Wesen treffen, und du kannst nicht als Ziel von <strong>Nahkampfangriffen</strong> gewählt werden, es sei denn, der Angreifer fliegt oder ist irgendwie in der Lage, fliegende Ziele zu erreichen.</p><p>Diese Vorteile gelten nicht, wenn du nicht frei fliegen kannst (z. B. wenn du dich in einem Fahrzeug befindest, das für menschengroße Wesen konzipiert ist, oder in einem engen Korridor). Wenn du während einer Konfliktszene <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidest, verlierst du diese Vorteile bis zum Beginn deines nächsten Zuges.</p>",
-			"fxSysDuRem0": "1"
+			"effects": [{
+				"name": "Fliegend",
+				"source": "ATF157",
+				"description": "<p>Du bist in der Lage zu fliegen. Zusätzlich zu den offensichtlichen Vorteilen bei der Mobilität können deine <strong>Nahkampfangriffe fliegende</strong> Wesen treffen, und du kannst nicht als Ziel von <strong>Nahkampfangriffen</strong> gewählt werden, es sei denn, der Angreifer fliegt oder ist irgendwie in der Lage, fliegende Ziele zu erreichen.</p><p>Diese Vorteile gelten nicht, wenn du nicht frei fliegen kannst (z. B. wenn du dich in einem Fahrzeug befindest, das für menschengroße Wesen konzipiert ist, oder in einem engen Korridor). Wenn du während einer Konfliktszene <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidest, verlierst du diese Vorteile bis zum Beginn deines nächsten Zuges.</p>"
+			}]
 		},
 		"Pyrophora": {
 			"name": "Pyrophora",
@@ -1882,22 +1345,11 @@
 			"name": "Effekt: For Whom The Bell Tolls",
 			"source": "LU5",
 			"src": "LU5",
-			"fxDesc0": "<p>Wenn du <strong>einem Wesen mit einem Zauber Schaden zufügst</strong>, darfst du, sofern dieser Zauber <strong>nur diesem Wesen Schaden zufügt</strong>, 1 Grabpunkt ausgeben. Tust du das, wähle eine Option: Falls das Wesen unter einem oder mehreren Statuseffekten leidet, fügt der Zauber zusätzlichen Schaden in Höhe von<strong>【(FS × 2) + der Anzahl der Statuseffekte dieses Wesens】</strong>zu.</p>",
-			"fxName0": "Effekt: For Whom The Bell Tolls",
-			"img": "systems/projectfu/styles/static/compendium/classes/necromancer/for_whom_the_bell_tolls.png",
-			"rounds": "1",
-    		"_id": "RCtie3pzKMTEmDkR",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"fxSysDuTra0": "source",
-			"key": "system.bonuses.incomingDamage.spell",
-            "mode": "2",
-            "value": "~&sl(\"for-whom-the-bell-tolls\")+$tsc",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744596303090",
-			"modifiedTime": "1744596768033",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"disabled": "false"
+			"effects": [{
+				"name": "Effekt: For Whom The Bell Tolls",
+				"source": "LU5",
+				"description": "<p>Wenn du <strong>einem Wesen mit einem Zauber Schaden zufügst</strong>, darfst du, sofern dieser Zauber <strong>nur diesem Wesen Schaden zufügt</strong>, 1 Grabpunkt ausgeben. Tust du das, wähle eine Option: Falls das Wesen unter einem oder mehreren Statuseffekten leidet, fügt der Zauber zusätzlichen Schaden in Höhe von<strong>【(FS × 2) + der Anzahl der Statuseffekte dieses Wesens】</strong>zu.</p>"
+			}]
 		},
 		"Condemn": {
 			"name": "Tadeln",
@@ -1963,41 +1415,21 @@
 			"name": "Effekt: Herz des Antriebs (Defensiv)",
 			"source": "ATF159",
 			"src": "ATF159",
-			"img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
-			"rounds": "1",
-			"fxName0": "Effekt: Herz des Antriebs (Defensiv)",
-			"_id": "ofTfzPUoJ68tPn9j",
-			"disabled": "false",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.all",
-            "mode": "2",
-            "value": "&sl('heart-in-the-engine')*-2",
-			"fxDesc0": "<p>Wenn du das nächste Mal vor dem Beginn deines nächsten Zuges Schaden erleidest, wird dieser Schaden um<strong>【FS × 2】</strong>reduziert (dies kommt vor Schadensaffinitäten zum Tragen)</p>",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744656166925",
-			"modifiedTime": "1744656501200",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Effekt: Herz des Antriebs (Defensiv)",
+				"source": "ATF159",
+				"description": "<p>Wenn du das nächste Mal vor dem Beginn deines nächsten Zuges Schaden erleidest, wird dieser Schaden um<strong>【FS × 2】</strong>reduziert (dies kommt vor Schadensaffinitäten zum Tragen)</p>"
+			}]
 		},
 		"Effect: Heart in the Engine (Offensive)": {
 			"name": "Effekt: Herz des Antriebs (Offensiv)",
 			"source": "ATF159",
 			"src": "ATF159",
-			"img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
-			"rounds": "1",
-			"fxName0": "Effekt: Herz des Antriebs (Offensiv)",
-			"_id": "tErtYBdp5RqwrIz9",
-			"disabled": "false",
-			"fxSysDuEve0": "endOfTurn",
-			"fxSysDuRem0": "1",
-			"key": "system.bonuses.damage.all",
-            "mode": "2",
-            "value": "&sl('heart-in-the-engine')*2",
-			"fxDesc0": "<p>Wenn du das nächste Mal in diesem Zug Schaden verursachst, verursache<strong>【FS × 2】</strong>Zusatzschaden</p>",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744656027526",
-			"modifiedTime": "1744656359365",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Effekt: Herz des Antriebs (Offensiv)",
+				"source": "ATF159",
+				"description": "<p>Wenn du das nächste Mal in diesem Zug Schaden verursachst, verursache<strong>【FS × 2】</strong>Zusatzschaden</p>"
+			}]
 		},
 		"[Handout: Armor Modules]": {
 			"name": "[Handout: Rüstungsmodule]",
@@ -2039,19 +1471,12 @@
 			"name": "Ausweichen",
 			"source": "GRW211",
 			"src": "GRW211",
-			"fxFlSource0": "GRW211",
 			"Description": "<p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> ausgerüstet hast, wird dein Verteidigungswert um<strong>【FS】</strong>erhöht.</p>",
-			"disabled": "false",
-			"fxName0": "Ausweichen",
-			"_id": "JB8FXzYLdzxU3NgX",
-			"key": "system.derived.def.bonus",
-            "mode": "2",
-            "value": "@system.level.value",
-			"fxDesc0": "<p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> ausgerüstet hast, wird dein Verteidigungswert um<strong>【FS】</strong>erhöht.</p>",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1741967661498",
-			"lastModifiedBy": "uG2TkwmswfdRqaAv",
-			"img": "systems/projectfu/styles/static/compendium/classes/rogue/rogue_dodge.png"
+			"effects": [{
+				"name": "Ausweichen",
+				"source": "GRW211",
+				"description": "<p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> ausgerüstet hast, wird dein Verteidigungswert um<strong>【FS】</strong>erhöht.</p>"
+			}]
 		},
 		"High Speed": {
 			"name": "Hohe Geschwindigkeit",
@@ -2093,19 +1518,12 @@
 			"name": "Meisterlicher Fernkampf",
 			"source": "GRW209",
 			"src": "GRW209",
-			"fxFlSource0": "GRW209",
 			"Description": "<p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Fernkampfwaffen</strong>.</p>",
-			"fxName0": "Meisterlicher Fernkampf",
-			"fxDesc0": "<p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Fernkampfwaffen</strong>.</p>",
-			"_id": "M8kqwCdFQHllfjGs",
-			"disabled": "false",
-			"key": "system.bonuses.accuracy.accuracyRanged",
-            "mode": "2",
-            "value": "@system.level.value",
-			"img": "systems/projectfu/styles/static/compendium/classes/sharpshooter/sharpshooter_ranged_weapon_mastery.png",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1744661828239",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Meisterlicher Fernkampf",
+				"source": "GRW209",
+				"description": "<p>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Fernkampfwaffen</strong>.</p>"
+			}]
 		},
 		"Warning Shot": {
 			"name": "Warnschuss",
@@ -2117,21 +1535,11 @@
 			"name": "Effekt: Falkenauge (Fernkampf Hoch)",
 			"source": "GRW209",
 			"src": "GRW209",
-			"img": "systems/projectfu/styles/static/compendium/classes/sharpshooter/sharpshooter_hawkeye.png",
-			"rounds": "1",
-			"disabled": "false",
-			"fxName0": "Effekt: Falkenauge (Fernkampf Hoch)",
-			"fxDesc0": "<p>Der nächste <strong>Fernkampfangriff</strong>, den du vor dem Ende der aktuellen Szene ausführst, verursacht<strong>【FS × 2】</strong>zusätzlichen Schaden.</p>",
-			"_id": "6aO2CAugt4Ec5wfC",
-			"fxSysDuEve0": "endOfScene",
-			"fxSysDuRem0": "1",
-			"key": "system.bonuses.damage.ranged",
-            "mode": "2",
-            "value": "&sl(\"hawkeye\")*2",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744661392768",
-			"modifiedTime": "1744661658625",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Effekt: Falkenauge (Fernkampf Hoch)",
+				"source": "GRW209",
+				"description": "<p>Der nächste <strong>Fernkampfangriff</strong>, den du vor dem Ende der aktuellen Szene ausführst, verursacht<strong>【FS × 2】</strong>zusätzlichen Schaden.</p>"
+			}]
 		},
 		"Healing Power": {
 			"name": "Heilende Kraft",
@@ -2239,19 +1647,12 @@
 			"name": "Symbol der Opferung",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
 			"keyDesc": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, Schaden erleidet, darfst du, falls du es sehen kannst, dieses <strong>Symbol</strong> zerstören: Tust du das, erleidest du anstelle dieses Wesens die gleiche Menge Schaden.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.skills.Item.O8wUtXymIN3rrFNz]</p></li></ul>",
-			"origin": "Compendium.projectfu.skills.Item.XOrWUE6boHzXhAdF",
-			"rounds": "1",
-			"disabled": "true",
-			"fxName0": "Symbol der Opferung",
-			"img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
-			"_id": "SxWmfWFIUBrTKEza",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, Schaden erleidet, darfst du, falls du es sehen kannst, dieses <strong>Symbol</strong> zerstören: Tust du das, erleidest du anstelle dieses Wesens die gleiche Menge Schaden.</p>",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730911039085",
-			"modifiedTime": "1730911102188",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3"
+			"effects": [{
+				"name": "Symbol der Opferung",
+				"source": "AHF146",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, Schaden erleidet, darfst du, falls du es sehen kannst, dieses <strong>Symbol</strong> zerstören: Tust du das, erleidest du anstelle dieses Wesens die gleiche Menge Schaden.</p>"
+			}]
 		},
 		"Symbol of Revenge": {
 			"name": "Symbol der Rache",
@@ -2261,39 +1662,25 @@
 		},
 		"Symbol of Rebellion": {
 			"name": "Symbol der Rebellion",
-			"fxName0": "Symbol der Rebellion",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-			"origin": "Compendium.projectfu.skills.Item.9nJVufRrPpqtlnqM",
-			"rounds": "1",
-			"disabled": "true",
-			"img": "icons/magic/symbols/rune-sigil-horned-white-purple.webp",
-			"_id": "hKMM7HHVjXKBXyWd",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730912656043",
-			"modifiedTime": "1730912806848",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3",
 			"keyDesc": "<p>Wenn ein <strong>Bösewicht</strong> in der Szene anwesend ist, lösen alle Konkurrenzproben des Wesens mit diesem Symbol einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (solange die Probe kein <strong>Patzer</strong> ist).</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.skills.Item.CDC3VvFP8ZTCuxXk]</p></li></ul>",
-			"fxDesc0": "<p>Wenn ein <strong>Bösewicht</strong> in der Szene anwesend ist, lösen alle Konkurrenzproben des Wesens mit diesem Symbol einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (solange die Probe kein <strong>Patzer</strong> ist).</p>"
+			"effects": [{
+				"name": "Symbol der Rebellion",
+				"source": "AHF146",
+				"description": "<p>Wenn ein <strong>Bösewicht</strong> in der Szene anwesend ist, lösen alle Konkurrenzproben des Wesens mit diesem Symbol einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (solange die Probe kein <strong>Patzer</strong> ist).</p>"
+			}]
 		},
 		"Symbol of Weakness": {
 			"name": "Symbol der Schwäche",
-			"fxName0": "Symbol der Schwäche",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-    		"origin": "Compendium.projectfu.skills.Item.mP9ngLOdPcZfCyoM",
-     	 	"rounds": "1",
-    		"disabled": "true",
-			"img": "icons/magic/death/skull-poison-green.webp",
-			"_id": "1k3J3U9qsFPObWVa",
 			"keyDesc": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erleidet: </strong>@EFFECT[Compendium.projectfu.actor-effects.aI4tsuVswH5gfGab]{Effekt: Symbol der Schwäche (Luft)}, @EFFECT[Compendium.projectfu.actor-effects.MRNCMGIcZStGVV9J]{Effekt: Symbol der Schwäche (Blitz)}, @EFFECT[Compendium.projectfu.actor-effects.zFQpa3KcSAmBCWdE]{Effekt: Symbol der Schwäche (Finster)}, @EFFECT[Compendium.projectfu.actor-effects.YpXM5ClzMzIcwCgd]{Effekt: Symbol der Schwäche (Erde}, @EFFECT[Compendium.projectfu.actor-effects.dAFACJSQzCbcU9We]{Effekt: Symbol der Schwäche (Feuer)}, @EFFECT[Compendium.projectfu.actor-effects.BVOW692emrw4yxR0]{Effekt: Symbol der Schwäche (Eis)}, @EFFECT[Compendium.projectfu.actor-effects.aPBdnNy1hA8aRctl]{Effekt: Symbol der Schwäche (Licht)} oder @EFFECT[Compendium.projectfu.actor-effects.2sXIFIXiWxRHt8CP]{Effekt: Symbol der Schwäche (Gift)}</p></li></ul>",
-			"fxDesc0": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p>",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730910825288",
-			"modifiedTime": "1730910881562",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3"
+			"effects": [{
+				"name": "Symbol der Schwäche",
+				"source": "AHF146",
+				"description": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erleidet 5 Zusatzschaden aus Quellen, die Schaden der gewählten Art verursachen.</p>"
+			}]
 		},
 		"Symbol of Despair": {
 			"name": "Symbol der Verzweiflung",
@@ -2309,39 +1696,25 @@
 		},
 		"Symbol of Rebirth": {
 			"name": "Symbol der Wiedergeburt",
-			"fxName0": "Symbol der Wiedergeburt",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"origin": "Compendium.projectfu.skills.Item.9jbjucRoYnGMzhrX",
-			"rounds": "1",
-			"img": "icons/magic/nature/leaf-rune-glow-green.webp",
-			"_id": "dRDQ6DAQrwVpkwD4",
-    		"disabled": "true",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730912483711",
-			"modifiedTime": "1730912514531",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3",
 			"keyDesc": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, kurz davor steht, auf 0 Lebenspunkte reduziert zu werden, kann es dieses <strong>Symbol</strong> zerstören: Tut es das, wird es stattdessen auf genau 1 Lebenspunkt reduziert.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel regeneriert: </strong>@EFFECT[Compendium.projectfu.skills.PKduzohKSvwQRaa1]</p></li></ul>",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, kurz davor steht, auf 0 Lebenspunkte reduziert zu werden, kann es dieses <strong>Symbol</strong> zerstören: Tut es das, wird es stattdessen auf genau @GAIN[1 hp] reduziert.</p>"
+			"effects": [{
+				"name": "Symbol der Wiedergeburt",
+				"source": "AHF147",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, kurz davor steht, auf 0 Lebenspunkte reduziert zu werden, kann es dieses <strong>Symbol</strong> zerstören: Tut es das, wird es stattdessen auf genau @GAIN[1 hp] reduziert.</p>"
+			}]
 		},
 		"Symbol of Sorcery": {
 			"name": "Symbol der Zauberei",
-			"fxName0": "Symbol der Zauberei",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"origin": "Compendium.projectfu.skills.Item.SWhDqdjU2KYWDRK5",
-			"rounds": "1",
-			"img": "icons/magic/symbols/rune-sigil-black-pink.webp",
-			"_id": "A86q8ga9UBrnbELF",
-			"disabled": "true",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730910987672",
-			"modifiedTime": "1730911015571",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3",
 			"keyDesc": "<p>Die Geistpunkt-Gesamtkosten von Zaubern, die das Wesen mit diesem <strong>Symbol</strong> zum Ziel haben, werden um 5 GP reduziert (bis zu einem Minimum von 5 GP). Wenn ein Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> zielt, ist die Wirkung <strong>kumulativ</strong>.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.skills.Item.rvc4RnJ3OzuDuTiu]</p></li></ul>",
-			"fxDesc0": "<p>Die Geistpunkt-Gesamtkosten von Zaubern, die das Wesen mit diesem <strong>Symbol</strong> zum Ziel haben, werden um 5 GP reduziert (bis zu einem Minimum von 5 GP). Wenn ein Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> zielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			"effects": [{
+				"name": "Symbol der Zauberei",
+				"source": "AHF147",
+				"description": "<p>Die Geistpunkt-Gesamtkosten von Zaubern, die das Wesen mit diesem <strong>Symbol</strong> zum Ziel haben, werden um 5 GP reduziert (bis zu einem Minimum von 5 GP). Wenn ein Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> zielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			}]
 		},
 		"Symbol of Flux": {
 			"name": "Symbol des Flusses",
@@ -2357,21 +1730,14 @@
 		},
 		"Symbol of Protection": {
 			"name": "Symbol des Schutzes",
-			"fxName0": "Symbol des Schutzes",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-			"origin": "Compendium.projectfu.skills.Item.8ZSKkQu1aIZzVl1x",
-			"rounds": "1",
-			"disabled": "true",
-			"img": "icons/magic/defensive/shield-barrier-glowing-triangle-teal.webp",
-   			"_id": "8XkL4vgl5zST1zen",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730912884697",
-			"modifiedTime": "1730915692145",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3",
 			"keyDesc": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erhält Resistenz gegen die gewählte Schadensart.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @TYPE[affinity air resistance]{Effekt: Symbol des Schutzes (Luft)}, @TYPE[affinity bolt resistance]{Effekt: Symbol des Schutzes (Blitz)}, @TYPE[affinity dark resistance]{Effekt: Symbol des Schutzes (Finster)}, @TYPE[affinity earth resistance]{Effekt: Symbol des Schutzes (Feuer)}, @TYPE[affinity ice resistance]{Effekt: Symbol des Schutzes (Eis)}, @TYPE[affinity light resistance]{Effekt: Symbol des Schutzes (Licht)}, oder @TYPE[affinity poison resistance]{Effekt: Symbol des Schutzes (Gift)},</p></li></ul>",
-			"fxDesc0": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erhält Resistenz gegen die gewählte Schadensart.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @TYPE[affinity air resistance]{Effekt: Symbol des Schutzes (Luft)}, @TYPE[affinity bolt resistance]{Effekt: Symbol des Schutzes (Blitz)}, @TYPE[affinity dark resistance]{Effekt: Symbol des Schutzes (Finster)}, @TYPE[affinity earth resistance]{Effekt: Symbol des Schutzes (Feuer)}, @TYPE[affinity ice resistance]{Effekt: Symbol des Schutzes (Eis)}, @TYPE[affinity light resistance]{Effekt: Symbol des Schutzes (Licht)}, oder @TYPE[affinity poison resistance]{Effekt: Symbol des Schutzes (Gift)},</p></li></ul>"
+			"effects": [{
+				"name": "Symbol des Schutzes",
+				"source": "AHF146",
+				"description": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, erhält Resistenz gegen die gewählte Schadensart.</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @TYPE[affinity air resistance]{Effekt: Symbol des Schutzes (Luft)}, @TYPE[affinity bolt resistance]{Effekt: Symbol des Schutzes (Blitz)}, @TYPE[affinity dark resistance]{Effekt: Symbol des Schutzes (Finster)}, @TYPE[affinity earth resistance]{Effekt: Symbol des Schutzes (Feuer)}, @TYPE[affinity ice resistance]{Effekt: Symbol des Schutzes (Eis)}, @TYPE[affinity light resistance]{Effekt: Symbol des Schutzes (Licht)}, oder @TYPE[affinity poison resistance]{Effekt: Symbol des Schutzes (Gift)},</p></li></ul>"
+			}]
 		},
 		"Symbol of Forbiddance": {
 			"name": "Symbol des Verbots",
@@ -2387,371 +1753,215 @@
 		},
 		"Symbol of Prosperity": {
 			"name": "Symbol des Wohlstands",
-			"fxName0": "Symbol des Wohlstands",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"origin": "Compendium.projectfu.skills.Item.KKldqSKGvST62xI1",
-			"rounds": "1",
-			"disabled": "true",
-			"img": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
-			"_id": "PYe2GW1MLyRgNJRb",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1730915198170",
-			"modifiedTime": "1730915714709",
-			"lastModifiedBy": "B6evqtezy9ZsGZG3",
 			"keyDesc": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, @LOSS[1 fp] ausgibt, um <strong>eine Eigenschaft oder Bindung aufzurufen</strong>, erhält es zusätzlich @GAIN[100 zenit].</p><hr><ul><li><p><strong>Du bezahlst: </strong>@LOSS[2 ip]</p></li><li><p><strong>Ziel erhält:</strong> @EFFECT[Compendium.projectfu.skills.Item.EYyJjUSLrW8HcmA3]</p></li></ul>",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, @LOSS[1 fp] ausgibt, um <strong>eine Eigenschaft oder Bindung aufzurufen</strong>, erhält es zusätzlich @GAIN[100 zenit].</p>"
+			"effects": [{
+				"name": "Symbol des Wohlstands",
+				"source": "AHF147",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, @LOSS[1 fp] ausgibt, um <strong>eine Eigenschaft oder Bindung aufzurufen</strong>, erhält es zusätzlich @GAIN[100 zenit].</p>"
+			}]
 		},
 		"Effect: Symbol of Binding (DEX)": {
 			"name": "Effekt: Symbol der Bindung (GES)",
-			"fxName0": "Effekt: Symbol der Bindung (GES)",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-			"img": "icons/magic/symbols/rune-sigil-green.webp",
-			"rounds": "1",
-			"disabled": "false",
-			"_id": "TsULTAOsbp0aRzWi",
-			"remaining": "1",
-			"key": "system.attributes.dex.current",
-            "mode": "3",
-            "value": "@system.attributes.dex.base",
-        	"systemVersion": "#{VERSION}#",
-			"fxDesc0": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Bindung (GES)",
+				"source": "AHF145",
+				"description": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			}]
 		},
 		"Effect: Symbol of Binding (INS)": {
 			"name": "Effekt: Symbol der Bindung (EIN)",
-			"fxName0": "Effekt: Symbol der Bindung (EIN)",
-			"disabled": "false",
-			"_id": "TsULTAOsbp0aRzWi",
-			"img": "icons/magic/symbols/rune-sigil-green.webp",
-			"rounds": "1",
-			"remaining": "1",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-            "key": "system.attributes.ins.current",
-            "mode": "3",
-            "value": "@system.attributes.ins.base",
-       		"systemVersion": "#{VERSION}#",
-			"fxDesc0": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Bindung (EIN)",
+				"source": "AHF145",
+				"description": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			}]
 		},
 		"Effect: Symbol of Binding (MIG)": {
 			"name": "Effekt: Symbol der Bindung (MAT)",
-			"fxName0": "Effekt: Symbol der Bindung (MAT)",
-			"disabled": "false",
-			"_id": "TsULTAOsbp0aRzWi",
-			"img": "icons/magic/symbols/rune-sigil-green.webp",
-			"rounds": "1",
-			"remaining": "1",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-            "key": "system.attributes.mig.current",
-            "mode": "3",
-            "value": "@system.attributes.mig.base",
-       		"systemVersion": "#{VERSION}#",
-			"fxDesc0": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Bindung (MAT)",
+				"source": "AHF145",
+				"description": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			}]
 		},
 		"Effect: Symbol of Binding (WLP)": {
 			"name": "Effekt: Symbol der Bindung (WLK)",
-			"fxName0": "Effekt: Symbol der Bindung (WLK)",
-			"disabled": "false",
-			"_id": "TsULTAOsbp0aRzWi",
-			"img": "icons/magic/symbols/rune-sigil-green.webp",
-			"rounds": "1",
-			"remaining": "1",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-            "key": "system.attributes.wlp.current",
-            "mode": "3",
-            "value": "@system.attributes.wlp.base",
-       		"systemVersion": "#{VERSION}#",
-			"fxDesc0": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Bindung (WLK)",
+				"source": "AHF145",
+				"description": "<p>Die <strong>aktuellen</strong> Attributs-Würfelgrößen des Wesens, das dieses <strong>Symbol</strong> trägt, können nie höher sein als die entsprechenden <strong>Basis</strong>-Würfelgrößen des Wesens (dies beendet <strong>keine</strong> Zauber oder Effekte, aber es hebt ihren Einfluss auf die Attribute des Wesens auf).</p>"
+			}]
 		},
 		"Effect: Symbol of Creation": {
 			"name": "Effekt: Symbol der Erschaffung",
-			"fxName0": "Effekt: Symbol der Erschaffung",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-			"disabled": "false",
-			"_id": "mOJVQSoqbnYoW10q",
-			"img": "icons/magic/symbols/cog-glowing-green.webp",
-        	"rounds": "1",
-            "remaining": "1",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744735904759",
-			"modifiedTime": "1744736767663",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, während eines Konflikts Inventarpunkte ausgeben muss, kann es stattdessen dieses <strong>Symbol</strong> zerstören, um keine Inventarpunkte auszugeben.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Erschaffung",
+				"source": "AHF145",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, während eines Konflikts Inventarpunkte ausgeben muss, kann es stattdessen dieses <strong>Symbol</strong> zerstören, um keine Inventarpunkte auszugeben.</p>"
+			}]
 		},
 		"Effect: Symbol of Despair": {
 			"name": "Effekt: Symbol der Verzweiflung",
-			"fxName0": "Symbol der Verzweiflung",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"img": "icons/magic/symbols/mask-yellow-orange.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"_id": "mW4KxjbQ2kx3aKaA",
-            "key": "system.multipliers.incomingRecovery.hp",
-            "mode": "2",
-            "value": "0.5",
-            "key1": "system.multipliers.incomingRecovery.mp",
-            "mode1": "2",
-            "value1": "0.5",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744737091711",
-			"modifiedTime": "1744737656660",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, in Konflikten Lebenspunkte und/oder Geistpunkte zurückgewinnt, erhält es stattdessen nur die <strong>Hälfte</strong> der normalen Menge an Lebenspunkten und/oder Geistpunkten zurück.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Verzweiflung",
+				"source": "AHF147",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, in Konflikten Lebenspunkte und/oder Geistpunkte zurückgewinnt, erhält es stattdessen nur die <strong>Hälfte</strong> der normalen Menge an Lebenspunkten und/oder Geistpunkten zurück.</p>"
+			}]
 		},
 		"Effect: Symbol of Destiny": {
 			"name": "Effekt: Symbol des Schicksals",
-			"fxName0": "Effekt: Symbol des Schicksals",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-    		"_id": "dYTJiTq2oXwQSmaE",
-			"img": "icons/magic/symbols/star-solid-gold.webp",
-            "remaining": "1",
-			"disabled": "false",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744737913623",
-			"modifiedTime": "1744737994183",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, eine Probe ablegt, darfst du, falls du es sehen kannst, 1 Fabula-Punkt ausgeben, um das Wesen zu zwingen, beide Würfel neu zu würfeln. Das darfst du nur einmal pro Probe tun, und nur, wenn das Ergebnis kein <strong>kritischer Erfolg</strong> oder <strong>Patzer</strong> war.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol des Schicksals",
+				"source": "AHF146",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, eine Probe ablegt, darfst du, falls du es sehen kannst, 1 Fabula-Punkt ausgeben, um das Wesen zu zwingen, beide Würfel neu zu würfeln. Das darfst du nur einmal pro Probe tun, und nur, wenn das Ergebnis kein <strong>kritischer Erfolg</strong> oder <strong>Patzer</strong> war.</p>"
+			}]
 		},
 		"Effect: Symbol of Elements": {
 			"name": "Effekt: Symbol der Elemente",
-			"fxName0": "Effekt: Symbol der Elemente",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-			"img": "icons/magic/symbols/rune-sigil-red-orange.webp",
-            "remaining": "1",
-    		"_id": "fcRQNVO71bIFIHF9",
-			"disabled": "false",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744738097160",
-			"modifiedTime": "1744738117033",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, einem oder mehreren Wesen Schaden zufügt, darfst du, sofern du das Wesen, das dieses <strong>Symbol</strong> trägt, sehen kannst, eine Menge an Geistpunkten ausgeben, die <strong>einem Drittel des gesamten Schadens entspricht, der diesen Wesen zugefügt wurde</strong> (einschließlich aller Quellen von Zusatzschaden). Wenn du das tust, wechselt der gesamte Schaden, der auf diese Weise zugefügt wird, zu der Schadensart, die du bei der Erschaffung dieses <strong>Symbols</strong> gewählt hast.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Elemente",
+				"source": "AHF145",
+				"description": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Schadensart: <strong>Luft</strong>, <strong>Blitz</strong>, <strong>Finster</strong>, <strong>Erde</strong>, <strong>Feuer</strong>, <strong>Eis</strong>, <strong>Licht</strong> oder <strong>Gift</strong>. Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, einem oder mehreren Wesen Schaden zufügt, darfst du, sofern du das Wesen, das dieses <strong>Symbol</strong> trägt, sehen kannst, eine Menge an Geistpunkten ausgeben, die <strong>einem Drittel des gesamten Schadens entspricht, der diesen Wesen zugefügt wurde</strong> (einschließlich aller Quellen von Zusatzschaden). Wenn du das tust, wechselt der gesamte Schaden, der auf diese Weise zugefügt wird, zu der Schadensart, die du bei der Erschaffung dieses <strong>Symbols</strong> gewählt hast.</p>"
+			}]
 		},
 		"Effect: Symbol of Enmity": {
 			"name": "Effekt: Symbol der Feindschaft",
-			"fxName0": "Effekt: Symbol der Feindschaft",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-			"img": "icons/skills/targeting/crosshair-mark-rough-pink.webp",
-			"_id": "2WewSSAYYbjV3Shf",
-			"disabled": "false",
-            "crisisInteraction": "active",
-            "remaining": "1",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744738855196",
-			"modifiedTime": "1744738874537",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Solange sich das Wesen, das dieses <strong>Symbol</strong> trägt, in einer <strong>Krise</strong> befindet, müssen alle Gegner dieses Wesens, die es sehen können, es zu den Zielen ihrer Angriffe und offensiven Zauber ( @ICON[offensive] ) zählen, wenn möglich.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Feindschaft",
+				"source": "AHF145",
+				"description": "<p>Solange sich das Wesen, das dieses <strong>Symbol</strong> trägt, in einer <strong>Krise</strong> befindet, müssen alle Gegner dieses Wesens, die es sehen können, es zu den Zielen ihrer Angriffe und offensiven Zauber ( @ICON[offensive] ) zählen, wenn möglich.</p>"
+			}]
 		},
 		"Effect: Symbol of Forbiddance": {
 			"name": "Effekt: Symbol des Verbots",
-			"fxName0": "Effekt: Symbol des Verbots",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-			"img": "icons/magic/symbols/mask-metal-silver-white.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"_id": "fU1zRMKc6PFM0uOW",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744743430323",
-			"modifiedTime": "1744744118674",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn du dieses Symbol erschaffst, wähle eine Aktionsart aus: <strong>Angriff</strong>, <strong>Beschützen</strong>, <strong>Zielsetzung</strong>, <strong>Zaubern</strong> oder <strong>Fähigkeit</strong>. Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, die gewählte Aktion ausführt, verliert es 5 Lebenspunkte und 5 Geistpunkte (<strong>bevor</strong> es die Aktion ausführt). Beide Werte erhöhen sich auf 10, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder auf 20, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol des Verbots",
+				"source": "AHF146",
+				"description": "<p>Wenn du dieses Symbol erschaffst, wähle eine Aktionsart aus: <strong>Angriff</strong>, <strong>Beschützen</strong>, <strong>Zielsetzung</strong>, <strong>Zaubern</strong> oder <strong>Fähigkeit</strong>. Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, die gewählte Aktion ausführt, verliert es 5 Lebenspunkte und 5 Geistpunkte (<strong>bevor</strong> es die Aktion ausführt). Beide Werte erhöhen sich auf 10, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder auf 20, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p>"
+			}]
 		},
 		"Effect: Symbol of Growth": {
 			"name": "Effekt: Symbol des Wachstums",
-			"fxName0": "Effekt: Symbol des Wachstums",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"img": "icons/magic/control/buff-flight-wings-runes-purple.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-    		"_id": "1xHIU81sGFarw5Lz",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744744210181",
-			"modifiedTime": "1744744242691",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Zauber mit dem <strong>Ziel</strong> „Bis zu drei Wesen“, die von dem Wesen mit diesem <strong>Symbol</strong> gewirkt werden, haben stattdessen das Ziel „Bis zu vier Wesen“. Das Wesen muss dennoch zusätzliche Geist-punkte für ein viertes Ziel ausgeben.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol des Wachstums",
+				"source": "AHF147",
+				"description": "<p>Zauber mit dem <strong>Ziel</strong> „Bis zu drei Wesen“, die von dem Wesen mit diesem <strong>Symbol</strong> gewirkt werden, haben stattdessen das Ziel „Bis zu vier Wesen“. Das Wesen muss dennoch zusätzliche Geist-punkte für ein viertes Ziel ausgeben.</p>"
+			}]
 		},
 		"Effect: Symbol of Metamorphosis": {
 			"name": "Effekt: Symbol der Metamorphose",
-			"fxName0": "Effekt: Symbol der Metamorphose",
 			"source": "AHF145",
 			"src": "AHF145",
-			"fxFlSource0": "AHF145",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"img": "icons/magic/control/encase-creature-spider-hold.webp",
-    		"_id": "i7k3HOyS5R7mLXKH",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744744631288",
-			"modifiedTime": "1744744654098",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Spezies: <strong>Bestie</strong>, <strong>Dämon</strong>, <strong>Elementar</strong>, <strong>Konstrukt</strong>, <strong>Monster</strong>, <strong>Pflanze</strong> oder <strong>Untot</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, wird im Hinblick auf Fähigkeiten und Effekte so behandelt, als gehöre es der gewählten Spezies anstelle seiner normalen Spezies an (dies ändert ansonsten <strong>nichts</strong> am Profil des Wesens, wie z. B. an seinen Affinitäten oder etwaigen Spezialregeln). Dieses Symbol kann nicht auf Spielercharaktere angewendet werden.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Metamorphose",
+				"source": "AHF145",
+				"description": "<p>Wenn du dieses <strong>Symbol</strong> erschaffst, wähle eine Spezies: <strong>Bestie</strong>, <strong>Dämon</strong>, <strong>Elementar</strong>, <strong>Konstrukt</strong>, <strong>Monster</strong>, <strong>Pflanze</strong> oder <strong>Untot</strong>. Das Wesen, das dieses <strong>Symbol</strong> trägt, wird im Hinblick auf Fähigkeiten und Effekte so behandelt, als gehöre es der gewählten Spezies anstelle seiner normalen Spezies an (dies ändert ansonsten <strong>nichts</strong> am Profil des Wesens, wie z. B. an seinen Affinitäten oder etwaigen Spezialregeln). Dieses Symbol kann nicht auf Spielercharaktere angewendet werden.</p>"
+			}]
 		},
 		"Effect: Symbol of Prosperity": {
 			"name": "Effekt: Symbol des Wohlstands",
-			"fxName0": "Effekt: Symbol des Wohlstands",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"img": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
-    		"_id": "g480Ar3jtcprd86o",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744744789359",
-			"modifiedTime": "1744744864754",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, @LOSS[1 fp] ausgibt, um <strong>eine Eigenschaft oder Bindung aufzurufen</strong>, erhält es zusätzlich @GAIN[100 zenit].</p>"
+			"effects": [{
+				"name": "Effekt: Symbol des Wohlstands",
+				"source": "AHF147",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, @LOSS[1 fp] ausgibt, um <strong>eine Eigenschaft oder Bindung aufzurufen</strong>, erhält es zusätzlich @GAIN[100 zenit].</p>"
+			}]
 		},
 		"Effect: Symbol of Rebellion": {
 			"name": "Effekt: Symbol der Rebellion",
-			"fxName0": "Effekt: Symbol der Rebellion",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-			"img": "icons/magic/symbols/rune-sigil-horned-white-purple.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-    		"_id": "DjQ5TnGBXOPkaS01",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744745395498",
-			"modifiedTime": "1744745450614",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn ein <strong>Bösewicht</strong> in der Szene anwesend ist, lösen alle Konkurrenzproben des Wesens mit diesem Symbol einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (solange die Probe kein <strong>Patzer</strong> ist).</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Rebellion",
+				"source": "AHF146",
+				"description": "<p>Wenn ein <strong>Bösewicht</strong> in der Szene anwesend ist, lösen alle Konkurrenzproben des Wesens mit diesem Symbol einen <strong>kritischen Erfolg</strong> aus, wenn beide Würfel die gleiche Zahl zeigen (solange die Probe kein <strong>Patzer</strong> ist).</p>"
+			}]
 		},
 		"Effect: Symbol of Rebirth": {
 			"name": "Effekt: Symbol der Wiedergeburt",
-			"fxName0": "Effekt: Symbol der Wiedergeburt",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-			"rounds": "1",
-			"disabled": "false",
-			"img": "icons/magic/nature/leaf-rune-glow-green.webp",
-    		"_id": "HFdxx7xuPNifHpWJ",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1742583349321",
-			"modifiedTime": "1744748447964",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, kurz davor steht, auf 0 Lebenspunkte reduziert zu werden, kann es dieses <strong>Symbol</strong> zerstören: Tut es das, wird es stattdessen auf genau 1 Lebenspunkt reduziert.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Wiedergeburt",
+				"source": "AHF147",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, kurz davor steht, auf 0 Lebenspunkte reduziert zu werden, kann es dieses <strong>Symbol</strong> zerstören: Tut es das, wird es stattdessen auf genau 1 Lebenspunkt reduziert.</p>"
+			}]
 		},
 		"Effect: Symbol of Revenge": {
 			"name": "Effekt: Symbol der Rache",
-			"fxName0": "Symbol der Rache",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-			"img": "icons/magic/symbols/runes-carved-stone-green.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-    		"_id": "0gdrA51PpAw9rogi",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744745840872",
-			"modifiedTime": "1744745946158",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn ein Wesen in einer <strong>Krise</strong> das Wesen, das dieses <strong>Symbol</strong> trägt, mit einem Angriff oder offensiven Zauber ( @ICON[offensive] ) trifft, erhält das Wesen in der <strong>Krise</strong> 5 Lebenspunkte und 5 Geistpunkte zurück.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Rache",
+				"source": "AHF146",
+				"description": "<p>Wenn ein Wesen in einer <strong>Krise</strong> das Wesen, das dieses <strong>Symbol</strong> trägt, mit einem Angriff oder offensiven Zauber ( @ICON[offensive] ) trifft, erhält das Wesen in der <strong>Krise</strong> 5 Lebenspunkte und 5 Geistpunkte zurück.</p>"
+			}]
 		},
 		"Effect: Symbol of Sacrifice": {
     		"name": "Effekt: Symbol der Opferung",
-			"fxName0": "Effekt: Symbol der Opferung",
 			"source": "AHF146",
 			"src": "AHF146",
-			"fxFlSource0": "AHF146",
-    		"_id": "gGQGjmW4EEckGQew",
-    		"img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744746080855",
-			"modifiedTime": "1744746115920",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, Schaden erleidet, darfst du, falls du es sehen kannst, dieses <strong>Symbol</strong> zerstören: Tust du das, erleidest du anstelle dieses Wesens die gleiche Menge Schaden.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Opferung",
+				"source": "AHF146",
+				"description": "<p>Wenn das Wesen, das dieses <strong>Symbol</strong> trägt, Schaden erleidet, darfst du, falls du es sehen kannst, dieses <strong>Symbol</strong> zerstören: Tust du das, erleidest du anstelle dieses Wesens die gleiche Menge Schaden.</p>"
+			}]
 		},
 		"Effect: Symbol of Sorcery": {
     		"name": "Effekt: Symbol der Zauberei",
-			"fxName0": "Effekt: Symbol der Zauberei",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-    		"_id": "zKhxZPFQ9nwfeJqi",
-    		"img": "icons/magic/symbols/rune-sigil-black-pink.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744746165482",
-			"modifiedTime": "1744746342876",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Die Geistpunkt-Gesamtkosten von Zaubern, die das Wesen mit diesem <strong>Symbol</strong> zum Ziel haben, werden um 5 GP reduziert (bis zu einem Minimum von 5 GP). Wenn ein Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> zielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Zauberei",
+				"source": "AHF147",
+				"description": "<p>Die Geistpunkt-Gesamtkosten von Zaubern, die das Wesen mit diesem <strong>Symbol</strong> zum Ziel haben, werden um 5 GP reduziert (bis zu einem Minimum von 5 GP). Wenn ein Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> zielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			}]
 		},
 		"Effect: Symbol of Truth": {
     		"name": "Effekt: Symbol der Wahrheit",
-			"fxName0": "Effekt: Symbol der Wahrheit",
 			"source": "AHF147",
 			"src": "AHF147",
-			"fxFlSource0": "AHF147",
-    		"_id": "EAXhqhgXa9Kbvour",
-    		"img": "icons/magic/symbols/star-yellow.webp",
-			"rounds": "1",
-            "remaining": "1",
-			"disabled": "false",
-			"key": "system.bonuses.accuracy.accuracyCheck",
-            "mode": "2",
-            "value": "2",
-			"key1": "system.bonuses.accuracy.magicCheck",
-            "mode1": "2",
-            "value1": "2",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744746402121",
-			"modifiedTime": "1744746822004",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
-			"fxDesc0": "<p>Proben zum Analysieren oder Auffinden des Wesens, das dieses <strong>Symbol</strong> trägt, sowie Präzisions- und Magieproben für Angriffe und offensive Zauber ( @ICON[offensive] ), die das Wesen, das dieses <strong>Symbol</strong> trägt, zum Ziel haben, erhalten einen Bonus von +2. Wenn ein Angriff oder Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> abzielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			"effects": [{
+				"name": "Effekt: Symbol der Wahrheit",
+				"source": "AHF147",
+				"description": "<p>Proben zum Analysieren oder Auffinden des Wesens, das dieses <strong>Symbol</strong> trägt, sowie Präzisions- und Magieproben für Angriffe und offensive Zauber ( @ICON[offensive] ), die das Wesen, das dieses <strong>Symbol</strong> trägt, zum Ziel haben, erhalten einen Bonus von +2. Wenn ein Angriff oder Zauber auf mehrere Wesen mit diesem <strong>Symbol</strong> abzielt, ist die Wirkung <strong>kumulativ</strong>.</p>"
+			}]
 		},
 		"Emergency Item": {
 			"name": "Notfall-Item",
-			"fxName0": "Notfall-Item",
 			"source": "GRW183",
 			"src": "GRW183",
-			"fxFlSource0": "GRW183",
-			"img": "systems/projectfu/styles/static/compendium/classes/tinkerer/tinkerer_emergency_item.png",
-            "remaining": "1",
-			"disabled": "false",
-			"crisisInteraction": "active",
-			"origin": "Compendium.projectfu.skills.Item.2MoV74xWJnF5Ru8u",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1744748570567",
-			"modifiedTime": "1744748614369",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn",
 			"Description": "<p>Einmal pro Konflikt-Szene darfst du, sofern du dich in einer Krise befindest, eine zusätzliche Aktion in deinem Zug ausführen. Diese Aktion <strong>muss</strong> die <strong>Inventar</strong>-Aktion sein.</p>",
-			"fxDesc0": "<p>Einmal pro Konflikt-Szene darfst du, sofern du dich in einer Krise befindest, eine zusätzliche Aktion in deinem Zug ausführen. Diese Aktion <strong>muss</strong> die <strong>Inventar</strong>-Aktion sein.</p>"
+			"effects": [{
+				"name": "Notfall-Item",
+				"source": "GRW183",
+				"description": "<p>Einmal pro Konflikt-Szene darfst du, sofern du dich in einer Krise befindest, eine zusätzliche Aktion in deinem Zug ausführen. Diese Aktion <strong>muss</strong> die <strong>Inventar</strong>-Aktion sein.</p>"
+			}]
 		},
 		"Gadgets": {
 			"name": "Hilfsmittel",
@@ -2870,23 +2080,13 @@
 		},
 		"Effect: Breach": {
 			"name": "Effekt: Durchbrechen",
-			"fxName0": "Effekt: Durchbrechen",
 			"source": "GRW219",
 			"src": "GRW219",
-			"fxDesc0": "<p>Wann immer du, vor Beginn des nächsten Zuges vom Waffenmeister, Schaden durch eine Quelle erleidest, fügt diese Quelle dir<strong>【FS × 2】</strong>Zusatzschaden zu.</p></p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/weaponmaster/weaponmaster_breach.png",
-			"disabled": "false",
-			"rounds": "1",
-			"_id": "zoOqCdNwgemMCpvA",
-			"fxSysDuEve0": "startOfTurn",
-			"fxSysDuTra0": "source",
-            "key": "system.bonuses.incomingDamage.all",
-            "mode": "2",
-            "value": "~&sl(\"breach\")*2",
-			"systemVersion": "#{VERSION}#",
-			"createdTime": "1742152985738",
-			"modifiedTime": "1742155195565",
-			"lastModifiedBy": "JXPd932s9DHQRD0w"
+			"effects": [{
+				"name": "Effekt: Durchbrechen",
+				"source": "GRW219",
+				"description": "<p>Wann immer du, vor Beginn des nächsten Zuges vom Waffenmeister, Schaden durch eine Quelle erleidest, fügt diese Quelle dir<strong>【FS × 2】</strong>Zusatzschaden zu.</p></p>"
+			}]
 		},
 		"Bladestorm": {
 			"name": "Klingensturm",
@@ -2914,19 +2114,14 @@
 		},
 		"Melee Weapon Mastery": {
 			"name": "Meisterlicher Nahkampf",
-			"fxName0": "Meisterlicher Nahkampf",
 			"source": "GRW219",
 			"src": "GRW219",
 			"Description": "<p><span>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Nahkampfwaffen</strong>.</span></p>",
-			"fxDesc0": "<p><span>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Nahkampfwaffen</strong>.</span></p>",
-    		"_id": "Sks7cSsjFlEgMg53",
-			"key": "system.bonuses.accuracy.accuracyMelee",
-            "mode": "2",
-            "value": "@system.level.value",
-			"img": "systems/projectfu/styles/static/compendium/classes/weaponmaster/weaponmaster_melee_weapon_mastery.png",
-			"systemVersion": "#{VERSION}#",
-			"modifiedTime": "1744750237269",
-			"lastModifiedBy": "LokWlpJRX2uVxtGn"
+			"effects": [{
+				"name": "Meisterlicher Nahkampf",
+				"source": "GRW219",
+				"description": "<p><span>Du erhältst einen Bonus in Höhe von<strong>【FS】</strong>auf alle Präzisionsproben mit <strong>Nahkampfwaffen</strong>.</span></p>"
+			}]
 		},
 		"Battle Gardening": {
 			"name": "Kampfgärtnern",
@@ -3214,34 +2409,23 @@
 		},
 		"Effect: Hookleaf Nightshade": {
 			"name": "Effekt: Hakenblatt-Nachtschatten",
-			"fxName0": "Effekt: Hakenblatt-Nachtschatten",
 			"source": "ANF147",
 			"src": "ANF147",
-			"disabled": "false",
-			"fxDesc0": "<p>Du fügst Zusatzschaden in Höhe von<strong>【deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p>",
-			"img": "icons/commodities/flowers/lotus-violet.webp",
-			"rounds": "1",
-            "fxSysDuEve0": "endOfTurn",
-            "fxSysDuInt0": "2",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-            "key": "system.bonuses.damage.poison",
-            "mode": "2",
-            "value": "~&sl(chloromancy)"
+			"effects": [{
+				"name": "Effekt: Hakenblatt-Nachtschatten",
+				"source": "ANF147",
+				"description": "<p>Du fügst Zusatzschaden in Höhe von<strong>【deiner Fähigkeitsstufe in Chloromantie】</strong>zu.</p>"
+			}]
 		},
 		"Effect: Wrathful Carnation": {
 			"name": "Effekt: Zornige Nelke",
-			"fxName0": "Effekt: Zornige Nelke",
 			"source": "ANF151",
 			"src": "ANF151",
-			"disabled": "false",
-			"fxDesc0": "<p>Wenn dieser <strong>Magiesamen</strong> deinen <strong>Garten</strong> verlässt, wähle bis zu einem Gegner, den du sehen kannst. Wenn der gewählte Gegner bis zum Ende deines nächsten Zuges einen Angriff durchführt oder einen offensiven Zauber (@ICON[offensive]) wirkt, muss er dich zu den Zielen dieses Angriffs oder Zaubers zählen (falls möglich).</p>",
-			"img": "icons/commodities/flowers/lotus-pink.webp",
-			"rounds": "1",
-            "fxSysDuEve0": "endOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1"
+			"effects": [{
+				"name": "Effekt: Zornige Nelke",
+				"source": "ANF151",
+				"description": "<p>Wenn dieser <strong>Magiesamen</strong> deinen <strong>Garten</strong> verlässt, wähle bis zu einem Gegner, den du sehen kannst. Wenn der gewählte Gegner bis zum Ende deines nächsten Zuges einen Angriff durchführt oder einen offensiven Zauber (@ICON[offensive]) wirkt, muss er dich zu den Zielen dieses Angriffs oder Zaubers zählen (falls möglich).</p>"
+			}]
 		},
 		"[Handout: Magiseed List]": {
 			"name": "[Handout: Magiesamen-Liste]",
@@ -3309,98 +2493,53 @@
 		},
 		"Effect: Aero Hex": {
 			"name": "Effekt: Luft-Verhexung",
-			"fxName0": "Effekt: Luft-Verhexung",
 			"source": "ANF141",
 			"src": "ANF141",
-			"img": "systems/projectfu/styles/static/affinities/air.svg",
-			"disabled": "false",
-            "fxSysDuEve0": "startOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.bolt",
-            "mode": "2",
-            "value": "5+(~&sl('wellspring-expansion'))",
-			"key1": "system.bonuses.incomingDamage.fire",
-            "mode1": "2",
-            "value1": "5+(~&sl('wellspring-expansion'))",
-			"fxDesc0": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Blitz-</strong> und <strong>Feuerschaden</strong> verursachen.</p>"
+			"effects": [{
+				"name": "Effekt: Luft-Verhexung",
+				"source": "ANF141",
+				"description": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Blitz-</strong> und <strong>Feuerschaden</strong> verursachen.</p>"
+			}]
 		},
 		"Effect: Electro Hex": {
 			"name": "Effekt: Elektro-Verhexung",
-			"fxName0": "Effekt: Elektro-Verhexung",
 			"source": "ANF141",
 			"src": "ANF141",
-			"img": "systems/projectfu/styles/static/affinities/bolt.svg",
-			"disabled": "false",
-            "fxSysDuEve0": "startOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.earth",
-            "mode": "2",
-            "value": "5+(~&sl('wellspring-expansion'))",
-			"key1": "system.bonuses.incomingDamage.fire",
-            "mode1": "2",
-            "value1": "5+(~&sl('wellspring-expansion'))",
-			"fxDesc0": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd-</strong> und <strong>Feuerschaden</strong> verursachen.</p>"
+			"effects": [{
+				"name": "Effekt: Elektro-Verhexung",
+				"source": "ANF141",
+				"description": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd-</strong> und <strong>Feuerschaden</strong> verursachen.</p>"
+			}]
 		},
 		"Effect: Geo Hex": {
 			"name": "Effekt: Geo-Verhexung",
-			"fxName0": "Effekt: Geo-Verhexung",
 			"source": "ANF141",
 			"src": "ANF141",
-			"img": "systems/projectfu/styles/static/affinities/earth.svg",
-			"disabled": "false",
-            "fxSysDuEve0": "startOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.air",
-            "mode": "2",
-            "value": "5+(~&sl('wellspring-expansion'))",
-			"key1": "system.bonuses.incomingDamage.ice",
-            "mode1": "2",
-            "value1": "5+(~&sl('wellspring-expansion'))",
-			"fxDesc0": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft-</strong> und <strong>Eisschaden</strong> verursachen.</p>"
+			"effects": [{
+				"name": "Effekt: Geo-Verhexung",
+				"source": "ANF141",
+				"description": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft-</strong> und <strong>Eisschaden</strong> verursachen.</p>"
+			}]
 		},
 		"Effect: Hydro Hex": {
 			"name": "Effekt: Hydro-Verhexung",
-			"fxName0": "Effekt: Hydro-Verhexung",
 			"source": "ANF141",
 			"src": "ANF141",
-			"img": "systems/projectfu/styles/static/affinities/ice.svg",
-			"disabled": "false",
-            "fxSysDuEve0": "startOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.air",
-            "mode": "2",
-            "value": "5+(~&sl('wellspring-expansion'))",
-			"key1": "system.bonuses.incomingDamage.bolt",
-            "mode1": "2",
-            "value1": "5+(~&sl('wellspring-expansion'))",
-			"fxDesc0": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft-</strong> und <strong>Blitzschaden</strong> verursachen.</p>"
+			"effects": [{
+				"name": "Effekt: Hydro-Verhexung",
+				"source": "ANF141",
+				"description": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Luft-</strong> und <strong>Blitzschaden</strong> verursachen.</p>"
+			}]
 		},
 		"Effect: Pyro Hex": {
 			"name": "Effekt: Pyro-Verhexung",
-			"fxName0": "Effekt: Pyro-Verhexung",
 			"source": "ANF141",
 			"src": "ANF141",
-			"img": "systems/projectfu/styles/static/affinities/air.svg",
-			"disabled": "false",
-            "fxSysDuEve0": "startOfTurn",
-            "fxSysDuInt0": "1",
-            "fxSysDuTra0": "source",
-            "fxSysDuRem0": "1",
-			"key": "system.bonuses.incomingDamage.earth",
-            "mode": "2",
-            "value": "5+(~&sl('wellspring-expansion'))",
-			"key1": "system.bonuses.incomingDamage.ice",
-            "mode1": "2",
-            "value1": "5+(~&sl('wellspring-expansion'))",
-			"fxDesc0": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd-</strong> und <strong>Eisschaden</strong> verursachen.</p>"
+			"effects": [{
+				"name": "Effekt: Pyro-Verhexung",
+				"source": "ANF141",
+				"description": "<p>Bis zum Beginn deines nächsten Zuges erleidet das Ziel 5 Zusatzschaden aus allen Quellen, die <strong>Erd-</strong> und <strong>Eisschaden</strong> verursachen.</p>"
+			}]
 		},
 		"Elemental Harmony": {
 			"name": "Elementare Harmonie",
@@ -3422,16 +2561,14 @@
 		},
 		"Ripples": {
 			"name": "Nachschlag",
-			"fxName0": "Nachschlag: Präzisionsbonus",
 			"source": "ANF139",
 			"src": "ANF139",
 			"Description": "<p>Wenn ein Gegner, den du sehen kannst, durch den verursachten Schaden eines deiner Verbündeten Lebenspunkte verliert und dieser Schaden durch eine oder mehrere deiner <strong>„Verhexungs“-Anrufungen</strong> erhöht wurde, darfst du einen <strong>freien Angriff</strong> mit einer Waffe ausführen, die du ausgerüstet hast. Dieser Angriff kann nur diesen Gegner zum Ziel haben und erhält einen Bonus in Höhe von<strong>【FS】</strong>auf seine Präzisionsprobe. Wenn er erfolgreich ist, wird der gesamte Schaden zu derselben Schadensart, die dein Verbündeter verursacht hat, und <strong>alle „Verhexungs“-Anrufungen</strong>, die auf dem Ziel liegen, enden sofort, nachdem der Angriff abgehandelt worden ist.</p><p>Wenn zwei oder mehr Gegner diese Fähigkeit gleichzeitig auslösen, kannst du gegen <strong>jeden</strong> von ihnen einen <strong>freien Angriff</strong> ausführen, in beliebiger Reihenfolge.</p>",
-			"img": "systems/projectfu/styles/static/compendium/classes/invoker/ripples.png",
-    		"origin": "Compendium.projectfu.skills.Item.ouhN6A6jFZO10eST",
-			"key": "system.accuracy",
-            "mode": "2",
-            "value": "@system.level.value",
-			"disabled": "false"
+			"effects": [{
+				"name": "Nachschlag: Präzisionsbonus",
+				"source": "ANF139",
+				"description": "</p>Dieser Angriff kann nur diesen Gegner zum Ziel haben und erhält einen Bonus in Höhe von<strong>【FS】</strong>auf seine Präzisionsprobe.</p>"
+			}]
 		},
 		"Wellspring Expansion": {
 			"name": "Quellenerweiterung",
@@ -3477,27 +2614,13 @@
 		},
 		"Cookbook": {
 			"name": "Kochbuch",
-			"fxName0": "Geschmacksrichtungs-Aliase",
 			"source": "ANF154",
 			"src": "ANF154",
-			"disabled": "true",
-			"fxDesc0": "Passe die Werte an, um zu ändern wie die Geschmacksrichtungen angezeigt werden.",
-			"img": "systems/projectfu/styles/static/compendium/classes/gourmet/cooking.png",
-			"key": "flags.projectfu.tasteAliases.bitter",
-			"mode": "5",
-			"value": "",
-			"key1": "flags.projectfu.tasteAliases.salty",
-			"mode1": "5",
-			"value1": "",
-			"key2": "flags.projectfu.tasteAliases.sour",
-			"mode2": "5",
-			"value2": "",
-			"key3": "flags.projectfu.tasteAliases.sweet",
-			"mode3": "5",
-			"value3": "",
-			"key4": "flags.projectfu.tasteAliases.umami",
-			"mode4": "5",
-			"value4": ""
+			"effects": [{
+				"name": "Geschmacksrichtungs-Aliase",
+				"source": "ANF154",
+				"description": "Passe die Werte an, um zu ändern wie die Geschmacksrichtungen angezeigt werden."
+			}]
 		},
 		"Cooking": {
 			"name": "Kochen",

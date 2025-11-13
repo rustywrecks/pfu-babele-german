@@ -4,29 +4,10 @@
     "source": "system.source",
     "summary": "system.summary.value",
     "description": "system.data.description",
-    "fxName": "effects.0.name",
-    "img": "effects.0.img",
-    "origin": "effects.0.origin",
-    "fxDescription": "effects.0.description",
-    "key": "effects.0.changes.0.key",
-    "mode": "effects.0.changes.0.mode",
-    "value": "effects.0.changes.0.value",
-    "key1": "effects.0.changes.1.key",
-    "mode1": "effects.0.changes.1.mode",
-    "value1": "effects.0.changes.1.value",
-    "disabled": "effects.0.disabled",
-    "event": "effects.0.system.duration.event",
-    "interval": "effects.0.system.duration.interval",
-    "remaining": "effects.0.system.duration.remaining",
-    "tracking": "effects.0.system.duration.tracking",
-    "id": "effects.0._id",
-    "createdTime": "effects.0._stats.createdTime",
-    "lastModifiedBy": "effects.0._stats.lastModifiedBy",
-    "modifiedTime": "effects.0._stats.modifiedTime",
-    "systemVersion": "effects.0._stats.systemVersion",
-    "fxSource": "effects.0.flags.projectfu.source",
-    "statuses": "effects.0.statuses.0",
-    "crisisInteraction": "effects.0.system.predicate.crisisInteraction"
+		"effects": {
+			"path": "effects",
+			"converter": "effects"
+		}
   },
   "folders": {
     "Vehicle Frame": "Fahrzeugrahmen",
@@ -50,74 +31,41 @@
     "Aerial Module": {
       "name": "Flugmodul",
       "source": "ATF168",
-      "summary": "",
       "description": "<h5>(ZÄHLT ALS ZWEI AKTIVIERTE MODULE)</h5><p>Dieses <strong>persönliche Fahrzeug</strong> kann fliegen, und seine <strong>Entfernung</strong> wird auf ×3 erhöht.</p><p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, können deine <strong>Nahkampfangriffe fliegende</strong> Wesen zum Ziel haben, und keines der Wesen im Inneren des <strong>persönlichen Fahrzeugs</strong> kann zum Ziel von <strong>Nahkampfangriffen</strong> werden, es sei denn, der Angreifer fliegt oder kann fliegende Ziele irgendwie erreichen.</p><p>Diese Vorteile gelten nicht, wenn das <strong>persönliche Fahrzeug</strong> inaktiv oder am Boden ist, du in einer Krise bist oder du ein anderes Wesen mit der <strong>Beschützen</strong>-Aktion deckst. Wenn ein Wesen an Bord dieses <strong>persönlichen Fahrzeugs</strong> während eines Konflikts <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidet, werden die Vorteile dieses Moduls bis zum Beginn deines nächsten Zuges aufgehoben.</p>",
-      "id": "iT2kp5MfqL4yaKp7",
-      "fxName": "Flugmodul",
-      "img": "icons/commodities/tech/fan-ventilator-copper.webp",
-      "origin": "Compendium.projectfu.vehicle-modules.Item.76ieutWWlthLOXap",
-      "fxDescription": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann fliegen, und seine <strong>Entfernung</strong> wird auf ×3 erhöht.</p><p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, können deine <strong>Nahkampfangriffe fliegende</strong> Wesen zum Ziel haben, und keines der Wesen im Inneren des <strong>persönlichen Fahrzeugs</strong> kann zum Ziel von <strong>Nahkampfangriffen</strong> werden, es sei denn, der Angreifer fliegt oder kann fliegende Ziele irgendwie erreichen.</p><p>Diese Vorteile gelten nicht, wenn das <strong>persönliche Fahrzeug</strong> inaktiv oder am Boden ist, du in einer Krise bist oder du ein anderes Wesen mit der <strong>Beschützen</strong>-Aktion deckst. Wenn ein Wesen an Bord dieses <strong>persönlichen Fahrzeugs</strong> während eines Konflikts <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidet, werden die Vorteile dieses Moduls bis zum Beginn deines nächsten Zuges aufgehoben.</p>",
-      "disabled": false,
-      "event": "none",
-      "interval": 1,
-      "remaining": 0,
-      "tracking": "self",
-      "createdTime": 1743183356662,
-      "lastModifiedBy": "LokWlpJRX2uVxtGn",
-      "modifiedTime": 1744750783209,
-      "systemVersion": "#{VERSION}#",
-      "crisisInteraction": "inactive",
-      "statuses": "flying",
-      "fxSource": "ATF168"
+      "effects": [{
+          "name": "Flugmodul",
+          "source": "ATF168",
+          "description": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann fliegen, und seine <strong>Entfernung</strong> wird auf ×3 erhöht.</p><p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, können deine <strong>Nahkampfangriffe fliegende</strong> Wesen zum Ziel haben, und keines der Wesen im Inneren des <strong>persönlichen Fahrzeugs</strong> kann zum Ziel von <strong>Nahkampfangriffen</strong> werden, es sei denn, der Angreifer fliegt oder kann fliegende Ziele irgendwie erreichen.</p><p>Diese Vorteile gelten nicht, wenn das <strong>persönliche Fahrzeug</strong> inaktiv oder am Boden ist, du in einer Krise bist oder du ein anderes Wesen mit der <strong>Beschützen</strong>-Aktion deckst. Wenn ein Wesen an Bord dieses <strong>persönlichen Fahrzeugs</strong> während eines Konflikts <strong>Luft</strong>-, <strong>Blitz</strong>- oder <strong>Eisschaden</strong> erleidet, werden die Vorteile dieses Moduls bis zum Beginn deines nächsten Zuges aufgehoben.</p>"
+      }]
     },
     "Cannon Module": {
       "name": "Kanonenmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schusswaffe</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Secondary Offensive Module": {
       "name": "Sekundäres Offensivmodul",
       "source": "ATF169",
-      "summary": "",
       "description": "<h5>(NUR EXOSKELETT- UND MECHA-RAHMEN)</h5><p>Jedes Mal, wenn du dieses Modul in deinem <strong>persönlichen Fahrzeug</strong> aktivierst, wähle eines seiner <strong>deaktivierten Waffenmodule</strong>. Solange das gewählte Modul deaktiviert und dieses Modul aktiviert ist, kannst du eine Aktion nutzen, um einen <strong>freien Angriff</strong> mit diesem <strong>Waffenmodul</strong> auszuführen.</p>"
     },
     "Sword Module": {
       "name": "Schwertmodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schwert</strong>.</p>"
     },
     "Advanced Targeting Module": {
       "name": "Erweitertes Zielerfassungsmodul",
       "source": "ATF168",
-      "summary": "",
       "description": "<p>Während du dieses <strong>Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf deine Präzisionsproben sowie auf Magieproben für offensive Zauber ( @ICON[offensive] ), die du wirkst.</p>",
-      "id": "tBO2RxyIGFzJOStU",
-      "fxName": "Erweitertes Zielerfassungsmodul",
-      "img": "icons/commodities/tech/metal-blue.webp",
-      "origin": "Compendium.projectfu.vehicle-modules.Item.9YM4VR2e6Y4MgmJ2",
-      "fxDescription": "<p>Während du dieses <strong>Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf deine Präzisionsproben sowie auf Magieproben für offensive Zauber ( @ICON[offensive] ), die du wirkst.</p>",
-      "key": "system.bonuses.accuracy.accuracyCheck",
-      "mode": 2,
-      "value": "2",
-      "key1": "system.bonuses.accuracy.magicCheck",
-      "mode1": 2,
-      "value1": "2",
-      "disabled": false,
-      "event": "none",
-      "interval": 1,
-      "remaining": 0,
-      "tracking": "self",
-      "createdTime": 1743183056735,
-      "lastModifiedBy": "uG2TkwmswfdRqaAv",
-      "modifiedTime": 1743183094497,
-      "systemVersion": "#{VERSION}#"
+      "effects": [{
+          "name": "Erweitertes Zielerfassungsmodul",
+          "source": "ATF168",
+          "description": "<p>Während du dieses <strong>Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf deine Präzisionsproben sowie auf Magieproben für offensive Zauber ( @ICON[offensive] ), die du wirkst.</p>"
+      }]
     },
     "Spear Module": {
       "name": "Speermodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Speer</strong>.</p>"
     },
     "Magistatic Module": {
@@ -129,227 +77,161 @@
     "Rifle Module": {
       "name": "Gewehrmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schusswaffe</strong>.</p>"
     },
     "Sensor Module": {
       "name": "Sensormodul",
       "source": "ATF169",
-      "summary": "",
       "description": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf Offene Proben, um Wesen, Items und Orte in der Nähe zu untersuchen.</p>",
-      "id": "OyRDYwvhLfJt7eCu",
-      "fxName": "Sensormodul",
-      "img": "icons/commodities/tech/sensor-brown.webp",
-      "origin": "Compendium.projectfu.vehicle-modules.Item.F281qYUhqNxVoSk3",
-      "fxDescription": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf Offene Proben, um Wesen, Items und Orte in der Nähe zu untersuchen.</p>",
-      "key": "system.bonuses.accuracy.openCheck",
-      "mode": 2,
-      "value": "2",
-      "disabled": true,
-      "event": "none",
-      "interval": 1,
-      "remaining": 0,
-      "tracking": "self",
-      "createdTime": 1743183194146,
-      "lastModifiedBy": "uG2TkwmswfdRqaAv",
-      "modifiedTime": 1743183284768,
-      "systemVersion": "#{VERSION}#",
-      "fxSource": "ATF169"
+      "effects": [{
+          "name": "Sensormodul",
+          "source": "ATF169",
+          "description": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf Offene Proben, um Wesen, Items und Orte in der Nähe zu untersuchen.</p>"
+      }]
     },
     "Expanded Plating Module": {
       "name": "Erweitertes Panzerungsmodul",
       "source": "ATF168",
-      "summary": "",
       "description": "<h5>(NUR MECHA- UND ROSS-RAHMEN)</h5><p>Wenn du dieses <strong>Fahrzeug</strong> steuerst und ein Modul für <strong>Schwere Panzerung</strong>, <strong>Runen</strong>- oder <strong>Standard-Panzerung</strong> aktiviert ist, können alle Passagiere an Bord ihre Werte in Verteidigung und Magie-Verteidigung so behandeln, als würden sie den Werten des betreffenden <strong>Rüstungsmoduls</strong> entsprechen (sie können dennoch ihre üblichen Werte verwenden, falls diese besser sind).</p>"
     },
     "Excavation Module": {
       "name": "Grabungsmodul",
       "source": "ATF168",
-      "summary": "",
       "description": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann sich durch den Boden graben und ist mit hellen Lichtern ausgestattet.</p>"
     },
     "Axe Module": {
       "name": "Axtmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schwere Waffe</strong>.</p>"
     },
     "Esoteric Module": {
       "name": "Esoterisches Modul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Arkan</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Claymore Module": {
       "name": "Claymoremodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schwert</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Trident Module": {
       "name": "Dreizackmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Speer</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Turbo Module": {
       "name": "Turbo-Modul",
       "source": "ATF169",
-      "summary": "",
       "description": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, bei denen es auf <strong>Geschwindigkeit</strong> und <strong>schnelle Manöver</strong> ankommt.</p>",
-      "id": "ON1J8xVy0XFPlIdI",
-      "fxName": "Turbo-Modul",
-      "img": "icons/commodities/tech/dial-meter-gauge-blue.webp",
-      "origin": "Compendium.projectfu.vehicle-modules.Item.OEgMfny6AwrXCkEg",
-      "fxDescription": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, bei denen es auf <strong>Geschwindigkeit</strong> und <strong>schnelle Manöver</strong> ankommt.</p>",
-      "key": "system.bonuses.accuracy.opposedCheck",
-      "mode": 2,
-      "value": "2",
-      "disabled": true,
-      "event": "none",
-      "interval": 1,
-      "remaining": 0,
-      "tracking": "self",
-      "createdTime": 1743183702635,
-      "lastModifiedBy": "uG2TkwmswfdRqaAv",
-      "modifiedTime": 1743183750551,
-      "systemVersion": "#{VERSION}#"
+      "effects": [{
+          "name": "Turbo-Modul",
+          "source": "ATF169",
+          "description": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, bei denen es auf <strong>Geschwindigkeit</strong> und <strong>schnelle Manöver</strong> ankommt.</p>"
+      }]
     },
     "Seafarer Module": {
       "name": "Seefahrermodul",
       "source": "ATF169",
-      "summary": "",
       "description": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann auf dem Wasser und unter Wasser fahren.</p>"
     },
     "Standard Plating Module": {
       "name": "Standard-Panzerung-Modul",
       "source": "ATF165",
-      "summary": "",
       "description": ""
     },
     "Shield Module": {
       "name": "Schildmodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<h5>(NUR EXOSKELETT- UND MECHA-RAHMEN)</h5><p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf Verteidigung und Magie-Verteidigung. Außerdem zählt dieses Waffenmodul <strong>nicht</strong> als „Waffe“, sondern als ausgerüsteter <strong>Schild</strong>. Dieses Modul kann <strong>nicht</strong> in deinem <strong>Slot</strong> für die <strong>primäre Hand</strong> ausgerüstet werden, es sei denn, du hast die Fähigkeit <strong>Doppelschild</strong> (siehe <strong>Grundegelwerk</strong>, Seite <strong>217</strong>) erworben. Falls du das getan hast, verursachen deine <strong>Doppelschilde</strong> 2 Zusatzschaden (dies ist kumulativ, wenn du zwei <strong>Schild-Module</strong> gleichzeitig aktiviert hast).</p>"
     },
     "Heavy Plating Module": {
       "name": "Schwere Panzerung-Modul",
       "source": "ATF165",
-      "summary": "",
       "description": ""
     },
     "Flamer Module": {
       "name": "Flammenwerfermodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schusswaffe</strong>.</p>"
     },
     "Exoskeleton": {
       "name": "Exoskelett",
       "source": "ATF165",
-      "summary": "",
       "description": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann bis zu <strong>2 Waffenmodule, 1 Rüstungsmodul</strong> und eine <strong>beliebige Anzahl von Unterstützungsmodulen</strong> aktiviert haben.</p><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.kMQH13lhWY4Mlbh8] mit diesem <strong>persönlichen Fahrzeug</strong> einsetzt, ignoriere die IP-Kosten.</p>"
     },
     "Arcane Module": {
       "name": "Arkanmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Arkan</strong>.</p>"
     },
     "Scythe Module": {
       "name": "Sensenmodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schwere Waffe</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Steed": {
       "name": "Ross",
       "source": "ATF165",
-      "summary": "",
       "description": "<p>Dieses <strong>persönliche Fahrzeug</strong> kann bis zu <strong>1 Waffenmodul, 1 Rüstungsmodul</strong> und eine <strong>beliebige Anzahl von Unterstützungsmodulen</strong> aktiviert haben.</p><p>Wenn du die Fähigkeit @UUID[Compendium.projectfu.skills.Item.HCzLtYgEWScIeJNq] mit diesem <strong>persönlichen Fahrzeug</strong> einsetzt, ignoriere die GP-Kosten.</p>"
     },
     "Blade Module": {
       "name": "Klingenmodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Dolch</strong>.</p>"
     },
     "Rapid Interface Module": {
       "name": "Schnelles Interface-Modul",
       "source": "ATF169",
-      "summary": "",
       "description": "<p>Wenn du in deinem Zug während eines Konflikts dieses <strong>persönliche Fahrzeug betrittst</strong>, darfst du sofort eine zusätzliche Aktion ausführen.</p>"
     },
     "Flexible Plating Module": {
       "name": "Flexible Panzerung-Modul",
       "source": "ATF165",
-      "summary": "",
       "description": ""
     },
     "Anti-Element Module": {
       "name": "Anti-Element-Modul",
       "source": "ATF168",
-      "summary": "",
       "description": "<p>Jedes Mal, wenn du dieses Modul in deinem <strong>persönlichen Fahrzeug</strong> aktivierst, wähle eine Schadensart: <strong>Luft, Blitz, Erde, Feuer</strong> oder <strong>Eis</strong>. Wesen an Bord dieses <strong>persönlichen Fahrzeugs</strong> werden als resistent gegen die gewählte Schadensart angesehen, solange dieses Modul aktiviert ist.</p><hr><ul><li><p><strong>Ziele erhalten:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance] oder @TYPE[affinity ice resistance]</p></li></ul>"
     },
     "Power Module": {
       "name": "Kraftmodul",
       "source": "ATF169",
-      "summary": "",
       "description": "<h5>(NUR EXOSKELETT- UND MECHA-RAHMEN)</h5><p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, die auf <strong>roher Gewalt</strong> oder <strong>physischer Resistenz</strong> beruhen.</p>",
-      "id": "OJS0b7OweaYLU0gT",
-      "fxName": "Kraftmodul",
-      "img": "icons/commodities/tech/transmission.webp",
-      "origin": "Compendium.projectfu.vehicle-modules.Item.qzvVPIVFgZ9jtOYT",
-      "fxDescription": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, die auf <strong>roher Gewalt</strong> oder <strong>physischer Resistenz</strong> beruhen.</p>",
-      "key": "system.bonuses.accuracy.opposedCheck",
-      "mode": 2,
-      "value": "2",
-      "disabled": true,
-      "event": "none",
-      "interval": 1,
-      "remaining": 0,
-      "tracking": "self",
-      "createdTime": 1743183600297,
-      "lastModifiedBy": "uG2TkwmswfdRqaAv",
-      "modifiedTime": 1743183641554,
-      "systemVersion": "#{VERSION}#"
+      "effects": [{
+          "name": "Kraftmodul",
+          "source": "ATF169",
+          "description": "<p>Während du dieses <strong>persönliche Fahrzeug</strong> steuerst, erhältst du einen Bonus von +2 auf alle Konkurrenzproben, die auf <strong>roher Gewalt</strong> oder <strong>physischer Resistenz</strong> beruhen.</p>"
+      }]
     },
     "Machine Gun Module": {
       "name": "Maschinengewehrmodul",
       "source": "ATF167",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Schusswaffe</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine anderen <strong>Waffenmodule</strong> aktiviert haben. Wenn du die <strong>Angriffs</strong>-Aktion ausführst und mit diesem Waffenmodul angreifst, kannst du außerdem zwei getrennte Angriffe statt einem ausführen (gegen dasselbe Ziel oder gegen verschiedene Ziele). Wenn du das tust, folgen beide Angriffe den Regeln für den <strong>Kampf mit zwei Waffen</strong>: Jeder Angriff verliert das <strong>Multi</strong>-Merkmal und kann es nicht erhalten, und du behandelst den höheren Wurf jeder Präzisionsprobe bei der Bestimmung des Schadens so, als wäre er 0.</p>"
     },
     "Flail Module": {
       "name": "Flegelmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Flegel</strong>.</p>"
     },
     "Seat Module": {
       "name": "Sitzmodul",
       "source": "ATF169",
-      "summary": "",
       "description": "<h5>(NUR MECHA- UND ROSS-RAHMEN)</h5><p>Dieses <strong>persönliche Fahrzeug</strong> kann einen zusätzlichen menschengroßen Passagier befördern.</p>"
     },
     "Bow Module": {
       "name": "Bogenmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Bogen</strong>.</p><p>Ein <strong>persönliches Fahrzeug</strong>, das dieses Modul aktiviert hat, kann keine weiteren <strong>Waffenmodule</strong> aktiviert haben.</p>"
     },
     "Claw Module": {
       "name": "Klauenmodul",
       "source": "ATF166",
-      "summary": "",
       "description": "<p>Diese Waffe gehört zur Kategorie <strong>Raufen</strong>.</p><p>Diese Waffe kann zur Interaktion mit der Szene benutzt werden, als wäre sie eine freie Hand.</p>"
     },
     "Counterstrike Module": {
       "name": "Gegenschlag-Modul",
       "source": "ATF168",
-      "summary": "",
       "description": "<p>Wenn ein Wesen an Bord dieses <strong>persönlichen Fahrzeugs</strong> von einem <strong>Fernkampfangriff</strong> getroffen wird, darfst du 1 Inventarpunkt ausgeben, wenn du dieses <strong>Fahrzeug</strong> steuerst. Tust du das, erleidet der Angreifer 10 <strong>physischen</strong> Schaden (nachdem sein Angriff abehandelt wurde). Dieser Betrag erhöht sich um 5 Schaden, wenn du auf <strong>Stufe 20 oder höher</strong> bist, oder um 10 Schaden, wenn du auf <strong>Stufe 40 oder höher</strong> bist.</p><hr><ul><li><p><strong>Du bezahlst:</strong> @LOSS[1 ip]</p></li><li><p><strong>Ziel erleidet:</strong> @DMG[&step(10,15,20) physical]{10|15|20 Physisch}</p></li></ul>"
     }
   }

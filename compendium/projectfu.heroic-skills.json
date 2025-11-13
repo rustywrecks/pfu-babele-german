@@ -153,7 +153,8 @@
       "effects": [{
         "name": "Zeitlupe",
         "source": "ATF177",
-        "description": "<p>Du erhältst einen Bonus auf deinen Initiative-Modifikator in Höhe<strong>【deiner FS in Ausweichen + deiner FS in Gestohlene Zeit】</strong>.</p><p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> trägst, wird jeglicher Schaden, den du erleidest, um einen Betrag in Höhe<strong>【deiner FS in Ausweichen】</strong>reduziert (wird <strong>vor</strong> Schadensaffinitäten angewendet), und du verursachst Zusatzschaden in Höhe<strong>【deiner FS in Gestohlene Zeit】</strong>.</p>"}]
+        "description": "<p>Du erhältst einen Bonus auf deinen Initiative-Modifikator in Höhe<strong>【deiner FS in Ausweichen + deiner FS in Gestohlene Zeit】</strong>.</p><p>Solange du keine <strong>Schilde</strong> und keine <strong>martialische Rüstung</strong> trägst, wird jeglicher Schaden, den du erleidest, um einen Betrag in Höhe<strong>【deiner FS in Ausweichen】</strong>reduziert (wird <strong>vor</strong> Schadensaffinitäten angewendet), und du verursachst Zusatzschaden in Höhe<strong>【deiner FS in Gestohlene Zeit】</strong>.</p>"
+      }]
     },
     "Card Vanguard": {
       "name": "Vorhutkarte",
