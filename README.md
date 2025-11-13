@@ -1,4 +1,4 @@
-# Project Fabula Ultima - Deutsche Kompendium-Übersetzung
+# Project FU Deutsche Übersetzung
 ![Fabula Ultima Mod](https://need.games/wp-content/uploads/2024/06/FU-MOD-bgW-300x121.png)
 ## Vorwort
 In einem Anfall von Arbeitswut habe ich mich dazu entschieden die Kompendien, die mit dem wundervollen System [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) zusammen kommen per [Babele](https://gitlab.com/riccisi/foundryvtt-babele) zu übersetzen.
@@ -8,7 +8,6 @@ Abseits davon ein großer Shoutout an [DjLeChuck](https://github.com/djlechuck/)
 ## ToDo
 - Journal "Heldenhafte Fähigkeiten" vollständig bearbeiten
 - Einträge im HTML sortieren
-- Rework nach Implementierung der Custom Converter
 ## Manuelle Installation
 Um das Modul in Foundry zu installieren sind wenige, simple Schritte notwendig:
 1. Öffne die Setup-Seite deiner _FoundryVTT_ Instanz
@@ -63,7 +62,7 @@ Das hier sind die Kompendien, die ich bisher übersetze habe. Ich versuche, die 
 > - ATF = Atlas: Techno Fantasy
 > - ANF = Atlas: Natural Fantasy
 
-# Project Fabula Ultima - German Compendium Translation
+# Project FU german translation
 ## Foreword
 In a fit of workaholism, I decided to translate the compendiums that come with the wonderful [Project FU](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) system using [Babele](https://gitlab.com/riccisi/foundryvtt-babele).
 However, since I am not a developer – nor do I understand anything about JavaScript – there are various hurdles that I have failed to overcome so far.
@@ -72,7 +71,6 @@ Apart from that, a big shoutout to [DjLeChuck](https://github.com/djlechuck/) an
 ## ToDo
 - Complete the journal "Heroic Skills"
 - Sort entries inside HTML content
-- Rework compendiums after implementation of custom converters
 ## Manual installation
 To install the module in Foundry, a few simple steps are necessary:
 1. Open the setup page of your _FoundryVTT_ instance
